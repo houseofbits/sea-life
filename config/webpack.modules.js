@@ -62,7 +62,18 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(html)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        publicPath: '/content',
+                        outputPath: 'content/'
+                    }
+                }]
+            },
         ],
     },
 };

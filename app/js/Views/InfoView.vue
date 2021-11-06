@@ -1,32 +1,49 @@
 <template>
-    <div class="screen text-gray-500 bg-gray-100">
-        Info page
+    <div class="screen">
+        <info-overview  v-if="!content" v-model="selectedPage"/>
+        <info-detail-view v-if="content" :content="content" @close="this.closeDetailsView"/>
     </div>
 </template>
 
 <script>
+import HttpService from "@js/Services/HttpService.js";
+import InfoOverview from "@js/Components/InfoOverview.vue";
+import InfoDetailView from "@js/Components/InfoDetailView.vue";
+import _ from 'lodash';
+import view1 from '@content/01-lv.html';
+
 export default {
     name: "InfoView",
+    components: {InfoDetailView, InfoOverview},
     data() {
         return {
-            someText:'Test text'
+            selectedPage: null,
+            selectedLanguage: 'lv',
+            content: null
         };
     },
-    computed: {
-        someTextModified() {
-            return this.someText + ' modified';
+    watch: {
+        selectedPage(val) {
+            console.log(val);
+            if (!_.isNull(val)) {
+                this.loadContent(val);
+            }
         }
     },
-    methods: {}
+    methods: {
+        loadContent(id) {
+            HttpService.get(id, this.selectedLanguage).then(result => {
+                this.content = result.data;
+            });
+        },
+        closeDetailsView() {
+            this.content = null;
+            this.selectedPage = null;
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-
-    .screen {
-        position: absolute;
-        width: 1024px;
-        height: 768px;
-    }
 
 </style>
