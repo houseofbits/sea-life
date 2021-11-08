@@ -10,7 +10,7 @@ import HttpService from "@js/Services/HttpService.js";
 import InfoOverview from "@js/Components/InfoOverview.vue";
 import InfoDetailView from "@js/Components/InfoDetailView.vue";
 import _ from 'lodash';
-import view1 from '@content/01-lv.html';
+import ContentLV from '@js/Helpers/ContentLV.js';
 
 export default {
     name: "InfoView",
@@ -24,7 +24,6 @@ export default {
     },
     watch: {
         selectedPage(val) {
-            console.log(val);
             if (!_.isNull(val)) {
                 this.loadContent(val);
             }
@@ -32,7 +31,8 @@ export default {
     },
     methods: {
         loadContent(id) {
-            HttpService.get(id, this.selectedLanguage).then(result => {
+            const url = ContentLV[id-1];
+            HttpService.get(url).then(result => {
                 this.content = result.data;
             });
         },

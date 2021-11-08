@@ -3,7 +3,7 @@ import axios from "axios";
 class HttpService {
     constructor() {
         this.axiosInstance = axios.create({
-            baseURL: "http://0.0.0.0:9001/content",
+            baseURL: "http://0.0.0.0:9001/",
             headers: {
                 "Content-type": "text/html"
             }
@@ -11,12 +11,11 @@ class HttpService {
     }
 
     /**
-     * @param {number} id
-     * @param {string} lang
+     * @param {string} url
      * @returns {Promise<AxiosResponse<any>>}
      */
-    get(id, lang) {
-        return this.axiosInstance.get(id.toString().padStart(2, '0') + '-' + lang + '.html');
+    get(url) {
+        return this.axiosInstance.get(url);
     }
 }
 
