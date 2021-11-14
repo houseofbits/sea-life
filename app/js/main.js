@@ -5,6 +5,9 @@ import MainApp from "@js/MainApp.vue";
 import IndexView from '@js/Views/IndexView.vue';
 import InfoView from "@js/Views/InfoView.vue";
 import GameView from "@js/Views/GameView.vue";
+import PuzzleView from "@js/Views/PuzzleView.vue";
+import Animation1View from "@js/Views/Animation1View.vue";
+import Animation2View from "@js/Views/Animation2View.vue";
 
 const routes = [
     {
@@ -21,6 +24,23 @@ const routes = [
         path: "/game",
         name: "GameView",
         component: GameView,
+        children: [
+            {
+                path: "puzzle",
+                name: "PuzzleView",
+                component: PuzzleView,
+            },
+            {
+                path: "anim1",
+                name: "Animation1View",
+                component: Animation1View,
+            },
+            {
+                path: "anim2",
+                name: "Animation2View",
+                component: Animation2View,
+            }
+        ],
     },
 ];
 

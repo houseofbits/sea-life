@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@js/*": ["./app/js/*"]
+        },
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

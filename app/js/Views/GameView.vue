@@ -1,32 +1,18 @@
 <template>
-    <div class="screen text-gray-500 bg-gray-100">
-        Game page
+    <div class="screen p-4">
+        <router-link to="/game/puzzle" class="btn btn-blue m-1">Puzzle</router-link>
+        <router-link to="/game/anim1" class="btn btn-blue m-1">Animation #1</router-link>
+        <router-link to="/game/anim2" class="btn btn-blue m-1">Animation #2</router-link>
+        <router-view/>
     </div>
 </template>
 
 <script>
 export default {
     name: "GameView",
-    data() {
-        return {
-            someText:'Test text'
-        };
-    },
-    computed: {
-        someTextModified() {
-            return this.someText + ' modified';
-        }
-    },
-    methods: {}
 }
 </script>
 
 <style lang="scss" scoped>
-
-    .screen {
-        position: absolute;
-        width: 1024px;
-        height: 768px;
-    }
 
 </style>

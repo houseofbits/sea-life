@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
     resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
             '@js': path.resolve(__dirname, '../app/js'),
             '@images': path.resolve(__dirname, '../app/images'),

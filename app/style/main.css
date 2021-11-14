@@ -36,3 +36,7 @@ p{
 .btn-blue:hover {
     @apply bg-blue-700;
 }
+
+.btn-active {
+    @apply border-4 border-gray-600;
+}
