@@ -6,6 +6,7 @@
 
 <script>
 import PuzzleElement from "@js/Structures/PuzzleElement.ts";
+import {PuzzleElementStateEnum, PUZZLE_PIECE_CAPTURE_DISTANCE} from "@js/Helpers/Constants";
 
 export default {
     name: "PuzzleElement",
@@ -17,23 +18,19 @@ export default {
     },
     data() {
         return {
-            isCaptured: false,
-            left: this.config.initialPosition.x,
-            top: this.config.initialPosition.y,
+            state: PuzzleElementStateEnum.NONE,
+            position: this.config.initialPosition.clone(),
             mouseX: 0,
             mouseY: 0,
-            offsetX: 0,
-            offsetY: 0,
         };
     },
     computed: {
-        elementStyle()
-        {
+        elementStyle() {
             return {
                 backgroundColor: this.config.image,
                 width: '200px',
                 height: '200px',
-                transform: 'translate('+this.left+'px, '+this.top+'px)',
+                transform: 'translate(' + this.position.x + 'px, ' + this.position.y + 'px)',
                 clipPath: 'circle(100px at center)',
                 zIndex: this.config.zIndex,
             };
@@ -43,13 +40,13 @@ export default {
         emitEvent(eventName, additionalOptions) {
             this.$emit(eventName, {
                 eventName,
-                left: this.left,
-                top: this.top,
+                position: this.position,
                 ...additionalOptions
             });
         },
         handleDown(event) {
-            if (event.target === this.$refs.parent) {
+            if (this.state === PuzzleElementStateEnum.NONE
+                && event.target === this.$refs.parent) {
                 if (event.touches && event.touches.length >= 1) {
                     this.mouseX = event.touches[0].clientX;
                     this.mouseY = event.touches[0].clientY;
@@ -58,16 +55,18 @@ export default {
                     this.mouseX = event.clientX;
                     this.mouseY = event.clientY;
                 }
-                this.isCaptured = true;
+                this.state = PuzzleElementStateEnum.DRAG;
                 this.emitEvent('drag:start');
             }
         },
         handleUp() {
-            this.emitEvent('drag:end');
-            this.isCaptured = false;
+            if (this.state === PuzzleElementStateEnum.DRAG) {
+                this.emitEvent('drag:end');
+                this.state = PuzzleElementStateEnum.NONE;
+            }
         },
         handleMove(event) {
-            if (this.isCaptured) {
+            if (this.state === PuzzleElementStateEnum.DRAG) {
                 let eventY, eventX;
                 if (event.touches && event.touches.length >= 0) {
                     eventY = event.touches[0].clientY;
@@ -76,18 +75,40 @@ export default {
                     eventY = event.clientY;
                     eventX = event.clientX;
                 }
-                let diffX = eventX - this.mouseX + this.offsetX,
-                    diffY = eventY - this.mouseY + this.offsetY;
+                let diffX = eventX - this.mouseX,
+                    diffY = eventY - this.mouseY;
 
+                this.position.x += diffX;
+                this.position.y += diffY;
 
-                this.left = this.left + diffX;
-                this.top = this.top + diffY;
+                if (this.config.targetPosition.distance(this.position) < PUZZLE_PIECE_CAPTURE_DISTANCE) {
+                    this.state = PuzzleElementStateEnum.CAPTURED;
+                    this.processCapturedElement();
+                }
 
                 this.mouseX = eventX;
                 this.mouseY = eventY;
                 this.emitEvent('drag:move');
             }
         },
+        processCapturedElement() {
+            if (!this.moveIntoPosition()) {
+                setTimeout(this.processCapturedElement, 16);
+            } else {
+                this.state = PuzzleElementStateEnum.PLACED;
+            }
+        },
+        moveIntoPosition() {
+            const diff = this.position.sub(this.config.targetPosition);
+            if (diff.lengthSquared() < 0.5) {
+                return true;
+            }
+
+            diff.clamp(10);
+            this.position.subInPlace(diff);
+
+            return false;
+        }
     },
     mounted() {
         document.documentElement.addEventListener(

@@ -13,6 +13,7 @@
 import PuzzleElement from "@js/Components/PuzzleElement.vue";
 import PuzzlePieces from "@js/Helpers/PuzzlePieces";
 
+const MAX_ELEMENTS_PER_LAYER = 20;
 export default {
     name: "PuzzleView",
     components: {PuzzleElement},
@@ -23,7 +24,7 @@ export default {
     },
     methods: {
         dragStart(element) {
-            element.zIndex = element.layer + 20;
+            element.zIndex = element.layer * MAX_ELEMENTS_PER_LAYER + (MAX_ELEMENTS_PER_LAYER - 1);
             this.normalizeZIndexes();
         },
         normalizeZIndexes() {
@@ -32,7 +33,7 @@ export default {
             });
             let i = 0;
             for (const element of this.elements) {
-                element.zIndex = element.layer + i;
+                element.zIndex = element.layer * MAX_ELEMENTS_PER_LAYER + i;
                 i++;
             }
         }
