@@ -4,13 +4,3 @@
         <router-link to="/info" class="btn btn-blue m-1">Information view</router-link>
     </div>
 </template>
-
-<script>
-export default {
-    name: "IndexView"
-}
-</script>
-
-<style lang="scss" scoped>
-
-</style>

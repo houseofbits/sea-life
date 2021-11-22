@@ -39,7 +39,10 @@ module.exports = {
             },
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
+                loader: 'vue-loader',
+                options: {
+                    esModule: true
+                }
             },
             {
                 test: /\.s(a|c)ss$/,
@@ -52,7 +55,10 @@ module.exports = {
             },
             {
                 test: /\.ts?$/,
-                use: 'ts-loader',
+                loader: 'ts-loader',
+                options: {
+                    appendTsSuffixTo: [/\.vue$/],
+                },
                 exclude: /node_modules/,
             },
             {

@@ -4,8 +4,10 @@
         "paths": {
             "@js/*": ["./app/js/*"]
         },
-        "target": "es6",
-        "module": "commonjs",
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
         "moduleResolution": "node",
         "sourceMap": false
     },

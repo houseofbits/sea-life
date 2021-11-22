@@ -1,18 +1,12 @@
-<template>
-    <div ref="parent" class="element" :style="elementStyle">
-
-    </div>
-</template>
-
 <script>
-import PuzzleElement from "@js/Structures/PuzzleElement.ts";
+import DraggableElement from "@js/Structures/DraggableElement.ts";
 import {PuzzleElementStateEnum, PUZZLE_PIECE_CAPTURE_DISTANCE} from "@js/Helpers/Constants";
 
 export default {
     name: "PuzzleElement",
     props: {
         config: {
-            type: PuzzleElement,
+            type: DraggableElement,
             required: true
         }
     },
@@ -170,13 +164,6 @@ export default {
     },
 }
 </script>
-
-<style lang="scss" scoped>
-
-.element {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-</style>
+<template>
+    <div ref="parent" class="puzzle-element" :style="elementStyle"/>
+</template>
