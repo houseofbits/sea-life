@@ -1,169 +1,45 @@
-<script>
-import DraggableElement from "@js/Structures/DraggableElement.ts";
-import {PuzzleElementStateEnum, PUZZLE_PIECE_CAPTURE_DISTANCE} from "@js/Helpers/Constants";
+<script setup lang="ts">
+import Draggable from "@js/Services/Draggable";
+import DraggableElement from "@js/Structures/DraggableElement";
+import {computed, onBeforeUnmount, onMounted, reactive, ref, watch} from "vue";
+import {PuzzleElementStateEnum} from "@js/Helpers/Constants";
 
-export default {
-    name: "PuzzleElement",
-    props: {
-        config: {
-            type: DraggableElement,
-            required: true
-        }
-    },
-    data() {
-        return {
-            state: PuzzleElementStateEnum.NONE,
-            position: this.config.initialPosition.clone(),
-            mouseX: 0,
-            mouseY: 0,
-        };
-    },
-    computed: {
-        elementStyle() {
-            return {
-                backgroundColor: this.config.image,
-                width: '200px',
-                height: '200px',
-                transform: 'translate(' + this.position.x + 'px, ' + this.position.y + 'px)',
-                clipPath: 'circle(100px at center)',
-                zIndex: this.config.zIndex,
-            };
-        },
-    },
-    methods: {
-        emitEvent(eventName, additionalOptions) {
-            this.$emit(eventName, {
-                eventName,
-                position: this.position,
-                ...additionalOptions
-            });
-        },
-        handleDown(event) {
-            if (this.state === PuzzleElementStateEnum.NONE
-                && event.target === this.$refs.parent) {
-                if (event.touches && event.touches.length >= 1) {
-                    this.mouseX = event.touches[0].clientX;
-                    this.mouseY = event.touches[0].clientY;
-                } else {
-                    event.preventDefault && event.preventDefault();
-                    this.mouseX = event.clientX;
-                    this.mouseY = event.clientY;
-                }
-                this.state = PuzzleElementStateEnum.DRAG;
-                this.emitEvent('drag:start');
-            }
-        },
-        handleUp() {
-            if (this.state === PuzzleElementStateEnum.DRAG) {
-                this.emitEvent('drag:end');
-                this.state = PuzzleElementStateEnum.NONE;
-            }
-        },
-        handleMove(event) {
-            if (this.state === PuzzleElementStateEnum.DRAG) {
-                let eventY, eventX;
-                if (event.touches && event.touches.length >= 0) {
-                    eventY = event.touches[0].clientY;
-                    eventX = event.touches[0].clientX;
-                } else {
-                    eventY = event.clientY;
-                    eventX = event.clientX;
-                }
-                let diffX = eventX - this.mouseX,
-                    diffY = eventY - this.mouseY;
+const root = ref(null);
 
-                this.position.x += diffX;
-                this.position.y += diffY;
+const emit = defineEmits(['drag:start', 'drag:end', 'drag:move']);
 
-                if (this.config.targetPosition.distance(this.position) < PUZZLE_PIECE_CAPTURE_DISTANCE) {
-                    this.state = PuzzleElementStateEnum.CAPTURED;
-                    this.processCapturedElement();
-                }
+const props = defineProps({
+    config: {
+        type: DraggableElement,
+        required: true
+    }
+});
 
-                this.mouseX = eventX;
-                this.mouseY = eventY;
-                this.emitEvent('drag:move');
-            }
-        },
-        processCapturedElement() {
-            if (!this.moveIntoPosition()) {
-                setTimeout(this.processCapturedElement, 16);
-            } else {
-                this.state = PuzzleElementStateEnum.PLACED;
-            }
-        },
-        moveIntoPosition() {
-            const diff = this.position.sub(this.config.targetPosition);
-            if (diff.lengthSquared() < 0.5) {
-                return true;
-            }
+const draggable = reactive(new Draggable(props.config));
 
-            diff.clamp(10);
-            this.position.subInPlace(diff);
+const elementStyle = computed(() => {
+    return {
+        backgroundColor: props.config.image,
+        width: '200px',
+        height: '200px',
+        transform: 'translate(' + draggable.position.x + 'px, ' + draggable.position.y + 'px)',
+        clipPath: 'circle(100px at center)',
+        zIndex: props.config.zIndex,
+    };
+});
 
-            return false;
-        }
-    },
-    mounted() {
-        document.documentElement.addEventListener(
-            "mousemove",
-            this.handleMove,
-            true
-        );
-        document.documentElement.addEventListener(
-            "mousedown",
-            this.handleDown,
-            true
-        );
-        document.documentElement.addEventListener("mouseup", this.handleUp, true);
-        document.documentElement.addEventListener(
-            "touchmove",
-            this.handleMove,
-            true
-        );
-        document.documentElement.addEventListener(
-            "touchstart",
-            this.handleDown,
-            true
-        );
-        document.documentElement.addEventListener("touchend", this.handleUp, true);
-        this.emitEvent("mount");
-    },
-    beforeUnmount() {
-        document.documentElement.removeEventListener(
-            "mousemove",
-            this.handleMove,
-            true
-        );
-        document.documentElement.removeEventListener(
-            "mousedown",
-            this.handleDown,
-            true
-        );
-        document.documentElement.removeEventListener(
-            "mouseup",
-            this.handleUp,
-            true
-        );
-        document.documentElement.removeEventListener(
-            "touchmove",
-            this.handleMove,
-            true
-        );
-        document.documentElement.removeEventListener(
-            "touchstart",
-            this.handleDown,
-            true
-        );
-        document.documentElement.removeEventListener(
-            "touchend",
-            this.handleUp,
-            true
-        );
-        this.emitEvent("destroy");
-    },
-}
+watch(() => (draggable.state), (state: PuzzleElementStateEnum) => {
+    if (state === PuzzleElementStateEnum.DRAG) {
+        emit('drag:start');
+    } else if (state === PuzzleElementStateEnum.NONE) {
+        emit('drag:end');
+    }
+});
+
+onMounted(() => draggable.registerEventHandlers(root.value));
+onBeforeUnmount(() => draggable.unregisterEventHandlers());
+
 </script>
 <template>
-    <div ref="parent" class="puzzle-element" :style="elementStyle"/>
+    <div ref="root" class="puzzle-element" :style="elementStyle"/>
 </template>

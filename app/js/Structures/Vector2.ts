@@ -24,6 +24,13 @@ export default class Vector2 {
         return this;
     }
 
+    addInPlace(other: Vector2): Vector2 {
+        this.x += other.x;
+        this.y += other.y;
+
+        return this;
+    }
+
     clone(): Vector2 {
         return new Vector2(this.x, this.y);
     }
