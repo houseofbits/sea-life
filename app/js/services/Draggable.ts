@@ -1,6 +1,6 @@
-import Vector2 from "@js/Structures/Vector2";
-import {PUZZLE_PIECE_CAPTURE_DISTANCE, PuzzleElementStateEnum} from "@js/Helpers/Constants";
-import DraggableElement from "@js/Structures/DraggableElement";
+import Vector2 from "@js/structures/Vector2";
+import {PUZZLE_PIECE_CAPTURE_DISTANCE, PuzzleElementStateEnum} from "@js/helpers/Constants";
+import DraggableElement from "@js/structures/DraggableElement";
 
 export default class Draggable {
     position: Vector2 = new Vector2(0, 0);

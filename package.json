@@ -31,8 +31,8 @@
     "raw-loader": "^4.0.1",
     "sass-loader": "^10.0.2",
     "tailwindcss": "^2.2.19",
-    "ts-loader": "^9.2.6",
     "typescript": "^4.4.4",
+    "ts-loader": "^9.2.6",
     "url-loader": "^4.1.1",
     "vue-loader": "^16.0.0-rc.1",
     "vue-style-loader": "^4.1.3",
@@ -47,5 +47,8 @@
     "popper.js": "^1.16.1",
     "vue": "^3.2.21",
     "vue-router": "^4.0.12"
+  },
+  "browser": {
+    "buffer": false
   }
 }

@@ -4,6 +4,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
         alias: {
+            vue: "vue/dist/vue.esm-bundler.js",
             '@js': path.resolve(__dirname, '../app/js'),
             '@images': path.resolve(__dirname, '../app/images'),
             '@json': path.resolve(__dirname, '../app/json'),

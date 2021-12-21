@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Draggable from "@js/Services/Draggable";
-import DraggableElement from "@js/Structures/DraggableElement";
+import Draggable from "@js/services/Draggable";
+import DraggableElement from "@js/structures/DraggableElement";
 import {computed, onBeforeUnmount, onMounted, reactive, ref, watch} from "vue";
-import {PuzzleElementStateEnum} from "@js/Helpers/Constants";
+import {PuzzleElementStateEnum} from "@js/helpers/Constants";
 
 const root = ref(null);
 

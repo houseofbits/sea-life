@@ -2,12 +2,12 @@ import "@style/main.css";
 import {createApp} from 'vue'
 import {createWebHistory, createRouter} from "vue-router";
 import MainApp from "@js/MainApp.vue";
-import IndexView from '@js/Views/IndexView.vue';
-import InfoView from "@js/Views/InfoView.vue";
-import GameView from "@js/Views/GameView.vue";
-import PuzzleView from "@js/Views/PuzzleView.vue";
-import Animation1View from "@js/Views/Animation1View.vue";
-import Animation2View from "@js/Views/Animation2View.vue";
+import IndexView from '@js/views/IndexView.vue';
+import InfoView from "@js/views/InfoView.vue";
+import GameView from "@js/views/GameView.vue";
+import PuzzleView from "@js/views/PuzzleView.vue";
+import Animation1View from "@js/views/Animation1View.vue";
+import Animation2View from "@js/views/Animation2View.vue";
 
 const routes = [
     {
