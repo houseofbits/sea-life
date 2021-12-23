@@ -1,6 +1,6 @@
-import DraggableElement from "@js/structures/DraggableElement";
-import Vector2 from "@js/structures/Vector2";
-import {PuzzleLayersEnum} from "@js/helpers/Constants";
+import DraggableElement from "@src/structures/DraggableElement";
+import Vector2 from "@src/structures/Vector2";
+import {PuzzleLayersEnum} from "@src/helpers/Constants";
 
 export default [
     new DraggableElement({

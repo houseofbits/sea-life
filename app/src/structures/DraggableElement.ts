@@ -1,4 +1,4 @@
-import Vector2 from "@js/structures/Vector2";
+import Vector2 from "@src/structures/Vector2";
 
 export default class DraggableElement {
 

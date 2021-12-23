@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import PuzzleElement from "@js/components/PuzzleElement.vue";
-import PuzzlePieces from "@js/helpers/PuzzlePieces";
+import PuzzleElement from "@src/components/PuzzleElement.vue";
+import PuzzlePieces from "@src/helpers/PuzzlePieces";
 import {reactive, onMounted} from "vue";
-import DraggableElement from "@js/structures/DraggableElement";
+import DraggableElement from "@src/structures/DraggableElement";
 
 const MAX_ELEMENTS_PER_LAYER = 20;
 

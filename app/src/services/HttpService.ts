@@ -1,5 +1,5 @@
 import axios, {AxiosInstance, AxiosResponse} from "axios";
-import DetailListItem from "@js/structures/DetailListItem";
+import DetailListItem from "@src/structures/DetailListItem";
 
 class HttpService {
 

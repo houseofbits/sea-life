@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@js/*": ["./app/js/*"]
+            "@src/*": ["./app/src/*"]
         },
         "target": "esnext",
         "module": "esnext",

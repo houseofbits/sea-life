@@ -1,15 +1,11 @@
-import "@style/main.css";
-import {createApp} from 'vue'
-import {createWebHistory, createRouter} from "vue-router";
-import MainApp from "@js/MainApp.vue";
-import IndexView from '@js/views/IndexView.vue';
-import InfoView from "@js/views/InfoView.vue";
-import GameView from "@js/views/GameView.vue";
-import PuzzleView from "@js/views/PuzzleView.vue";
-import Animation1View from "@js/views/Animation1View.vue";
-import Animation2View from "@js/views/Animation2View.vue";
+import IndexView from "@src/views/IndexView.vue";
+import InfoView from "@src/views/InfoView.vue";
+import GameView from "@src/views/GameView.vue";
+import PuzzleView from "@src/views/PuzzleView.vue";
+import Animation1View from "@src/views/Animation1View.vue";
+import Animation2View from "@src/views/Animation2View.vue";
 
-const routes = [
+export default [
     {
         path: "/",
         name: "Home",
@@ -43,14 +39,3 @@ const routes = [
         ],
     },
 ];
-
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
-});
-
-const app = createApp(MainApp);
-
-app.use(router);
-
-app.mount('#gui');

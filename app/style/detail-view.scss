@@ -1,0 +1,207 @@
+
+.flex-wrapper {
+
+    @apply min-h-full flex flex-col;
+
+    background-image: url('@images/detail-bg.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+
+    .header {
+        border-bottom: 1px solid #729DB7;
+        color: #22324B;
+        @apply p-4 font-bold h-24 flex items-center justify-between;
+    }
+
+    .categories {
+        @apply p-4 font-bold h-24 flex items-center justify-center;
+    }
+
+    .items {
+        @apply flex-grow;
+
+        .arrow-l {
+            @apply cursor-pointer absolute border h-full w-24 left-0;
+        }
+
+        .arrow-r {
+            @apply cursor-pointer absolute border h-full w-24 right-0;
+        }
+    }
+
+    .footer {
+        @apply p-4 text-center font-bold h-24 items-start flex justify-center;
+
+        li {
+            @apply rounded-full mx-3 mt-1 cursor-pointer;
+
+            width: 24px;
+            height: 24px;
+            border: 1px solid #729DB7;
+
+            &.active {
+                @apply border-4;
+            }
+        }
+    }
+}
+
+.slider-container {
+    @apply
+    absolute
+    h-full
+    transition-all
+    duration-500
+    ease-in-out
+    flex
+    justify-center
+    content-center
+    flex-wrap;
+
+    width: 1920px;
+    left: 1920px;
+
+    &.active {
+        left: 0;
+    }
+
+    &.previous {
+        left: -1920px;
+    }
+
+    .item {
+        @apply
+        absolute
+        cursor-pointer
+        bg-white
+        m-3
+        rounded
+        overflow-hidden
+        transition-all
+        duration-500
+        ease-in-out
+        ;
+
+        background-image: url('@images/detail-bg.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left top;
+
+        width: 400px;
+        height: 230px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+        &:nth-child(1) {
+            left: 100px;
+            top: 100px;
+        }
+
+        &:nth-child(2) {
+            left: 500px;
+            top: 100px;
+        }
+
+        &:nth-child(3) {
+            left: 900px;
+            top: 100px;
+        }
+
+        &:nth-child(4) {
+            left: 1300px;
+            top: 100px;
+        }
+
+        &:nth-child(5) {
+            left: 100px;
+            top: 500px;
+        }
+
+        &:nth-child(6) {
+            left: 500px;
+            top: 500px;
+        }
+
+        &:nth-child(7) {
+            left: 900px;
+            top: 500px;
+        }
+
+        &:nth-child(8) {
+            left: 1300px;
+            top: 500px;
+        }
+
+        .icon-content {
+            @apply
+            absolute
+            bg-white
+            w-full
+            h-full
+            flex
+            justify-end
+            flex-col
+            ;
+
+            h1 {
+                @apply ml-4 mb-1;
+                font-family: Arimo;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0.15px;
+                color: #22324B;
+            }
+
+            em {
+                @apply ml-4 mb-4;
+                font-family: Arimo;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.005em;
+                color: #263238;
+                opacity: 0.54;
+            }
+
+            .identifier {
+                @apply absolute rounded-full text-white text-center bottom-4 right-4 font-bold;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                background: #54598B;
+            }
+        }
+
+        img {
+            @apply
+            absolute
+            top-0
+            left-0
+            transition-all
+            duration-500
+            ease-in-out
+            ;
+        }
+
+        &.active {
+            z-index: 100;
+            width: 1920px;
+            height: 1080px;
+            top: 0;
+            left: 0;
+            margin: 0;
+            filter: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.detail-view {
+    @apply absolute;
+
+    width: 1920px;
+    height: 1080px;
+}
