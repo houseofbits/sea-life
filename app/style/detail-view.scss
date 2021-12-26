@@ -9,10 +9,11 @@
     .header {
         position: absolute;
         width: 1920px;
+        height: 102px;
         border-bottom: 1px solid #729DB7;
         color: #22324B;
         z-index: 200;
-        @apply bg-white p-4 font-bold h-24 flex items-center justify-between;
+        @apply bg-white p-4 font-bold h-24 flex items-center justify-between overflow-hidden;
     }
 
     .categories {
@@ -20,19 +21,22 @@
     }
 
     .arrow-l {
-        @apply cursor-pointer absolute border h-full w-24 left-0;
+        width: 65px;
+        @apply cursor-pointer absolute border h-full left-0;
     }
 
     .arrow-r {
-        @apply cursor-pointer absolute border h-full w-24 right-0;
+        width: 65px;
+        @apply cursor-pointer absolute border h-full right-0;
     }
 
     .footer {
         position: absolute;
         width: 1920px;
+        height: 130px;
         bottom: 0;
 
-        @apply p-4 text-center font-bold h-24 items-start flex justify-center;
+        @apply text-center font-bold items-start flex justify-center;
 
         li {
             @apply rounded-full mx-3 mt-1 cursor-pointer;
@@ -76,61 +80,60 @@
         absolute
         cursor-pointer
         bg-white
-        m-3
-        rounded
         overflow-hidden
         transition-all
         duration-500
         ease-in-out
         ;
 
+        border-radius: 7px;
         background-image: url('@images/detail-bg.svg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: left top;
 
-        width: 400px;
-        height: 230px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        width: 424px;
+        height: 315px;
+        box-shadow: 0 1.60804px 3.21608px rgba(0, 0, 0, 0.16), 0 3.21608px 6.43216px rgba(0, 0, 0, 0.12), 0 1.60804px 12.8643px rgba(0, 0, 0, 0.1);
 
         &:nth-child(1) {
-            left: 100px;
-            top: 100px;
+            left: 73px;
+            top: 208px;
         }
 
         &:nth-child(2) {
-            left: 500px;
-            top: 100px;
+            left: 523px;
+            top: 208px;
         }
 
         &:nth-child(3) {
-            left: 900px;
-            top: 100px;
+            left: 973px;
+            top: 208px;
         }
 
         &:nth-child(4) {
-            left: 1300px;
-            top: 100px;
+            left: 1423px;
+            top: 208px;
         }
 
         &:nth-child(5) {
-            left: 100px;
-            top: 500px;
+            left: 73px;
+            top: 588px;
         }
 
         &:nth-child(6) {
-            left: 500px;
-            top: 500px;
+            left: 523px;
+            top: 588px;
         }
 
         &:nth-child(7) {
-            left: 900px;
-            top: 500px;
+            left: 973px;
+            top: 588px;
         }
 
         &:nth-child(8) {
-            left: 1300px;
-            top: 500px;
+            left: 1423px;
+            top: 588px;
         }
 
         .icon-content {
@@ -154,8 +157,8 @@
                 font-family: Arimo;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 20px;
-                line-height: 28px;
+                font-size: 30px;
+                line-height: 38px;
                 letter-spacing: 0.15px;
                 color: #22324B;
             }
@@ -163,9 +166,9 @@
             em {
                 @apply ml-4 mb-4;
                 font-family: Arimo;
-                font-style: normal;
+                font-style: italic;
                 font-weight: normal;
-                font-size: 14px;
+                font-size: 20px;
                 line-height: 20px;
                 letter-spacing: 0.005em;
                 color: #263238;
@@ -174,9 +177,10 @@
 
             .identifier {
                 @apply absolute rounded-full text-white text-center bottom-4 right-4 font-bold;
-                width: 28px;
-                height: 28px;
-                line-height: 28px;
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                line-height: 45px;
                 background: #54598B;
             }
         }

@@ -24,7 +24,7 @@ const {
   <div class="content-1080p detail-list">
 
     <div class="header">
-      <img src="logo">
+      <img src="@images/logo.svg" alt="">
       <span v-if="!selectedItem" class="text-5xl">Baltijas jūras iemītnieki</span>
       <span v-if="!selectedItem" class="text-1xl">Putni Zivis Vēžveidīgie Gliemji</span>
       <span v-if="selectedItem" class="text-4xl">{{ selectedItem.title }}</span>
