@@ -1,30 +1,26 @@
 import {onMounted, ref} from "vue";
 import DetailListItem from "@src/structures/DetailListItem";
-import HttpService from "@src/services/HttpService";
+import DetailViewService from "@src/services/DetailViewService";
 
 export default () => {
 
-    const languages = {
-        lv: 'LV',
-        en: 'EN',
-        ru: 'RU',
-        de: 'DE',
-    };
-
+    const languages = ref<Array<string>>([]);
     const listItems = ref<Array<Array<DetailListItem>>>([]);
     const selectedPage = ref(0);
-    const selectedItem = ref<number | null>(null);
+    const selectedItem = ref<DetailListItem | null>(null);
+    const selectedLanguage = ref<string>('lv');
 
     function isLanguageSelected(language: string): boolean{
-        return false;
+        return selectedLanguage.value === language;
     }
 
     function selectLanguage(language: string): void {
-        fetchListItems();
+        selectedLanguage.value = language
+        selectListItems();
     }
 
-    function selectItem(id: number): void {
-        selectedItem.value = id;
+    function selectItem(item: DetailListItem): void {
+        selectedItem.value = item;
     }
 
     function closeItem(): void {
@@ -43,26 +39,32 @@ export default () => {
         }
     }
 
-    function fetchListItems(): void {
-        HttpService.getList().then(items => {
-            let i = 0;
-            listItems.value.push([]);
-            for (const item of items) {
-                listItems.value[i].push(item);
-                if (listItems.value[i].length >= 8) {
-                    i++;
-                    listItems.value.push([]);
-                }
-            }
+    function splitListItemsIntoPages(allListItems: Array<DetailListItem>): Array<Array<DetailListItem>> {
+        const items: Array<Array<DetailListItem>> = [];
+        let i,j;
+        const pageSize = 8;
+        for (i = 0, j = allListItems.length; i < j; i += pageSize) {
+            items.push(allListItems.slice(i, i + pageSize));
+        }
+        return items;
+    }
 
+    function selectListItems(): void {
+
+        DetailViewService.fetchAll().then(completedService => {
+            languages.value = completedService.config.languages;
+            if (languages.value.length > 0) {
+                selectedLanguage.value = languages.value[0];
+                listItems.value = splitListItemsIntoPages(completedService.getItemForLanguage(selectedLanguage.value));
+            }
         });
     }
 
     function isItemSelected(item: DetailListItem): boolean {
-        return item.id === selectedItem.value;
+        return item.id === selectedItem.value?.id;
     }
 
-    onMounted(() => fetchListItems());
+    onMounted(() => selectListItems());
 
     return {
         isItemSelected,
@@ -74,6 +76,7 @@ export default () => {
         isLanguageSelected,
         listItems,
         languages,
-        selectedPage
+        selectedPage,
+        selectedItem
     };
 }

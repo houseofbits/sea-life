@@ -1,7 +1,5 @@
 
-.flex-wrapper {
-
-    @apply min-h-full flex flex-col;
+.detail-list {
 
     background-image: url('@images/detail-bg.svg');
     background-repeat: no-repeat;
@@ -9,28 +7,31 @@
     background-position: left top;
 
     .header {
+        position: absolute;
+        width: 1920px;
         border-bottom: 1px solid #729DB7;
         color: #22324B;
-        @apply p-4 font-bold h-24 flex items-center justify-between;
+        z-index: 200;
+        @apply bg-white p-4 font-bold h-24 flex items-center justify-between;
     }
 
     .categories {
         @apply p-4 font-bold h-24 flex items-center justify-center;
     }
 
-    .items {
-        @apply flex-grow;
+    .arrow-l {
+        @apply cursor-pointer absolute border h-full w-24 left-0;
+    }
 
-        .arrow-l {
-            @apply cursor-pointer absolute border h-full w-24 left-0;
-        }
-
-        .arrow-r {
-            @apply cursor-pointer absolute border h-full w-24 right-0;
-        }
+    .arrow-r {
+        @apply cursor-pointer absolute border h-full w-24 right-0;
     }
 
     .footer {
+        position: absolute;
+        width: 1920px;
+        bottom: 0;
+
         @apply p-4 text-center font-bold h-24 items-start flex justify-center;
 
         li {
@@ -143,6 +144,11 @@
             flex-col
             ;
 
+            opacity: 1;
+            visibility: visible;
+            transition: opacity, visibility;
+            transition-duration: 200ms;
+
             h1 {
                 @apply ml-4 mb-1;
                 font-family: Arimo;
@@ -175,6 +181,11 @@
             }
         }
 
+        &.active .icon-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+
         img {
             @apply
             absolute
@@ -184,6 +195,9 @@
             duration-500
             ease-in-out
             ;
+            max-width: 1080px;
+            pointer-events: none;
+
         }
 
         &.active {
@@ -200,8 +214,128 @@
 }
 
 .detail-view {
-    @apply absolute;
+    .back-button {
+        position: absolute;
+        left: 74px;
+        top: 98px;
 
-    width: 1920px;
+        font-family: Arimo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+
+        color: #729DB7;
+    }
+}
+
+.family-detail {
+    @apply
+    absolute
+    flex
+    flex-col
+    text-2xl
+    justify-end
+    ;
+
+    padding-left: 10px;
+    top: 700px;
+    left: 100px;
+    height: 250px;
+    border-left: solid 1px #729DB7;
+
+    :first-child {
+        @apply font-bold;
+        color: #263238;
+        letter-spacing: 0.005em;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: #222222;
+        letter-spacing: 0.1px;
+        opacity: 0.54;
+        margin-bottom: 5px;
+    }
+}
+
+.fact-detail {
+    @apply
+    absolute
+    flex
+    flex-col
+    text-2xl
+    justify-start
+    ;
+
+    padding-left: 10px;
+    top: 200px;
+    left: 500px;
+    height: 200px;
+    width: 500px;
+    border-left: solid 1px #729DB7;
+
+    span {
+        color: #222222;
+        letter-spacing: 0.1px;
+        opacity: 0.54;
+        margin-bottom: 5px;
+    }
+}
+
+.info-detail {
+    @apply
+    absolute
+    flex
+    flex-col
+    justify-center
+    ;
+
+    right: 60px;
+    top: 0;
     height: 1080px;
+    width: 700px;
+
+    .detail-collapsible {
+        @apply
+        flex
+        flex-col
+        ;
+
+        border-bottom: solid 1px #729DB7;
+
+        .detail-header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: 0.1px;
+            color: #22324B;
+            font-weight: bold;
+        }
+
+        .detail-text {
+            display: inline-block;
+            margin-bottom: 0;
+            overflow: hidden;
+            letter-spacing: 0.1px;
+            color: #22324B;
+            height: 0;
+            transition: height, margin-bottom;
+            transition-duration: 500ms;
+        }
+    }
+}
+
+.large-identifier {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    bottom: 60px;
+    left: 60px;
+    border-radius: 50%;
+    background: #54598B;
+    color: white;
+    text-align: center;
 }

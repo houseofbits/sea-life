@@ -1,7 +1,7 @@
 import axios, {AxiosInstance, AxiosResponse} from "axios";
 import DetailListItem from "@src/structures/DetailListItem";
 
-class HttpService {
+export default class HttpService {
 
     axiosInstance: AxiosInstance;
 
@@ -14,25 +14,28 @@ class HttpService {
         });
     }
 
-    get(url: string): Promise<AxiosResponse<any>> {
-        return this.axiosInstance.get(url);
+    async get(url: string): Promise<any> {
+        const result = await this.axiosInstance.get('content/' + url);
+        return result.data;
     }
 
-    async getList(language: string = 'lv'): Promise<Array<DetailListItem>> {
-        const response = await this.get('content/' + language + '/list.json');
-        const listItems = [];
-        for (const params of response.data.list) {
-            listItems.push(
-                new DetailListItem(params)
-            );
-        }
-        return listItems;
+    getContent(language: string, filename: string): Promise<any> {
+        return this.get(language + '/' + filename);
     }
 
-    async getDetail(id: number): Promise<any> {
-
-    }
+    // async getList(language: string = 'lv'): Promise<Array<DetailListItem>> {
+    //     const response = await this.get('content/' + language + '/list.json');
+    //     const listItems = [];
+    //     for (const params of response.data.itemsList) {
+    //         listItems.push(
+    //             new DetailListItem(params)
+    //         );
+    //     }
+    //     return listItems;
+    // }
+    //
+    // async getDetail(id: number): Promise<any> {
+    //
+    // }
 
 }
-
-export default new HttpService();

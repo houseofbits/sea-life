@@ -13,18 +13,21 @@ const {
   isLanguageSelected,
   listItems,
   languages,
-  selectedPage
+  selectedPage,
+  selectedItem
 } = InfoItemsListComposable();
 
 </script>
 
 <template>
 
-  <div class="screen flex-wrapper">
+  <div class="content-1080p detail-list">
 
     <div class="header">
       <img src="logo">
-      <span class="text-5xl">Baltijas jūras iemītnieki</span>
+      <span v-if="!selectedItem" class="text-5xl">Baltijas jūras iemītnieki</span>
+      <span v-if="!selectedItem" class="text-1xl">Putni Zivis Vēžveidīgie Gliemji</span>
+      <span v-if="selectedItem" class="text-4xl">{{ selectedItem.title }}</span>
       <div class="flex">
         <div v-for="(val, key) in languages" :class="{'btn-active': isLanguageSelected(key)}"
              class="btn btn-blue m-1 cursor-pointer text-center"
@@ -33,29 +36,24 @@ const {
       </div>
     </div>
 
-    <div class="items">
-      <div class="relative w-full h-full">
+    <div
+        v-for="(batch, index) in listItems"
+        class="slider-container"
+        :class="{active: index===selectedPage, previous: index<selectedPage}"
+    >
 
-        <div
-            v-for="(batch, index) in listItems"
-            class="slider-container"
-            :class="{active: index===selectedPage, previous: index<selectedPage}"
-        >
+      <info-item
+          v-for="item in batch"
+          :item="item"
+          :is-selected="isItemSelected(item)"
+          @select="selectItem"
+          @close="closeItem"
+      />
 
-          <info-item
-              v-for="item in batch"
-              :item="item"
-              :is-selected="isItemSelected(item)"
-              @select="selectItem"
-              @close="closeItem"
-          />
-
-        </div>
-
-        <div class="arrow-r" @click="nextPage"></div>
-        <div class="arrow-l" @click="prevPage"></div>
-      </div>
     </div>
+
+    <div class="arrow-r" @click="nextPage"></div>
+    <div class="arrow-l" @click="prevPage"></div>
 
     <ul class="footer">
       <li
