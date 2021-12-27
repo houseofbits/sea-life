@@ -12,6 +12,7 @@ body {
     left: 0;
     width: 1920px;
     height: 1080px;
+    overflow: hidden;
 }
 
 .screen {
@@ -19,6 +20,7 @@ body {
     height: 1080px;
     background: white;
     border:  dashed 1px gray;
+    overflow: hidden;
 }
 
 h1 {
@@ -53,4 +55,9 @@ p{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+small {
+    font-style: normal;
+    font-weight: normal !important;
 }

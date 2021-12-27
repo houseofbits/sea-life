@@ -1,0 +1,43 @@
+{
+  "id": 16,
+  "group": 1,
+  "title": "Ķīnas cimdiņkrabis",
+  "latinTitle": "Eriocheir sinensis",
+  "order": "<small>desmitkājvēžu</small> Decapoda",
+  "family": "<small>krastkrabju</small> Varunidae",
+  "imageFileName": "KINAS CIMDINKRABIS.png",
+  "identifier": "16",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Galvkrūšu vairogs var sasniegt 20 cm garumu. Krāsa var būt no tumši zaļganbrūnas līdz sarkanīgi brūnai. Spīles īsākas par ejkājām. Raksturīga pazīme – spīles klāj apmatojums ar tumšiem matiņiem."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Ķīnas cimdiņkrabji apdzīvo mērenās un tropu joslas ūdeņus starp Vladivostoku un Dienvidķīnu, ietverot Japānas piekrasti, Taivānu un Koreju. Sastopami jūras piekrastē, piejūras ezeros un upju grīvās. Eiropas piekrastēs ievesti ar kuģu balasta ūdeņiem."
+    },
+    {
+      "title": "Barība",
+      "content": "Visēdājs – barojas ar augiem, aļģēm, zivīm un bezmugurkaulniekiem."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Dzimumgatavību Eiropas upēs krabis sasniedz 3–5 gadu vecumā, Ķīnas piekrastē 1–2 gadu vecumā. Olas tiek dētas vienu reizi mūžā vasaras beigās sālsūdenī un tiek piestiprinātas zem mātītes ķermeņa. Mātīte dodas uz upju iztekām, kur izšķiļas kāpuri, kas vēlāk turpina attīstību saldūdenī. Vienā perēšanas reizē krabju mātīte var veidot no simt tūkstošiem līdz pat miljonam olu."
+    },
+    {
+      "title": "Zveja",
+      "content": "Latvijā krabis bojā zivju tīklus un apēd vai apgrauž tajos esošās zivis."
+    }
+  ],
+  "fact": "Konstatēts, ka dabīgajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu – gliemeņu, nematožu, vēžveidīgo – izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

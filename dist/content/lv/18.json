@@ -1,0 +1,43 @@
+{
+  "id": 18,
+  "group": 1,
+  "title": "Lasis",
+  "latinTitle": "Salmo salar",
+  "order": "Salmoniformes",
+  "family": "Salmonidae",
+  "imageFileName": "lasis.png",
+  "identifier": "18",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Lasis ir viena no lielākajām Baltijas jūras zivīm, var pārsniegt 1,5 m garumu. Mazuļi ir tumšāki nekā pieaugušie, ar 7–13 lieliem tumšiem plankumiem uz sāniem. Gar sānu līniju lašu mazuļiem vienā rindā ir sarkani punkti. Pirms nārsta lašu tēviņi maina ķermeņa krāsu – kļūst tumšāki, ar sarkaniem plankumiem, bet apakšžoklis tiem kāšveidā ieliecas."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Baltijas jūras lasis ir izplatīts visā Baltijas jūrā. Daļu savas dzīves tas pavada upēs, tāpēc tiek pieskaitīts pie ceļotājzivīm. Lašu mazuļi uzturas upēs, bet pieaugušās zivis lielāko dzīves daļu pavada jūrā."
+    },
+    {
+      "title": "Barība",
+      "content": "Parasti ēd brētliņas, reņģes un trīsadatu stagarus, retāk vējzivis un mencas. Pieaugušās zivis saldūdenī nebarojas, bet mazuļu barība ir ūdens kukaiņu kāpuri."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Nārsts notiek rudenī upju straujtecēs, kur uz oļiem laši izdēj ikrus. Mātīte veido ligzdu, ierokot ikrus oļos. Ikri izšķiļas pavasarī, un lašu mazuļi Baltijas jūras upēs pavada 1–4 gadus."
+    },
+    {
+      "title": "Zveja",
+      "content": "Lasis ir populārs makšķerēšanas objekts. Latvijā lašu licencēta makšķerēšana ir atļauta Salacā, Gaujā un Ventā. Zvejnieku lomos lasis pēdējos gados gadās reti. "
+    }
+  ],
+  "fact": "Lašiem ir izteikta savas upes izjūta, uz nārstu tas atgriežas tieši uz to upi, kur piedzimis. Cilvēka darbības rezultātā, piemēram, veidojot aizsprostus, lašu nārstam piemērotu upju skaits ir samazinājies.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

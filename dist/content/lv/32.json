@@ -1,0 +1,43 @@
+{
+  "id": 32,
+  "identifier": "32",
+  "group": 1,
+  "title": "Vējzivs",
+  "latinTitle": "Belone belone",
+  "order": "Beloniformes",
+  "family": "Belonidae",
+  "imageFileName": "vejzivs.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Zivīm ir raksturīgs zilganzaļš muguras krāsojums un sudrabaini sāni. Ķermeņa ārējā uzbūve ir labi piemērota straujam paātrinājumam. Garumā var nedaudz pārsniegt 1 m un sasniegt 1 kg svaru."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Vējzivs apdzīvo Austrumatlantijas un Vidusjūras reģionu. Baltijas jūrā iemigrē aprīlī un maijā, kad lielākā daudzumā sastopama tās dienvidu un centrālajā daļā."
+    },
+    {
+      "title": "Barība",
+      "content": "Vējzivs mazuļi barojas ar <em>zooplanktonu</em> un kukaiņiem, pēc tam pāriet uz lielākiem <em>vēžveidīgiem</em> organismiem un zivīm, galvenokārt nelielām <em>pelaģiskām</em> sugām."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Latvijas piekrastē nārsts parasti notiek maijā un jūnijā. Ikriem ir gari, lipīgi pavedieni, kas atvieglo nostiprināšanos uz substrāta. Pēc izšķilšanās kāpuri uzturas ūdens virsējā slānī un, ja tiek izbiedēti, vertikāli ienirst dziļāk."
+    },
+    {
+      "title": "Zveja",
+      "content": "Vējzivs ir nozīmīgs zvejas objekts, pavasaros tiek makšķerēta. Lielākoties nozvejo ar reņģu un apaļo jūrasgrunduļu zvejas rīkiem."
+    }
+  ],
+  "fact": "Vējzivs kauli zilganzaļā krāsā, ko rada īpašs pigments – biliverdīns. Neraugoties uz savdabīgo asaku krāsu, zivi var droši lietot uzturā.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

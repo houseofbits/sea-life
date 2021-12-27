@@ -1,0 +1,35 @@
+{
+  "id": 4,
+  "group": 1,
+  "title": "Baltijas plakangliemene",
+  "latinTitle": "Limecola balthica",
+  "order": "<small>plakangliemeņu</small> Tellinidae",
+  "family": "<small>gliemeņu</small> Bivalvia",
+  "imageFileName": "Baltijas plakangliemenes daudz.png",
+  "identifier": "4",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Čaula noapaļoti trīsstūrveida, plāna, baltas, rozā vai dzeltenīgas krāsas, 15–22 mm liela. Čaulas ārējā virsma ir gluda."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Baltijas plakangliemene apdzīvo Atlantijas okeāna ziemeļdaļu, lokāli sastopama arī Vidusjūrā. Latvijā ļoti bieži, masveidā izskaloti gliemežvāki redzami Baltijas jūras krastā, īpaši Rīgas jūras līcī."
+    },
+    {
+      "title": "Ekoloģija",
+      "content": "Apdzīvo seklūdeņus, jaunās gliemenes uzturas uz ūdensaugiem, vēlāk šī suga dzīvo uz smilšainas grunts. Šo sugu izmanto par indikatoru jūras piesārņojuma novērtēšanā. Baltijas plakangliemene nespēj ilgstoši dzīvot vietās ar biezu dūņu slāni."
+    }
+  ],
+  "fact": "Ziemeļamerikā dzīvo cita, bet pēc izskata ļoti līdzīga suga – <em>Limecola petalum</em>.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

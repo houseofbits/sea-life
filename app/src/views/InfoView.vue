@@ -2,20 +2,43 @@
 import InfoItem from "@src/components/InfoItem.vue";
 
 import InfoItemsListComposable from "@src/composables/InfoItemsList";
+import DetailTranslations from "@src/composables/DetailTranslations";
+import {onMounted} from "vue";
+import DetailPagination from "@src/composables/DetailPagination";
+import DetailViewService from "@src/services/DetailViewService";
 
 const {
   isItemSelected,
   selectItem,
   closeItem,
-  prevPage,
-  nextPage,
-  selectLanguage,
-  isLanguageSelected,
   listItems,
-  languages,
-  selectedPage,
-  selectedItem
+  selectedItem,
+  selectListItems
 } = InfoItemsListComposable();
+
+const {
+  initLanguages,
+  languages,
+  selectedLanguage,
+  commonTexts,
+  isLanguageSelected,
+  selectLanguage
+} = DetailTranslations();
+
+const {
+  selectedPage,
+  nextPage,
+  prevPage,
+  hasNextPage,
+  hasPrevPage,
+} = DetailPagination();
+
+onMounted(() => {
+  DetailViewService.fetchAll().then(() => {
+    initLanguages();
+    selectListItems(selectedLanguage.value);
+  });
+});
 
 </script>
 
@@ -25,7 +48,7 @@ const {
 
     <div class="header">
       <img src="@images/logo.svg" alt="">
-      <span v-if="!selectedItem" class="text-5xl">Baltijas jūras iemītnieki</span>
+      <span v-if="!selectedItem" class="text-5xl">{{ commonTexts.title }}</span>
       <span v-if="!selectedItem" class="text-1xl">Putni Zivis Vēžveidīgie Gliemji</span>
       <span v-if="selectedItem" class="text-4xl">{{ selectedItem.title }}</span>
       <div class="flex">
@@ -52,8 +75,12 @@ const {
 
     </div>
 
-    <div class="arrow-r" @click="nextPage"></div>
-    <div class="arrow-l" @click="prevPage"></div>
+    <div class="arrow-r" @click="nextPage(listItems.length)" v-if="hasNextPage(listItems.length)">
+      <img src="@images/chevron-right.svg" alt="">
+    </div>
+    <div class="arrow-l" @click="prevPage" v-if="hasPrevPage">
+      <img src="@images/chevron-left.svg" alt="">
+    </div>
 
     <ul class="footer">
       <li

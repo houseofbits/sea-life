@@ -1,0 +1,35 @@
+{
+  "id": 25,
+  "identifier": "25",
+  "group": 1,
+  "title": "Parastā ēdamgliemene",
+  "latinTitle": "Mytilus trossulus <small>(Gould, 1850)</small>",
+  "order": "<small>ēdamgliemeņu</small> Mytilidae",
+  "family": "<small>gliemeņu</small> Bivalvia",
+  "imageFileName": "parasta_ edamgliemene.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Čaula garena, trīsstūrveida, tumši brūngana ar melni zilu tonējumu, sienas plānas. Čaulas garums Latvijā ap 40 mm, sāļākos ūdeņos citās jūrās – līdz pat 90 milimetriem. Vāka iekšpusē plāns perlamutra slānis."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Apdzīvo Klusā okeāna ziemeļdaļu, lokāli – Atlantijas okeānu (ASV piekrasti un Baltijas jūras ziemeļaustrumu daļu). Latvijā gliemežvāki bieži redzami izskaloti gan Baltijas jūras krastā, gan Rīgas jūras līcī."
+    },
+    {
+      "title": "Ekoloģija",
+      "content": "Apdzīvo seklūdeņus, sastopama grupās, piestiprinājusies pie substrāta. Viens no ekosistēmu pakalpojumiem, ko sniedz šī gliemeņu suga, ir ūdens filtrācija."
+    }
+  ],
+  "fact": "Suga veido hibrīdus ar ziemeļu ēdamgliemeni, kas sastopama Baltijas jūras dienvidrietumu daļā (Polijas un Vācijas teritorijā). Ēdamgliemenes daudzviet lieto pārtikā, daudzās zemēs arī audzē.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

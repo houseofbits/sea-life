@@ -1,0 +1,43 @@
+{
+  "id": 26,
+  "identifier": "26",
+  "group": 1,
+  "title": "Plekste",
+  "latinTitle": "Platichthys flesus <small>(Eiropas plekste) un</small> Platichthys solemdali <small>(Baltijas plekste)</small>",
+  "order": "Pleuronectiformes",
+  "family": "Pleuronectidae",
+  "imageFileName": "plekste.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Plekste var izaugt līdz 50 cm gara. Mātītes parasti ir lielākas, tēviņi reti pārsniedz 35 cm garumu. Plekstes spēj mainīt ķermeņa krāsu, pielāgojoties jūras dibena krāsai."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Plekste apdzīvo Atlantijas okeāna ziemeļaustrumu piekrastes rajonus. Tā ir labi pielāgojusies ūdeņiem ar zemu sāļuma saturu, tāpēc tā ir izplatīta visā Baltijas jūrā."
+    },
+    {
+      "title": "Barība",
+      "content": "Plekstes kāpuru galvenā barība ir jūrā brīvi peldošs planktons. Mazuļi paaugoties sāk baroties ar moluskiem. Lielāko plekstu barības sastāvā ietilpst arī mazas zivtiņas."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Plekstes nārsto no marta līdz jūnijam. Plekstu kāpuri ir <em>pelaģiski</em>, to acis atrodas abās ķermeņa pusēs. Sasniedzot 7–10 mm garumu, kāpura organismā notiek izmaiņas, un tie no simetriskas zivs pamazām pārvēršas plakanā mazulī, it kā “noguļoties” uz viena sāna, un abas acis novietojas ķermeņa virspusē. "
+    },
+    {
+      "title": "Zveja",
+      "content": "Plekste ir nozīmīgs zvejas un makšķerēšanas objekts, to makšķerē no krasta, izmantojot grunts makšķeres."
+    }
+  ],
+  "fact": "2018. gadā zinātnieki, izmantojot ģenētiskās metodes, atklāja, ka ir divas izskatā līdzīgas, bet nārsta uzvedībā atšķirīgas sugas. Eiropas plekstes nārsto dziļumā un tām ir brīvi peldoši ikri, bet Baltijas plekstes nārsto seklumā un to ikri noguļas uz jūras grunts.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

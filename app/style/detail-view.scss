@@ -22,12 +22,12 @@
 
     .arrow-l {
         width: 65px;
-        @apply cursor-pointer absolute border h-full left-0;
+        @apply cursor-pointer absolute h-full left-0 flex flex-col justify-center;
     }
 
     .arrow-r {
         width: 65px;
-        @apply cursor-pointer absolute border h-full right-0;
+        @apply cursor-pointer absolute h-full right-0 flex flex-col justify-center;
     }
 
     .footer {
@@ -139,7 +139,6 @@
         .icon-content {
             @apply
             absolute
-            bg-white
             w-full
             h-full
             flex
@@ -153,7 +152,7 @@
             transition-duration: 200ms;
 
             h1 {
-                @apply ml-4 mb-1;
+                @apply pl-4 pb-2 pt-1 m-0;
                 font-family: Arimo;
                 font-style: normal;
                 font-weight: 600;
@@ -161,18 +160,19 @@
                 line-height: 38px;
                 letter-spacing: 0.15px;
                 color: #22324B;
+                background: white;
             }
 
             em {
-                @apply ml-4 mb-4;
+                @apply pl-4 pb-4;
                 font-family: Arimo;
                 font-style: italic;
                 font-weight: normal;
                 font-size: 20px;
                 line-height: 20px;
                 letter-spacing: 0.005em;
-                color: #263238;
-                opacity: 0.54;
+                color: rgba(38,50,56,0.54);
+                background: white;
             }
 
             .identifier {
@@ -186,6 +186,23 @@
         }
 
         &.active .icon-content {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .icon-background {
+            @apply
+            absolute
+            w-full
+            h-full;
+            background-color: white;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity, visibility;
+            transition-duration: 200ms;
+        }
+
+        &.active .icon-background {
             opacity: 0;
             visibility: hidden;
         }
@@ -213,6 +230,9 @@
             margin: 0;
             filter: none;
             border-radius: 0;
+        }
+        &.on-top {
+            z-index: 100;
         }
     }
 }
@@ -276,7 +296,7 @@
     padding-left: 10px;
     top: 200px;
     left: 500px;
-    height: 200px;
+    height: 0;
     width: 500px;
     border-left: solid 1px #729DB7;
 

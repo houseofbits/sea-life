@@ -1,0 +1,43 @@
+{
+  "id": 31,
+  "identifier": "31",
+  "group": 1,
+  "title": "Tūbīte",
+  "latinTitle": "Ammodytes tobianus",
+  "order": "Perciformes",
+  "family": "Ammodytidae",
+  "imageFileName": "tubite.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Tūbīte visbiežāk ir dzeltenīgi brūnā krāsā, ar baltu vēderu. Baltijas jūrā var sasniegt 20 cm garumu. Ārēji līdzīga nigliņam. Dabā šīs zivis var atšķirt, atverot muti, tūbītei tā veido piltuvi."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Sastopama Atlantijas ziemeļaustrumu piekrastēs un jūrās. Baltijas jūrā mīt visos piekrastes ūdeņos."
+    },
+    {
+      "title": "Barība",
+      "content": "Tūbītes mazuļi pārtiek no <em>zooplanktona</em>. Arī pieaugušām tūbītēm pamatbarība ir <em>zooplanktons</em>, dažkārt ēd arī nelielus vēžveidīgos."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Baltijas jūrā nārsts notiek jūnijā un augustā. Ikri ovāli, tiek nērsti nelielām pikām uz smiltīm. Kāpuri pelaģiski."
+    },
+    {
+      "title": "Zveja",
+      "content": "Tūbītēm nav rūpnieciskas nozīmes zvejā. Līdzīgi kā nigliņus, makšķernieki un zvejnieki tūbītes izmanto par ēsmas zivi. "
+    }
+  ],
+  "fact": "Tūbītes ir nozīmīgas zivis piekrastes ekosistēmā, tās uzturā izmanto gan piekrastes plēsīgās zivis, gan arī ūdensputni un roņi. Diennakts gaišo daļu tūbītes lielākoties pavada, ierakušās smiltīs.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

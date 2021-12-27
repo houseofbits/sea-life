@@ -1,0 +1,43 @@
+{
+  "id": 14,
+  "group": 1,
+  "title": "Jūrasgrundulis",
+  "latinTitle": "Pomatoschistus microps ",
+  "order": "Perciformes",
+  "family": "Gobiidae",
+  "imageFileName": "jurasgrundulis.png",
+  "identifier": "14",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Piekrastes ūdeņos mītoša zivs, parasti 2–4 cm gara. Jūrasgrunduļiem uz vēdera ir piesūceknis, kas veidojies, saaugot vēdera spurām."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Jūrasgrundulis ir sastopams Ziemeļatlantijā. Baltijas jūrā mīt visās piekrastēs, izņemot Botnijas un Somu līča piekrastes. "
+    },
+    {
+      "title": "Barība",
+      "content": "Jūrasgrunduļu mazuļi barojas ar <em>zooplanktonu</em>, bet pieaugušie jūrasgrunduļi ēd arī nelielus <em>vēžveidīgos</em>."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Nārsto vasaras otrajā pusē. Mātītes iznērš ikrus zem tukšiem gliemeņu vākiem, kur tēviņi tos apsargā. Grunduļa tēviņi ar asti ikrus apskalina ar svaigu ūdeni, tādējādi nodrošinot tiem pietiekamu skābekļa daudzumu."
+    },
+    {
+      "title": "Zveja",
+      "content": "Jūrasgrunduļiem nav rūpnieciskas nozīmes un tie netiek arī makšķerēti."
+    }
+  ],
+  "fact": "Jūrasgrunduļi ir nozīmīga ekosistēmas sastāvdaļa piekrastes ūdeņos. Plēsīgajām zivīm tie parasti ir pirmie lielākie barības objekti. ",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

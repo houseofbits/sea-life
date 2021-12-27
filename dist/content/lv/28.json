@@ -1,0 +1,43 @@
+{
+  "id": 28,
+  "identifier": "28",
+  "group": 1,
+  "title": "Reņģe",
+  "latinTitle": "Clupea harengus",
+  "order": "Clupeiformes",
+  "family": "Clupeidae",
+  "imageFileName": "renge.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Rīgas jūras līcī reņģes parasti nepārsniedz 18 cm garumu, tomēr citur var izaugt 30 cm garumā. "
+    },
+    {
+      "title": "Izplatība",
+      "content": "Reņģe ir plaši izplatīta Ziemeļatlantijas reģionā. Tās ir spējīgas pielāgoties ļoti dažādiem jūras apstākļiem un dzīvot teritorijās ar samazinātu ūdens sāļumu."
+    },
+    {
+      "title": "Barība",
+      "content": "Reņģes pārsvarā barojas ar sīkiem <em>vēžveidīgiem</em> organismiem – <em>zooplanktonu</em>, taču lielākās zivis var baroties arī ar zivju mazuļiem. Veic diennakts vertikālās migrācijas, sekojot barības organismiem."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Galvenie nārsta mēneši ir maijs un jūnijs. Reņģe nārsto piekrastes rajonos un sēkļos atklātā jūrā, visbiežāk ikrus nēršot vietās, kur uz grunts ir zemūdens aļģu audzes."
+    },
+    {
+      "title": "Zveja",
+      "content": "Reņģes ir ļoti nozīmīgas zivis Baltijas jūras komerciālajā zvejā. "
+    }
+  ],
+  "fact": "Ārpus Baltijas jūras dzīvojošo reņģi latviski parasti sauc par siļķi.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

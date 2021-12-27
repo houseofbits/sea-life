@@ -1,0 +1,43 @@
+{
+  "id": 8,
+  "group": 1,
+  "title": "Čūskzivs",
+  "latinTitle": "Nerophis ophidion",
+  "imageFileName": "cuskzivs.png",
+  "identifier": "8",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Čūskzivs ir neliela jūras piekrastē dzīvojoša zivs. Nārsta periodā mātītēm raksturīgs košs krāsojums ar gaišzilām svītrām galvas un vēdera daļā. Tēviņi var sasniegt 25 cm, bet mātītes – 30 cm garumu."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Čūskzivs ir izplatīta Austrumatlantijas reģionā, Eiropas piekrastē, Vidusjūrā un Melnajā jūrā."
+    },
+    {
+      "title": "Barība",
+      "content": "Barojas ar nelieliem <em>zooplanktona</em> organismiem un bezmugurkaulniekiem."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Nārsto vasarā. Pirms ikru nēršanas mātīte un tēviņš veic nārsta deju. Ikri tiek iznērsti vaļējā perējamā somā uz tēviņa vēdera daļas, kur tie tiek apaugļoti un notiek to attīstība."
+    },
+    {
+      "title": "Zveja",
+      "content": "Nelielā izmēra dēļ sugai nav nozīmes ne komerciālajā zvejā, ne makšķerēšanā."
+    }
+  ],
+  "fact": "Čūskzivs ir radniecīga jūraszirdziņiem – īpaša izskata zivīm, kas galvenokārt mājo seklās tropu un mērenās joslas piekrastes jūrās.",
+  "order": "Syngnathiformes",
+  "family": "Syngnathidae",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

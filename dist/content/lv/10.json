@@ -1,0 +1,43 @@
+{
+  "id": 10,
+  "group": 1,
+  "title": "Jūras zīriņš",
+  "latinTitle": "Sterna paradisaea",
+  "order": "<small>tārtiņveidīgo</small> Charadriiformes",
+  "family": "<small>zīriņu</small> Sternidae",
+  "imageFileName": "juras zirins.png",
+  "identifier": "10",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Ķermeņa garums 28–43 cm, svars 86–127 grami. Abi dzimumi izskatās vienādi. Jūras zīriņš ir slaids, vidēji liels jūras putns ar šauriem, gariem spārniem. Pieauguša putna apspalvojums augšpusē ir gaiši pelēks, apakšpusē balts, vaigi balti, galvas virsa melna. Garā, šķeltā aste balta, ar pelēkām ārējām spalvām. Taisnais knābis un kājas tumši sarkanas. Jauniem putniem atšķirībā no dzimumbriedumu sasniegušajiem ir melns knābis un kājas, brūnpelēki, raibumoti spārni, īsas astes lidspalvas un mazāk koša galvas virsa."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Cirkumpolārs Ziemeļu puslodē, izplatīts uz ziemeļiem no Polārā loka. Eiropā uz dienvidiem līdz Lielbritānijai un Nīderlandei. Ziemo Antarktīdas ūdeņos Dienvidu puslodē. Pēc jaunākajiem datiem Latvijā ligzdo tikai 5–20 pāri. Latvijā sastopams jūras piekrastē un jūrā.\n"
+    },
+    {
+      "title": "Barība",
+      "content": "Barojas galvenokārt ar nelielām zivīm (līdz 15 cm garām), retos gadījumos arī ar vēžveidīgajiem, abiniekiem, gliemjiem un jūras tārpiem. "
+    },
+    {
+      "title": "Ligzdošana",
+      "content": "Ligzda parasti ir neliela iedobe zemē, tā var būt un var arī nebūt izklāta ar sausu zāli vai citu līdzīgu materiālu. Pludmales oļos tās ir īpaši grūti pamanāmas. Dējumā 1–3 olas. Perē un par mazuļiem rūpējas abi vecāki. Latvijā ligzdo tikai 5–20 pāri."
+    },
+    {
+      "title": "Jūras zīriņš un cilvēks",
+      "content": "Ligzdošanas laikā jūras zīriņu un tā mazuļus apdraud cilvēks, kaķi un citi sauszemes dzīvnieki."
+    }
+  ],
+  "fact": "Tā kā jūras zīriņš var nodzīvot līdz 34 gadu vecumam, tad savā mūžā tas migrācijas laikā nolido 2,4 miljonus kilometru, kas ir apmēram tikpat daudz kā trīs reizes aizlidot turp un atpakaļ uz Mēnesi.",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

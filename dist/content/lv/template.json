@@ -1,0 +1,43 @@
+{
+  "id": 0,
+  "identifier": "",
+  "group": 0,
+  "title": "",
+  "latinTitle": "",
+  "order": "",
+  "family": "",
+  "imageFileName": "",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": ""
+    },
+    {
+      "title": "Izplatība",
+      "content": ""
+    },
+    {
+      "title": "Barība",
+      "content": ""
+    },
+    {
+      "title": "Attīstība",
+      "content": ""
+    },
+    {
+      "title": "Zveja",
+      "content": ""
+    }
+  ],
+  "fact": "",
+  "thumbnailImageTransform": {
+    "left": -420,
+    "top": -110,
+    "width": 800
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 300,
+    "width": 1200
+  }
+}

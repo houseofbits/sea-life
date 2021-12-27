@@ -38,6 +38,13 @@ function getStyle(id: number): any {
   };
 }
 
+function getFactStyle(): any {
+  return {
+    height: 200 + 'px',
+    width: 500 + 'px'
+  };
+}
+
 </script>
 <template>
   <div class="content-1080p detail-view">
@@ -46,20 +53,18 @@ function getStyle(id: number): any {
 
     <div class="family-detail">
       <em>{{ item.latinTitle }}</em>
-      <span><strong>Kārta: </strong><em>{{ item.order }}</em></span>
-      <span><strong>Dzimta: </strong><em>{{ item.family }}</em></span>
+      <span><strong>Kārta: </strong><em v-html="item.order"/></span>
+      <span><strong>Dzimta: </strong><em v-html="item.family"/></span>
     </div>
 
-    <div class="fact-detail">
-      <span>{{ item.fact }}</span>
+    <div class="fact-detail" :style="getFactStyle()">
+      <span v-html="item.fact"/>
     </div>
 
     <div class="info-detail">
       <div class="detail-collapsible" v-for="(content, index) in item.content" @click="select(index)">
         <div class="detail-header">{{ content.title }}</div>
-        <div class="detail-text" :style="getStyle(index)" :ref="el => setElem(el, index)">
-          {{ content.content }}
-        </div>
+        <div class="detail-text" :style="getStyle(index)" :ref="el => setElem(el, index)" v-html="content.content"/>
       </div>
     </div>
 
