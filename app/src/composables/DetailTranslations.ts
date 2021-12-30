@@ -1,16 +1,22 @@
-import {ref} from 'vue';
-import DetailViewService from "@src/services/DetailViewService";
-import DetailCommon from "@src/structures/DetailCommon";
+import {computed, ref} from 'vue';
+import DetailCommonStructure from "@src/structures/DetailCommonStructure";
+
+const selectedLanguage = ref<string>('');
+const commonTranslations = ref<{[key: string]: DetailCommonStructure}>({});
+const languages = ref<Array<string>>([]);
 
 export default () => {
 
-    const languages = ref<Array<string>>(DetailViewService.config.languages);
-    const selectedLanguage = ref<string>(DetailViewService.config.languages[0]);
-    const commonTexts = ref<DetailCommon>(DetailViewService.getCommon(selectedLanguage.value));
+    function setTranslations(translations: {[key: string]: DetailCommonStructure}): void {
+        commonTranslations.value = translations;
+    }
 
-    function initLanguages(): void {
-        languages.value = DetailViewService.config.languages;
-        selectLanguage(DetailViewService.config.languages[0]);
+    const translations = computed(() => {
+        return commonTranslations.value[selectedLanguage.value] || new DetailCommonStructure({});
+    });
+
+    function setLanguages(lang: Array<string>): void {
+        languages.value = lang;
     }
 
     function isLanguageSelected(language: string): boolean{
@@ -19,14 +25,14 @@ export default () => {
 
     function selectLanguage(language: string): void {
         selectedLanguage.value = language
-        commonTexts.value = DetailViewService.getCommon(language);
     }
 
     return {
-        initLanguages,
+        setTranslations,
+        setLanguages,
+        translations,
         languages,
         selectedLanguage,
-        commonTexts,
         isLanguageSelected,
         selectLanguage
     };

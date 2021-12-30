@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {ref} from 'vue';
 import DetailListItem from "@src/structures/DetailListItem";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
 defineProps({
   item: {
@@ -45,16 +46,20 @@ function getFactStyle(): any {
   };
 }
 
+const {
+  translations
+} = DetailTranslations();
+
 </script>
 <template>
   <div class="content-1080p detail-view">
 
-    <div class="back-button" @click="emit('close')">&lt;- Atpakaļ</div>
+    <div class="back-button" @click="emit('close')">&lt;- {{ translations.backButton }}</div>
 
     <div class="family-detail">
       <em>{{ item.latinTitle }}</em>
-      <span><strong>Kārta: </strong><em v-html="item.order"/></span>
-      <span><strong>Dzimta: </strong><em v-html="item.family"/></span>
+      <span><strong>{{ translations.order }}: </strong><em v-html="item.order"/></span>
+      <span><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
     </div>
 
     <div class="fact-detail" :style="getFactStyle()">

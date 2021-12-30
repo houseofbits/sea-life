@@ -7,8 +7,8 @@ Detail info view
 - [x] Detail view data loading
 - [x] Detail list slider actions & transitions
 - [x] Detail view accordion
-- [ ] Transitions between views
-- [ ] Translated common texts
+- [x] Transitions between views
+- [x] Translated common texts
 - [ ] Background transition
 - [ ] Detail view facts transition
 - [ ] Detail view Family info transition

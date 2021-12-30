@@ -1,42 +1,52 @@
 <script setup lang="ts">
 import InfoItem from "@src/components/InfoItem.vue";
-
 import InfoItemsListComposable from "@src/composables/InfoItemsList";
 import DetailTranslations from "@src/composables/DetailTranslations";
 import {onMounted} from "vue";
-import DetailPagination from "@src/composables/DetailPagination";
 import DetailViewService from "@src/services/DetailViewService";
+import DetailContentStructure from "@src/structures/DetailContentStructure";
+import DetailList from "@src/composables/DetailList";
 
 const {
   isItemSelected,
   selectItem,
   closeItem,
-  listItems,
   selectedItem,
-  selectListItems
 } = InfoItemsListComposable();
 
 const {
-  initLanguages,
+  setTranslations,
+  setLanguages,
+  translations,
   languages,
   selectedLanguage,
-  commonTexts,
+  selectLanguage,
   isLanguageSelected,
-  selectLanguage
 } = DetailTranslations();
 
 const {
-  selectedPage,
-  nextPage,
-  prevPage,
+  allPages,
+  pages,
+  createPageGroupsFromItems,
+  selectNextPage,
+  selectPrevPage,
+  selectGroup,
   hasNextPage,
   hasPrevPage,
-} = DetailPagination();
+  selectPage,
+  getAnimationState,
+  isActivePage
+} = DetailList();
 
 onMounted(() => {
-  DetailViewService.fetchAll().then(() => {
-    initLanguages();
-    selectListItems(selectedLanguage.value);
+  DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
+    setLanguages(result.config.languages);
+    selectLanguage(result.config.languages[0]);
+    setTranslations(result.translatedCommon);
+
+    createPageGroupsFromItems('lv', result.translatedItems['lv']);
+    selectGroup();
+
   });
 });
 
@@ -45,11 +55,17 @@ onMounted(() => {
 <template>
 
   <div class="content-1080p detail-list">
-
     <div class="header">
       <img src="@images/logo.svg" alt="">
-      <span v-if="!selectedItem" class="text-5xl">{{ commonTexts.title }}</span>
-      <span v-if="!selectedItem" class="text-1xl">Putni Zivis Vēžveidīgie Gliemji</span>
+      <span v-if="!selectedItem" class="text-5xl cursor-pointer" @click="selectGroup(null)">{{
+          translations.title
+        }}</span>
+      <span v-if="!selectedItem" class="text-1xl">
+        <a href="#" class="mx-3 text-2xl" @click="selectGroup(1)">Putni</a>
+        <a href="#" class="mx-3 text-2xl" @click="selectGroup(2)">Zivis</a>
+        <a href="#" class="mx-3 text-2xl" @click="selectGroup(3)">Vēžveidīgie</a>
+        <a href="#" class="mx-3 text-2xl" @click="selectGroup(4)">Gliemji</a>
+      </span>
       <span v-if="selectedItem" class="text-4xl">{{ selectedItem.title }}</span>
       <div class="flex">
         <div v-for="(val, key) in languages" :class="{'btn-active': isLanguageSelected(key)}"
@@ -60,13 +76,15 @@ onMounted(() => {
     </div>
 
     <div
-        v-for="(batch, index) in listItems"
+        v-for="page in allPages"
+        :key="page.id"
         class="slider-container"
-        :class="{active: index===selectedPage, previous: index<selectedPage}"
+        :class="[getAnimationState(page)]"
     >
 
       <info-item
-          v-for="item in batch"
+          v-for="item in page.items"
+          :key="item.id"
           :item="item"
           :is-selected="isItemSelected(item)"
           @select="selectItem"
@@ -75,19 +93,21 @@ onMounted(() => {
 
     </div>
 
-    <div class="arrow-r" @click="nextPage(listItems.length)" v-if="hasNextPage(listItems.length)">
+    <div class="arrow-r" v-if="hasNextPage" @click="selectNextPage">
       <img src="@images/chevron-right.svg" alt="">
     </div>
-    <div class="arrow-l" @click="prevPage" v-if="hasPrevPage">
+    <div class="arrow-l" v-if="hasPrevPage" @click="selectPrevPage">
       <img src="@images/chevron-left.svg" alt="">
     </div>
 
-    <ul class="footer">
+    <ul class="footer" v-if="pages.length > 1">
       <li
-          v-for="(n, index) in listItems.length"
-          :class="{active:index===selectedPage}"
-          @click="selectedPage=index"
+          v-for="page in pages"
+          :key="'ul-' + page.id"
+          :class="{active: isActivePage(page)}"
+          @click="selectPage(page)"
       ></li>
+
     </ul>
 
   </div>

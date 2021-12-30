@@ -52,12 +52,50 @@
     }
 }
 
+@keyframes slideINLeft {
+    from {
+        left: 1920px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOUTLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -1920px;
+    }
+}
+
+@keyframes slideINRight {
+    from {
+        left: -1920px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOUTRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 1920px;
+    }
+}
+
 .slider-container {
     @apply
     absolute
     h-full
-    transition-all
-    duration-500
     ease-in-out
     flex
     justify-center
@@ -67,12 +105,30 @@
     width: 1920px;
     left: 1920px;
 
-    &.active {
-        left: 0;
+    &.in-left {
+        animation-duration: 500ms;
+        animation-name: slideINLeft;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
     }
 
-    &.previous {
-        left: -1920px;
+    &.out-left {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTLeft;
+    }
+
+    &.in-right {
+        animation-duration: 500ms;
+        animation-name: slideINRight;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &.out-right {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTRight;
     }
 
     .item {
