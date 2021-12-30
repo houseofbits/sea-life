@@ -63,6 +63,10 @@ export default () => {
         return allPages.value.find(page => page.id === id) || null;
     }
 
+    function isActiveGroup(group: number): boolean {
+        return currentGroup.value === group;
+    }
+
     function selectGroup(group: number | null = null): void {
         previousPageId.value = currentPageId.value;
         currentGroup.value = group;
@@ -144,6 +148,7 @@ export default () => {
         hasNextPage,
         hasPrevPage,
         isActivePage,
-        getAnimationState
+        getAnimationState,
+        isActiveGroup
     };
 };

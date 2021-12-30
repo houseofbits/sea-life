@@ -9,11 +9,57 @@
     .header {
         position: absolute;
         width: 1920px;
-        height: 102px;
         border-bottom: 1px solid #729DB7;
         color: #22324B;
         z-index: 200;
-        @apply bg-white p-4 font-bold h-24 flex items-center justify-between overflow-hidden;
+        height: 64px;
+        background: white;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-left: 46px;
+        }
+
+        .header-title {
+            cursor: pointer;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: left;
+            margin-right: auto;
+            margin-left: 40px;
+        }
+
+        .group-links {
+            margin-right: 20px;
+
+            a {
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 20px;
+                vertical-align: center;
+                padding-bottom: 1px;
+
+                &.active {
+                    border-bottom: solid 2px #22324B;
+                }
+            }
+        }
+
+        .languages {
+            img {
+                cursor: pointer;
+                width: 26px;
+                height: 18px;
+                margin-left: 16px;
+                margin-right: 16px;
+                filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+            }
+            img:last-child {
+                margin-right: 43px;
+            }
+        }
     }
 
     .categories {
@@ -21,12 +67,12 @@
     }
 
     .arrow-l {
-        width: 65px;
+        width: 45px;
         @apply cursor-pointer absolute h-full left-0 flex flex-col justify-center;
     }
 
     .arrow-r {
-        width: 65px;
+        width: 45px;
         @apply cursor-pointer absolute h-full right-0 flex flex-col justify-center;
     }
 
@@ -39,14 +85,16 @@
         @apply text-center font-bold items-start flex justify-center;
 
         li {
-            @apply rounded-full mx-3 mt-1 cursor-pointer;
-
-            width: 24px;
-            height: 24px;
+            margin-left: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
             border: 1px solid #729DB7;
 
             &.active {
-                @apply border-4;
+                border: 2px solid #729DB7;
             }
         }
     }
@@ -142,54 +190,54 @@
         ease-in-out
         ;
 
-        border-radius: 7px;
+        border-radius: 4px;
         background-image: url('@images/detail-bg.svg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: left top;
 
-        width: 424px;
-        height: 315px;
-        box-shadow: 0 1.60804px 3.21608px rgba(0, 0, 0, 0.16), 0 3.21608px 6.43216px rgba(0, 0, 0, 0.12), 0 1.60804px 12.8643px rgba(0, 0, 0, 0.1);
+        width: 445px;
+        height: 348px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.1);
 
         &:nth-child(1) {
-            left: 73px;
-            top: 208px;
+            left: 43px;
+            top: 174px;
         }
 
         &:nth-child(2) {
-            left: 523px;
-            top: 208px;
+            left: 507px;
+            top: 174px;
         }
 
         &:nth-child(3) {
-            left: 973px;
-            top: 208px;
+            left: 968px;
+            top: 174px;
         }
 
         &:nth-child(4) {
-            left: 1423px;
-            top: 208px;
+            left: 1429px;
+            top: 174px;
         }
 
         &:nth-child(5) {
-            left: 73px;
-            top: 588px;
+            left: 43px;
+            top: 562px;
         }
 
         &:nth-child(6) {
-            left: 523px;
-            top: 588px;
+            left: 507px;
+            top: 562px;
         }
 
         &:nth-child(7) {
-            left: 973px;
-            top: 588px;
+            left: 968px;
+            top: 562px;
         }
 
         &:nth-child(8) {
-            left: 1423px;
-            top: 588px;
+            left: 1429px;
+            top: 562px;
         }
 
         .icon-content {
@@ -208,35 +256,47 @@
             transition-duration: 200ms;
 
             h1 {
-                @apply pl-4 pb-2 pt-1 m-0;
+                margin: 0;
+                padding-right: 45px;
+                padding-left: 16px;
+                padding-top: 20px;
+                padding-bottom: 10px;
                 font-family: Arimo;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 30px;
-                line-height: 38px;
+                font-size: 20px;
+                line-height: 20px;
                 letter-spacing: 0.15px;
                 color: #22324B;
                 background: white;
             }
 
             em {
-                @apply pl-4 pb-4;
+                padding-left: 16px;
+                padding-bottom: 16px;
                 font-family: Arimo;
                 font-style: italic;
                 font-weight: normal;
-                font-size: 20px;
-                line-height: 20px;
+                font-size: 14px;
+                line-height: 14px;
                 letter-spacing: 0.005em;
-                color: rgba(38,50,56,0.54);
+                color: rgba(38, 50, 56, 0.54);
                 background: white;
+                padding-right: 45px;
             }
 
             .identifier {
-                @apply absolute rounded-full text-white text-center bottom-4 right-4 font-bold;
-                width: 45px;
-                height: 45px;
-                font-size: 20px;
-                line-height: 45px;
+                text-align: center;
+                font-weight: 500;
+                border-radius: 50%;
+                color: white;
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+                width: 28px;
+                height: 28px;
+                font-size: 16px;
+                line-height: 28px;
                 background: #54598B;
             }
         }
@@ -287,6 +347,7 @@
             filter: none;
             border-radius: 0;
         }
+
         &.on-top {
             z-index: 100;
         }

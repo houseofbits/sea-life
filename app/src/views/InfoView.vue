@@ -35,7 +35,8 @@ const {
   hasPrevPage,
   selectPage,
   getAnimationState,
-  isActivePage
+  isActivePage,
+  isActiveGroup
 } = DetailList();
 
 onMounted(() => {
@@ -56,22 +57,32 @@ onMounted(() => {
 
   <div class="content-1080p detail-list">
     <div class="header">
-      <img src="@images/logo.svg" alt="">
-      <span v-if="!selectedItem" class="text-5xl cursor-pointer" @click="selectGroup(null)">{{
-          translations.title
-        }}</span>
-      <span v-if="!selectedItem" class="text-1xl">
-        <a href="#" class="mx-3 text-2xl" @click="selectGroup(1)">Putni</a>
-        <a href="#" class="mx-3 text-2xl" @click="selectGroup(2)">Zivis</a>
-        <a href="#" class="mx-3 text-2xl" @click="selectGroup(3)">Vēžveidīgie</a>
-        <a href="#" class="mx-3 text-2xl" @click="selectGroup(4)">Gliemji</a>
+      <img src="@images/logo.svg" alt="" width="64">
+      <div class="header-title">
+        <span v-if="!selectedItem" @click="selectGroup(null)">
+          {{ translations.title  }}
+        </span>
+        <span v-else>
+        {{ selectedItem.title }}
       </span>
-      <span v-if="selectedItem" class="text-4xl">{{ selectedItem.title }}</span>
-      <div class="flex">
-        <div v-for="(val, key) in languages" :class="{'btn-active': isLanguageSelected(key)}"
-             class="btn btn-blue m-1 cursor-pointer text-center"
-             @click="selectLanguage(key)">{{ val }}
-        </div>
+      </div>
+      <span v-if="!selectedItem" class="group-links">
+        <a href="#" @click="selectGroup(1)" :class="{active: isActiveGroup(1)}">Putni</a>
+        <a href="#" @click="selectGroup(2)" :class="{active: isActiveGroup(2)}">Zivis</a>
+        <a href="#" @click="selectGroup(3)" :class="{active: isActiveGroup(3)}">Vēžveidīgie</a>
+        <a href="#" @click="selectGroup(4)" :class="{active: isActiveGroup(4)}">Gliemji</a>
+      </span>
+      <div class="languages flex">
+<!--        <div v-for="(val, key) in languages" :class="{'btn-active': isLanguageSelected(key)}"-->
+<!--             class="btn btn-blue m-1 cursor-pointer text-center"-->
+<!--             @click="selectLanguage(key)">{{ val }}-->
+<!--        </div>-->
+
+        <img src="@images/flag-lv.svg" alt="Latvia">
+        <img src="@images/flag-gb.svg" alt="Latvia">
+        <img src="@images/flag-ru.svg" alt="Latvia">
+        <img src="@images/flag-de.svg" alt="Latvia">
+
       </div>
     </div>
 
