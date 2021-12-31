@@ -323,7 +323,7 @@
             visibility: hidden;
         }
 
-        img {
+        img.main-image {
             @apply
             absolute
             top-0
@@ -354,89 +354,121 @@
     }
 }
 
+.back-filter {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height: 20px;
+    left: 46px;
+    top: 98px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    letter-spacing: 0.005em;
+    color: #729DB7;
+}
+
 .detail-view {
-    .back-button {
-        position: absolute;
-        left: 74px;
-        top: 98px;
+    .back-filter {
+        transition: all;
+        transition-duration: 500ms;
+        opacity: 0;
+    }
 
-        font-family: Arimo;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.005em;
+    .family-detail {
+        height: 0;
+        opacity: 0;
+        transition: all;
+        transition-duration: 500ms;
+    }
 
-        color: #729DB7;
+    .fact-detail {
+        height: 0;
+        opacity: 0;
+        transition: all;
+        transition-duration: 500ms;
+    }
+
+    &.active {
+        .back-filter {
+            opacity: 1;
+        }
+        .family-detail {
+            opacity: 1;
+        }
+        .fact-detail {
+            opacity: 1;
+        }
     }
 }
 
 .family-detail {
-    @apply
-    absolute
-    flex
-    flex-col
-    text-2xl
-    justify-end
-    ;
-
-    padding-left: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 16px;
     top: 700px;
     left: 100px;
-    height: 250px;
+    height: 0;
     border-left: solid 1px #729DB7;
 
     :first-child {
-        @apply font-bold;
-        color: #263238;
+        margin-bottom: 16px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
         letter-spacing: 0.005em;
-        margin-bottom: 5px;
+        color: #263238;
     }
 
     span {
-        color: #222222;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1px;
+        color: #263238;
         opacity: 0.54;
-        margin-bottom: 5px;
     }
 }
 
 .fact-detail {
-    @apply
-    absolute
-    flex
-    flex-col
-    text-2xl
-    justify-start
-    ;
-
-    padding-left: 10px;
-    top: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 16px;
+    bottom: 600px;
     left: 500px;
     height: 0;
     width: 500px;
     border-left: solid 1px #729DB7;
 
     span {
-        color: #222222;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
         letter-spacing: 0.1px;
+        color: #263238;
         opacity: 0.54;
-        margin-bottom: 5px;
     }
 }
 
 .info-detail {
-    @apply
-    absolute
-    flex
-    flex-col
-    justify-center
-    ;
-
-    right: 60px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 1122px;
     top: 0;
     height: 1080px;
-    width: 700px;
+    width: 752px;
 
     .detail-collapsible {
         @apply
@@ -447,21 +479,27 @@
         border-bottom: solid 1px #729DB7;
 
         .detail-header {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin-top: 16px;
+            margin-bottom: 16px;
             letter-spacing: 0.1px;
             color: #22324B;
+            font-style: normal;
             font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
         }
 
         .detail-text {
             display: inline-block;
+            margin-top: 0;
             margin-bottom: 0;
             overflow: hidden;
             letter-spacing: 0.1px;
-            color: #22324B;
+            font-size: 16px;
+            line-height: 24px;
+            color: #555555;
             height: 0;
-            transition: height, margin-bottom;
+            transition: height, margin-bottom, margin-top;
             transition-duration: 500ms;
         }
     }
@@ -469,14 +507,22 @@
 
 .large-identifier {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    bottom: 60px;
-    left: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    bottom: 46px;
+    left: 46px;
     border-radius: 50%;
     background: #54598B;
     color: white;
     text-align: center;
+
+    font-family: Arimo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.15px;
+
+
+
 }

@@ -39,6 +39,7 @@ watch(() => props.isSelected, (isSelected: boolean) => {
   >
     <div class="icon-background"/>
     <img
+        class="main-image"
         :src="'/images/' + item.imageFileName"
         :style="getImageTransform(item)"
         alt=""

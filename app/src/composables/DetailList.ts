@@ -32,7 +32,7 @@ export default () => {
         return allPages.value.filter(page => page.group === currentGroup.value);
     }
 
-    function createPageGroupsFromItems(language: string, allItems: Array<DetailListItem>): void {
+    function createPageGroupsFromItems(allItems: Array<DetailListItem>): void {
 
         allPages.value = [
             ...splitListItemsIntoPages(null, allItems),
@@ -43,7 +43,7 @@ export default () => {
         ];
 
         for (const [index, page] of allPages.value.entries()) {
-            page.id = index;
+            page.id = index + 1;
         }
 
         let prevPage = null;
@@ -63,7 +63,7 @@ export default () => {
         return allPages.value.find(page => page.id === id) || null;
     }
 
-    function isActiveGroup(group: number): boolean {
+    function isActiveGroup(group: number | null): boolean {
         return currentGroup.value === group;
     }
 

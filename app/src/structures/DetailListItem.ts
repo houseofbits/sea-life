@@ -15,6 +15,9 @@ export default class DetailListItem {
     thumbnailImageTransform: ElementTransform;
     detailImageTransform: ElementTransform;
     content: Array<DetailItemContent>;
+    familyTextTransform: ElementTransform;
+    factTextTransform: ElementTransform;
+    translatedItems: Array<{[key: string]: Partial<DetailListItem>}> = [];
 
     constructor(params: Partial<DetailListItem>) {
         this.id = params?.id || 0;
@@ -28,6 +31,8 @@ export default class DetailListItem {
         this.imageFileName = params?.imageFileName || '';
         this.thumbnailImageTransform = new ElementTransform(params?.thumbnailImageTransform || {});
         this.detailImageTransform = new ElementTransform(params?.detailImageTransform || {});
+        this.familyTextTransform = new ElementTransform(params?.familyTextTransform || {});
+        this.factTextTransform = new ElementTransform(params?.factTextTransform || {});
 
         this.content = [];
         if (params?.content) {

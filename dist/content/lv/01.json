@@ -38,8 +38,18 @@
   },
   "detailImageTransform": {
     "left": 50,
-    "top": 300,
-    "width": 1200,
-    "angle": -15
+    "top": 360,
+    "width": 906,
+    "angle": 0
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 491
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

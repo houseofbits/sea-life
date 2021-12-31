@@ -45,7 +45,7 @@ onMounted(() => {
     selectLanguage(result.config.languages[0]);
     setTranslations(result.translatedCommon);
 
-    createPageGroupsFromItems('lv', result.translatedItems['lv']);
+    createPageGroupsFromItems(result.translatedItems['lv']);
     selectGroup();
 
   });
@@ -56,6 +56,7 @@ onMounted(() => {
 <template>
 
   <div class="content-1080p detail-list">
+
     <div class="header">
       <img src="@images/logo.svg" alt="" width="64">
       <div class="header-title">
@@ -73,16 +74,10 @@ onMounted(() => {
         <a href="#" @click="selectGroup(4)" :class="{active: isActiveGroup(4)}">Gliemji</a>
       </span>
       <div class="languages flex">
-<!--        <div v-for="(val, key) in languages" :class="{'btn-active': isLanguageSelected(key)}"-->
-<!--             class="btn btn-blue m-1 cursor-pointer text-center"-->
-<!--             @click="selectLanguage(key)">{{ val }}-->
-<!--        </div>-->
-
-        <img src="@images/flag-lv.svg" alt="Latvia">
-        <img src="@images/flag-gb.svg" alt="Latvia">
-        <img src="@images/flag-ru.svg" alt="Latvia">
-        <img src="@images/flag-de.svg" alt="Latvia">
-
+        <img src="@images/flag-lv.svg" alt="LV">
+        <img src="@images/flag-gb.svg" alt="GB">
+        <img src="@images/flag-ru.svg" alt="RU">
+        <img src="@images/flag-de.svg" alt="DE">
       </div>
     </div>
 
@@ -120,6 +115,13 @@ onMounted(() => {
       ></li>
 
     </ul>
+
+    <div class="back-filter"
+         @click="selectGroup(null)"
+         v-if="!selectedItem && !isActiveGroup(null)">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>{{ translations.mainFilterButton}}</span>
+    </div>
 
   </div>
 
