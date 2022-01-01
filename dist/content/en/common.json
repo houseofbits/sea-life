@@ -1,0 +1,25 @@
+{
+  "title": "Inhabitants of the Baltic Sea",
+  "backButton": "Back",
+  "order": "Order",
+  "family": "Family",
+  "mainFilterButton": "Back to all",
+  "groups": [
+    {
+      "group": 1,
+      "title": "Birds"
+    },
+    {
+      "group": 2,
+      "title": "Fish"
+    },
+    {
+      "group": 3,
+      "title": "Crustaceans"
+    },
+    {
+      "group": 4,
+      "title": "Mussels"
+    }
+  ]
+}

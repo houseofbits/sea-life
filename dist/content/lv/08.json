@@ -31,13 +31,26 @@
   "order": "Syngnathiformes",
   "family": "Syngnathidae",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -640,
+    "top": 150,
+    "width": 1342,
+    "angle": -19
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": -60,
+    "top": 450,
+    "width": 1044,
+    "angle": -30
+  },
+  "factTextTransform": {
+    "height": 332,
+    "top": 217,
+    "left": 337,
+    "width": 446
+  },
+  "familyTextTransform": {
+    "height": 138,
+    "top": 779,
+    "left": 184
   }
 }

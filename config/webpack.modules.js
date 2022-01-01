@@ -15,19 +15,17 @@ module.exports = {
                 }]
             },
             {
-                test: /\.obj$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        publicPath: '/assets/objects',
-                        outputPath: 'objects/'
+                test: /\.ttf$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            publicPath: '/fonts',
+                            outputPath: 'fonts/'
+                        }
                     }
-                }]
-            },
-            {
-                test: /\.(frag|vert)$/i,
-                use: 'raw-loader',
+                ]
             },
             {
                 test: /\.css$/,
@@ -60,31 +58,7 @@ module.exports = {
                     appendTsSuffixTo: [/\.vue$/],
                 },
                 exclude: /node_modules/,
-            },
-            {
-                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            publicPath: 'fonts',
-                            outputPath: 'fonts/'
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.(html)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[folder]/[name].[ext]',
-                        publicPath: '/content',
-                        outputPath: 'content/'
-                    }
-                }]
-            },
+            }
         ],
     },
 };

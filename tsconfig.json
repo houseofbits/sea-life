@@ -9,7 +9,11 @@
         "strict": true,
         "jsx": "preserve",
         "moduleResolution": "node",
-        "sourceMap": false
+        "sourceMap": false,
+      "lib": [
+        "esnext",
+        "dom"
+      ]
     },
     "exclude": [
         "node_modules"

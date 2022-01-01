@@ -1,3 +1,4 @@
+import "@style/font.css";
 import "@style/main.css";
 import "@style/detail-view.scss";
 import {createApp} from 'vue';

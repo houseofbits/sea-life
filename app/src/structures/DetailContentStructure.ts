@@ -5,7 +5,7 @@ import DetailCommonStructure from "@src/structures/DetailCommonStructure";
 export default class DetailContentStructure {
 
     config: DetailViewConfigStructure = new DetailViewConfigStructure({});
-    translatedItems: {[key: string]: Array<DetailListItem>} = {};
+    items: Array<DetailListItem> = [];
     translatedCommon: {[key: string]: DetailCommonStructure} = {};
 
 }

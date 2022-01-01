@@ -45,7 +45,7 @@ onMounted(() => {
     selectLanguage(result.config.languages[0]);
     setTranslations(result.translatedCommon);
 
-    createPageGroupsFromItems(result.translatedItems['lv']);
+    createPageGroupsFromItems(result.items);
     selectGroup();
 
   });
@@ -68,16 +68,12 @@ onMounted(() => {
       </span>
       </div>
       <span v-if="!selectedItem" class="group-links">
-        <a href="#" @click="selectGroup(1)" :class="{active: isActiveGroup(1)}">Putni</a>
-        <a href="#" @click="selectGroup(2)" :class="{active: isActiveGroup(2)}">Zivis</a>
-        <a href="#" @click="selectGroup(3)" :class="{active: isActiveGroup(3)}">Vēžveidīgie</a>
-        <a href="#" @click="selectGroup(4)" :class="{active: isActiveGroup(4)}">Gliemji</a>
+        <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)" :class="{active: isActiveGroup(group.group)}">
+          {{ group.title }}
+        </a>
       </span>
       <div class="languages flex">
-        <img src="@images/flag-lv.svg" alt="LV">
-        <img src="@images/flag-gb.svg" alt="GB">
-        <img src="@images/flag-ru.svg" alt="RU">
-        <img src="@images/flag-de.svg" alt="DE">
+        <img v-for="language in languages" :src="'/images/flag-' + language + '.svg'" :alt="language" @click="selectLanguage(language)">
       </div>
     </div>
 
@@ -91,7 +87,7 @@ onMounted(() => {
       <info-item
           v-for="item in page.items"
           :key="item.id"
-          :item="item"
+          :item="item.getTranslatedItem(selectedLanguage)"
           :is-selected="isItemSelected(item)"
           @select="selectItem"
           @close="closeItem"

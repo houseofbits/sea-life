@@ -17,7 +17,7 @@ export default class DetailListItem {
     content: Array<DetailItemContent>;
     familyTextTransform: ElementTransform;
     factTextTransform: ElementTransform;
-    translatedItems: Array<{[key: string]: Partial<DetailListItem>}> = [];
+    translatedItems: { [key: string]: Partial<DetailListItem> } = {};
 
     constructor(params: Partial<DetailListItem>) {
         this.id = params?.id || 0;
@@ -38,5 +38,13 @@ export default class DetailListItem {
         if (params?.content) {
             this.content = params?.content.map(elem => new DetailItemContent(elem));
         }
+    }
+
+    getTranslatedItem(language: string): DetailListItem {
+        const translated = this.translatedItems[language] || null;
+        if (translated) {
+            return new DetailListItem(Object.assign({}, this, translated));
+        }
+        return this;
     }
 };

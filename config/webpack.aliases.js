@@ -9,6 +9,7 @@ module.exports = {
             '@json': path.resolve(__dirname, '../app/json'),
             '@style': path.resolve(__dirname, '../app/style'),
             '@content': path.resolve(__dirname, '../app/content'),
+            '@fonts': path.resolve(__dirname, '../app/fonts'),
         }
     }
 };

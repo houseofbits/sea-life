@@ -15,30 +15,36 @@ class DetailViewService extends HttpService {
 
         structure.config = await this.fetchConfig();
 
+        structure.items = [];
+        for (const listItemFilename of structure.config.listItems) {
+            const item = await this.fetchItem(listItemFilename, structure.config);
+            structure.items.push(item);
+        }
+
         for (const language of structure.config.languages) {
-            const items = await this.fetchAllForLanguage(structure.config, language);
-
-            this.preloadImages(items)
-
-            structure.translatedItems[language] = items;//this.splitListItemsIntoPages(items);
             structure.translatedCommon[language] = await this.fetchCommonTexts(language);
         }
+
+        //this.preloadImages(structure.items);
 
         return structure;
     }
 
-    async fetchAllForLanguage(config: DetailViewConfigStructure, language: string = 'lv'): Promise<Array<DetailListItem>> {
+    async fetchItem(filename: string, config: DetailViewConfigStructure): Promise<DetailListItem> {
 
-        const promises = [];
-        for (const listItemFilename of config.listItems) {
-            promises.push(this.getContent(language, listItemFilename));
+        const item = new DetailListItem(await this.getContent(config.baseLanguage, filename));
+
+        const additionalLanguages = config.languages.filter(lang => lang !== config.baseLanguage);
+
+        for (const additionalLanguage of additionalLanguages) {
+            try {
+                item.translatedItems[additionalLanguage] = await this.getContent(additionalLanguage, filename);
+            } catch (e: any) {
+                console.error('Failed to load content of ' + additionalLanguage + ', ' + filename);
+            }
         }
 
-        try {
-            return (await Promise.all(promises)).map((params: any) => new DetailListItem(params));
-        } catch (e: any) {
-            return [];
-        }
+        return item;
     }
 
     async fetchCommonTexts(language: string = 'lv'): Promise<DetailCommonStructure> {

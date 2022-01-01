@@ -100,7 +100,8 @@ const {
 onMounted(() => {
   setTimeout(() => {
     active.value = true;
-  }, 500);
+    select(0);
+  }, 300);
 });
 
 </script>
@@ -108,9 +109,9 @@ onMounted(() => {
   <div class="content-1080p detail-view" :class="{active: active}">
 
     <div class="family-detail" :style="getFamilyStyle()">
-      <em>{{ item.latinTitle }}</em>
-      <span><strong>{{ translations.order }}: </strong><em v-html="item.order"/></span>
-      <span><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
+      <span class="latin-name">{{ item.latinTitle }}</span>
+      <span class="latin-detail"><strong>{{ translations.order }}: </strong><em v-html="item.order"/></span>
+      <span class="latin-detail"><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
     </div>
 
     <div class="fact-detail" :style="getFactStyle()">

@@ -324,17 +324,15 @@
         }
 
         img.main-image {
-            @apply
-            absolute
-            top-0
-            left-0
-            transition-all
-            duration-500
-            ease-in-out
-            ;
+            position: absolute;
+            top:0;
+            left: 0;
             max-width: 1080px;
             pointer-events: none;
-
+            transition: all;
+            transition-duration: 550ms;
+            transition-delay: 50ms;
+            transition-timing-function: ease-in-out;
         }
 
         &.active {
@@ -346,6 +344,10 @@
             margin: 0;
             filter: none;
             border-radius: 0;
+
+            img.main-image {
+                transition-duration: 400ms;
+            }
         }
 
         &.on-top {
@@ -417,7 +419,7 @@
     height: 0;
     border-left: solid 1px #729DB7;
 
-    :first-child {
+    .latin-name {
         margin-bottom: 16px;
         font-style: italic;
         font-weight: bold;
@@ -427,7 +429,7 @@
         color: #263238;
     }
 
-    span {
+    .latin-detail {
         font-style: normal;
         font-size: 16px;
         line-height: 24px;

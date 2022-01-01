@@ -3,5 +3,23 @@
   "backButton": "Atpakaļ",
   "order": "Kārta",
   "family": "Dzimta",
-  "mainFilterButton": "Atpakaļ uz visiem"
+  "mainFilterButton": "Atpakaļ uz visiem",
+  "groups": [
+    {
+      "group": 1,
+      "title": "Putni"
+    },
+    {
+      "group": 2,
+      "title": "Zivis"
+    },
+    {
+      "group": 3,
+      "title": "Vēžveidīgie"
+    },
+    {
+      "group": 4,
+      "title": "Gliemji"
+    }
+  ]
 }
