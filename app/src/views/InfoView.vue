@@ -6,6 +6,7 @@ import {onMounted} from "vue";
 import DetailViewService from "@src/services/DetailViewService";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
+import TimeoutService from "@src/services/TimeoutService";
 
 const {
   isItemSelected,
@@ -44,11 +45,17 @@ onMounted(() => {
     setLanguages(result.config.languages);
     selectLanguage(result.config.languages[0]);
     setTranslations(result.translatedCommon);
-
     createPageGroupsFromItems(result.items);
     selectGroup();
-
   });
+
+  TimeoutService.registerCallback(() => {
+    closeItem();
+    selectLanguage(languages.value[0]);
+    selectGroup(null);
+    selectPage(pages.value[0]);
+  });
+
 });
 
 </script>
