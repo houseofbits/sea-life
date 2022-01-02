@@ -31,13 +31,24 @@
   ],
   "fact": "Mencai salīdzinājumā ar citām zivīm ir liels ikru daudzums, sezonā iznēršot ap 0,2–2,4 miljoniem ikru.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -258,
+    "top": -28,
+    "width": 688
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 46,
+    "top": 332,
+    "width": 906
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 353,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

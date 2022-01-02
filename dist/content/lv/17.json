@@ -5,7 +5,7 @@
   "latinTitle": "Cerastoderma glaucum",
   "order": "<small>sirsniņgliemeņu</small> Cardiidae",
   "family": "<small>gliemeņu</small> Bivalvia",
-  "imageFileName": "Lamarka sirsningliemenes daudz.png",
+  "imageFileName": "Lamarka sirsniņgliemene.png",
   "identifier": "17",
   "content": [
     {
@@ -23,13 +23,26 @@
   ],
   "fact": "Lielas mainības dēļ sugai izveidojies liels daudzums sinonīmu. Sirsniņgliemenes daudzviet lieto pārtikā.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -70,
+    "top": 0,
+    "width": 441,
+    "angle": -30
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 110,
+    "top": 340,
+    "width": 626,
+    "angle": -18
+  },
+  "factTextTransform": {
+    "height": 134,
+    "top": 304,
+    "left": 645,
+    "width": 289
+  },
+  "familyTextTransform": {
+    "height": 167,
+    "top": 755,
+    "left": 184
   }
 }

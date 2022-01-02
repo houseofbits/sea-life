@@ -31,13 +31,25 @@
   ],
   "fact": "Lašiem ir izteikta savas upes izjūta, uz nārstu tas atgriežas tieši uz to upi, kur piedzimis. Cilvēka darbības rezultātā, piemēram, veidojot aizsprostus, lašu nārstam piemērotu upju skaits ir samazinājies.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -400,
+    "top": 0,
+    "width": 840,
+    "angle": -15
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 46,
+    "top": 351,
+    "width": 904
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 353,
+    "width": 445
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

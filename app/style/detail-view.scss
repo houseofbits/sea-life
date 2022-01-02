@@ -180,22 +180,18 @@
     }
 
     .item {
-        @apply
-        absolute
-        cursor-pointer
-        bg-white
-        overflow-hidden
-        transition-all
-        duration-500
-        ease-in-out
-        ;
-
+        position: absolute;
+        cursor: pointer;
+        background-color: white;
+        overflow: hidden;
+        transition-timing-function: ease-out;
+        transition-duration: 500ms;
+        transition-property: all;
         border-radius: 4px;
         background-image: url('@images/detail-bg.svg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: left top;
-
         width: 445px;
         height: 348px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.1);
@@ -257,11 +253,7 @@
 
             h1 {
                 margin: 0;
-                padding-right: 45px;
-                padding-left: 16px;
-                padding-top: 20px;
-                padding-bottom: 10px;
-                font-family: Arimo;
+                padding: 20px 45px 10px 16px;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 20px;
@@ -274,7 +266,6 @@
             em {
                 padding-left: 16px;
                 padding-bottom: 16px;
-                font-family: Arimo;
                 font-style: italic;
                 font-weight: normal;
                 font-size: 14px;
@@ -329,10 +320,9 @@
             left: 0;
             max-width: 1080px;
             pointer-events: none;
-            transition: all;
-            transition-duration: 550ms;
-            transition-delay: 50ms;
-            transition-timing-function: ease-in-out;
+            transition-property: all;
+            transition-duration: 500ms;
+            transition-timing-function: ease-out;
         }
 
         &.active {
@@ -344,10 +334,6 @@
             margin: 0;
             filter: none;
             border-radius: 0;
-
-            img.main-image {
-                transition-duration: 400ms;
-            }
         }
 
         &.on-top {

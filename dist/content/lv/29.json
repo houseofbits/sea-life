@@ -31,13 +31,25 @@
   ],
   "fact": "Mūsdienu literatūrā pastāv uzskats, ka Eiropā un tās piekrastē var būt sastopamas nevis viena, bet pat vairāk nekā 59 dažādas sīgu sugas.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -620,
+    "top": 35,
+    "width": 1088,
+    "angle": -15
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 47,
+    "top": 428,
+    "width": 904
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 353,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

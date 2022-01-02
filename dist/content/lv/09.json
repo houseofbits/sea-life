@@ -31,13 +31,24 @@
   ],
   "fact": "Tā spēj nirt līdz 4 m dziļumam.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -110,
+    "top": 18,
+    "width": 539
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 184,
+    "top": 255,
+    "width": 614
+  },
+  "factTextTransform": {
+    "height": 421,
+    "top": 171,
+    "left": 278,
+    "width": 446
+  },
+  "familyTextTransform": {
+    "height": 164,
+    "top": 548,
+    "left": 645
   }
 }

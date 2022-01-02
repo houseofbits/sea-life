@@ -31,13 +31,24 @@
   ],
   "fact": "Melnkakla gārgale zem ūdens uzturas līdz 45 sekundēm. Lai arī gārgale ir laba peldētāja un nirēja, uz sauszemes tā ir ļoti neveikla un nespēj no zemes pacelties gaisā.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -50,
+    "top": -21,
+    "width": 482
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 184,
+    "top": 204,
+    "width": 614
+  },
+  "factTextTransform": {
+    "height": 421,
+    "top": 171,
+    "left": 278,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 244,
+    "top": 566,
+    "left": 680
   }
 }

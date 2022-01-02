@@ -75,13 +75,14 @@ function getFamilyStyle(): any {
   const top = props.item.familyTextTransform.top || 500;
   const left = props.item.familyTextTransform.left || 150;
   const height = props.item.familyTextTransform.height || 200;
+  const width = props.item.familyTextTransform.width || 500;
 
   if (active.value) {
     return {
       top: top + 'px',
       left: left + 'px',
       height: height + 'px',
-      width: 500 + 'px'
+      width: width + 'px'
     };
   }
 
@@ -89,7 +90,7 @@ function getFamilyStyle(): any {
     top: top + 'px',
     left: left + 'px',
     height: 0,
-    width: 500 + 'px'
+    width: width + 'px'
   };
 }
 
@@ -109,7 +110,7 @@ onMounted(() => {
   <div class="content-1080p detail-view" :class="{active: active}">
 
     <div class="family-detail" :style="getFamilyStyle()">
-      <span class="latin-name">{{ item.latinTitle }}</span>
+      <span class="latin-name" v-html="item.latinTitle"/>
       <span class="latin-detail"><strong>{{ translations.order }}: </strong><em v-html="item.order"/></span>
       <span class="latin-detail"><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
     </div>

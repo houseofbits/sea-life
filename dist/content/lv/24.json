@@ -31,13 +31,25 @@
   ],
   "fact": "Lielāko dzīves daļu tie pavada, ierakušies smiltīs, kur tie slēpjas no plēsējiem – ūdensputniem, roņiem, asariem, akmeņplekstēm un mencām, kas labprāt tos izmanto uzturā.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -400,
+    "top": 60,
+    "width": 826,
+    "angle": -15
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 45,
+    "top": 458,
+    "width": 906
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 353,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

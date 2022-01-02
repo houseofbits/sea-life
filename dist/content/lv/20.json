@@ -23,13 +23,25 @@
   ],
   "fact": "Maksimālais šīs gliemenes zināmais dzīves ilgums ir 28 gadi. Tā tiek izmantota pārtikā.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -80,
+    "top": 0,
+    "width": 494,
+    "angle": -15
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 45,
+    "top": 322,
+    "width": 752
+  },
+  "factTextTransform": {
+    "height": 134,
+    "top": 290,
+    "left": 645,
+    "width": 304
+  },
+  "familyTextTransform": {
+    "height": 167,
+    "top": 755,
+    "left": 184
   }
 }

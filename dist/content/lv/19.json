@@ -31,13 +31,24 @@
   ],
   "fact": "Ļoti bieži vairākas mātītes apvienojas lielākā barā un mazuļus uzmana kopā. Lielā gaura zem ūdens spēj pavadīt līdz pat divām minūtēm.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -100,
+    "top": 44,
+    "width": 530
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 170,
+    "top": 298,
+    "width": 614
+  },
+  "factTextTransform": {
+    "height": 375,
+    "top": 171,
+    "left": 278,
+    "width": 450
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 572,
+    "left": 645
   }
 }

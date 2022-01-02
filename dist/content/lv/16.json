@@ -31,13 +31,26 @@
   ],
   "fact": "Konstatēts, ka dabīgajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu – gliemeņu, nematožu, vēžveidīgo – izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": -110,
-    "width": 800
+    "left": -130,
+    "top": -10,
+    "width": 609,
+    "angle": 15
   },
   "detailImageTransform": {
-    "left": 50,
-    "top": 300,
-    "width": 1200
+    "left": 150,
+    "top": 350,
+    "width": 751,
+    "angle": 30
+  },
+  "factTextTransform": {
+    "height": 196,
+    "top": 238,
+    "left": 353,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
   }
 }

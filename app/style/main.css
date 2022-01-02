@@ -5,6 +5,7 @@
 body {
     background: gray;
     font-family: Arimo;
+    user-select: none;
 }
 
 .content-1080p {
