@@ -3,7 +3,7 @@ import InfoDetailView from "@src/components/InfoDetailView.vue";
 import DetailListItem from "@src/structures/DetailListItem";
 import {watch, ref} from "vue";
 
-const emit = defineEmits(['close', 'select']);
+const emit = defineEmits(['close']);
 const props = defineProps({
   item: {
     type: DetailListItem,
@@ -44,7 +44,7 @@ watch(() => props.isSelected, (isSelected: boolean) => {
         :style="getImageTransform(item)"
         alt=""
     />
-    <div class="icon-content" @click="emit('select', item)">
+    <div class="icon-content" :data-item-id="item.id">
       <h1>{{ item.title }}</h1>
       <em v-html="item.latinTitle"/>
       <span class="identifier">{{ item.identifier }}</span>

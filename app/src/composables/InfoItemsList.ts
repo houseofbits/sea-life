@@ -3,24 +3,24 @@ import DetailListItem from "@src/structures/DetailListItem";
 
 export default () => {
 
-    const selectedItem = ref<DetailListItem | null>(null);
+    const selectedItemId = ref<number | null>(null);
 
-    function selectItem(item: DetailListItem): void {
-        selectedItem.value = item;
+    function selectItem(itemId: number): void {
+        selectedItemId.value = itemId;
     }
 
     function closeItem(): void {
-        selectedItem.value = null;
+        selectedItemId.value = null;
     }
 
     function isItemSelected(item: DetailListItem): boolean {
-        return item.id === selectedItem.value?.id;
+        return selectedItemId.value !== null && item.id == selectedItemId.value;
     }
 
     return {
         isItemSelected,
         selectItem,
         closeItem,
-        selectedItem,
+        selectedItemId,
     };
 }

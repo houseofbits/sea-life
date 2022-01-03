@@ -2,17 +2,18 @@
 import InfoItem from "@src/components/InfoItem.vue";
 import InfoItemsListComposable from "@src/composables/InfoItemsList";
 import DetailTranslations from "@src/composables/DetailTranslations";
-import {onMounted} from "vue";
+import {computed, onMounted} from "vue";
 import DetailViewService from "@src/services/DetailViewService";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
 import TimeoutService from "@src/services/TimeoutService";
+import Hammering from "@src/helpers/Hammering";
 
 const {
   isItemSelected,
   selectItem,
   closeItem,
-  selectedItem,
+  selectedItemId,
 } = InfoItemsListComposable();
 
 const {
@@ -56,7 +57,28 @@ onMounted(() => {
     selectPage(pages.value[0]);
   });
 
+  Hammering(() => {
+        if (!selectedItemId.value) {
+          selectPrevPage();
+        }
+      }, () => {
+        if (!selectedItemId.value) {
+          selectNextPage();
+        }
+      }, selectItem);
+
 });
+
+const itemTitle = computed<string>(() => {
+  for (const page of pages.value) {
+    const item = page.items.find(elem => elem.id == selectedItemId.value) || null;
+    if (item) {
+      return item.getTranslatedItem(selectedLanguage.value).title;
+    }
+  }
+  return '';
+});
+
 
 </script>
 
@@ -67,20 +89,22 @@ onMounted(() => {
     <div class="header">
       <img src="@images/logo.svg" alt="" width="64">
       <div class="header-title">
-        <span v-if="!selectedItem" @click="selectGroup(null)">
-          {{ translations.title  }}
+        <span v-if="!selectedItemId" @click="selectGroup(null)">
+          {{ translations.title }}
         </span>
         <span v-else>
-        {{ selectedItem.title }}
+        {{ itemTitle }}
       </span>
       </div>
-      <span v-if="!selectedItem" class="group-links">
-        <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)" :class="{active: isActiveGroup(group.group)}">
+      <span v-if="!selectedItemId" class="group-links">
+        <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)"
+           :class="{active: isActiveGroup(group.group)}">
           {{ group.title }}
         </a>
       </span>
       <div class="languages flex">
-        <img v-for="language in languages" :src="'/images/flag-' + language + '.svg'" :alt="language" @click="selectLanguage(language)">
+        <img v-for="language in languages" :src="'/images/flag-' + language + '.svg'" :alt="language"
+             @click="selectLanguage(language)">
       </div>
     </div>
 
@@ -96,7 +120,6 @@ onMounted(() => {
           :key="item.id"
           :item="item.getTranslatedItem(selectedLanguage)"
           :is-selected="isItemSelected(item)"
-          @select="selectItem"
           @close="closeItem"
       />
 
@@ -121,9 +144,9 @@ onMounted(() => {
 
     <div class="back-filter"
          @click="selectGroup(null)"
-         v-if="!selectedItem && !isActiveGroup(null)">
+         v-if="!selectedItemId && !isActiveGroup(null)">
       <img src="@images/arrow-left.svg" alt="">
-      <span>{{ translations.mainFilterButton}}</span>
+      <span>{{ translations.mainFilterButton }}</span>
     </div>
 
   </div>

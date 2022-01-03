@@ -1,21 +1,26 @@
 {
-    "compilerOptions": {
-        "baseUrl": "./",
-        "paths": {
-            "@src/*": ["./app/src/*"]
-        },
-        "target": "esnext",
-        "module": "esnext",
-        "strict": true,
-        "jsx": "preserve",
-        "moduleResolution": "node",
-        "sourceMap": false,
-      "lib": [
-        "esnext",
-        "dom"
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": [
+        "./app/src/*"
+      ],
+      "@images/*": [
+        "./app/images/*"
       ]
     },
-    "exclude": [
-        "node_modules"
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "lib": [
+      "esnext",
+      "dom"
     ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
