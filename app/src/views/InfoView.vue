@@ -7,7 +7,7 @@ import DetailViewService from "@src/services/DetailViewService";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
 import TimeoutService from "@src/services/TimeoutService";
-import Hammering from "@src/helpers/Hammering";
+import InputHandlerService from "@src/services/InputHandlerService";
 
 const {
   isItemSelected,
@@ -57,15 +57,18 @@ onMounted(() => {
     selectPage(pages.value[0]);
   });
 
-  Hammering(() => {
-        if (!selectedItemId.value) {
-          selectPrevPage();
-        }
-      }, () => {
-        if (!selectedItemId.value) {
-          selectNextPage();
-        }
-      }, selectItem);
+  const input = new InputHandlerService(document.querySelector('.detail-list'));
+  input.onSwipeLeft(() => {
+    if (!selectedItemId.value) {
+      selectPrevPage();
+    }
+  });
+  input.onSwipeRight(() => {
+    if (!selectedItemId.value) {
+      selectNextPage();
+    }
+  });
+  input.onSelectItem(selectItem);
 
 });
 
