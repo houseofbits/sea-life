@@ -41,10 +41,27 @@ export default class Vector2 {
         return a * a + b * b;
     }
 
+    length(): number {
+        return Math.sqrt(this.lengthSquared());
+    }
+
     distance(other: Vector2): number {
         const a = this.x - other.x;
         const b = this.y - other.y;
         return Math.sqrt(a * a + b * b);
+    }
+
+    scaleInPlace(value: number): Vector2 {
+        this.x = this.x * value;
+        this.y = this.y * value;
+        return this;
+    }
+
+    normalizeInPlace(): Vector2 {
+        const oneOverLength = 1.0 / this.length();
+        this.x = this.x * oneOverLength;
+        this.y = this.y * oneOverLength;
+        return this;
     }
 
     static createArrayOfVectorsFromNumbers(values: number[] = []): Vector2[] {

@@ -53,12 +53,6 @@ p{
     @apply border-4 border-gray-600;
 }
 
-.puzzle-element {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 small {
     font-style: normal;
     font-weight: normal !important;

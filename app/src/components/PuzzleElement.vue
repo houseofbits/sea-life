@@ -2,7 +2,7 @@
 import Draggable from "@src/services/Draggable";
 import DraggableElement from "@src/structures/DraggableElement";
 import {computed, onBeforeUnmount, onMounted, reactive, ref, watch} from "vue";
-import {PuzzleElementStateEnum} from "@src/helpers/Constants";
+import {PuzzleElementStateEnum} from "@src/helpers/PuzzleConstants";
 
 const root = ref(null);
 
@@ -18,13 +18,15 @@ const props = defineProps({
 const draggable = reactive(new Draggable(props.config));
 
 const elementStyle = computed(() => {
+    const scale = 0.6 + draggable.getDistanceUnitValue() * 0.4;
+    const zIndex = draggable.isPlaced() ? props.config.finalLayer : props.config.zIndex;
     return {
-        backgroundColor: props.config.image,
-        width: '200px',
-        height: '200px',
-        transform: 'translate(' + draggable.position.x + 'px, ' + draggable.position.y + 'px)',
-        clipPath: 'circle(100px at center)',
-        zIndex: props.config.zIndex,
+        backgroundColor: 'red',
+        width: props.config.size.x + 'px',
+        height: props.config.size.y + 'px',
+        transform: 'translate(' + draggable.position.x + 'px, ' + draggable.position.y + 'px) scale(' + scale + ')',
+        clipPath: "path('"+props.config.mask+"')",
+        zIndex,
     };
 });
 
@@ -41,5 +43,7 @@ onBeforeUnmount(() => draggable.unregisterEventHandlers());
 
 </script>
 <template>
-    <div ref="root" class="puzzle-element" :style="elementStyle"/>
+    <div ref="root" class="puzzle-element" :style="elementStyle">
+      <img :src="'/images/' + props.config.image" alt="">
+    </div>
 </template>

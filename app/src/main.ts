@@ -1,6 +1,7 @@
 import "@style/font.css";
 import "@style/main.css";
 import "@style/detail-view.scss";
+import "@style/puzzle.scss";
 import {createApp} from 'vue';
 import {createWebHistory, createRouter} from "vue-router";
 import MainApp from "@src/MainApp.vue";

@@ -1,17 +1,29 @@
 import Vector2 from "@src/structures/Vector2";
-import {PUZZLE_PIECE_CAPTURE_DISTANCE, PuzzleElementStateEnum} from "@src/helpers/Constants";
+import {
+    PIECE_CAPTURE_DISTANCE,
+    PuzzleElementStateEnum,
+    SNAP_TO_TARGET_STEP,
+    TIME_STEP,
+    SNAP_TO_INITIAL_STEP
+} from "@src/helpers/PuzzleConstants";
 import DraggableElement from "@src/structures/DraggableElement";
 
 export default class Draggable {
     position: Vector2 = new Vector2(0, 0);
     mousePosition: Vector2 = new Vector2(0, 0);
-    targetPosition: Vector2 = new Vector2(0,0);
+    targetPosition: Vector2 = new Vector2(0, 0);
+    initialPosition: Vector2 = new Vector2(0, 0);
     state: PuzzleElementStateEnum = PuzzleElementStateEnum.NONE;
     element: Element | null = null;
+    initialDistance: number = 0;
+    actualDistance: number = 0;
 
     constructor(config: DraggableElement) {
-        this.position = config.initialPosition;
+        this.position = config.initialPosition.clone();
         this.targetPosition = config.targetPosition;
+        this.initialPosition = config.initialPosition;
+        this.initialDistance = this.targetPosition.distance(this.initialPosition);
+        this.calculateActualDistance();
     }
 
     handleMouseMove(event: MouseEvent): void {
@@ -41,8 +53,12 @@ export default class Draggable {
         }
     }
 
+    canDrag(): boolean {
+        return this.state === PuzzleElementStateEnum.NONE || this.state === PuzzleElementStateEnum.SNAP;
+    }
+
     handleDown(event: Event): void {
-        if (this.state === PuzzleElementStateEnum.NONE
+        if (this.canDrag()
             && event.target === this.element) {
             this.state = PuzzleElementStateEnum.DRAG;
         }
@@ -50,7 +66,8 @@ export default class Draggable {
 
     handleUp(): void {
         if (this.state === PuzzleElementStateEnum.DRAG) {
-            this.state = PuzzleElementStateEnum.NONE;
+            this.state = PuzzleElementStateEnum.SNAP;
+            this.snapToInitialPosition();
         }
     }
 
@@ -59,9 +76,12 @@ export default class Draggable {
             let diff = mousePosition.sub(this.mousePosition);
             this.position.addInPlace(diff);
 
-            if (this.targetPosition.distance(this.position) < PUZZLE_PIECE_CAPTURE_DISTANCE) {
+            this.calculateActualDistance();
+
+            if (this.actualDistance < PIECE_CAPTURE_DISTANCE) {
                 this.state = PuzzleElementStateEnum.CAPTURED;
                 this.processCapturedElement();
+
             }
 
             this.mousePosition = mousePosition;
@@ -69,23 +89,51 @@ export default class Draggable {
     }
 
     processCapturedElement(): void {
-        if (!this.moveIntoPosition()) {
-            setTimeout(this.processCapturedElement.bind(this), 16);
+        if (!this.moveIntoPosition(this.targetPosition, SNAP_TO_TARGET_STEP)) {
+            setTimeout(this.processCapturedElement.bind(this), TIME_STEP);
         } else {
             this.state = PuzzleElementStateEnum.PLACED;
         }
     }
 
-    moveIntoPosition(): boolean {
-        const diff = this.position.sub(this.targetPosition);
-        if (diff.lengthSquared() < 0.5) {
+    snapToInitialPosition(): void {
+        if (this.state === PuzzleElementStateEnum.SNAP
+            && !this.moveIntoPosition(this.initialPosition, SNAP_TO_INITIAL_STEP)) {
+            setTimeout(this.snapToInitialPosition.bind(this), TIME_STEP);
+        } else {
+            this.state = PuzzleElementStateEnum.NONE;
+        }
+    }
+
+    moveIntoPosition(targetPosition: Vector2, speed: number): boolean {
+        const diff = this.position.sub(targetPosition);
+        const length = diff.length();
+        if (diff.lengthSquared() < 1.0) {
             return true;
         }
 
-        diff.clamp(10);
+        diff
+            .normalizeInPlace()
+            .scaleInPlace(Math.min(speed, length));
+
         this.position.subInPlace(diff);
 
+        this.calculateActualDistance();
+
         return false;
+    }
+
+    calculateActualDistance(): void {
+        this.actualDistance = this.targetPosition.distance(this.position);
+    }
+
+    getDistanceUnitValue(): number {
+        const mDist = Math.min(this.initialDistance, this.actualDistance);
+        return 1.0 - (mDist / this.initialDistance);
+    }
+
+    isPlaced(): boolean {
+        return this.state === PuzzleElementStateEnum.PLACED;
     }
 
     registerEventHandlers(element: Element | null): void {
