@@ -11,3 +11,46 @@
         pointer-events: none;
     }
 }
+
+.text-callout {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.0;
+    transition: all;
+
+    &.top-left {
+        justify-content: start;
+        padding-left: 16px;
+        border-left: solid 1px #729DB7;
+    }
+    &.top-right {
+        justify-content: start;
+        padding-right: 16px;
+        border-right: solid 1px #729DB7;
+    }
+    &.bottom-left {
+        justify-content: end;
+        padding-left: 16px;
+        border-left: solid 1px #729DB7;
+    }
+    &.bottom-right {
+        justify-content: end;
+        padding-right: 16px;
+        border-right: solid 1px #729DB7;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #263238;
+        opacity: 0.54;
+    }
+
+    &.active {
+        opacity: 1.0;
+    }
+}

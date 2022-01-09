@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import PuzzleElement from "@src/components/PuzzleElement.vue";
 import PuzzlePieces from "@src/helpers/PuzzlePieces";
-import {reactive, onMounted} from "vue";
+import {onMounted, reactive} from "vue";
 import DraggableElement from "@src/structures/DraggableElement";
 import {useRouter} from "vue-router";
+import TextCallout from "@src/components/TextCallout.vue";
+import TextCalloutConfigStructure from "@src/structures/TextCalloutConfigStructure";
+import Vector2 from "@src/structures/Vector2";
+import {TextCalloutTypeEnum} from "@src/helpers/TextCalloutTypeEnum";
 
 const roter = useRouter();
 
@@ -33,6 +37,13 @@ function back(): void {
 
 onMounted(normalizeZIndexes);
 
+const calloutConfig = new TextCalloutConfigStructure({
+  size: new Vector2(300, 400),
+  position: new Vector2(500, 500),
+  type: TextCalloutTypeEnum.TOP_LEFT
+});
+
+
 </script>
 <template>
   <div class="content-1080p detail-list">
@@ -58,5 +69,10 @@ onMounted(normalizeZIndexes);
         :key="element.name"
         :config="element"
         @drag:start="dragStart(element)"/>
+
+    <text-callout :config="calloutConfig">
+      asdfadsf asdf asdf asdf asdf asdf sadf sad fasdf sadf asdfsad
+    </text-callout>
+
   </div>
 </template>

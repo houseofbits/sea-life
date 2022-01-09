@@ -74,4 +74,8 @@ export default class Vector2 {
         }
         return array;
     }
+
+    static create(params: Partial<Vector2>): Vector2 {
+        return new Vector2(params.x || 0, params.y || 0);
+    }
 }
