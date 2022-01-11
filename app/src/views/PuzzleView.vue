@@ -64,15 +64,13 @@ const calloutConfig = new TextCalloutConfigStructure({
       <span>Atpakaļ</span>
     </div>
 
+    <img class="bones-image" alt="" src="/images/Skelets.png"/>
+
     <puzzle-element
         v-for="(element, index) in elements"
         :key="element.name"
         :config="element"
         @drag:start="dragStart(element)"/>
-
-    <text-callout :config="calloutConfig">
-      asdfadsf asdf asdf asdf asdf asdf sadf sad fasdf sadf asdfsad
-    </text-callout>
 
   </div>
 </template>

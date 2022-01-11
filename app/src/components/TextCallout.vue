@@ -24,11 +24,11 @@ const style = computed(() => {
   };
 
   if (props.config.type == TextCalloutTypeEnum.TOP_LEFT || props.config.type == TextCalloutTypeEnum.TOP_RIGHT) {
-    params['top'] = props.config.position.y + 'px';
-  }
-  if (props.config.type == TextCalloutTypeEnum.BOTTOM_LEFT || props.config.type == TextCalloutTypeEnum.BOTTOM_RIGHT) {
     const bottom = 1080 - props.config.position.y - props.config.size.y;
     params['bottom'] = bottom + 'px';
+  }
+  if (props.config.type == TextCalloutTypeEnum.BOTTOM_LEFT || props.config.type == TextCalloutTypeEnum.BOTTOM_RIGHT) {
+    params['top'] = props.config.position.y + 'px';
   }
   if (props.config.type == TextCalloutTypeEnum.TOP_LEFT || props.config.type == TextCalloutTypeEnum.BOTTOM_LEFT) {
     params['left'] = props.config.position.x + 'px';
