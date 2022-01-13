@@ -1,7 +1,8 @@
 
 export enum DetailItemType {
-    BIRDS = 1,
-    FISH = 2,
-    CRUSTACEANS = 3,    //vēžveidīgie
-    MUSSELS = 4,        //gliemji
+    GROUP_1 = 1,
+    GROUP_2 = 2,
+    GROUP_3 = 3,
+    GROUP_4 = 4,
+    GROUP_5 = 5,
 }

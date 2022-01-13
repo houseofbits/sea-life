@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import {ref} from "vue";
 import PuzzleElement from "@src/components/PuzzleElement.vue";
 import PuzzlePieces from "@src/helpers/PuzzlePieces";
 import {onMounted, reactive} from "vue";
@@ -14,6 +15,8 @@ const roter = useRouter();
 const MAX_ELEMENTS_PER_LAYER = 20;
 
 const elements = reactive(PuzzlePieces);
+
+const viewToggle = ref(false);
 
 function normalizeZIndexes() {
   elements.sort((a, b) => {
@@ -56,6 +59,16 @@ const calloutConfig = new TextCalloutConfigStructure({
       </div>
       <div class="languages flex">
 
+      </div>
+    </div>
+
+    <div class="view-toggle" @click="viewToggle=!viewToggle" :class="{toggle: viewToggle}">
+      <div class="text">
+        <span>Ārējā uzbūve</span>
+        <span>Iekšējā uzbūve</span>
+      </div>
+      <div class="line">
+        <div></div>
       </div>
     </div>
 

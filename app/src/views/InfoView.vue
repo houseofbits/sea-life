@@ -8,6 +8,8 @@ import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
 import TimeoutService from "@src/services/TimeoutService";
 import InputHandlerService from "@src/services/InputHandlerService";
+import DetailListPageStructure from "@src/structures/DetailListPageStructure";
+import {ref} from "vue";
 
 const {
   isItemSelected,
@@ -41,6 +43,18 @@ const {
   isActiveGroup
 } = DetailList();
 
+const isPanning = ref(false);
+const panOffset = ref(0);
+
+function getPageStyle(page: DetailListPageStructure): any {
+  // if (isActivePage(page) && isPanning.value) {
+  //     return {
+  //       marginLeft: panOffset.value + 'px'
+  //     };
+  // }
+  return {};
+}
+
 onMounted(() => {
   DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
     setLanguages(result.config.languages);
@@ -69,6 +83,18 @@ onMounted(() => {
     }
   });
   input.onSelectItem(selectItem);
+
+  // input.onPan((e: any) => {
+  //   if (e.isFinal) {
+  //     isPanning.value = false;
+  //     panOffset.value = 0;
+  //   } else {
+  //     isPanning.value = true;
+  //     panOffset.value = e.deltaX;
+  //
+  //     console.log(e);
+  //   }
+  // });
 
 });
 
@@ -116,6 +142,7 @@ const itemTitle = computed<string>(() => {
         :key="page.id"
         class="slider-container"
         :class="[getAnimationState(page)]"
+        :style="getPageStyle(page)"
     >
 
       <info-item

@@ -7,19 +7,19 @@
   "groups": [
     {
       "group": 1,
-      "title": "Putni"
-    },
-    {
-      "group": 2,
       "title": "Zivis"
     },
     {
+      "group": 2,
+      "title": "Putni"
+    },
+    {
       "group": 3,
-      "title": "Vēžveidīgie"
+      "title": "Zīdītāji"
     },
     {
       "group": 4,
-      "title": "Gliemji"
+      "title": "Bezmugurkaulnieki"
     }
   ]
 }
