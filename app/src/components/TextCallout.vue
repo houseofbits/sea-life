@@ -67,5 +67,6 @@ const classes = computed(() => {
     <span>
       <slot/>
     </span>
+    <div class="point"></div>
   </div>
 </template>

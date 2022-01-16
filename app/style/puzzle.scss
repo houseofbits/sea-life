@@ -21,28 +21,68 @@
     transition: all;
     transition-duration: 1000ms;
 
+    .point {
+        position: absolute;
+        background-color: #729DB7;
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+        margin-top: -6px;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+    }
+
     &.top-left {
         justify-content: start;
         padding-left: 16px;
-        border-left: solid 1px #729DB7;
+        border-left: solid 2px #729DB7;
+
+        .point {
+            top: 0;
+            left: 0;
+            margin-left: -6px;
+            margin-top: -6px;
+        }
     }
 
     &.top-right {
         justify-content: start;
         padding-right: 16px;
-        border-right: solid 1px #729DB7;
+        border-right: solid 2px #729DB7;
+
+        .point {
+            top: 0;
+            right: 0;
+            margin-right: 6px;
+            margin-top: -6px;
+        }
     }
 
     &.bottom-left {
         justify-content: end;
         padding-left: 16px;
-        border-left: solid 1px #729DB7;
+        border-left: solid 2px #729DB7;
+
+        .point {
+            bottom: 0;
+            left: 0;
+            margin-left: -6px;
+            margin-bottom: 6px;
+        }
     }
 
     &.bottom-right {
         justify-content: end;
         padding-right: 16px;
-        border-right: solid 1px #729DB7;
+        border-right: solid 2px #729DB7;
+
+        .point {
+            bottom: 0;
+            right: 0;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
     }
 
     span {

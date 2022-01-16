@@ -3,14 +3,11 @@ import Draggable from "@src/services/Draggable";
 import DraggableElement from "@src/structures/DraggableElement";
 import {computed, onBeforeUnmount, onMounted, reactive, ref, watch} from "vue";
 import {PuzzleElementStateEnum} from "@src/helpers/PuzzleConstants";
-import TextCalloutConfigStructure from "@src/structures/TextCalloutConfigStructure";
-import Vector2 from "@src/structures/Vector2";
-import {TextCalloutTypeEnum} from "@src/helpers/TextCalloutTypeEnum";
 import TextCallout from "@src/components/TextCallout.vue";
 
 const root = ref(null);
 
-const emit = defineEmits(['drag:start', 'drag:end', 'drag:move']);
+const emit = defineEmits(['drag:start', 'drag:end', 'drag:move', 'placed']);
 
 const props = defineProps({
   config: {
@@ -36,10 +33,8 @@ const elementStyle = computed(() => {
   };
 });
 
-const calloutConfig = new TextCalloutConfigStructure({
-  size: new Vector2(300, 400),
-  position: new Vector2(500, 500),
-  type: TextCalloutTypeEnum.BOTTOM_LEFT,
+const isPlaced = computed(() => {
+  return draggable.state === PuzzleElementStateEnum.PLACED;
 });
 
 watch(() => (draggable.state), (state: PuzzleElementStateEnum) => {
@@ -48,7 +43,7 @@ watch(() => (draggable.state), (state: PuzzleElementStateEnum) => {
   } else if (state === PuzzleElementStateEnum.NONE) {
     emit('drag:end');
   } else if (state === PuzzleElementStateEnum.PLACED) {
-    calloutConfig.isActive = true;
+    emit('placed', draggable);
   }
 });
 
@@ -61,7 +56,7 @@ onBeforeUnmount(() => draggable.unregisterEventHandlers());
     <img :src="'/images/' + props.config.image" alt="">
   </div>
 
-  <text-callout :config="calloutConfig" :hidden="!calloutConfig.isActive">
+  <text-callout v-if="props.config.calloutConfig !== null" :config="props.config.calloutConfig" :hidden="!isPlaced">
     asdfadsf asdf asdf asdf asdf asdf sadf sad fasdf sadf asdfsad
   </text-callout>
 
