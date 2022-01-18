@@ -1,50 +1,53 @@
 <script setup lang="ts">
-import {ref} from "vue";
 import PuzzlePieces from "@src/helpers/PuzzlePieces";
 import {useRouter} from "vue-router";
 import Puzzle from "@src/components/Puzzle.vue";
+import NavigationBar from "@src/components/NavigationBar.vue";
+import NumericPagination from "@src/composables/NumericPagination";
 
-const roter = useRouter();
-
-const viewToggle = ref(true);
+const router = useRouter();
 
 function back(): void {
-  roter.push('/game');
+  router.push('/game');
 }
+
+function navigateToAnimation1(): void {
+  router.push('/game/anim1');
+}
+
+function navigateToAnimation2(): void {
+  router.push('/game/anim2');
+}
+
+const {getAnimationState} = NumericPagination();
 
 </script>
 <template>
   <div class="content-1080p detail-list">
-    <div class="header">
-      <img src="@images/logo.svg" alt="" width="64">
-      <div class="header-title">
-        <span>
-          Saliec Mencu
+
+    <navigation-bar>
+      <span>Saliec mencu</span>
+      <template #links>
+        <span class="group-links">
+          <a href="#" class="active">Saliec mencu</a>
+          <a href="#" @click="navigateToAnimation1">Attīstība</a>
+          <a href="#" @click="navigateToAnimation2">Stagara riests</a>
         </span>
-      </div>
-      <div class="languages flex">
-
-      </div>
-    </div>
-
-    <div class="view-toggle" @click="viewToggle=!viewToggle" :class="{toggle: viewToggle}">
-      <div class="text">
-        <span>Ārējā uzbūve</span>
-        <span>Iekšējā uzbūve</span>
-      </div>
-      <div class="line">
-        <div></div>
-      </div>
-    </div>
+      </template>
+    </navigation-bar>
 
     <div class="back-filter" @click="back">
       <img src="@images/arrow-left.svg" alt="">
       <span>Atpakaļ</span>
     </div>
 
-    <img class="bones-image" alt="" src="/images/Skelets.png"/>
+    <div class="full-slider-container" :class="[getAnimationState(0)]">
 
-    <puzzle :pieces="PuzzlePieces"/>
+      <img class="bones-image" alt="" src="/images/Skelets.png"/>
+      <puzzle :pieces="PuzzlePieces"/>
+
+    </div>
+
 
   </div>
 </template>

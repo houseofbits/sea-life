@@ -1,3 +1,55 @@
+<script setup lang="ts">
+import NavigationBar from "@src/components/NavigationBar.vue";
+import {useRouter} from "vue-router";
+import Page1 from "@src/components/animation1/Page1.vue";
+import Page2 from "@src/components/animation1/Page2.vue";
+import Page3 from "@src/components/animation1/Page3.vue";
+import Page4 from "@src/components/animation1/Page4.vue";
+import Page5 from "@src/components/animation1/Page5.vue";
+import NumericPagination from "@src/composables/NumericPagination";
+
+const router = useRouter();
+
+const pageComponents = [
+    Page1,
+    Page2,
+    Page3,
+    Page4,
+    Page5
+];
+
+const {getAnimationState} = NumericPagination();
+
+function back(): void {
+  router.push('/game');
+
+}
+function navigateToPuzzle(): void {
+  router.push('/game/puzzle');
+
+}
+function navigateToAnimation2(): void {
+  router.push('/game/anim2');
+
+}
+
+</script>
 <template>
-    <router-link to="/game" class="btn btn-blue m-1">Home</router-link>
+  <div class="content-1080p">
+    <navigation-bar>
+      <span>Attīstība</span>
+      <template #links>
+        <span class="group-links">
+          <a href="#" @click="navigateToPuzzle">Saliec mencu</a>
+          <a href="#" class="active">Attīstība</a>
+          <a href="#" @click="navigateToAnimation2">Stagara riests</a>
+        </span>
+      </template>
+    </navigation-bar>
+
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container" :class="[getAnimationState(index)]">
+      <component :is="component"/>
+    </div>
+
+  </div>
 </template>

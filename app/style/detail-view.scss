@@ -1,66 +1,66 @@
 
+.navigation-bar {
+    position: absolute;
+    width: 1920px;
+    border-bottom: 1px solid #729DB7;
+    color: #22324B;
+    z-index: 200;
+    height: 64px;
+    background: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-left: 46px;
+    }
+
+    .header-title {
+        cursor: pointer;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: left;
+        margin-right: auto;
+        margin-left: 40px;
+    }
+
+    .group-links {
+        margin-right: 20px;
+
+        a {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+            vertical-align: center;
+            padding-bottom: 1px;
+
+            &.active {
+                border-bottom: solid 2px #22324B;
+            }
+        }
+    }
+
+    .languages {
+        img {
+            cursor: pointer;
+            width: 26px;
+            height: 18px;
+            margin-left: 16px;
+            margin-right: 16px;
+            filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+        }
+        img:last-child {
+            margin-right: 43px;
+        }
+    }
+}
+
 .detail-list {
 
     background-image: url('@images/detail-bg.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left top;
-
-    .header {
-        position: absolute;
-        width: 1920px;
-        border-bottom: 1px solid #729DB7;
-        color: #22324B;
-        z-index: 200;
-        height: 64px;
-        background: white;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-
-        img {
-            margin-left: 46px;
-        }
-
-        .header-title {
-            cursor: pointer;
-            font-size: 32px;
-            font-weight: bold;
-            text-align: left;
-            margin-right: auto;
-            margin-left: 40px;
-        }
-
-        .group-links {
-            margin-right: 20px;
-
-            a {
-                font-size: 20px;
-                font-weight: bold;
-                margin-right: 20px;
-                vertical-align: center;
-                padding-bottom: 1px;
-
-                &.active {
-                    border-bottom: solid 2px #22324B;
-                }
-            }
-        }
-
-        .languages {
-            img {
-                cursor: pointer;
-                width: 26px;
-                height: 18px;
-                margin-left: 16px;
-                margin-right: 16px;
-                filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
-            }
-            img:last-child {
-                margin-right: 43px;
-            }
-        }
-    }
 
     .categories {
         @apply p-4 font-bold h-24 flex items-center justify-center;
@@ -100,47 +100,7 @@
     }
 }
 
-@keyframes slideINLeft {
-    from {
-        left: 1920px;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-@keyframes slideOUTLeft {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: -1920px;
-    }
-}
-
-@keyframes slideINRight {
-    from {
-        left: -1920px;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-@keyframes slideOUTRight {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 1920px;
-    }
-}
-
-.slider-container {
+.cards-container {
     @apply
     absolute
     h-full
@@ -149,35 +109,6 @@
     justify-center
     content-center
     flex-wrap;
-
-    width: 1920px;
-    left: 1920px;
-
-    &.in-left {
-        animation-duration: 500ms;
-        animation-name: slideINLeft;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-    }
-
-    &.out-left {
-        animation-duration: 500ms;
-        animation-timing-function: ease-in-out;
-        animation-name: slideOUTLeft;
-    }
-
-    &.in-right {
-        animation-duration: 500ms;
-        animation-name: slideINRight;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
-    }
-
-    &.out-right {
-        animation-duration: 500ms;
-        animation-timing-function: ease-in-out;
-        animation-name: slideOUTRight;
-    }
 
     .item {
         position: absolute;

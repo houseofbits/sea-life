@@ -10,6 +10,7 @@ import TimeoutService from "@src/services/TimeoutService";
 import InputHandlerService from "@src/services/InputHandlerService";
 import DetailListPageStructure from "@src/structures/DetailListPageStructure";
 import {ref} from "vue";
+import NavigationBar from "@src/components/NavigationBar.vue";
 
 const {
   isItemSelected,
@@ -115,32 +116,30 @@ const itemTitle = computed<string>(() => {
 
   <div class="content-1080p detail-list">
 
-    <div class="header">
-      <img src="@images/logo.svg" alt="" width="64">
-      <div class="header-title">
-        <span v-if="!selectedItemId" @click="selectGroup(null)">
-          {{ translations.title }}
-        </span>
-        <span v-else>
+    <navigation-bar :languages="languages" @selectLanguage="selectLanguage">
+
+      <span v-if="!selectedItemId" @click="selectGroup(null)">
+        {{ translations.title }}
+      </span>
+      <span v-else>
         {{ itemTitle }}
       </span>
-      </div>
-      <span v-if="!selectedItemId" class="group-links">
-        <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)"
-           :class="{active: isActiveGroup(group.group)}">
-          {{ group.title }}
-        </a>
-      </span>
-      <div class="languages flex">
-        <img v-for="language in languages" :src="'/images/flag-' + language + '.svg'" :alt="language"
-             @click="selectLanguage(language)">
-      </div>
-    </div>
+
+      <template #links v-if="!selectedItemId">
+        <span class="group-links">
+          <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)"
+             :class="{active: isActiveGroup(group.group)}">
+            {{ group.title }}
+          </a>
+        </span>
+      </template>
+
+    </navigation-bar>
 
     <div
         v-for="page in allPages"
         :key="page.id"
-        class="slider-container"
+        class="full-slider-container cards-container"
         :class="[getAnimationState(page)]"
         :style="getPageStyle(page)"
     >

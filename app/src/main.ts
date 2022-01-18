@@ -1,5 +1,6 @@
 import "@style/font.css";
 import "@style/main.css";
+import "@style/slider.scss";
 import "@style/detail-view.scss";
 import "@style/puzzle.scss";
 import {createApp} from 'vue';
