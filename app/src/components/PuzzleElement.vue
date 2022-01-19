@@ -3,7 +3,6 @@ import Draggable from "@src/services/Draggable";
 import DraggableElement from "@src/structures/DraggableElement";
 import {computed, onBeforeUnmount, onMounted, reactive, ref, watch} from "vue";
 import {PuzzleElementStateEnum} from "@src/helpers/PuzzleConstants";
-import TextCallout from "@src/components/TextCallout.vue";
 
 const root = ref(null);
 
@@ -19,7 +18,6 @@ const props = defineProps({
 const draggable = reactive(new Draggable(props.config));
 
 const elementStyle = computed(() => {
-
   const remainder = 1.0 - props.config.initialScale;
   const scale = props.config.initialScale + draggable.getDistanceUnitValue() * remainder;
   const zIndex = draggable.isPlaced() ? props.config.finalLayer : props.config.zIndex;
@@ -53,11 +51,6 @@ onBeforeUnmount(() => draggable.unregisterEventHandlers());
 </script>
 <template>
   <div ref="root" class="puzzle-element" :style="elementStyle">
-    <img :src="'/images/' + props.config.image" alt="">
+    <slot/>
   </div>
-
-  <text-callout v-if="props.config.calloutConfig !== null" :config="props.config.calloutConfig" :hidden="!isPlaced">
-    asdfadsf asdf asdf asdf asdf asdf sadf sad fasdf sadf asdfsad
-  </text-callout>
-
 </template>

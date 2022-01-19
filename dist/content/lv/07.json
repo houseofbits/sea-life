@@ -31,15 +31,16 @@
   ],
   "fact": "Nelec ārā no ūdens kā citi delfīni. Mazās galvas un strupā purna dēļ cūkdelfīnu sauc arī par jūrascūku.",
   "thumbnailImageTransform": {
-    "left": -420,
-    "top": 0,
-    "width": 822
+    "left": -390,
+    "top": -50,
+    "width": 822,
+    "angle": 18
   },
   "detailImageTransform": {
     "left": 100,
     "top": 380,
     "width": 826,
-    "angle": 15
+    "angle": 18
   },
   "factTextTransform": {
     "height": 235,

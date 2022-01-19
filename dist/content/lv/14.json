@@ -32,14 +32,15 @@
   "fact": "Jūrasgrunduļi ir nozīmīga ekosistēmas sastāvdaļa piekrastes ūdeņos. Plēsīgajām zivīm tie parasti ir pirmie lielākie barības objekti. ",
   "thumbnailImageTransform": {
     "left": -260,
-    "top": 20,
+    "top": -30,
     "width": 677,
-    "angle": -15
+    "angle": 3
   },
   "detailImageTransform": {
     "left": 50,
     "top": 374,
-    "width": 906
+    "width": 906,
+    "angle": 3
   },
   "factTextTransform": {
     "height": 235,

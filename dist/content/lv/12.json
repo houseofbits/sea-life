@@ -32,9 +32,9 @@
   "fact": "Zaķzivīm nav peldpūšļa. Vēdera spuras ir saaugušas, veidojot piesūcekni, ar ko zaķzivis var piestiprināties pie akmeņaina substrāta.",
   "thumbnailImageTransform": {
     "left": -180,
-    "top": -20,
+    "top": -30,
     "width": 568,
-    "angle": -15
+    "angle": 0
   },
   "detailImageTransform": {
     "left": 46,

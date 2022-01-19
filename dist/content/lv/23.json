@@ -33,12 +33,14 @@
   "thumbnailImageTransform": {
     "left": -258,
     "top": -28,
-    "width": 688
+    "width": 688,
+    "angle": 10
   },
   "detailImageTransform": {
     "left": 46,
     "top": 332,
-    "width": 906
+    "width": 906,
+    "angle": 10
   },
   "factTextTransform": {
     "height": 235,

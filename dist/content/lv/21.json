@@ -32,9 +32,9 @@
   "fact": "Lucīti bieži izmanto kā vides indikatoru, jo tas ir dzīvdzemdētājs un veic salīdzinoši nelielas migrācijas, tā labi raksturojot lokālo vides stāvokli. Lucīšu asakas ir zaļganā krāsā.",
   "thumbnailImageTransform": {
     "left": -320,
-    "top": 20,
+    "top": 0,
     "width": 759,
-    "angle": -15
+    "angle": 0
   },
   "detailImageTransform": {
     "left": 45,

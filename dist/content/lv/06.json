@@ -32,9 +32,9 @@
   "family": "Cottidae",
   "thumbnailImageTransform": {
     "left": -210,
-    "top": 10,
+    "top": -15,
     "width": 644,
-    "angle": -15
+    "angle": 0
   },
   "detailImageTransform": {
     "left": 46,

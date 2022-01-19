@@ -32,9 +32,9 @@
   "family": "Gobiidae",
   "thumbnailImageTransform": {
     "left": -100,
-    "top": 20,
+    "top": 30,
     "width": 500,
-    "angle": -15
+    "angle": -7
   },
   "detailImageTransform": {
     "left": 50,

@@ -31,10 +31,10 @@
   "order": "Pleuronectiformes",
   "family": "Scophthalmidae",
   "thumbnailImageTransform": {
-    "left": -110,
-    "top": 25,
+    "left": -150,
+    "top": 0,
     "width": 530,
-    "angle": -30
+    "angle": -5
   },
   "detailImageTransform": {
     "left": 46,

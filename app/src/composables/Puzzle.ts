@@ -1,14 +1,14 @@
 import DraggableElement from "@src/structures/DraggableElement";
 import {watch, onMounted, reactive, ref} from "vue";
-import PuzzlePieces from "@src/helpers/PuzzlePieces";
 import Draggable from "@src/services/Draggable";
 
-export default (pieces: DraggableElement[], emit: any) => {
+export default (pieces: DraggableElement[]) => {
 
     const MAX_ELEMENTS_PER_LAYER = 20;
 
-    const draggableElements = reactive(PuzzlePieces);
+    const draggableElements = reactive(pieces);
     const placedCount = ref(0);
+    const isComplete = ref(false);
 
     function normalizeZIndexes() {
         draggableElements.sort((a, b) => {
@@ -28,7 +28,7 @@ export default (pieces: DraggableElement[], emit: any) => {
 
     watch(placedCount, () => {
         if (placedCount.value >= draggableElements.length) {
-            emit('complete');
+            isComplete.value = true;
         }
     });
 
@@ -41,6 +41,7 @@ export default (pieces: DraggableElement[], emit: any) => {
     return {
         draggableElements,
         dragStart,
-        onElementPlaced
+        onElementPlaced,
+        isComplete
     };
 };

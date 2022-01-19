@@ -1,5 +1,4 @@
 import Vector2 from "@src/structures/Vector2";
-import TextCalloutConfigStructure from "@src/structures/TextCalloutConfigStructure";
 
 export default class DraggableElement {
 
@@ -11,9 +10,8 @@ export default class DraggableElement {
     finalLayer: number = 0;
     image: string = '';
     zIndex: number = 0;
-    mask: string = '';
-    initialScale: number = 0.6;
-    calloutConfig: TextCalloutConfigStructure | null = null;
+    mask: string | null = null;
+    initialScale: number = 1.0;
 
     constructor(params: Partial<DraggableElement>) {
         Object.assign(this, params);

@@ -31,16 +31,14 @@
   "order": "Scorpaeniformes",
   "family": "Gasterosteidae",
   "thumbnailImageTransform": {
-    "left": -200,
+    "left": -170,
     "top": 15,
-    "width": 585,
-    "angle": -15
+    "width": 585
   },
   "detailImageTransform": {
     "left": 50,
     "top": 360,
-    "width": 906,
-    "angle": 0
+    "width": 906
   },
   "factTextTransform": {
     "height": 235,

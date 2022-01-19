@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import PuzzlePieces from "@src/helpers/PuzzlePieces";
 import {useRouter} from "vue-router";
-import Puzzle from "@src/components/Puzzle.vue";
 import NavigationBar from "@src/components/NavigationBar.vue";
 import NumericPagination from "@src/composables/NumericPagination";
+import PuzzleSkeleton from "@src/components/puzzle/PuzzleSkeleton.vue";
+import PuzzleInnerParts from "@src/components/puzzle/PuzzleInnerParts.vue";
+import PuzzleOuterParts from "@src/components/puzzle/PuzzleOuterParts.vue";
 
 const router = useRouter();
+
+const pageComponents = [
+  PuzzleSkeleton,
+  PuzzleInnerParts,
+  PuzzleOuterParts
+];
 
 function back(): void {
   router.push('/game');
@@ -41,13 +48,9 @@ const {getAnimationState} = NumericPagination();
       <span>Atpakaļ</span>
     </div>
 
-    <div class="full-slider-container" :class="[getAnimationState(0)]">
-
-      <img class="bones-image" alt="" src="/images/Skelets.png"/>
-      <puzzle :pieces="PuzzlePieces"/>
-
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container" :class="[getAnimationState(index)]">
+      <component :is="component"/>
     </div>
-
 
   </div>
 </template>

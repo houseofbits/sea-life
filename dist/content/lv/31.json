@@ -34,12 +34,13 @@
     "left": -250,
     "top": 60,
     "width": 678,
-    "angle": -15
+    "angle": 0
   },
   "detailImageTransform": {
     "left": 45,
     "top": 430,
-    "width": 906
+    "width": 906,
+    "angle": 0
   },
   "factTextTransform": {
     "height": 235,
