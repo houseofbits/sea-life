@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import {computed} from "vue";
+
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
+import {computed} from "vue";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 
 const props = defineProps({
@@ -63,10 +64,11 @@ const classes = computed(() => {
 
 </script>
 <template>
-  <div class="text-callout" :class="classes" :style="style">
-    <span>
-      <slot/>
-    </span>
-    <div class="point"></div>
+  <div class="icon-callout" :class="classes" :style="style">
+    <div class="ball"><div></div></div>
+    <div class="line"></div>
+    <div class="icon">
+      <span>?</span>
+    </div>
   </div>
 </template>

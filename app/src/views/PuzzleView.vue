@@ -14,6 +14,8 @@ const pageComponents = [
   PuzzleOuterParts
 ];
 
+const {getAnimationState, selectPage, selectNextPage, isSelectedPage} = NumericPagination();
+
 function back(): void {
   router.push('/game');
 }
@@ -26,11 +28,13 @@ function navigateToAnimation2(): void {
   router.push('/game/anim2');
 }
 
-const {getAnimationState} = NumericPagination();
+function navigateToStep(step: number): void {
+  selectPage(step);
+}
 
 </script>
 <template>
-  <div class="content-1080p detail-list">
+  <div class="content-1080p puzzle-view">
 
     <navigation-bar>
       <span>Saliec mencu</span>
@@ -48,8 +52,26 @@ const {getAnimationState} = NumericPagination();
       <span>Atpakaļ</span>
     </div>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container" :class="[getAnimationState(index)]">
-      <component :is="component"/>
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container"
+         :class="[getAnimationState(index)]">
+      <component :is="component" @next="selectNextPage"/>
+    </div>
+
+    <div class="progress-indicator">
+      <div class="step" :class="{active: isSelectedPage(0)}" @click="() => navigateToStep(0)">
+        <div><span>1</span></div>
+        <span class="name">Skelets</span>
+      </div>
+      <div class="divider"></div>
+      <div class="step" :class="{active: isSelectedPage(1)}" @click="() => navigateToStep(1)">
+        <div><span>2</span></div>
+        <span class="name">Iekšējā uzbūve</span>
+      </div>
+      <div class="divider"></div>
+      <div class="step" :class="{active: isSelectedPage(2)}" @click="() => navigateToStep(2)">
+        <div><span>3</span></div>
+        <span class="name">Ārējā uzbūve</span>
+      </div>
     </div>
 
   </div>

@@ -21,11 +21,20 @@ const elementStyle = computed(() => {
   const remainder = 1.0 - props.config.initialScale;
   const scale = props.config.initialScale + draggable.getDistanceUnitValue() * remainder;
   const zIndex = draggable.isPlaced() ? props.config.finalLayer : props.config.zIndex;
+
+  let posX = draggable.position.x;
+  let posY = draggable.position.y;
+
+  if (props.config.isAlignedCenter) {
+    posX = posX - (props.config.size.x * 0.5);
+    posY = posY - (props.config.size.y * 0.5);
+  }
+
   return {
     // backgroundColor: 'red',
     width: props.config.size.x + 'px',
     height: props.config.size.y + 'px',
-    transform: 'translate(' + draggable.position.x + 'px, ' + draggable.position.y + 'px) scale(' + scale + ')',
+    transform: 'translate(' + posX + 'px, ' + posY + 'px) scale(' + scale + ')',
     clipPath: "path('" + props.config.mask + "')",
     zIndex,
   };

@@ -18,7 +18,28 @@ export default () => {
         return '';
     }
 
+    function selectPage(page: number): void {
+        previousPage.value = currentPage.value;
+        currentPage.value = page;
+    }
+
+    function selectNextPage(): void {
+        selectPage(currentPage.value + 1);
+    }
+
+    function selectPrevPage(): void {
+        selectPage(currentPage.value - 1);
+    }
+
+    function isSelectedPage(page: number): boolean {
+        return currentPage.value === page;
+    }
+
     return {
-        getAnimationState
+        getAnimationState,
+        selectPage,
+        selectNextPage,
+        selectPrevPage,
+        isSelectedPage
     };
 };
