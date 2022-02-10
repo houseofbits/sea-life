@@ -6,8 +6,16 @@ import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import Vector2 from "@src/structures/Vector2";
+import {onMounted, ref} from "vue";
 
-const emit = defineEmits(['next']);
+const emit = defineEmits(['prev', 'next']);
+
+const props = defineProps({
+  isActive: {
+    type: Boolean,
+    default: false
+  }
+});
 
 const {draggableElements, dragStart, onElementPlaced, isComplete} = Puzzle(SkeletonPuzzlePieces);
 
@@ -19,7 +27,7 @@ const calloutConf = [
   }),
   new CalloutConfigStructure({
     size: new Vector2(0, 240),
-    position: new Vector2(814, 470),
+    position: new Vector2(900, 470),
     type: CalloutTypeEnum.BOTTOM_LEFT
   }),
   new CalloutConfigStructure({
@@ -34,6 +42,14 @@ const calloutConf = [
   })
 ];
 
+const isActive = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    isActive.value = true;
+  }, 500);
+});
+
 </script>
 <template>
 
@@ -43,16 +59,15 @@ const calloutConf = [
       v-for="(element, index) in draggableElements"
       :key="element.name"
       :config="element"
+      :is-placeable="true"
       class="card-element"
       @placed="onElementPlaced"
       @drag:start="dragStart(element)">
 
-    <div>
-        {{ element.metadata.text }}
-    </div>
+    <div>{{ element.metadata.text }}</div>
   </puzzle-element>
 
-  <icon-callout v-for="callout in calloutConf" :config="callout"/>
+  <icon-callout v-for="callout in calloutConf" :config="callout" :hidden="!isActive"/>
 
   <div class="next-puzzle-button" @click="emit('next')">
     <span>Iekšējā uzbūve</span>

@@ -14,7 +14,7 @@ const pageComponents = [
   PuzzleOuterParts
 ];
 
-const {getAnimationState, selectPage, selectNextPage, isSelectedPage} = NumericPagination();
+const {getAnimationState, selectPage, selectNextPage, selectPrevPage, isSelectedPage} = NumericPagination();
 
 function back(): void {
   router.push('/game');
@@ -54,7 +54,7 @@ function navigateToStep(step: number): void {
 
     <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container"
          :class="[getAnimationState(index)]">
-      <component :is="component" @next="selectNextPage"/>
+      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
     </div>
 
     <div class="progress-indicator">

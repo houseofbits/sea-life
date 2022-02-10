@@ -109,6 +109,16 @@ const itemTitle = computed<string>(() => {
   return '';
 });
 
+const itemLatinTitle = computed<string>(() => {
+  for (const page of pages.value) {
+    const item = page.items.find(elem => elem.id == selectedItemId.value) || null;
+    if (item) {
+      return item.getTranslatedItem(selectedLanguage.value).latinTitle;
+    }
+  }
+  return '';
+});
+
 
 </script>
 
@@ -123,6 +133,7 @@ const itemTitle = computed<string>(() => {
       </span>
       <span v-else>
         {{ itemTitle }}
+        <span class="latin-title">{{ itemLatinTitle }}</span>
       </span>
 
       <template #links v-if="!selectedItemId">

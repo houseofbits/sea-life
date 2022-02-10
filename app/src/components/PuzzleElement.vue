@@ -12,10 +12,16 @@ const props = defineProps({
   config: {
     type: DraggableElement,
     required: true
+  },
+  isPlaceable: {
+    type: Boolean,
+    default: false
   }
 });
 
 const draggable = reactive(new Draggable(props.config));
+
+draggable.isPlaceable = props.isPlaceable;
 
 const elementStyle = computed(() => {
   const remainder = 1.0 - props.config.initialScale;
@@ -42,6 +48,10 @@ const elementStyle = computed(() => {
 
 const isPlaced = computed(() => {
   return draggable.state === PuzzleElementStateEnum.PLACED;
+});
+
+watch(() => props.isPlaceable, () => {
+  draggable.isPlaceable = props.isPlaceable;
 });
 
 watch(() => (draggable.state), (state: PuzzleElementStateEnum) => {

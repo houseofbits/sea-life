@@ -19,7 +19,7 @@ export default [
         name: 'item2',
         size: new Vector2(341, 74),
         initialPosition: new Vector2(709, 849),
-        targetPosition: new Vector2(814, 711),
+        targetPosition: new Vector2(900, 711),
         layer: PuzzleLayersEnum.LAYER1,
         finalLayer: PuzzleLayersEnum.LAYER1,
         isAlignedCenter: true,

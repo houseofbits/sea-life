@@ -13,6 +13,12 @@
     top: 0;
     left: 0;
     background-repeat: no-repeat;
+    opacity: 1.0;
+    transition: opacity 1500ms, color 600ms, border 600ms;
+
+    &.faded {
+        opacity: 0;
+    }
 
     img {
         width: 100%;
@@ -41,6 +47,11 @@
         letter-spacing: 0.1px;
 
         color: #729DB7;
+    }
+
+    &.complete {
+        border: 1px solid #ade563;
+        color: #72b778;
     }
 }
 
@@ -146,6 +157,7 @@
     height: 901px;
     top: 48px;
     left: 159px;
+    //opacity: 0.7;
 }
 
 .outer-parts-image {
@@ -233,17 +245,55 @@
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
-    //z-index: 200;
-    transition: all;
-    transition-duration: 1000ms;
-    min-height: 60px;
-    //border: solid 1px red;
+    transition: all 1000ms;
+    height: 0;
+    opacity: 1.0;
+
+    &.faded {
+        opacity: 0;
+    }
+
+    &.active {
+        .ball {
+            width: 38px;
+            height: 38px;
+
+            div {
+                width: 17px;
+                height: 17px;
+            }
+        }
+        .icon {
+            opacity: 1.0;
+        }
+
+        &.bottom-left, &.bottom-right {
+            .ball {
+                margin-top: -19px;
+            }
+
+            .icon {
+                margin-bottom: -30px;
+            }
+        }
+
+        &.top-left, &.top-right {
+            .ball {
+                margin-bottom: -19px;
+            }
+
+            .icon {
+                margin-top: -30px;
+            }
+
+        }
+    }
 
     &.bottom-left, &.bottom-right {
         flex-direction: column;
 
         .ball {
-            margin-top: -19px;
+            margin-top: 0;
         }
 
         .icon {
@@ -255,7 +305,7 @@
         flex-direction: column-reverse;
 
         .ball {
-            margin-bottom: -19px;
+            margin-bottom: 0;
         }
 
         .icon {
@@ -265,8 +315,11 @@
     }
 
     .ball {
-        width: 38px;
-        height: 38px;
+        transition: all;
+        transition-duration: 1000ms;
+        width: 0;
+        height: 0;
+
         border-radius: 50%;
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23000000FF' stroke-width='2' stroke-dasharray='39%25%2c 39%25' stroke-dashoffset='37' stroke-linecap='round'/%3e%3c/svg%3e");
         display: flex;
@@ -274,9 +327,12 @@
         justify-content: center;
 
         div {
+            transition: all;
+            transition-duration: 500ms;
+            transition-delay: 300ms;
             position: absolute;
-            width: 17px;
-            height: 17px;
+            width: 0;
+            height: 0;
             background: #222222;
             border-radius: 50%;
         }
@@ -288,7 +344,7 @@
         border-left: 1px solid;
         width: 0;
         height: auto;
-        flex-grow: 2;
+        flex-grow: 1;
     }
 
     .icon {
@@ -299,6 +355,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all;
+        transition-duration: 1000ms;
+        opacity: 0.0;
 
         span {
             color: #729DB7;
@@ -396,6 +455,28 @@
     left:1718px;
     width: 200px;
     height: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #729DB7;
+    cursor: pointer;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.prev-puzzle-button {
+    position: absolute;
+    width: 98px;
+    height: 40px;
+    left: 46px;
+    top: 520px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

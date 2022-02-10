@@ -17,6 +17,7 @@ export default class Draggable {
     element: Element | null = null;
     initialDistance: number = 0;
     actualDistance: number = 0;
+    isPlaceable: boolean = false;
 
     constructor(config: DraggableElement) {
         this.position = config.initialPosition.clone();
@@ -76,9 +77,9 @@ export default class Draggable {
             let diff = mousePosition.sub(this.mousePosition);
             this.position.addInPlace(diff);
 
-            this.calculateActualDistance();
+            this.calculateGrabbedDistance(this.mousePosition);
 
-            if (this.actualDistance < PIECE_CAPTURE_DISTANCE) {
+            if (this.isPlaceable && this.actualDistance < PIECE_CAPTURE_DISTANCE) {
                 this.state = PuzzleElementStateEnum.CAPTURED;
                 this.processCapturedElement();
 
@@ -121,6 +122,12 @@ export default class Draggable {
         this.calculateActualDistance();
 
         return false;
+    }
+
+    calculateGrabbedDistance(position: Vector2): void {
+        const dist1 = this.targetPosition.distance(this.position);
+        const dist2 = this.targetPosition.distance(position);
+        this.actualDistance = Math.min(dist1, dist2);
     }
 
     calculateActualDistance(): void {

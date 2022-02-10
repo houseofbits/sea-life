@@ -46,6 +46,10 @@ function getStyle(id: number): any {
   };
 }
 
+function isSectionSelected(id: number): boolean {
+  return selectedSection.value === id;
+}
+
 function getFactStyle(): any {
   const bottom = 1080
       - (props.item.factTextTransform.top || 200)
@@ -121,7 +125,10 @@ onMounted(() => {
 
     <div class="info-detail">
       <div class="detail-collapsible" v-for="(content, index) in item.content" @click="select(index)">
-        <div class="detail-header">{{ content.title }}</div>
+        <div class="detail-header"><span>{{ content.title }}</span>
+          <img v-if="isSectionSelected(index)" src="@images/chevron-up.svg" alt="">
+          <img v-else src="@images/chevron-down.svg" alt="">
+        </div>
         <div class="detail-text" :style="getStyle(index)" :ref="el => setElem(el, index)" v-html="content.content"/>
       </div>
     </div>

@@ -15,8 +15,7 @@ export enum PuzzleElementStateEnum {
     PLACED = 4
 }
 
-
 export const TIME_STEP = 16;
 export const PIECE_CAPTURE_DISTANCE = 70;
-export const SNAP_TO_TARGET_STEP = 5;
+export const SNAP_TO_TARGET_STEP = 25;
 export const SNAP_TO_INITIAL_STEP = 50;
