@@ -16,10 +16,11 @@ const props = defineProps({
 
 const style = computed(() => {
 
+  const width = props.config.size.x + 'px';
   const height = props.hidden ? '0' : props.config.size.y + 'px';
 
   const params: { [key: string]: string } = {
-    width: props.config.size.x + 'px',
+    width,
     height
   };
 
@@ -67,6 +68,6 @@ const classes = computed(() => {
     <span>
       <slot/>
     </span>
-    <div class="point"></div>
+<!--    <div class="point"></div>-->
   </div>
 </template>

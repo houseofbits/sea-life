@@ -5,6 +5,7 @@ import Draggable from "@src/services/Draggable";
 import PuzzleElement from "@src/components/PuzzleElement.vue";
 import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import {onMounted, reactive, watch, ref} from "vue";
+import OuterPartsInformation from "@src/components/puzzle/OuterPartsInformation.vue";
 
 const emit = defineEmits(['prev', 'next']);
 
@@ -50,7 +51,7 @@ onMounted(() => {
 </script>
 <template>
 
-  <img class="outer-parts-image" alt="" src="/images/Zivs-arpuse.png"/>
+  <img class="outer-parts-image" :class={complete:isComplete} alt="" src="/images/Zivs-arpuse.png"/>
 
   <template v-for="(element, index) in draggableElements" :key="element.name">
 
@@ -77,5 +78,7 @@ onMounted(() => {
     <img src="@images/chevron-left.svg" alt="">
     <span>Skelets</span>
   </div>
+
+  <outer-parts-information v-if="isComplete"/>
 
 </template>
