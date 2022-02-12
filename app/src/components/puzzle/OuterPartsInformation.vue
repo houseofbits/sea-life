@@ -80,10 +80,14 @@ const pairingExclude: { [key: number]: number[] } = {
 const calloutVisibilityStack = ref(new Array<number>());
 
 function openInfoCallout(id: number): void {
-  calloutVisibilityStack.value.push(id);
+  if (!calloutVisibilityStack.value.includes(id)) {
+    calloutVisibilityStack.value.push(id);
+  }
+
   while (calloutVisibilityStack.value.length > 3) {
     calloutVisibilityStack.value.shift();
   }
+
   for (const exclude of pairingExclude[id]) {
     const existingIndex = calloutVisibilityStack.value.findIndex((val: number) => val === exclude);
     if (existingIndex >= 0) {

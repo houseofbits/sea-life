@@ -6,6 +6,7 @@ import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import DraggableElement from "@src/structures/DraggableElement";
 import Draggable from "@src/services/Draggable";
 import {onMounted, reactive, ref, watch} from "vue";
+import InnerPartsInformation from "@src/components/puzzle/InnerPartsInformation.vue";
 
 const emit = defineEmits(['prev', 'next']);
 
@@ -111,26 +112,26 @@ onMounted(() => {
 </script>
 <template>
 
-  <img class="inner-parts-image" alt="" src="/images/Zivs-Veders-Ieksas.png"/>
+<!--  <img class="inner-parts-image" :class="{complete:true}" alt="" src="/images/Zivs-Veders-Ieksas.png"/>-->
 
   <template v-for="(element, index) in draggableElements" :key="element.name">
 
-    <puzzle-element
-        :config="element"
-        :is-placeable="isElementPlaceable(element.name)"
-        class="card-element"
-        :class="{faded:isElementComplete(element.name), complete: isElementPlacedAndComplete(element.name)}"
-        @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
-        @drag:start="dragStart(element)">
+<!--    <puzzle-element-->
+<!--        :config="element"-->
+<!--        :is-placeable="isElementPlaceable(element.name)"-->
+<!--        class="card-element"-->
+<!--        :class="{faded:isElementComplete(element.name), complete: isElementPlacedAndComplete(element.name)}"-->
+<!--        @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"-->
+<!--        @drag:start="dragStart(element)">-->
 
-      <div>{{ element.metadata.text }}</div>
-    </puzzle-element>
+<!--      <div>{{ element.metadata.text }}</div>-->
+<!--    </puzzle-element>-->
 
-    <icon-callout
-        :class="{faded:isElementComplete(element.name)}"
-        :config="element.metadata.callout"
-        :hidden="isElementCalloutHidden(element.name)"
-    />
+<!--    <icon-callout-->
+<!--        :class="{faded:isElementComplete(element.name)}"-->
+<!--        :config="element.metadata.callout"-->
+<!--        :hidden="isElementCalloutHidden(element.name)"-->
+<!--    />-->
 
   </template>
 
@@ -143,5 +144,7 @@ onMounted(() => {
     <span>Ārējā uzbūve</span>
     <img src="@images/chevron-right.svg" alt="">
   </div>
+
+  <inner-parts-information/>
 
 </template>
