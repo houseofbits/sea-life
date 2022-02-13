@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {useRouter} from "vue-router";
+import {ref} from "vue";
 import NavigationBar from "@src/components/NavigationBar.vue";
 import NumericPagination from "@src/composables/NumericPagination";
 import PuzzleSkeleton from "@src/components/puzzle/PuzzleSkeleton.vue";
@@ -16,8 +17,11 @@ const pageComponents = [
 
 const {getAnimationState, selectPage, selectNextPage, selectPrevPage, isSelectedPage} = NumericPagination();
 
-function back(): void {
-  router.push('/game');
+const key = ref(0);
+
+function restart(): void {
+  navigateToStep(0);
+  key.value++;
 }
 
 function navigateToAnimation1(): void {
@@ -47,14 +51,14 @@ function navigateToStep(step: number): void {
       </template>
     </navigation-bar>
 
-    <div class="back-filter" @click="back">
+    <div class="back-filter" @click="restart">
       <img src="@images/arrow-left.svg" alt="">
-      <span>Atpakaļ</span>
+      <span>Sākt no sākuma</span>
     </div>
 
     <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container"
          :class="[getAnimationState(index)]">
-      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
+      <component :key="index + '-' + key" :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
     </div>
 
     <div class="progress-indicator">

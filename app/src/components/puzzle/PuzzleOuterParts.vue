@@ -76,9 +76,12 @@ onMounted(() => {
 
   <div class="prev-puzzle-button" @click="emit('prev')">
     <img src="@images/chevron-left.svg" alt="">
-    <span>Skelets</span>
+    <span>Iekšējā uzbūve</span>
   </div>
 
   <outer-parts-information v-if="isComplete"/>
+
+  <span class="bottom-info-line fade-fast" :class="{faded: isComplete}">Saliec ārējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>
+  <span class="bottom-info-line fade-fast" :class="{faded: !isComplete}">Uzzini vairāk par katru no zivs ārējās uzbūves daļām</span>
 
 </template>

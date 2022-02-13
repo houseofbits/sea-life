@@ -6,6 +6,9 @@
     background-attachment: fixed;
     background-position: left top;
 
+    .back-filter {
+        z-index: 1001;
+    }
 }
 
 .puzzle-element {
@@ -499,7 +502,7 @@
 .next-puzzle-button {
     position: absolute;
     top: 520px;
-    left:1718px;
+    right:0;
     width: 200px;
     height: 40px;
     font-style: normal;
@@ -511,6 +514,7 @@
     letter-spacing: 0.005em;
     color: #729DB7;
     cursor: pointer;
+    z-index: 1001;
 
     img {
         width: 40px;
@@ -520,7 +524,7 @@
 
 .prev-puzzle-button {
     position: absolute;
-    width: 98px;
+    width: 200px;
     height: 40px;
     left: 46px;
     top: 520px;
@@ -533,6 +537,7 @@
     letter-spacing: 0.005em;
     color: #729DB7;
     cursor: pointer;
+    z-index: 1001;
 
     img {
         width: 40px;
@@ -550,9 +555,28 @@
 
 .fade-fast {
     opacity: 1.0;
-    transition: opacity 300ms;
+    transition: opacity 500ms;
+    transition-delay: 300ms;
+    transition-timing-function: ease-in;
 
     &.faded {
         opacity: 0.0;
+        transition-delay: 0ms;
+        transition: opacity 300ms;
     }
+}
+
+.bottom-info-line {
+    position: absolute;
+    height: 24px;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    color: #263238;
+    opacity: 0.54;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
 }

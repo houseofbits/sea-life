@@ -81,7 +81,7 @@ function isElementPlaced(name: string): boolean {
 }
 
 function isElementCalloutHidden(name: string): boolean {
-  return elementCompletionState[name] === GroupState.HIDDEN || isInfoVisible.value;
+  return elementCompletionState[name] === GroupState.HIDDEN;// || isInfoVisible.value;
 }
 
 function isElementComplete(name: string): boolean {
@@ -97,12 +97,27 @@ function isElementPlaceable(name: string): boolean {
   return elementCompletionState[name] === GroupState.ACTIVE;
 }
 
+function toggleInfo(): void {
+  if (!isComplete.value) {
+    isInfoVisible.value = !isInfoVisible.value;
+  }
+}
+
+watch(() => isComplete.value, () => {
+  isInfoVisible.value = true;
+});
+
 watch(() => props.isActive, () => {
   if (props.isActive && !isInitialized.value) {
     setTimeout(() => {
       initFirstElements();
       isInitialized.value = true;
     }, 500);
+  }
+  if (isInfoVisible.value && !isComplete.value) {
+    setTimeout(() => {
+      isInfoVisible.value = false;
+    }, 200);
   }
 });
 
@@ -115,7 +130,8 @@ onMounted(() => {
 
   <img class="inner-parts-image" :class="{complete:isInfoVisible}" alt="" src="/images/Zivs-Veders-Ieksas.png"/>
 
-  <div class="fade-fast" :class="{faded: isInfoVisible}" v-for="(element, index) in draggableElements" :key="element.name">
+  <div class="fade-fast" :class="{faded: isInfoVisible}" v-for="(element, index) in draggableElements"
+       :key="element.name">
 
     <puzzle-element
         :config="element"
@@ -148,6 +164,9 @@ onMounted(() => {
 
   <inner-parts-information v-if="isInfoVisible"/>
 
-  <img class="information-icon" src="@images/information-outline.svg" @click="isInfoVisible = !isInfoVisible" alt="">
+  <img v-if="!isComplete" class="information-icon" src="@images/information-outline.svg" @click="toggleInfo" alt="">
+
+  <span class="bottom-info-line fade-fast" :class="{faded: isInfoVisible}">Saliec iekšējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>
+  <span class="bottom-info-line fade-fast" :class="{faded: !isInfoVisible}">Uzzini vairāk par kādu no zivs iekšējās uzbūves daļām</span>
 
 </template>
