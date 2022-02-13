@@ -25,6 +25,7 @@ enum GroupState {
 }
 
 const isInitialized = ref(false);
+const isInfoVisible = ref(false);
 const elementCompletionState = reactive<{ [key: string]: GroupState }>({});
 
 const {draggableElements, dragStart, onElementPlaced, isComplete} = Puzzle(InnerPartsPuzzlePieces);
@@ -80,7 +81,7 @@ function isElementPlaced(name: string): boolean {
 }
 
 function isElementCalloutHidden(name: string): boolean {
-  return elementCompletionState[name] === GroupState.HIDDEN;
+  return elementCompletionState[name] === GroupState.HIDDEN || isInfoVisible.value;
 }
 
 function isElementComplete(name: string): boolean {
@@ -112,28 +113,28 @@ onMounted(() => {
 </script>
 <template>
 
-<!--  <img class="inner-parts-image" :class="{complete:true}" alt="" src="/images/Zivs-Veders-Ieksas.png"/>-->
+  <img class="inner-parts-image" :class="{complete:isInfoVisible}" alt="" src="/images/Zivs-Veders-Ieksas.png"/>
 
-  <template v-for="(element, index) in draggableElements" :key="element.name">
+  <div class="fade-fast" :class="{faded: isInfoVisible}" v-for="(element, index) in draggableElements" :key="element.name">
 
-<!--    <puzzle-element-->
-<!--        :config="element"-->
-<!--        :is-placeable="isElementPlaceable(element.name)"-->
-<!--        class="card-element"-->
-<!--        :class="{faded:isElementComplete(element.name), complete: isElementPlacedAndComplete(element.name)}"-->
-<!--        @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"-->
-<!--        @drag:start="dragStart(element)">-->
+    <puzzle-element
+        :config="element"
+        :is-placeable="isElementPlaceable(element.name)"
+        class="card-element"
+        :class="{faded:isElementComplete(element.name), complete: isElementPlacedAndComplete(element.name)}"
+        @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
+        @drag:start="dragStart(element)">
 
-<!--      <div>{{ element.metadata.text }}</div>-->
-<!--    </puzzle-element>-->
+      <div>{{ element.metadata.text }}</div>
+    </puzzle-element>
 
-<!--    <icon-callout-->
-<!--        :class="{faded:isElementComplete(element.name)}"-->
-<!--        :config="element.metadata.callout"-->
-<!--        :hidden="isElementCalloutHidden(element.name)"-->
-<!--    />-->
+    <icon-callout
+        :class="{faded:isElementComplete(element.name), hidden: isInfoVisible}"
+        :config="element.metadata.callout"
+        :hidden="isElementCalloutHidden(element.name)"
+    />
 
-  </template>
+  </div>
 
   <div class="prev-puzzle-button" @click="emit('prev')">
     <img src="@images/chevron-left.svg" alt="">
@@ -145,6 +146,8 @@ onMounted(() => {
     <img src="@images/chevron-right.svg" alt="">
   </div>
 
-  <inner-parts-information/>
+  <inner-parts-information v-if="isInfoVisible"/>
+
+  <img class="information-icon" src="@images/information-outline.svg" @click="isInfoVisible = !isInfoVisible" alt="">
 
 </template>

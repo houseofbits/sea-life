@@ -157,11 +157,14 @@
     height: 901px;
     top: 48px;
     left: 159px;
-    transition: top 500ms;
+    transition: all 500ms;
     transition-timing-function: ease-out;
 
     &.complete {
-        top: 140px;
+        top: 115px;
+        left: 101px;
+        width: 1717px;
+        height: 951px;
     }
 }
 
@@ -260,6 +263,10 @@
     opacity: 1.0;
     //border: dashed 1px red;
 
+    &.hidden {
+        visibility: hidden;
+    }
+
     &.faded {
         opacity: 0;
     }
@@ -277,7 +284,9 @@
         .icon {
             opacity: 1.0;
         }
-
+        .text {
+            opacity: 1.0;
+        }
         &.bottom-left, &.bottom-right {
             .ball {
                 margin-top: -19px;
@@ -400,6 +409,9 @@
         bottom: 0;
         left: 10px;
         right:0;
+        opacity: 0;
+        transition: all;
+        transition-duration: 1000ms;
     }
 }
 
@@ -412,6 +424,7 @@
     align-items: start;
     width: 786px;
     height: 94px;
+    z-index: 1500;
 
     .step {
         width: 52px;
@@ -524,5 +537,22 @@
     img {
         width: 40px;
         height: 40px;
+    }
+}
+
+.information-icon {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 1832px;
+    top: 96px;
+}
+
+.fade-fast {
+    opacity: 1.0;
+    transition: opacity 300ms;
+
+    &.faded {
+        opacity: 0.0;
     }
 }

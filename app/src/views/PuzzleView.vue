@@ -9,8 +9,8 @@ import PuzzleOuterParts from "@src/components/puzzle/PuzzleOuterParts.vue";
 const router = useRouter();
 
 const pageComponents = [
-  PuzzleInnerParts,
   PuzzleSkeleton,
+  PuzzleInnerParts,
   PuzzleOuterParts
 ];
 
