@@ -7,7 +7,7 @@ export default class HttpService {
 
     constructor() {
         this.axiosInstance = axios.create({
-            baseURL: "http://0.0.0.0:9001/",
+            baseURL: window.location.origin,      //"http://beta.dizainsuninterjers.lv/",//http://0.0.0.0:9001/",
             headers: {
                 "Content-type": "text/html"
             }
@@ -15,7 +15,7 @@ export default class HttpService {
     }
 
     async get(url: string): Promise<any> {
-        const result = await this.axiosInstance.get('content/' + url);
+        const result = await this.axiosInstance.get('/content/' + url);
         return result.data;
     }
 

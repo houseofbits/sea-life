@@ -16,6 +16,7 @@ const props = defineProps({
 });
 
 const isOpenOrLoading = ref(false);
+// const isImageLoaded = ref(false);
 
 function getImageTransform(item: DetailListItem): string {
   return props.isSelected
@@ -39,11 +40,14 @@ watch(() => props.isSelected, (isSelected: boolean) => {
   >
     <div class="icon-background"/>
     <img
+        loading="eager"
+        decoding="sync"
         class="main-image"
         :src="'/images/' + item.imageFileName"
         :style="getImageTransform(item)"
         alt=""
     />
+
     <div class="icon-content" :data-item-id="item.id">
       <h1>{{ item.title }}</h1>
       <em v-html="item.latinTitle"/>

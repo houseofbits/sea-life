@@ -133,7 +133,7 @@ const itemLatinTitle = computed<string>(() => {
       </span>
       <span v-else>
         {{ itemTitle }}
-        <span class="latin-title">{{ itemLatinTitle }}</span>
+        <span class="latin-title" v-html="itemLatinTitle"></span>
       </span>
 
       <template #links v-if="!selectedItemId">

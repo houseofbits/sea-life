@@ -35,10 +35,10 @@
     "angle": -75
   },
   "factTextTransform": {
-    "height": 150,
-    "top": 304,
+    "height": 200,
+    "top": 260,
     "left": 645,
-    "width": 300
+    "width": 400
   },
   "familyTextTransform": {
     "height": 167,

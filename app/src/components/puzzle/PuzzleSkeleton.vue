@@ -6,7 +6,8 @@ import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import Vector2 from "@src/structures/Vector2";
-import {onMounted, ref} from "vue";
+import {onMounted, reactive, ref} from "vue";
+import Draggable from "@src/services/Draggable";
 
 const emit = defineEmits(['prev', 'next']);
 
@@ -44,6 +45,17 @@ const calloutConf = [
 
 const isActive = ref(false);
 
+const elementCompletionState = reactive<{ [key: string]: boolean }>({});
+
+function elementPlaced(name: string, dragable: Draggable): void {
+  elementCompletionState[name] = true;
+  onElementPlaced(dragable);
+}
+
+function isElementComplete(name: string): boolean {
+  return elementCompletionState[name];
+}
+
 onMounted(() => {
   setTimeout(() => {
     isActive.value = true;
@@ -61,7 +73,8 @@ onMounted(() => {
       :config="element"
       :is-placeable="true"
       class="card-element"
-      @placed="onElementPlaced"
+      :class="{complete: isElementComplete(element.name)}"
+      @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
       @drag:start="dragStart(element)">
 
     <div>{{ element.metadata.text }}</div>
