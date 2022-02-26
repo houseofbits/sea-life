@@ -1,0 +1,30 @@
+{
+    "id": 12,
+    "latinTitle": "Cyclopterus lumpus",
+    "title": "Zaķzivs",
+    "order": "skorpēnveidīgo  Scorpaeniformes",
+    "family": "zaķzivju Cyclopteridae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Zaķzivs Baltijas jūrā izaug 20 cm gara. Parasti tās ir pelēcīgi zilā krāsā, bet nārsta laikā tēviņiem vēders iekrāsojas sarkanā, mātītēm  -  zilgani zaļā krāsā."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Zaķzivis ir sastopama Atlantijas okeāna ziemeļdaļā."
+        },
+        {
+            "title": "Barība",
+            "content": "Pamatbarība ir dažādi vēžveidīgie un tārpi. Peldot augstāk virs jūras grunts, zaķzivs barojas ar medūzām un mazām zivtiņām."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsts notiek ziemas un pavasara mēnešos piekrastes tuvumā. Tēviņi uz nārstu ierodas pirmie un aizņem nārsta teritoriju. Zaķzivis nārsta laikā veido pārus. Pēc nārsta tēviņi apsargā ikrus."
+        },
+        {
+            "title": "Zveja",
+            "content": "Dažās valstīs zaķzivis tiek zvejotas. No zaķzivs ikriem gatavo kaviāru."
+        }
+    ],
+    "fact": "Zaķzivīm nav peldpūšļa. Vēdera spuras ir saaugušas, veidojot piesūcekni, ar ko zaķzivis var piestiprināties pie akmeņaina substrāta."
+}

@@ -1,0 +1,29 @@
+{
+    "id": 8,
+    "title": "Seeskorpion",
+    "order": "Scorpaeniformes (Drachenkopfartige)",
+    "family": "Cottidae (Groppen)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Im Unterschied zu anderen ähnlichen Fischen hat der Seeskorpion auf dem Kopf drei Stachel. Zur Laichzeit haben die Männchen einen rötlichen Bauch, die Weibchen  -  rötlich gelb mit weißen Flecken. Länge des Fisches 20-30 cm."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "In den Meeren Nordeuropas anzutreffen."
+        },
+        {
+            "title": "Nahrung",
+            "content": "Ernährt sich von Krebsartigen, Würmern, kleinen Fischen sowie von Jungtieren anderer Fischarten."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Laichzeit ist von Dezember bis zum März. Die Eier werden in Klumpen auf Steine gelegt."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Diese Fischart ist für den Fischfang für Fischer und Angler unbedeutend."
+        }
+    ],
+    "fact": "Der Laich wird vom Männchen bewacht."
+}

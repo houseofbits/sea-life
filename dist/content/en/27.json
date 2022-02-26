@@ -1,0 +1,29 @@
+{
+    "id": 27,
+    "title": "Common goby",
+    "order": "Perciformes",
+    "family": "Gobiidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "A fish of coastal waters, usually 2 - 4 cm long. The common goby has a sucker on its abdomen, formed by the fusion of the pelvic fins."
+        },
+        {
+            "title": "Distribution",
+            "content": "The common goby is found in the North Atlantic. In the Baltic Sea, it inhabits all coasts except the Gulf of Bothnia and the Gulf of Finland."
+        },
+        {
+            "title": "Diet",
+            "content": "Juvenile common gobies feed on zooplankton, whereas adults also eat small crustaceans."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns in the second half of summer. Females lay their eggs under empty clam shells, where the males guard them. Male gobies fan the eggs with their tails, thereby providing them with oxygenated water."
+        },
+        {
+            "title": "Fishing",
+            "content": "The common goby is not commercially important and is not fished."
+        }
+    ],
+    "fact": "The common goby is an important part of the coastal water ecosystem. They are usually the first larger prey for predatory fish."
+}

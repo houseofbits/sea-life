@@ -1,0 +1,29 @@
+{
+    "id": 33,
+    "title": "Garfish",
+    "order": "Beloniformes",
+    "family": "Belonidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The fish has a characteristic bluish-green dorsal colour and silvery sides. The external body structure is well suited for rapid acceleration. They can reach a length of slightly over 1 m and a weight of 1 kg."
+        },
+        {
+            "title": "Distribution",
+            "content": "The garfish inhabits the Eastern Atlantic and Mediterranean regions. It enters the Baltic Sea in April and May, when it is most abundant in the southern and central parts of the sea."
+        },
+        {
+            "title": "Diet",
+            "content": "Juvenile garfish feed on zooplankton and insects; as they develop, they move on to larger crustaceans and fish, mainly small pelagic species."
+        },
+        {
+            "title": "Development",
+            "content": "Along the Latvian coast, spawning usually takes place in May and June. The eggs have long, sticky tendrils that facilitate anchoring to a substrate. After hatching, the larvae stay in the upper layer of the water; if frightened, they dive deeper."
+        },
+        {
+            "title": "Fishing",
+            "content": "The garfish is of importance to the fishing industry, and anglers fish for it in spring. It is mainly caught with fishing gear meant for herring and round gobies."
+        }
+    ],
+    "fact": "The bones of the garfish are blue-green in colour, which is caused by a special pigment called biliverdin. Despite the peculiar colour of the bones, the fish is safe to eat."
+}

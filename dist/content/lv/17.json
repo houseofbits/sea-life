@@ -1,48 +1,55 @@
 {
-  "id": 17,
-  "group": 4,
-  "title": "Lamarka sirsniņgliemene",
-  "latinTitle": "Cerastoderma glaucum",
-  "order": "<small>sirsniņgliemeņu</small> Cardiidae",
-  "family": "<small>gliemeņu</small> Bivalvia",
-  "imageFileName": "Lamarka sirsniņgliemene.png",
-  "identifier": "17",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Jūras gliemene ar baltu līdz pelēcīgi baltu čaulu. Čaulas vāki ārpusē ar viļņainu skulptūru, čaulas mala robaina. Čaula izaug līdz 50 mm, bet Latvijā – tikai līdz 20 mm, jo Baltijas jūras ūdenī sāls daudzums tai nav pietiekams."
+    "id": 17,
+    "latinTitle": "Taurulus bubalis",
+    "title": "Jūras dzeloņgalve",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "platgalvju Cottidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Jūras dzeloņgalve parasti sasniedz 10 - 15 cm garumu. Atšķirībā no buļļzivīm tai ir liels dzelonis galvas sānos. Nārstojošiem tēviņiem vēders kļūst oranžsarkans ar zilganbaltiem plankumiem."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Jūras dzeloņgalve ir sastopama Ziemeļeiropas un Rietumeiropas piekrastē, plaši izplatīta Kategatā un Baltijas jūras dienvidu daļā. Dzīvo seklā piekrastē starp akmeņiem."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd vēžveidīgos, tārpus un nelielas zivis."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsto no februāra līdz aprīlim."
+        },
+        {
+            "title": "Zveja",
+            "content": "Jūras dzeloņgalvei nav rūpnieciskas nozīmes, tā netiek makšķerēta vai zvejota."
+        }
+    ],
+    "fact": "Zivs neilgu laiku spēj elpot gaisu ārpus ūdens. Spēj ļoti labi maskēties, pielāgojot ķermeņa krāsojumu apkārtējai videi.",
+    "identifier": "x",
+    "imageFileName": "Juras dzelongalve.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -150,
+        "top": -30,
+        "width": 551,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Lamarka sirsniņgliemene apdzīvo Baltijas, Melno, Kaspijas jūru un Vidusjūru. Gliemežvāki bieži redzami izskaloti Baltijas jūras krastā, biežāk gar Rīgas jūras līci."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 253,
+        "width": 906
     },
-    {
-      "title": "Ekoloģija",
-      "content": "Apdzīvo seklūdeņus. Jaunās gliemenes uzturas uz ūdensaugiem, vēlāk šī suga dzīvo uz smilšainas grunts."
+    "factTextTransform": {
+        "height": 138,
+        "top": 238,
+        "left": 491,
+        "width": 428
+    },
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Lielas mainības dēļ sugai izveidojies liels daudzums sinonīmu. Sirsniņgliemenes daudzviet lieto pārtikā.",
-  "thumbnailImageTransform": {
-    "left": -70,
-    "top": 0,
-    "width": 441,
-    "angle": -30
-  },
-  "detailImageTransform": {
-    "left": 110,
-    "top": 340,
-    "width": 626,
-    "angle": -18
-  },
-  "factTextTransform": {
-    "height": 134,
-    "top": 304,
-    "left": 645,
-    "width": 400
-  },
-  "familyTextTransform": {
-    "height": 167,
-    "top": 755,
-    "left": 184
-  }
 }

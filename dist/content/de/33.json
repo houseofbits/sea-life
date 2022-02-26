@@ -1,0 +1,29 @@
+{
+    "id": 33,
+    "title": "Gewöhnlicher Hornhecht",
+    "order": "Beloniformes",
+    "family": "Belonidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Charakteristisch für diesen Fisch ist seine grünlich blaue Rückenfärbung und die silbernen Seiten. Die Körperform ist für eine rasche Beschleunigung geeignet. Kann eine Länge von 1 m überschreiten und ein Gewicht von 1 kg erreichen."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Der Hornhecht lebt im Ostatlantik und in der Mittelmeerregion. Wandert im April und Mai in die Ostsee ein, wo er in größerer Anzahl in den südlichen und zentralen Regionen anzutreffen ist."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Die Larven des Hornhechtes ernähren sich von Zooplankton und Insekten, danach gehen sie über auf größere krebsartige Organismen und Fische, meist kleine pelagische Arten."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "An der Küste Lettlands erfolgt die Laichzeit meist im Mai und Juni. Die Eier haben lange, klebrige Fäden, die das Befestigen an Substraten erleichtern. Nach dem Schlüpfen halten sich die Larven in den oberen Wasserschichten auf, wenn sie aufgescheucht werden, tauchen sie vertikal in die Tiefe ab."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Der Hornhecht ist bedeutend für die Fischerei, im Frühling wird er geangelt. Meist wird er mit Sprotten und Grundeln im Netz gefangen."
+        }
+    ],
+    "fact": "Die Knochen des Hornhechtes sind grünlich blau gefärbt, was von einem besonderen Pigment  -  dem Biliverdin  -  herrührt. Ungeachtet der eigenartigen Färbung der Fischgräten, kann der Fisch ohne Bedenken gegessen werden."
+}

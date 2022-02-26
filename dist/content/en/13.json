@@ -1,0 +1,29 @@
+{
+    "id": 13,
+    "title": "Viviparous eelpout",
+    "order": "Perciformes",
+    "family": "Zoarcidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The viviparous eelpout is a benthic fish with a slender body. The body is flattened towards the tail. The dorsal and anal fins are very long and have fused with the caudal fin. Its scales are small, invisible to the naked eye, and embedded in the skin."
+        },
+        {
+            "title": "Distribution",
+            "content": "The eelpout is found in the seas of northern Europe and widely distributed in all coastal waters of the Baltic Sea, usually to a depth of 40 m. The eelpout is a typical cold-water species; as water temperatures rise, its growth and survival are reduced."
+        },
+        {
+            "title": "Diet",
+            "content": "Eats benthic crustaceans, worms, juvenile fish, and eggs."
+        },
+        {
+            "title": "Development",
+            "content": "The eelpout is the only viviparous species (gives birth to live larvae) in our marine waters. Eelpouts usually reach sexual maturity in their second year of life, when they are 13 - 18 cm long. Mating takes place in July - September. The eggs develop in the female for several months until December - February, when 30 - 400 small eelpouts, 3 - 5 cm long, are born."
+        },
+        {
+            "title": "Fishing",
+            "content": "The eelpout is an important fish for coastal fishermen. The largest catches are made in the Gulf of Riga during the summer months. Eelpouts are caught with specialised traps (fyke nets) as well as in fish traps for other kinds of fish."
+        }
+    ],
+    "fact": "The eelpout is often used as an environmental indicator because it is a viviparous fish and makes relatively short migrations, thus giving a good indication of the local state of the environment. The bones of the eelpout are greenish in colour."
+}

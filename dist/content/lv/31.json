@@ -1,56 +1,55 @@
 {
-  "id": 31,
-  "identifier": "31",
-  "group": 1,
-  "title": "Tūbīte",
-  "latinTitle": "Ammodytes tobianus",
-  "order": "Perciformes",
-  "family": "Ammodytidae",
-  "imageFileName": "tubite.png",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Tūbīte visbiežāk ir dzeltenīgi brūnā krāsā, ar baltu vēderu. Baltijas jūrā var sasniegt 20 cm garumu. Ārēji līdzīga nigliņam. Dabā šīs zivis var atšķirt, atverot muti, tūbītei tā veido piltuvi."
+    "id": 31,
+    "latinTitle": "Salmo salar",
+    "title": "Lasis",
+    "order": "lašveidīgo Salmoniformes",
+    "family": "lašu Salmonidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Lasis ir viena no lielākajām Baltijas jūras zivīm, var pārsniegt 1,5 m garumu. Mazuļi ir tumšāki nekā pieaugušie, ar 7 - 13 lieliem tumšiem plankumiem uz sāniem. Gar sānu līniju lašu mazuļiem vienā rindā ir sarkani punkti. Pirms nārsta lašu tēviņi maina ķermeņa krāsu  -  kļūst tumšāki, ar sarkaniem plankumiem, bet apakšžoklis tiem kāšveidā ieliecas."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Baltijas jūras lasis ir izplatīts visā Baltijas jūrā. Daļu savas dzīves tas pavada upēs, tāpēc tiek pieskaitīts pie ceļotājzivīm. Lašu mazuļi uzturas upēs, bet pieaugušās zivis lielāko dzīves daļu pavada jūrā."
+        },
+        {
+            "title": "Barība",
+            "content": "Parasti ēd brētliņas, reņģes un trīsadatu stagarus, retāk vējzivis un mencas. Pieaugušās zivis saldūdenī nebarojas, bet mazuļu barība ir ūdens kukaiņu kāpuri."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsts notiek rudenī upju straujtecēs, kur uz oļiem laši izdēj ikrus. Mātīte veido ligzdu, ierokot ikrus oļos. Ikri izšķiļas pavasarī, un lašu mazuļi Baltijas jūras upēs pavada 1 - 4 gadus."
+        },
+        {
+            "title": "Zveja",
+            "content": "Lasis ir populārs makšķerēšanas objekts. Latvijā lašu licencēta makšķerēšana ir atļauta Salacā, Gaujā un Ventā. Zvejnieku lomos lasis pēdējos gados gadās reti."
+        }
+    ],
+    "fact": "Lašiem ir izteikta savas upes izjūta, uz nārstu tas atgriežas tieši uz to upi, kur piedzimis. Cilvēka darbības rezultātā, piemēram, veidojot aizsprostus, lašu nārstam piemērotu upju skaits ir samazinājies.",
+    "identifier": "x",
+    "imageFileName": "lasis.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -430,
+        "top": -60,
+        "width": 840,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Sastopama Atlantijas ziemeļaustrumu piekrastēs un jūrās. Baltijas jūrā mīt visos piekrastes ūdeņos."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 351,
+        "width": 904
     },
-    {
-      "title": "Barība",
-      "content": "Tūbītes mazuļi pārtiek no <em>zooplanktona</em>. Arī pieaugušām tūbītēm pamatbarība ir <em>zooplanktons</em>, dažkārt ēd arī nelielus vēžveidīgos."
+    "factTextTransform": {
+        "height": 235,
+        "top": 238,
+        "left": 353,
+        "width": 445
     },
-    {
-      "title": "Attīstība",
-      "content": "Baltijas jūrā nārsts notiek jūnijā un augustā. Ikri ovāli, tiek nērsti nelielām pikām uz smiltīm. Kāpuri pelaģiski."
-    },
-    {
-      "title": "Zveja",
-      "content": "Tūbītēm nav rūpnieciskas nozīmes zvejā. Līdzīgi kā nigliņus, makšķernieki un zvejnieki tūbītes izmanto par ēsmas zivi. "
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Tūbītes ir nozīmīgas zivis piekrastes ekosistēmā, tās uzturā izmanto gan piekrastes plēsīgās zivis, gan arī ūdensputni un roņi. Diennakts gaišo daļu tūbītes lielākoties pavada, ierakušās smiltīs.",
-  "thumbnailImageTransform": {
-    "left": -250,
-    "top": 60,
-    "width": 678,
-    "angle": 0
-  },
-  "detailImageTransform": {
-    "left": 45,
-    "top": 430,
-    "width": 906,
-    "angle": 0
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 353,
-    "width": 429
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

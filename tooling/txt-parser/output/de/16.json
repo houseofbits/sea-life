@@ -1,0 +1,29 @@
+{
+    "id": 16,
+    "title": "Kleine Schlangennadel",
+    "order": "Syngnathiformes (Seenadelartige)",
+    "family": "Syngnathidae (Seenadeln)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Die Kleine Schlangennadel ist ein kleiner an der Meeresküste lebender Fisch. Während der Laichzeit sind die Weibchen grell gefärbt mit hellblauen Streifen am Kopf und Bauchteil. Die Männchen können eine Länge von 25 cm erreichen, Weibchen  -  bis zu 30 cm."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Die Kleine Schlangennadel ist in der ostatlantischen Region verbreitet, an den Küsten Europas, im Mittelmeer und im Schwarzen Meer."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Ernährt sich von kleinen Zooplanktonorganismen und Weichtieren."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Laichzeit ist im Sommer. Vor dem Laichen tanzen die Weibchen mit den Männchen einen Laichtanz. Die Eier werden in einer offenen Bruttasche am Bauchteil des Männchens gelegt, wo diese befruchtet werden und sich entwickeln können."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Wegen der kleinen Größe ist diese Fischart für den kommerziellen Fischfang sowie für das Angeln unbedeutend."
+        }
+    ],
+    "fact": "Die kleine Schlangennadel ist mit den Seepferdchen verwandt  -  dies sind Fische mit einem eigenartigen Aussehen, die meist in seichten tropischen und gemäßigten Meeresgewässern leben."
+}

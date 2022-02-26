@@ -1,0 +1,29 @@
+{
+    "id": 17,
+    "title": "Longspined bullhead",
+    "order": "Scorpaeniformes",
+    "family": "Cottidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The longspined bullhead usually reaches a length of 10 - 15 cm. Unlike sculpins, it has a large spine on the side of its head. In spawning males, the belly turns orange-red with blue-white spots."
+        },
+        {
+            "title": "Distribution",
+            "content": "The longspined bullhead is found along the coasts of northern and western Europe, and is widespread in the Kattegat and the southern Baltic Sea. It lives in shallow coastal areas among rocks."
+        },
+        {
+            "title": "Diet",
+            "content": "Eats crustaceans, worms and small fish."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns from February to April."
+        },
+        {
+            "title": "Fishing",
+            "content": "The longspined bullhead has no commercial importance and is not fished."
+        }
+    ],
+    "fact": "For short periods the fish can breathe air while out of the water. It can camouflage itself very well, adapting its body colour to its surroundings."
+}

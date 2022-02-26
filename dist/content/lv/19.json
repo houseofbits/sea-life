@@ -1,54 +1,54 @@
 {
-  "id": 19,
-  "identifier": "19",
-  "group": 2,
-  "title": "Lielā gaura",
-  "latinTitle": "Mergus merganser",
-  "order": "<small>zosveidīgo</small> Anseriformes",
-  "family": "<small>pīļu</small> Anatidae",
-  "imageFileName": "lielaa gaura.png",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Ķermeņa garums 78–94 cm, svars 0,9–2,1 kilogrami. Lielā gaura ir liela auguma pīle ar slaidu ķermeni, smailiem spārniem un garu, šauru knābi ar robotu maliņu. Sugai piemīt dzimumu dimorfisms: tēviņi ir nedaudz lielāki nekā mātītes, un katram dzimumam ir atšķirīgs apspalvojums. Tēviņam ķermeņa sāni un vēders ir balti ar rozīgu ietonējumu. Galva melna ar metāliski zaļu. Mātītes ķermenis ir pelēks, krūtis gaiši pelēkas, vēders gaiši brūns ar oranžīgu tonējumu, galva brūna. Jauni putni ir līdzīgi mātītēm."
+    "id": 19,
+    "latinTitle": "Phalacrocorax carbo",
+    "title": "Jūraskrauklis",
+    "order": "pelikānveidīgo Pelecaniformes",
+    "family": "jūraskraukļu Phalacrocoracidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Ķermeņa garums 121 - 149 cm, svars 1,8 - 3,0 kilogrami. Zoss lieluma putns ar pagaru kaklu. Pieaugušo putnu apspalvojums melns, ar metālisku zaigojumu. Jauniem putniem vēderpuse gaiša."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Eiropa, Āzija, Āfrika, Austrālija. Ziemeļamerikā tikai tās ziemeļaustrumu piekrastē. Rietumu puslodē arī Grenlandē. Eiropas ligzdotāji ziemo gar Atlantijas piekrasti, Ziemeļu un Baltijas jūrā, Vidusjūras reģionā un vietām arī iekšzemē. Latvija sastopams ar zivīm bagātos ezeros, dīķos un Baltijas jūrā."
+        },
+        {
+            "title": "Barība",
+            "content": "Barojas galvenokārt ar dažādām zivīm. Barības meklējumos jūraskrauklis var ienirt līdz 4 m dziļumam, tomēr bieži tas medī arī seklumā."
+        },
+        {
+            "title": "Ligzdošana",
+            "content": "Ligzdo kolonijās. Ligzdu no sausiem zariem parasti būvē kokos vai krūmos, kas aug ūdenī vai uz salām. Var ligzdot arī uz zemes. Dējumā 3 - 4 olas. Latvijā līdz pat 20. gs. 70. gadu beigām bija samērā reti sastopams, īpaši iekšzemē. Ligzdošana pirmo reizi pierādīta 1989. gadā Lubāna ezerā. Mūsdienās Latvijā ligzdo vairāki tūkstoši pāru."
+        },
+        {
+            "title": "Jūraskrauklis un cilvēks",
+            "content": "Nesenā pagātnē jūraskraukļi Eiropā bija gandrīz izmiruši, jo zvejnieki tos uzskatīja par konkurentiem zivju ieguvē. Jūraskraukļi tika nežēlīgi iznīcināti, bet, pateicoties aizsardzības pasākumiem, to populācija ir atjaunojusies. Populācijai atjaunojoties, ir atsākušies vecie konflikti ar zvejniekiem."
+        }
+    ],
+    "fact": "Lidojot barā, nereti izkārtojas kāsī vai ierindā. Nezinoši cilvēki bieži tos lidojumā sajauc ar zosīm.",
+    "identifier": "x",
+    "imageFileName": "juraskrauklis.png",
+    "group": 2,
+    "thumbnailImageTransform": {
+        "left": -222,
+        "top": -261,
+        "width": 667
     },
-    {
-      "title": "Izplatība",
-      "content": "Palearktikā no Islandes līdz Kamčatkai un Centrālāzijā. Ziemeļamerikā no Aļaskas līdz Ņūfaundlendai, dienvidos sasniedzot ASV ziemeļu un rietumu daļu. Areāla ziemeļu daļas ligzdotāji ziemo zemākos platuma grādos. Mērenā klimata joslā ligzdojošie pārsvarā pārvietojas tuvās distancēs, paliekot ligzdošanas areālā. Latvijā parasta caurceļotāja un ziemotāja vietās, kur saglabājas neaizsaluši ūdeņi. Vasarā visā teritorijā, bet vairāk gar Rīgas jūras līci, Gaujā un Daugavā."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 210,
+        "width": 905
     },
-    {
-      "title": "Barība",
-      "content": "Lielā gaura barojas galvenokārt ar zivīm (līdz 25 cm garām), retos gadījumos arī ar moluskiem, vēžveidīgajiem, tārpiem."
+    "factTextTransform": {
+        "height": 176,
+        "top": 344,
+        "left": 645,
+        "width": 291
     },
-    {
-      "title": "Ligzdošana",
-      "content": "Lielā gaura ligzdo koku dobumos vai piemērotos būros. Ligzdas izklājumā gaišpelēkas pūkas. Perē un mazuļus vada tikai mātīte. Dējumā 4–15 olas. Latvijā ligzdo 500–1200 pāru."
-    },
-    {
-      "title": "Lielā gaura un cilvēks",
-      "content": "Latvijā nav medījams putns. Cilvēki bieži palīdz lielajai gaurai, uztaisot mākslīgas ligzdvietas."
+    "familyTextTransform": {
+        "height": 356,
+        "top": 566,
+        "left": 184
     }
-  ],
-  "fact": "Ļoti bieži vairākas mātītes apvienojas lielākā barā un mazuļus uzmana kopā. Lielā gaura zem ūdens spēj pavadīt līdz pat divām minūtēm.",
-  "thumbnailImageTransform": {
-    "left": -100,
-    "top": 44,
-    "width": 530
-  },
-  "detailImageTransform": {
-    "left": 170,
-    "top": 298,
-    "width": 614
-  },
-  "factTextTransform": {
-    "height": 375,
-    "top": 171,
-    "left": 278,
-    "width": 450
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 572,
-    "left": 645
-  }
 }

@@ -1,49 +1,56 @@
 {
-  "id": 25,
-  "identifier": "25",
-  "group": 4,
-  "title": "Parastā ēdamgliemene",
-  "latinTitle": "Mytilus trossulus <small>(Gould, 1850)</small>",
-  "order": "<small>ēdamgliemeņu</small> Mytilidae",
-  "family": "<small>gliemeņu</small> Bivalvia",
-  "imageFileName": "parasta_ edamgliemene.png",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Čaula garena, trīsstūrveida, tumši brūngana ar melni zilu tonējumu, sienas plānas. Čaulas garums Latvijā ap 40 mm, sāļākos ūdeņos citās jūrās – līdz pat 90 milimetriem. Vāka iekšpusē plāns perlamutra slānis."
+    "id": 25,
+    "latinTitle": "Ammodytes tobianus",
+    "title": "Tūbīte",
+    "order": "čūskzivjveidīgo Trachiniformes",
+    "family": "tūbīšu Ammodytidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Tūbīte visbiežāk ir dzeltenīgi brūnā krāsā, ar baltu vēderu. Baltijas jūrā var sasniegt 20 cm garumu. Ārēji līdzīga nigliņam. Dabā šīs zivis var atšķirt, atverot muti, tūbītei tā veido piltuvi."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sastopama Atlantijas ziemeļaustrumu piekrastēs un jūrās. Baltijas jūrā mīt visos piekrastes ūdeņos."
+        },
+        {
+            "title": "Barība",
+            "content": "Tūbītes mazuļi pārtiek no zooplanktona. Arī pieaugušām tūbītēm pamatbarība ir zooplanktons, dažkārt ēd arī nelielus vēžveidīgos."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Baltijas jūrā nārsts notiek jūnijā un augustā. Ikri ovāli, tiek nērsti nelielām pikām uz smiltīm. Kāpuri pelaģiski."
+        },
+        {
+            "title": "Zveja",
+            "content": "Tūbītēm nav rūpnieciskas nozīmes zvejā. Līdzīgi kā nigliņus, makšķernieki un zvejnieki tūbītes izmanto par ēsmas zivi."
+        }
+    ],
+    "fact": "Tūbītes ir nozīmīgas zivis piekrastes ekosistēmā, tās uzturā izmanto gan piekrastes plēsīgās zivis, gan arī ūdensputni un roņi. Diennakts gaišo daļu tūbītes lielākoties pavada, ierakušās smiltīs.",
+    "identifier": "x",
+    "imageFileName": "tubite.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -250,
+        "top": 60,
+        "width": 678,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Apdzīvo Klusā okeāna ziemeļdaļu, lokāli – Atlantijas okeānu (ASV piekrasti un Baltijas jūras ziemeļaustrumu daļu). Latvijā gliemežvāki bieži redzami izskaloti gan Baltijas jūras krastā, gan Rīgas jūras līcī."
+    "detailImageTransform": {
+        "left": 45,
+        "top": 430,
+        "width": 906,
+        "angle": 0
     },
-    {
-      "title": "Ekoloģija",
-      "content": "Apdzīvo seklūdeņus, sastopama grupās, piestiprinājusies pie substrāta. Viens no ekosistēmu pakalpojumiem, ko sniedz šī gliemeņu suga, ir ūdens filtrācija."
+    "factTextTransform": {
+        "height": 235,
+        "top": 238,
+        "left": 353,
+        "width": 429
+    },
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Suga veido hibrīdus ar ziemeļu ēdamgliemeni, kas sastopama Baltijas jūras dienvidrietumu daļā (Polijas un Vācijas teritorijā). Ēdamgliemenes daudzviet lieto pārtikā, daudzās zemēs arī audzē.",
-  "thumbnailImageTransform": {
-    "left": 0,
-    "top": -65,
-    "width": 303,
-    "angle": -105
-  },
-  "detailImageTransform": {
-    "left": 200,
-    "top": 252,
-    "width": 472,
-    "angle": -75
-  },
-  "factTextTransform": {
-    "height": 200,
-    "top": 260,
-    "left": 645,
-    "width": 400
-  },
-  "familyTextTransform": {
-    "height": 167,
-    "top": 755,
-    "left": 184,
-    "width": 554
-  }
 }

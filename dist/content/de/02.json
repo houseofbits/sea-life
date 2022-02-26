@@ -1,0 +1,29 @@
+{
+    "id": 2,
+    "title": "Vierbärtelige Seequappe",
+    "order": "Gadiformes (Dorschartige)",
+    "family": "Gadrosaridae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Die Vierbärtelige Seequappe hat einen schlanken Körper mit kleinen Schuppen. Der Rücken kann bläulich oder bräunlich grau sein. Ein besonderes Merkmal ist der lange Fühler am Unterkiefer. In der Ostsee kann sie eine Maximalgröße von bis zu 36 cm erreichen."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Ist im Nordatlantik bis hin zu Island anzutreffen. In der Ostsee  -  bis zum Finnischen und Bottnischen Meerbusen."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Frisst benthische Krebsartige und Würmer."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Laicht meistens vom März bis zum August. Der Laich und die Larven sind pelagisch."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Diese Art ist für den Fischfang für Fischer und Anglern unbedeutend."
+        }
+    ],
+    "fact": "Der erste Stachel auf der ersten Rückenflosse ist gut entwickelt, wodurch dieser Fisch leicht von anderen Fischarten zu unterscheiden ist."
+}

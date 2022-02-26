@@ -1,0 +1,33 @@
+{
+    "id": 19,
+    "title": "Jūraskrauklis",
+    "order": "pelikānveidīgo Pelecaniformes",
+    "family": "jūraskraukļu Phalacrocoracidae",
+    "content": [
+        {
+            "title": "Kormoran Phalacrocorax carbo",
+            "content": "Ordnung: PelecaniformesFamilie: Phalacrocoracidae (Kormorane)"
+        },
+        {
+            "title": "Äußere Merkmale",
+            "content": "Körperlänge 121 - 149 cm, Gewicht 1,8 - 3,0 kg. Gänsegroßer Vogel mit einem langen Hals. Gefieder des erwachsenen Vogels ist schwarz mit metallischem Glanz. Jungvögel haben einen hellen Bauch."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Europa, Asien, Afrika, Australien. In Nordamerika nur an der nordöstlichen Küste. In der westlichen Hemisphäre auch in Grönland.  Die in Europa nistenden Vögel überwintern an der Küste des Atlantiks, in der Nord- und Ostsee, in der Mittelmeerregion und teilweise auch im Binnenland. In Lettland ist er in fischreichen Seen und Teichen zu vorzufinden, sowie in der Ostsee."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Ernährt sich hauptsächlich von verschiedenen Fischen. Auf der Nahrungssuche kann der Kormoran bis in eine Tiefe von 4 m tauchen, doch oft jagt er auch in seichten Küstengebieten."
+        },
+        {
+            "title": "Nisten",
+            "content": "Nistet in Kolonien. Das Nest wird aus trockenen Ästen in Bäumen und Büschen gebaut, die im Wasser oder auf Inseln wachsen. Kann auch auf dem Boden nisten. In einem Gelege sind 3-4 Eier. In Lettland war der Kormoran bis zu den 70er Jahren des 20. Jahrhunderts relative selten anzutreffen, besonders im Binnenland. Nisten wurde zum ersten Mal 1989 am Lubāna See festgestellt. Heutzutage nisten in Lettland mehrere tausend Paare."
+        },
+        {
+            "title": "Kormorane und der Mensch",
+            "content": "Vor nicht zu langer Zeit war der Kormoran in Europa so gut wie ausgestorben, weil Fischer ihn als Konkurrenten beim Fischfang ansahen. Die Kormorane wurden gnadenlos vernichtet, aber dank Schutzmassnahmen hat sich deren Population erneuert. Somit wurden auch die alten Konflikte mit den Fischern wieder erneuert."
+        }
+    ],
+    "fact": "Im Schwarm fliegen Kormorane oft in Keilform oder in einer Reihe, deshalb werden diese Schwärme oft für Gänse gehalten."
+}

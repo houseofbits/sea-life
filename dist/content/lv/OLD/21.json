@@ -1,0 +1,55 @@
+{
+  "id": 21,
+  "identifier": "21",
+  "group": 1,
+  "title": "Lucītis",
+  "latinTitle": "Zoarces viviparus",
+  "order": "Perciformes",
+  "family": "Zoarcidae",
+  "imageFileName": "lucitis.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Lucītis ir bentiska zivs ar slaidu ķermeni. Virzienā uz asti ķermenis ir saplacināts. Lucītim ir ļoti garas muguras un anālās spuras, kas saaugušas ar astes spuru. Zvīņas ir maziņas, ar neapbruņotu aci neredzamas, iegremdētas ādā."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Lucītis ir sastopams Ziemeļeiropas jūrās, plaši izplatīts visos Baltijas jūras piekrastes ūdeņos, parasti līdz 40 m dziļumam. Lucītis ir tipiska aukstūdens suga, kam, paaugstinoties ūdens temperatūrai, samazinās augšanas ātrums un izdzīvošana."
+    },
+    {
+      "title": "Barība",
+      "content": "Ēd <em>bentiskus</em> vēžveidīgos, tārpus, zivju mazuļus, arī ikrus. "
+    },
+    {
+      "title": "Attīstība",
+      "content": "Lucītis ir vienīgā dzīvdzemdētājsuga mūsu jūras ūdeņos. Lucīši parasti dzimumgatavību sasniedz otrajā dzīves gadā, kad tie ir 13–18 cm gari. Pārošanās notiek jūlijā–septembrī. Ikri attīstās mātītes organismā vairākus mēnešus, līdz decembrī–februārī piedzimst 30–400 aptuveni 3–5 cm gari mazie lucīši."
+    },
+    {
+      "title": "Zveja",
+      "content": "Lucītis ir nozīmīgs zvejas objekts piekrastes zvejniekiem. Lielākās nozvejas ir Rīgas jūras līča piekrastē vasaras mēnešos. Lucīšus zvejo ar specializētiem lucīšu murdiem un piezvejā citu zivju murdos."
+    }
+  ],
+  "fact": "Lucīti bieži izmanto kā vides indikatoru, jo tas ir dzīvdzemdētājs un veic salīdzinoši nelielas migrācijas, tā labi raksturojot lokālo vides stāvokli. Lucīšu asakas ir zaļganā krāsā.",
+  "thumbnailImageTransform": {
+    "left": -320,
+    "top": 0,
+    "width": 759,
+    "angle": 0
+  },
+  "detailImageTransform": {
+    "left": 45,
+    "top": 392,
+    "width": 906
+  },
+  "factTextTransform": {
+    "height": 254,
+    "top": 239,
+    "left": 353,
+    "width": 429
+  },
+  "familyTextTransform": {
+    "height": 320,
+    "top": 602,
+    "left": 184
+  }
+}

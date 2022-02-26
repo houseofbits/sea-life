@@ -1,0 +1,29 @@
+{
+    "id": 14,
+    "title": "Common seasnail",
+    "order": "Scorpaeniformes",
+    "family": "Liparidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The body of the common seasnail appears slightly transparent and can reach a length of 27 cm, but in Latvian waters they usually only grow up to 15 cm."
+        },
+        {
+            "title": "Distribution",
+            "content": "The common seasnail is distributed in the seas of the Arctic and Atlantic Oceans. It is most common in areas with a hard seabed, where it can attach with sucking disc-shaped fins, but it can also be found along the coast on sandy or muddy substrates."
+        },
+        {
+            "title": "Diet",
+            "content": "Eats crustaceans, especially opossum shrimps, and worms. May also feed on fish eggs."
+        },
+        {
+            "title": "Development",
+            "content": "The common seasnail spawns off the coast in winter, from November to February. The eggs are attached to algae or other seabed substrates. Their development lasts 6 - 8 weeks."
+        },
+        {
+            "title": "Fishing",
+            "content": "Due to its small size and relatively rare occurrence, the species is not important in commercial fishing or angling."
+        }
+    ],
+    "fact": "The pelvic fins have fused together in the shape of a disk, making it easier to attach to the seabed."
+}

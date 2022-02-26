@@ -1,25 +1,27 @@
 {
   "id": 1,
   "title": "",
+  "order": "",
+  "family": "",
   "content": [
     {
-      "title": "",
+      "title": "External appearance",
       "content": ""
     },
     {
-      "title": "",
+      "title": "Distribution",
       "content": ""
     },
     {
-      "title": "",
+      "title": "Diet",
       "content": ""
     },
     {
-      "title": "",
+      "title": "Development",
       "content": ""
     },
     {
-      "title": "",
+      "title": "Fishing",
       "content": ""
     }
   ],

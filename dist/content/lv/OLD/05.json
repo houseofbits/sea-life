@@ -1,0 +1,55 @@
+{
+  "id": 5,
+  "group": 1,
+  "title": "Brētliņa",
+  "latinTitle": "Sprattus sprattus",
+  "imageFileName": "bretlina.png",
+  "identifier": "5",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Brētliņa ir neliela, reņģei līdzīga <em>pelaģiska</em> jūras zivs. Salīdzinājumā ar reņģi brētliņai sānu daļa ir platāka. Atšķirībā no reņģes brētliņai vēdera apakšējā daļa ir ar asām ķīļa zvīņām. Var sasniegt 17 cm garumu un 25 g svaru."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Brētliņas ir izplatītas Eiropas, Ziemeļāfrikas, Vidusjūras un Melnās jūras ūdeņos. Brētliņas dod priekšroku dzīvei sāļākos ūdeņos nekā reņģes."
+    },
+    {
+      "title": "Barība",
+      "content": "Visās attīstības stadijās barojas ar <em>zooplanktonu</em>. Kāpuri barojas ar izmēros mazākām zooplanktona agrīnajām attīstības stadijām. Intensīvākā barošanās ir pēcnārsta periodā augustā un septembrī."
+    },
+    {
+      "title": "Attīstība",
+      "content": "Nārsta sezona ilgst no februāra līdz augustam. Ikri tiek nērsti ar 8–10 dienu intervālu starp nēršanas reizēm. To attīstība parasti notiek 30–60 m dziļumā. Pēc izšķilšanās <em>kāpuri</em> izplatās ar ūdens masas kustību. Baltijas jūrā brētliņas var sasniegt pat 21 gada vecumu, lielākā daļa zivju ir vecumā līdz 5 gadiem."
+    },
+    {
+      "title": "Zveja",
+      "content": "Baltijas jūrā mūsdienās brētliņa ir viszvejotākā zivju suga. Brētliņas pamatā tiek zvejotas ar traļiem atklātā jūrā."
+    }
+  ],
+  "fact": "Mūsdienās brētliņas kopā ar reņģēm ir dominējošās zivju sugas Baltijas jūrā. Ar tām barojas daudzas plēsīgās sugas.",
+  "order": "Clupeiformes",
+  "family": "Clupeidae",
+  "thumbnailImageTransform": {
+    "left": -300,
+    "top": -20,
+    "width": 712,
+    "angle": 0
+  },
+  "detailImageTransform": {
+    "left": 46,
+    "top": 368,
+    "width": 904
+  },
+  "factTextTransform": {
+    "height": 178,
+    "top": 282,
+    "left": 645,
+    "width": 289
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 669,
+    "left": 184
+  }
+}

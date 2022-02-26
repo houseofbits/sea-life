@@ -1,0 +1,30 @@
+{
+    "id": 35,
+    "latinTitle": "Acipenser sp.",
+    "title": "Store",
+    "order": "storveidīgo Acipenseriformes",
+    "family": "storu Acipenseridae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Tiek uzskatīts, ka Latvijas apkārtnē zivs var sasniegt 20 gadu vecumu un izaugt līdz 2 m gara un 245 kg smaga."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Vēsturiski ir bijusi izplatīta Eiropā, Atlantijas okeāna baseina piekrastē, Vidusjūrā, Melnajā un Baltijas jūrā. Mūsdienās vienīgā dabiski nārstojošā populācija atrodas Francijā, Garonnas upes baseinā."
+        },
+        {
+            "title": "Barība",
+            "content": "Jūrā barojas no grunts ar dažādiem moluskiem, tārpiem, vēžveidīgiem organismiem un nelielām zivīm."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Veic nārsta migrāciju no jūras uz upēm. Nārsto katru otro gadu vasarā, kad ūdens temperatūra ir virs 20 °C. Nārsts notiek lielu un dziļu upju straujtecēs, vietās uz akmeņainas vai grantainas grunts."
+        },
+        {
+            "title": "Zveja",
+            "content": "Populācijas sliktā stāvokļa dēļ sugai pašlaik nav nozīmes zvejā un makšķerēšanā."
+        }
+    ],
+    "fact": "Mūsdienās storu populācijas Eiropā ir kritiski apdraudētas pārzvejas, upju aizsprostošanas, piesārņojuma un klimata pārmaiņu rezultātā. Saistībā ar reintrodukcijas programmu zvejnieki Latvijā jūras ūdeņos nozvejo neliela izmēra iezīmētas stores."
+}

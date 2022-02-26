@@ -1,0 +1,11 @@
+{
+  "id": {id},
+  {latinTitle}
+  "title": "{title}",
+  "order": "{order}",
+  "family": "{family}",
+  "content": [
+    {content}
+  ],
+  "fact": "{fact}"
+}

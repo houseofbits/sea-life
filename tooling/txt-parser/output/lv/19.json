@@ -1,0 +1,30 @@
+{
+    "id": 19,
+    "latinTitle": "Phalacrocorax carbo",
+    "title": "Jūraskrauklis",
+    "order": "pelikānveidīgo Pelecaniformes",
+    "family": "jūraskraukļu Phalacrocoracidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Ķermeņa garums 121 - 149 cm, svars 1,8 - 3,0 kilogrami. Zoss lieluma putns ar pagaru kaklu. Pieaugušo putnu apspalvojums melns, ar metālisku zaigojumu. Jauniem putniem vēderpuse gaiša."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Eiropa, Āzija, Āfrika, Austrālija. Ziemeļamerikā tikai tās ziemeļaustrumu piekrastē. Rietumu puslodē arī Grenlandē. Eiropas ligzdotāji ziemo gar Atlantijas piekrasti, Ziemeļu un Baltijas jūrā, Vidusjūras reģionā un vietām arī iekšzemē. Latvija sastopams ar zivīm bagātos ezeros, dīķos un Baltijas jūrā."
+        },
+        {
+            "title": "Barība",
+            "content": "Barojas galvenokārt ar dažādām zivīm. Barības meklējumos jūraskrauklis var ienirt līdz 4 m dziļumam, tomēr bieži tas medī arī seklumā."
+        },
+        {
+            "title": "Ligzdošana",
+            "content": "Ligzdo kolonijās. Ligzdu no sausiem zariem parasti būvē kokos vai krūmos, kas aug ūdenī vai uz salām. Var ligzdot arī uz zemes. Dējumā 3 - 4 olas. Latvijā līdz pat 20. gs. 70. gadu beigām bija samērā reti sastopams, īpaši iekšzemē. Ligzdošana pirmo reizi pierādīta 1989. gadā Lubāna ezerā. Mūsdienās Latvijā ligzdo vairāki tūkstoši pāru."
+        },
+        {
+            "title": "Jūraskrauklis un cilvēks",
+            "content": "Nesenā pagātnē jūraskraukļi Eiropā bija gandrīz izmiruši, jo zvejnieki tos uzskatīja par konkurentiem zivju ieguvē. Jūraskraukļi tika nežēlīgi iznīcināti, bet, pateicoties aizsardzības pasākumiem, to populācija ir atjaunojusies. Populācijai atjaunojoties, ir atsākušies vecie konflikti ar zvejniekiem."
+        }
+    ],
+    "fact": "Lidojot barā, nereti izkārtojas kāsī vai ierindā. Nezinoši cilvēki bieži tos lidojumā sajauc ar zosīm."
+}

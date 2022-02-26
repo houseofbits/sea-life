@@ -1,0 +1,25 @@
+{
+  "title": "Bewohner der Ostsee",
+  "backButton": "Zurück",
+  "order": "Ordnung",
+  "family": "Familie",
+  "mainFilterButton": "Zurück zu allen",
+  "groups": [
+    {
+      "group": 1,
+      "title": "Vögel"
+    },
+    {
+      "group": 2,
+      "title": "Fisch"
+    },
+    {
+      "group": 3,
+      "title": "Krebstiere"
+    },
+    {
+      "group": 4,
+      "title": "Muscheln"
+    }
+  ]
+}

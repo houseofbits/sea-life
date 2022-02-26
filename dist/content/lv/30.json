@@ -1,55 +1,55 @@
 {
-  "id": 30,
-  "identifier": "30",
-  "group": 1,
-  "title": "Eiropas store",
-  "latinTitle": "Acipenser sturio",
-  "order": "Acipenseriformes",
-  "family": "Acipenseridae",
-  "imageFileName": "store.png",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Tiek uzskatīts, ka Latvijas apkārtnē zivs var sasniegt 20 gadu vecumu un izaugt līdz 2 m gara un 245 kg smaga."
+    "id": 30,
+    "latinTitle": "Sprattus sprattus",
+    "title": "Brētliņa",
+    "order": "siļķveidīgo Clupeiformes",
+    "family": "siļķu Clupeidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Brētliņa ir neliela, reņģei līdzīga pelaģiska jūras zivs. Salīdzinājumā ar reņģi brētliņai sānu daļa ir platāka. Atšķirībā no reņģes brētliņai vēdera apakšējā daļa ir ar asām ķīļa zvīņām. Var sasniegt 17 cm garumu un 25 g svaru."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Brētliņas ir izplatītas Eiropas, Ziemeļāfrikas, Vidusjūras un Melnās jūras ūdeņos. Brētliņas dod priekšroku dzīvei sāļākos ūdeņos nekā reņģes."
+        },
+        {
+            "title": "Barība",
+            "content": "Visās attīstības stadijās barojas ar zooplanktonu. Kāpuri barojas ar izmēros mazākām zooplanktona agrīnajām attīstības stadijām. Intensīvākā barošanās ir pēcnārsta periodā augustā un septembrī."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsta sezona ilgst no februāra līdz augustam. Ikri tiek nērsti ar 8 - 10 dienu intervālu starp nēršanas reizēm. To attīstība parasti notiek 30 - 60 m dziļumā. Pēc izšķilšanās kāpuri izplatās ar ūdens masas kustību. Baltijas jūrā brētliņas var sasniegt pat 21 gada vecumu, lielākā daļa zivju ir vecumā līdz 5 gadiem."
+        },
+        {
+            "title": "Zveja",
+            "content": "Baltijas jūrā mūsdienās brētliņa ir viszvejotākā zivju suga. Brētliņas pamatā tiek zvejotas ar traļiem atklātā jūrā."
+        }
+    ],
+    "fact": "Mūsdienās brētliņas kopā ar reņģēm ir dominējošās zivju sugas Baltijas jūrā. Ar tām barojas daudzas plēsīgās sugas.",
+    "identifier": "x",
+    "imageFileName": "bretlina.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -300,
+        "top": -20,
+        "width": 712,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Vēsturiski ir bijusi izplatīta Eiropā, Atlantijas okeāna baseina piekrastē, Vidusjūrā, Melnajā un Baltijas jūrā. Mūsdienās vienīgā dabiski nārstojošā populācija atrodas Francijā, Garonnas upes baseinā. "
+    "detailImageTransform": {
+        "left": 46,
+        "top": 368,
+        "width": 904
     },
-    {
-      "title": "Barība",
-      "content": "Jūrā barojas no grunts ar dažādiem moluskiem, tārpiem, vēžveidīgiem organismiem un nelielām zivīm."
+    "factTextTransform": {
+        "height": 178,
+        "top": 282,
+        "left": 645,
+        "width": 289
     },
-    {
-      "title": "Attīstība",
-      "content": "Veic nārsta migrāciju no jūras uz upēm. Nārsto katru otro gadu vasarā, kad ūdens temperatūra ir virs 20 °C. Nārsts notiek lielu un dziļu upju straujtecēs, vietās uz akmeņainas vai grantainas grunts."
-    },
-    {
-      "title": "Zveja",
-      "content": "Populācijas sliktā stāvokļa dēļ sugai pašlaik nav nozīmes zvejā un makšķerēšanā."
+    "familyTextTransform": {
+        "height": 238,
+        "top": 669,
+        "left": 184
     }
-  ],
-  "fact": "Mūsdienās storu populācijas Eiropā ir kritiski apdraudētas pārzvejas, upju aizsprostošanas, piesārņojuma un klimata pārmaiņu rezultātā. Saistībā ar reintrodukcijas programmu zvejnieki Latvijā jūras ūdeņos nozvejo neliela izmēra iezīmētas stores.",
-  "thumbnailImageTransform": {
-    "left": -560,
-    "top": -110,
-    "width": 985,
-    "angle": 0
-  },
-  "detailImageTransform": {
-    "left": 45,
-    "top": 350,
-    "width": 906
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 353,
-    "width": 500
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

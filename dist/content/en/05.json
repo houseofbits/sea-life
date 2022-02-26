@@ -1,0 +1,29 @@
+{
+    "id": 5,
+    "title": "Goosander",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "Body length: 78 - 94 cm; weight: 0.9 - 2.1 kg. The goosander is a large duck with a slender body, pointed wings and a long, narrow bill with a serrated edge. The species exhibits sexual dimorphism: males are slightly larger than females and each sex has differing plumage. The male's sides and belly are white with a pinkish tint. The head is black with an iridescent green sheen. The female has a grey body, a light-grey breast, a light-brown belly with an orange tint, and a brown head. Young birds are similar to females."
+        },
+        {
+            "title": "Distribution",
+            "content": "Palaearctic, from Iceland to Kamchatka and Central Asia; in North America, from Alaska to Newfoundland, its southernmost range stretching to the north and western part of the continental USA. Goosanders breeding in the northern part of the range winter at lower latitudes. Temperate breeders mostly move short distances, remaining within the breeding range. In Latvia, the goosander is a common passage migrant but will winter in areas where unfrozen waters remain. In summer they are observed throughout Latvia, mostly along the Gulf of Riga and the Gauja and Daugava rivers."
+        },
+        {
+            "title": "Diet",
+            "content": "The goosander feeds mainly on fish (up to 25 cm long), rarely on molluscs, crustaceans and worms."
+        },
+        {
+            "title": "Breeding",
+            "content": "The goosander nests in tree hollows or in suitable nesting boxes. The nest is lined with light-grey fluff. Only the female incubates the eggs and raises the young. 4 - 15 eggs are laid in a clutch. There are 500 - 1200 breeding pairs in Latvia."
+        },
+        {
+            "title": "Goosanders and humans",
+            "content": "They are not a game bird in Latvia. People often help goosanders by making artificial nests for them."
+        }
+    ],
+    "fact": "Very often several females join together in a larger flock and look after their young together. The goosander can spend up to two minutes underwater."
+}

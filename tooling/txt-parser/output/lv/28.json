@@ -1,0 +1,22 @@
+{
+    "id": 28,
+    "latinTitle": "Macoma balthica",
+    "title": "Baltijas plakangliemene",
+    "order": "plakangliemeņu Tellinidae",
+    "family": "gliemeņu Bivalvia",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Čaula noapaļoti trīsstūrveida, plāna, baltas, rozā vai dzeltenīgas krāsas, 15 - 22 mm liela. Čaulas ārējā virsma ir gluda."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Baltijas plakangliemene apdzīvo Atlantijas okeāna ziemeļdaļu, lokāli sastopama arī Vidusjūrā. Latvijā ļoti bieži, masveidā izskaloti gliemežvāki redzami Baltijas jūras krastā, īpaši Rīgas jūras līcī."
+        },
+        {
+            "title": "Ekoloģija",
+            "content": "Apdzīvo seklūdeņus, jaunās gliemenes uzturas uz ūdensaugiem, vēlāk šī suga dzīvo uz smilšainas grunts. Šo sugu izmanto par indikatoru jūras piesārņojuma novērtēšanā. Baltijas plakangliemene nespēj ilgstoši dzīvot vietās ar biezu dūņu slāni."
+        }
+    ],
+    "fact": "Ziemeļamerikā dzīvo cita, bet pēc izskata ļoti līdzīga suga  -  Macoma petalum."
+}

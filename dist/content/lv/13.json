@@ -1,54 +1,55 @@
 {
-  "id": 13,
-  "group": 2,
-  "title": "Jūraskrauklis",
-  "latinTitle": "Phalacrocorax carbo",
-  "order": "<small>pelikānveidīgo</small> Pelecaniformes",
-  "family": "<small>jūraskraukļu</small> Phalacrocoracidae",
-  "imageFileName": "juraskrauklis.png",
-  "identifier": "13",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Ķermeņa garums 121–149 cm, svars 1,8–3,0 kilogrami. Zoss lieluma putns ar pagaru kaklu. Pieaugušo putnu apspalvojums melns, ar metālisku zaigojumu. Jauniem putniem vēderpuse gaiša."
+    "id": 13,
+    "latinTitle": "Zoarces viviparus",
+    "title": "Lucītis",
+    "order": "asarveidīgo Perciformes",
+    "family": "lucīšu Zoarcidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Lucītis ir bentiska zivs ar slaidu ķermeni. Virzienā uz asti ķermenis ir saplacināts. Lucītim ir ļoti garas muguras un anālās spuras, kas saaugušas ar astes spuru. Zvīņas ir maziņas, ar neapbruņotu aci neredzamas, iegremdētas ādā."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Lucītis ir sastopams Ziemeļeiropas jūrās, plaši izplatīts visos Baltijas jūras piekrastes ūdeņos, parasti līdz 40 m dziļumam. Lucītis ir tipiska aukstūdens suga, kam, paaugstinoties ūdens temperatūrai, samazinās augšanas ātrums un izdzīvošana."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd bentiskus vēžveidīgos, tārpus, zivju mazuļus, arī ikrus."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Lucītis ir vienīgā dzīvdzemdētājsuga mūsu jūras ūdeņos. Lucīši parasti dzimumgatavību sasniedz otrajā dzīves gadā, kad tie ir 13 - 18 cm gari. Pārošanās notiek jūlijā - septembrī. Ikri attīstās mātītes organismā vairākus mēnešus, līdz decembrī - februārī piedzimst 30 - 400 aptuveni 3 - 5 cm gari mazie lucīši."
+        },
+        {
+            "title": "Zveja",
+            "content": "Lucītis ir nozīmīgs zvejas objekts piekrastes zvejniekiem. Lielākās nozvejas ir Rīgas jūras līča piekrastē vasaras mēnešos. Lucīšus zvejo ar specializētiem lucīšu murdiem un piezvejā citu zivju murdos."
+        }
+    ],
+    "fact": "Lucīti bieži izmanto kā vides indikatoru, jo tas ir dzīvdzemdētājs un veic salīdzinoši nelielas migrācijas, tā labi raksturojot lokālo vides stāvokli. Lucīšu asakas ir zaļganā krāsā.",
+    "identifier": "x",
+    "imageFileName": "lucitis.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -320,
+        "top": 0,
+        "width": 759,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Eiropa, Āzija, Āfrika, Austrālija. Ziemeļamerikā tikai tās ziemeļaustrumu piekrastē. Rietumu puslodē arī Grenlandē. Eiropas ligzdotāji ziemo gar Atlantijas piekrasti, Ziemeļu un Baltijas jūrā, Vidusjūras reģionā un vietām arī iekšzemē. Latvija sastopams ar zivīm bagātos ezeros, dīķos un Baltijas jūrā."
+    "detailImageTransform": {
+        "left": 45,
+        "top": 392,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Barojas galvenokārt ar dažādām zivīm. Barības meklējumos jūraskrauklis var ienirt līdz 4 m dziļumam, tomēr bieži tas medī arī seklumā."
+    "factTextTransform": {
+        "height": 254,
+        "top": 239,
+        "left": 353,
+        "width": 429
     },
-    {
-      "title": "Ligzdošana",
-      "content": "Ligzdo kolonijās. Ligzdu no sausiem zariem parasti būvē kokos vai krūmos, kas aug ūdenī vai uz salām. Var ligzdot arī uz zemes. Dējumā 3–4 olas. Latvijā līdz pat 20. gs. 70. gadu beigām bija samērā reti sastopams, īpaši iekšzemē. Ligzdošana pirmo reizi pierādīta 1989. gadā Lubāna ezerā. Mūsdienās Latvijā ligzdo vairāki tūkstoši pāru."
-    },
-    {
-      "title": "Jūraskrauklis un cilvēks",
-      "content": "Nesenā pagātnē jūraskraukļi Eiropā bija gandrīz izmiruši, jo zvejnieki tos uzskatīja par konkurentiem zivju ieguvē. Jūraskraukļi tika nežēlīgi iznīcināti, bet, pateicoties aizsardzības pasākumiem, to populācija ir atjaunojusies. Populācijai atjaunojoties, ir atsākušies vecie konflikti ar zvejniekiem."
+    "familyTextTransform": {
+        "height": 320,
+        "top": 602,
+        "left": 184
     }
-  ],
-  "fact": "Lidojot barā, nereti izkārtojas kāsī vai ierindā. Nezinoši cilvēki bieži tos lidojumā sajauc ar zosīm.",
-  "thumbnailImageTransform": {
-    "left": -222,
-    "top": -261,
-    "width": 667
-  },
-  "detailImageTransform": {
-    "left": 46,
-    "top": 210,
-    "width": 905
-  },
-  "factTextTransform": {
-    "height": 176,
-    "top": 344,
-    "left": 645,
-    "width": 291
-  },
-  "familyTextTransform": {
-    "height": 356,
-    "top": 566,
-    "left": 184
-  }
 }

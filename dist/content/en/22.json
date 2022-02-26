@@ -1,0 +1,29 @@
+{
+    "id": 22,
+    "title": "Atlantic cod",
+    "order": "Gadiformes",
+    "family": "Gadidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The cod has a spindle-shaped body with a large head and a barbel protruding from the lower jaw. It has three distinct dorsal fins and two anal fins. Maximum length: 130 cm."
+        },
+        {
+            "title": "Distribution",
+            "content": "Cod is found in the North Atlantic and northern European seas. In the Baltic Sea, the Eastern Baltic cod is a subspecies that has adapted to the low salinity of the Baltic Sea."
+        },
+        {
+            "title": "Diet",
+            "content": "Cod larvae feed on zooplankton. Adult cod mainly eat herring and sprats. Cod living closer to the coast like to eat round goby."
+        },
+        {
+            "title": "Development",
+            "content": "Breeding begins at the age of two or three years. Spawning takes place from February to August, with mass spawning in April - May. The eggs and larvae float freely in the water. After hatching, larvae migrate to the upper layers of the water."
+        },
+        {
+            "title": "Fishing",
+            "content": "Cod is an important fish for both the fishing industry and anglers, but nowadays more cod die from natural causes than through fishing. This is due to a combination of factors such as an increase in oxygen-free areas in cod spawning areas, the growing seal population, who feed on cod and spread cod parasites, and the growing sprat population that feeds on cod eggs. In the 20[th] century, cod spawned after having reached a length of 35 cm, but in recent years they have begun to spawn when less than 20 cm long. In 2020, fishing of the genetically distinct Eastern Baltic cod was banned; only bycatch is allowed."
+        }
+    ],
+    "fact": "Cod produce much higher numbers of eggs compared to other fish, with around 0.2 - 2.4 million eggs laid per female per season."
+}

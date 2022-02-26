@@ -1,0 +1,21 @@
+{
+    "id": 26,
+    "title": "Lagoon cockle",
+    "order": "Cardiidae (cockles)",
+    "family": "Bivalvia",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "A marine bivalve with a white to greyish-white shell. The outside of the shell is ribbed and has a serrated edge. The shell can grow up to 50 mm, but in Latvia they only grow to 20 mm because the Baltic Sea is not saline enough."
+        },
+        {
+            "title": "Distribution",
+            "content": "The lagoon cockle inhabits the Baltic, Black, Caspian and Mediterranean Seas. The shells are often seen washed up on the Baltic coast, especially along the Gulf of Riga."
+        },
+        {
+            "title": "Ecology",
+            "content": "Inhabits shallow waters. Young bivalves live on aquatic plants; as they mature, they move to the sandy bottom."
+        }
+    ],
+    "fact": "Due to its high variability, the species has developed a large number of synonyms. In many places people use cockles as a source of food."
+}

@@ -1,0 +1,54 @@
+{
+  "id": 1,
+  "group": 1,
+  "title": "Trīsadatu stagars",
+  "latinTitle": "Gasterosteus aculeatus",
+  "imageFileName": "3trisadatu-stagars.png",
+  "identifier": "1",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Trīsadatu stagars ir neliela, ūdens augšējos slāņos dzīvojoša zivs. Pieaugušu īpatņu izmērs parasti nepārsniedz 10 centimetrus. Raksturīga pazīme ir 2–5 dzeloņi uz pirmās muguras spuras aizsardzībai pret plēsējiem. Ķermeni klāj āda, zvīņu nav. Uz sāniem ir atsevišķas kaula plātnītes. Nārsta periodā tēviņiem raksturīgs košs krāsojums ar sarkanu ķermeņa vēdera daļu un zilas acis."
+    },
+    {
+      "title": "Izplatība",
+      "content": "Dzīvo gan jūrā, gan saldūdeņos. Sastopams Ziemeļu puslodes piekrastes ūdeņos."
+    },
+    {
+      "title": "Barība",
+      "content": "Barojas galvenokārt ar <em>zooplanktonu</em>, taču var baroties arī ar kukaiņiem, <em>zoobentosu</em>, augu izcelsmes barību, kā arī ar zivju ikriem un kāpuriem. "
+    },
+    {
+      "title": "Attīstība",
+      "content": "Latvijā nārsto maijā un jūnijā. Ikru skaits ir atkarīgs no mātītes izmēra – 4,5 cm gara mātīte nārsta sezonā kopā iznērš aptuveni 40 ikru, bet 7 cm gara mātīte var iznērst līdz pat 300 ikriem."
+    },
+    {
+      "title": "Zveja",
+      "content": "Zivju nelielā izmēra dēļ sugai nav būtiskas nozīmes komerciālajā zvejā. Senāk tika zvejota kā izejviela zivju eļļas ražošanai."
+    }
+  ],
+  "fact": "Tēviņi no aļģēm veido tuneļveida nārsta ligzdu, ko pēc tam apsargā. Vienā nārsta sezonā tēviņi var veidot vairākas nārsta ligzdas, uz kurām tie ar raksturīgu zigzagveida deju pievilina mātītes.",
+  "order": "Scorpaeniformes",
+  "family": "Gasterosteidae",
+  "thumbnailImageTransform": {
+    "left": -170,
+    "top": 15,
+    "width": 585
+  },
+  "detailImageTransform": {
+    "left": 50,
+    "top": 360,
+    "width": 906
+  },
+  "factTextTransform": {
+    "height": 235,
+    "top": 238,
+    "left": 491,
+    "width": 428
+  },
+  "familyTextTransform": {
+    "height": 238,
+    "top": 679,
+    "left": 184
+  }
+}

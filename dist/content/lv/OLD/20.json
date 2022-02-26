@@ -1,0 +1,47 @@
+{
+  "id": 20,
+  "identifier": "20",
+  "group": 4,
+  "title": "Lielā smilšgliemene",
+  "latinTitle": "Mya arenaria",
+  "order": "<small>smilšgliemeņu</small> Myidae",
+  "family": "<small>gliemeņu</small> Bivalvia",
+  "imageFileName": "lielaa smilsgliemene.png",
+  "content": [
+    {
+      "title": "Ārējais izskats",
+      "content": "Lielākā Baltijas jūras gliemene, čaulas garums Latvijā 50–60 mm, sāļākos ūdeņos citās jūrās – līdz pat 120 milimetriem. Čaula balta līdz dzeltenīga, ovāla, virsma gluda. "
+    },
+    {
+      "title": "Izplatība",
+      "content": "Lielā smilšgliemene apdzīvo Ziemeļu Ledus okeānu, Atlantijas un Klusā okeānu ziemeļdaļu, kā arī Melno, Azovas, Marmora jūru un Vidusjūru. Baltijas jūrā tā pirmoreiz atrasta 18. gs., iespējams, ievesta no Ziemeļamerikas.\nLatvijā izskalotas čaulas nereti sastopamas Baltijas jūras, retāk – Rīgas jūras līča krastā.\n"
+    },
+    {
+      "title": "Ekoloģija",
+      "content": "Lielā smilšgliemene apdzīvo jūras ūdeņus līdz 75 m dziļumam, kur ierokas smilšainā gruntī 10–15 cm dziļumā. "
+    }
+  ],
+  "fact": "Maksimālais šīs gliemenes zināmais dzīves ilgums ir 28 gadi. Tā tiek izmantota pārtikā.",
+  "thumbnailImageTransform": {
+    "left": -80,
+    "top": 0,
+    "width": 494,
+    "angle": -15
+  },
+  "detailImageTransform": {
+    "left": 45,
+    "top": 322,
+    "width": 752
+  },
+  "factTextTransform": {
+    "height": 134,
+    "top": 290,
+    "left": 645,
+    "width": 304
+  },
+  "familyTextTransform": {
+    "height": 167,
+    "top": 755,
+    "left": 184
+  }
+}

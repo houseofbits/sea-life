@@ -1,0 +1,21 @@
+{
+    "id": 10,
+    "title": "Pazifische Miesmuschel",
+    "order": "Mytilidae (Miesmuscheln)",
+    "family": "Bivalvia (Muscheln)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Das Gehäuse ist länglich, dreieckig, dunkelbraun mit blauschwarzem Ton, mit dünner Schale. Die Schalenlänge beträgt in Lettland etwa 40 mm, in salzigeren Gewässern in anderen Meeren  -  bis zu 90 mm. Die Schaleninnenseite ist von einer dünnen Perlmuttschicht bedeckt."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Bewohnt den Nordteil des Pazifiks, lokal  -  den Atlantik (Küste der USA und nordöstlicher Teil der Ostsee). In Lettland kann man die Schalen oft am Ostseestrand, sowie in der Rigaer Bucht angeschwemmt finden."
+        },
+        {
+            "title": "Ökologie",
+            "content": "Bewohnt seichte Gewässer, ist in Gruppen anzutreffen, an einem Substrat befestigt. Ein Dienst, den die Muschel dem Ökosystem erbringt, ist die Wasserfiltration."
+        }
+    ],
+    "fact": "Diese Muschelart bildet Hybriden mit der Nordischen Miesmuschel, die im südöstlichen Teil der Ostsee (Polen und Deutschland) anzutreffen ist. Miesmuscheln werden oft für den Verzehr gebraucht, in vielen Ländern wird sie auch gezüchtet."
+}

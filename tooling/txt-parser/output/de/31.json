@@ -1,0 +1,29 @@
+{
+    "id": 31,
+    "title": "Lachs",
+    "order": "Salmoniformes",
+    "family": "Salmonidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Der Lachs ist einer der größten Fische in der Ostsee, er kann eine Länge von 1,5 m erreichen. Die Jungtiere sind dunkler gefärbt als die Erwachsenen, mit 7 - 13 großen dunklen Flecken auf den Seiten. Entlang der Seitenlinie haben die Jungtiere eine Reihe von roten Punkten. Vor dem Laichen ändert sich die Farbe der Männchen  -  sie werden dunkler, mit roten Flecken, der Unterkiefer krümmt sich in Hakenform."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Der Lachs ist in der ganzen Ostsee verbreitet. Er verbringt einen Teil seines Lebens in Flüssen, deshalb zählt er zu den Wanderfischen. Die Jungtiere halten sich in den Flüssen auf, aber die erwachsenen Fische verbringen den Großteil ihres Lebens im Meer."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Meist fressen sie Sprotten, Heringe und Stichlinge, seltener Hornhechte und Kabeljau. Die erwachsenen Tiere ernähren sich im Süßwasser nicht, aber die Hauptnahrung für Jungtiere sind Larven von Wasserinsekten."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Die Laichzeit ist im Herbst in schnellen Flussströmungen, wo sie auf den Flusskieseln die Eier laichen. Das Weibchen formt ein Nest, indem der Laich in die Kiesel eingebuddelt wird. Die Larven schlüpfen im Frühjahr und die Jungtiere verbringen 1-4 Jahre in den Zuflüssen der Ostsee."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Der Lachs ist beliebt bei Anglern. In Lettland ist das lizensierte Angeln in den Flüssen Salaca, Gauja und Venta genehmigt. In den Fischereifängen findet sich der Lachs in den letzten Jahren nur selten."
+        }
+    ],
+    "fact": "Lachse haben einen ausgeprägten Sinn für ihren Heimatstrom. Zum Laichen kehren sie genau in den Fluss zurück, wo sie geschlüpft sind. Durch menschliches Einwirken  -  z.B. durch Dammbau, hat sich die Zahl der Laichströme der Lachse verringert."
+}

@@ -1,0 +1,30 @@
+{
+    "id": 14,
+    "latinTitle": "Liparis liparis",
+    "title": "Plūkšņzivs",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "jūrasplūkšņu Liparidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Plūkšņzivs ķermenis izskatās nedaudz caurspīdīgs, garums var sasniegt 27 cm, bet Latvijas ūdeņos vairākumā gadījumu tās izaug līdz 15 cm garumam."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Plūkšņzivs izplatīta Arktikas - Atlantijas okeānu jūrās. Biežāk uzturas vietās ar cietu grunti, kur var nostiprināties ar diskveida spurām, taču ir sastopama arī piekrastē uz smilšaina vai dūņaina substrāta."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd vēžveidīgos, īpaši mizīdas, un tārpus. Var baroties arī ar zivju ikriem."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Plūkšņzivs nārsto piekrastē ziemā no novembra līdz februārim. Ikri tiek nostiprināti pie aļģēm vai cita grunts substrāta. To attīstība ilgst 6 - 8 nedēļas."
+        },
+        {
+            "title": "Zveja",
+            "content": "Nelielā izmēra un salīdzinoši retās sastopamības dēļ sugai nav nozīmes ne komerciālajā zvejā, ne makšķerēšanā."
+        }
+    ],
+    "fact": "Vēdera spuras ir diskveidā saaugušas kopā, atvieglojot nostiprināšanos pie grunts."
+}

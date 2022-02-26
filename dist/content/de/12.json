@@ -1,0 +1,29 @@
+{
+    "id": 12,
+    "title": "Seehase",
+    "order": "Scorpaeniformes (Drachenkopfartige)",
+    "family": "Cyclopteridae (Seehasen)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Der Seehase kann in der Ostsee eine Länge von 20 cm erreichen. Meist ist er gräulich blau gefärbt, doch zur Laichzeit färbt sich der Bauch der Männchen rot, der Weibchen  -  bläulich grün."
+        },
+        {
+            "title": "Verbreitungsgebiet",
+            "content": "Der Seehase ist im Nordteil des Atlantischen Ozeans vorzufinden."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Die Hauptnahrung sind verschiedene Krebsartige und Würmer. Beim Schwimmen über dem Meeresgrund frisst der Seehase Quallen und kleine Fische."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Die Laichzeit findet in den Winter- und Frühlingsmonaten an der Meeresküste statt. Die Männchen kommen als erste zum Laichplatz und nehmen ihr Laichterritorium ein. Seehasen formen während der Laichzeit Paare. Nach dem Laichen beschützen die Männchen die Eier."
+        },
+        {
+            "title": "Fischfang",
+            "content": "In einigen Ländern wird der Seehase gefischt. Vom Rogen der Seehasen wird Kaviar hergestellt."
+        }
+    ],
+    "fact": "Der Seehase hat keine Schwimmblasen. Die Bauchflossen sind zusammengewachsen und formen einen Saugnapf, mit dem er sich an steinförmige Substrate befestigen kann."
+}

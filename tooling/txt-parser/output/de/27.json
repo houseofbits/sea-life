@@ -1,0 +1,29 @@
+{
+    "id": 27,
+    "title": "Strandgrundel",
+    "order": "Perciformes (Barschartige)",
+    "family": "Gobiidae (Grundeln)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Ein in den Küstengewässern lebender Fisch, meist 2 - 4 cm lang. Strandgrundel haben Saugnäpfe am Bauch, die dadurch entstehen, dass die Bauchflossen zusammenwachsen."
+        },
+        {
+            "title": "Verbreitungsgebiet",
+            "content": "Der Strandgrundel ist im Nordatlantik anzutreffen. In der Ostsee lebt er an allen Küsten, außer dem Bottnischen und Finnischen Meerbusen."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Die jungen Strandgrudel ernähren sich von Zooplankton, aber erwachsene Strandgrundel fressen auch kleine Krebsartige."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Laicht in der zweiten Sommerhälfte. Die Weibchen laichen die Eier unter leeren Muscheln, wo Männchen sie beschützen. Die Männchen fächeln mit ihrem Schwanz frisches Wasser auf den Laich und versorgen ihn somit mit der nötigen Sauerstoffzufuhr."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Strandgrundel haben keine industrielle Bedeutung für die Fischerei und sie werden auch nicht geangelt."
+        }
+    ],
+    "fact": "Strandgrundel sind ein wichtiger Bestandteil des Küstenökosystems. Für Raubfische sind sie meist die ersten größeren Fraßobjekte."
+}

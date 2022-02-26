@@ -1,0 +1,21 @@
+{
+    "id": 24,
+    "title": "Sandklaffmuschel",
+    "order": "Myidae (Klaffmuscheln)",
+    "family": "Bivalvia (Muscheln)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Die größte Muschel der Ostsee, mit einer Schalenlänge in Lettland von 50 - 60 mm, in salzigeren Gewässern  -  bis zu 120 mm. Die Schale ist weiß bis gelblich, oval, mit einer glatten Oberfläche."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Die Sandklaffmuschel besiedelt die nördlichen Eisozeane, den Nordteil des Atlantiks und des Pazifiks, sowie das Schwarze, Asovische und Marmormeer, und das Mittelmeer. In der Ostsee wurde sie im 18. Jahrhundert zum ersten Mal gefunden, möglicherweise wurde sie aus Nordamerika eingeführt.In Lettland werden die Schalen oft am Strand der Ostsee, seltener in der Rigaer Bucht angeschwemmt."
+        },
+        {
+            "title": "Ökologie",
+            "content": "Die Sandklaffmuschel lebt im Meer in einer Tiefe von bis zu 75 m, wo sie sich in den sandigen Grund in 10-15 cm Tiefe vergräbt."
+        }
+    ],
+    "fact": "Die maximale bekannte Lebensdauer der Sandklaffmuschel ist 28 Jahre. Sie wird als Nahrungsmittel verspeist."
+}

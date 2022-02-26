@@ -1,0 +1,30 @@
+{
+    "id": 17,
+    "latinTitle": "Taurulus bubalis",
+    "title": "Jūras dzeloņgalve",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "platgalvju Cottidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Jūras dzeloņgalve parasti sasniedz 10 - 15 cm garumu. Atšķirībā no buļļzivīm tai ir liels dzelonis galvas sānos. Nārstojošiem tēviņiem vēders kļūst oranžsarkans ar zilganbaltiem plankumiem."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Jūras dzeloņgalve ir sastopama Ziemeļeiropas un Rietumeiropas piekrastē, plaši izplatīta Kategatā un Baltijas jūras dienvidu daļā. Dzīvo seklā piekrastē starp akmeņiem."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd vēžveidīgos, tārpus un nelielas zivis."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsto no februāra līdz aprīlim."
+        },
+        {
+            "title": "Zveja",
+            "content": "Jūras dzeloņgalvei nav rūpnieciskas nozīmes, tā netiek makšķerēta vai zvejota."
+        }
+    ],
+    "fact": "Zivs neilgu laiku spēj elpot gaisu ārpus ūdens. Spēj ļoti labi maskēties, pielāgojot ķermeņa krāsojumu apkārtējai videi."
+}

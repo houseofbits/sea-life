@@ -1,0 +1,21 @@
+{
+    "id": 10,
+    "title": "Bay mussel",
+    "order": "Mytilidae",
+    "family": "Bivalvia",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The thin shell is elongated, triangular, and dark brown with a blackish blue tint. In Latvia the shell grows to about 40 mm, whereas in more saline seas it can grow up to 90 mm. On the inside of the shell is a thin layer of nacre (mother of pearl)."
+        },
+        {
+            "title": "Distribution",
+            "content": "Inhabits the North Pacific and parts of the Atlantic Ocean (the US coast and the north-eastern Baltic Sea). In Latvia the shells are often seen washed up on the Baltic coast, including in the Gulf of Riga."
+        },
+        {
+            "title": "Ecology",
+            "content": "Inhabits shallow waters; found in groups, attached to a substrate. A service that this mussel provides the ecosystem is water filtration."
+        }
+    ],
+    "fact": "The species hybridises with the blue mussel, which is found in the south-western Baltic Sea (off of Poland and Germany). Mussels are a common food source and even cultivated in many countries."
+}

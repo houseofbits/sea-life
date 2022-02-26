@@ -1,56 +1,54 @@
 {
-  "id": 3,
-  "group": 1,
-  "title": "Apaļais jūrasgrundulis",
-  "latinTitle": "Neogobius melanostomus",
-  "imageFileName": "apalais-jurasgrundulis.png",
-  "identifier": "3",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Vēdera spuras ir diskveidā saaugušas kopā, atvieglojot nostiprināšanos pie grunts. Viena no sugai raksturīgajām pazīmēm ir tumšs punkts pirmās muguras spuras aizmugurē. Zivs garums var sasniegt 24 cm un masa pārsniegt 230 gramus."
+    "id": 3,
+    "latinTitle": "Sterna paradisaea",
+    "title": "Jūras zīriņš",
+    "order": "tārtiņveidīgo Charadriiformes",
+    "family": "zīriņu Sternidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Ķermeņa garums 28 - 43 cm, svars 86 - 127 grami. Abi dzimumi izskatās vienādi. Jūras zīriņš ir slaids, vidēji liels jūras putns ar šauriem, gariem spārniem. Pieauguša putna apspalvojums augšpusē ir gaiši pelēks, apakšpusē balts, vaigi balti, galvas virsa melna. Garā, šķeltā aste balta, ar pelēkām ārējām spalvām. Taisnais knābis un kājas tumši sarkanas. Jauniem putniem atšķirībā no dzimumbriedumu sasniegušajiem ir melns knābis un kājas, brūnpelēki, raibumoti spārni, īsas astes lidspalvas un mazāk koša galvas virsa."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Cirkumpolārs Ziemeļu puslodē, visvairāk izplatīts uz ziemeļiem no Polārā loka. Eiropā uz dienvidiem sastopams līdz Lielbritānijai un Nīderlandei. Ziemo Antarktīdas ūdeņos Dienvidu puslodē. Pēc jaunākajiem datiem Latvijā ligzdo tikai 5 - 20 pāri. Latvijā sastopams jūras piekrastē un jūrā."
+        },
+        {
+            "title": "Barība",
+            "content": "Barojas galvenokārt ar nelielām zivīm (līdz 15 cm garām), retos gadījumos arī ar vēžveidīgajiem, abiniekiem, gliemjiem un jūras tārpiem."
+        },
+        {
+            "title": "Ligzdošana",
+            "content": "Ligzda parasti ir neliela iedobe zemē, tā var būt un var arī nebūt izklāta ar sausu zāli vai citu līdzīgu materiālu. Pludmales oļos tās ir īpaši grūti pamanāmas. Dējumā 1 - 3 olas. Perē un par mazuļiem rūpējas abi vecāki. Latvijā ligzdo tikai 5 - 20 pāri."
+        },
+        {
+            "title": "Jūras zīriņš un cilvēks",
+            "content": "Ligzdošanas laikā jūras zīriņu un tā mazuļus apdraud cilvēks, kaķi un citi sauszemes dzīvnieki."
+        }
+    ],
+    "fact": "Tā kā jūras zīriņš var nodzīvot līdz 34 gadu vecumam, tad savā mūžā tas migrācijas laikā nolido 2,4 miljonus kilometru, kas ir apmēram tikpat daudz kā trīs reizes aizlidot turp un atpakaļ uz Mēnesi.",
+    "identifier": "x",
+    "imageFileName": "juras zirins.png",
+    "group": 2,
+    "thumbnailImageTransform": {
+        "left": -280,
+        "top": 0,
+        "width": 699
     },
-    {
-      "title": "Izplatība",
-      "content": "Latvijā uzskatāma par invazīvu sugu. Sugas dabiskais izplatības areāls ir Azovas, Melnās un Kaspijas jūras reģions. Baltijas jūrā pirmoreiz konstatēts 1990. gadā."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 265,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Apaļā jūrasgrunduļa barība ir daudzveidīga, bet lielākoties tas ēd gliemenes un nelielus vēžveidīgos."
+    "factTextTransform": {
+        "height": 400,
+        "top": 197,
+        "left": 337,
+        "width": 599
     },
-    {
-      "title": "Attīstība",
-      "content": "Tēviņi ir agresīvi un teritoriāli – veido nārsta ligzdas un rūpējas par nārsta vietu aizsardzību. Nārsta sezona ilgst no aprīļa līdz septembrim. Ikri tiek nērsti uz grunts, tie ir lipīgi un viegli nostiprinās uz augiem vai cita substrāta."
-    },
-    {
-      "title": "Zveja",
-      "content": "Apaļā jūrasgrunduļa zvejai Baltijas jūrā netiek noteikti nozvejas  ierobežojumi. Pastāv specializēts zvejas rīks – apaļā jūrasgrunduļa murds, lai mazāk noķertu citas zivis. Kopš 2017. gada apaļais jūrasgrundulis ir otra zvejotākā suga Latvijas piekrastē."
+    "familyTextTransform": {
+        "height": 133,
+        "top": 814,
+        "left": 184
     }
-  ],
-  "fact": "Baltijas jūra ir labi piemērota vide apaļajam jūrasgrundulim, par ko liecina zivju lielāki izmēri un garāks dzīves ilgums salīdzinājumā ar zivīm to dabiskajā izplatības areālā.",
-  "order": "Gobiiformes",
-  "family": "Gobiidae",
-  "thumbnailImageTransform": {
-    "left": -100,
-    "top": 30,
-    "width": 500,
-    "angle": -7
-  },
-  "detailImageTransform": {
-    "left": 50,
-    "top": 320,
-    "width": 848,
-    "angle": -7
-  },
-  "factTextTransform": {
-    "height": 138,
-    "top": 238,
-    "left": 491,
-    "width": 428
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

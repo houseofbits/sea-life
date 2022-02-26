@@ -1,0 +1,29 @@
+{
+    "id": 3,
+    "title": "Arctic tern",
+    "order": "Charadriiformes",
+    "family": "Sternidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "Body length: 28 - 43 cm; weight: 86 - 127 grams. Both sexes look the same. The Arctic tern is a slender, medium-sized seabird with long, narrow wings. The plumage of the adult is light grey above, white underneath, with white cheeks and a black crown. The long forked tail is whitish, with grey outer webs. It has a straight bill and dark red legs. Young birds, unlike sexually mature birds, have black bills and legs, brownish-grey mottled wings, short tail streamers, and a lighter forecrown."
+        },
+        {
+            "title": "Distribution",
+            "content": "Circumpolar in the Northern Hemisphere, widely distributed north of the Arctic Circle. In Europe they are found as far south as Great Britain and the Netherlands. The Arctic tern winters in the Antarctic waters of the Southern Hemisphere. According to the latest data, there are only 5 - 20 breeding pairs in Latvia. In Latvia they are found on the coast and in the sea."
+        },
+        {
+            "title": "Diet",
+            "content": "Feeds mainly on small fish (up to 15 cm long), rarely on crustaceans, amphibians, molluscs and marine worms."
+        },
+        {
+            "title": "Breeding",
+            "content": "The nest is usually a small depression in the ground and may or may not be lined with dry grass or other similar material. They are particularly difficult to see in pebbles on the beach. 1 - 3 eggs are laid. Both sexes share incubation duties and care for the young. Only 5 - 20 pairs breed in Latvia."
+        },
+        {
+            "title": "Arctic terns and humans",
+            "content": "During the breeding season, Arctic terns and their chicks face threats from humans, cats and other land animals."
+        }
+    ],
+    "fact": "Since the tern can live to the age of 34, over its lifetime it will fly up to 2.4 million kilometres during migration, which is about the same as flying back and forth to the Moon three times over."
+}

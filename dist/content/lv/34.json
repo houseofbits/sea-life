@@ -1,0 +1,55 @@
+{
+    "id": 34,
+    "latinTitle": "Coregonus sp.",
+    "title": "Sīga",
+    "order": "lašveidīgo Salmoniformes",
+    "family": "lašu Salmonidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Sīga ir lašveidīgo kārtas zivs ar raksturīgu taukspuru starp muguras un astes spuru. Var sasniegt 12 kg lielu svaru."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sīga ir sastopama ūdeņos apkārt Ziemeļpolam. Eiropā izplatīta gan saldūdens, gan jūras ūdeņos."
+        },
+        {
+            "title": "Barība",
+            "content": "Mazuļi sākumā barojas ar zooplanktonu. Pieaugušas zivis barojas ar bezmugurkaulniekiem, zivju ikriem un nelielām zivīm, pārsvarā jūrasgrunduļiem."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsto oktobrī - decembrī, bet nārsta migrāciju veic jau jūnijā - oktobrī. Gan upēs, gan jūrā izvēlas nārstot rajonos ar akmeņainu vai grants substrātu."
+        },
+        {
+            "title": "Zveja",
+            "content": "Sīgām ir augsta komerciālā un gastronomiskā vērtība."
+        }
+    ],
+    "fact": "Mūsdienu literatūrā pastāv uzskats, ka Eiropā un tās piekrastē var būt sastopamas nevis viena, bet pat vairāk nekā 59 dažādas sīgu sugas.",
+    "identifier": "x",
+    "imageFileName": "siga.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -640,
+        "top": -10,
+        "width": 1088,
+        "angle": 0
+    },
+    "detailImageTransform": {
+        "left": 47,
+        "top": 428,
+        "width": 904
+    },
+    "factTextTransform": {
+        "height": 235,
+        "top": 238,
+        "left": 353,
+        "width": 429
+    },
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
+    }
+}

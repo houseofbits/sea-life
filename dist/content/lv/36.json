@@ -1,0 +1,55 @@
+{
+    "id": 36,
+    "latinTitle": "Myoxocephalus quadricornis",
+    "title": "Četrragu buļļzivs",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "platgalvju Cottidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Četrragu buļļzivs ir jūrās un saldūdeņos tuvu gultnei dzīvojoša zivs. Viena no galvenajām sugas pazīmēm ir četri \"ragi\"  -  bumbuļveida kaula veidojumi galvas virspusē. Āda kaila, segta ar rindās izvietotām nelielām kaula plātnītēm. Mātītes var sasniegt 35 cm, tēviņi  -  23 cm garumu un 0,95 kg svaru."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Četrragu buļļzivs ir sastopama Ziemeļu puslodē."
+        },
+        {
+            "title": "Barība",
+            "content": "Galvenokārt ēd sīkus vēžveidīgos, reizēm ikrus un nelielas zivis."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsto uz grunts no novembra līdz februārim. Tēviņi veido nārsta ligzdu un apsargā ikrus līdz to izšķilšanās brīdim pat trīs mēnešus."
+        },
+        {
+            "title": "Zveja",
+            "content": "Četrragu buļļzivis ir lietojamas uzturā, taču to nozīme komerciālajā zvejā ir neliela. Parasti tiek nozvejota kā piezveja."
+        }
+    ],
+    "fact": "Iespējams, ka šī bijusi viena no pirmajām jūras zivju sugām, kas pirms aptuveni 10 tūkstošiem gadu pēc ledus laikmeta beigām ienāca Baltijas jūras baseinā.",
+    "identifier": "x",
+    "imageFileName": "cetrragu bulzivs.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -210,
+        "top": -15,
+        "width": 644,
+        "angle": 0
+    },
+    "detailImageTransform": {
+        "left": 46,
+        "top": 345,
+        "width": 906
+    },
+    "factTextTransform": {
+        "height": 188,
+        "top": 238,
+        "left": 491,
+        "width": 428
+    },
+    "familyTextTransform": {
+        "height": 322,
+        "top": 595,
+        "left": 184
+    }
+}

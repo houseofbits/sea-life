@@ -1,0 +1,29 @@
+{
+    "id": 11,
+    "title": "Round goby",
+    "order": "Gobiiformes",
+    "family": "Gobiidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The pelvic fins are fused to form a single disc (shaped like a suction cup) on the belly, which aids the fish in anchoring to the bottom. One of the characteristic features of the species is a dark spot on the back of the first dorsal fin. The fish can reach a length of 24 cm and weigh more than 230 grams."
+        },
+        {
+            "title": "Distribution",
+            "content": "Considered an invasive species in Latvia. The natural range of the species are the Azov, Black and Caspian Sea regions. It was first recorded in the Baltic Sea in 1990."
+        },
+        {
+            "title": "Diet",
+            "content": "The diet of the round goby is varied, but it mostly eats bivalve molluscs and small crustaceans."
+        },
+        {
+            "title": "Development",
+            "content": "Males are aggressive and territorial  -  they build spawning nests and protect the area. The spawning season lasts from April to September. The eggs are deposited on the bottom; they are sticky and easily fix on to plants or other substrates."
+        },
+        {
+            "title": "Fishing",
+            "content": "There are no catch limits for round goby fishing in the Baltic Sea. Specialised fishing gear, the round goby fike net, has been designed to reduce the capture of other fish. As of 2017, the round goby is the second most fished species off the Latvian coast."
+        }
+    ],
+    "fact": "The Baltic Sea is a good habitat for the round goby, as evidenced by its larger size and longer lifespan compared to the round gobies living in their natural range."
+}

@@ -1,55 +1,56 @@
 {
-  "id": 21,
-  "identifier": "21",
-  "group": 1,
-  "title": "Lucītis",
-  "latinTitle": "Zoarces viviparus",
-  "order": "Perciformes",
-  "family": "Zoarcidae",
-  "imageFileName": "lucitis.png",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Lucītis ir bentiska zivs ar slaidu ķermeni. Virzienā uz asti ķermenis ir saplacināts. Lucītim ir ļoti garas muguras un anālās spuras, kas saaugušas ar astes spuru. Zvīņas ir maziņas, ar neapbruņotu aci neredzamas, iegremdētas ādā."
+    "id": 21,
+    "latinTitle": "Eriocheir sinensis",
+    "title": "Ķīnas cimdiņkrabis",
+    "order": "desmitkājvēžu Decapoda",
+    "family": "krastkrabju Varunidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Galvkrūšu vairogs var sasniegt 20 cm garumu. Krāsa var būt no tumši zaļganbrūnas līdz sarkanīgi brūnai. Spīles īsākas par ejkājām. Raksturīga pazīme  -  spīles klāj apmatojums ar tumšiem matiņiem."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Ķīnas cimdiņkrabji apdzīvo mērenās un tropu joslas ūdeņus starp Vladivostoku un Dienvidķīnu, ietverot Japānas piekrasti, Taivānu un Koreju. Sastopami jūras piekrastē, piejūras ezeros un upju grīvās. Eiropas piekrastēs ievesti ar kuģu balasta ūdeņiem."
+        },
+        {
+            "title": "Barība",
+            "content": "Visēdājs  -  barojas ar augiem, aļģēm, zivīm un bezmugurkaulniekiem."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Dzimumgatavību Eiropas upēs krabis sasniedz 3 - 5 gadu vecumā, Ķīnas piekrastē 1 - 2 gadu vecumā. Olas tiek dētas vienu reizi mūžā vasaras beigās sālsūdenī un tiek piestiprinātas zem mātītes ķermeņa. Mātīte dodas uz upju iztekām, kur izšķiļas kāpuri, kas vēlāk turpina attīstību saldūdenī. Vienā perēšanas reizē krabju mātīte var veidot no simt tūkstošiem līdz pat miljonam olu."
+        },
+        {
+            "title": "Zveja",
+            "content": "Latvijā krabis bojā zivju tīklus un apēd vai apgrauž tajos esošās zivis."
+        }
+    ],
+    "fact": "Konstatēts, ka dabīgajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu  -  gliemeņu, nematožu, vēžveidīgo  -  izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
+    "identifier": "x",
+    "imageFileName": "KINAS CIMDINKRABIS.png",
+    "group": 4,
+    "thumbnailImageTransform": {
+        "left": -130,
+        "top": -10,
+        "width": 609,
+        "angle": 15
     },
-    {
-      "title": "Izplatība",
-      "content": "Lucītis ir sastopams Ziemeļeiropas jūrās, plaši izplatīts visos Baltijas jūras piekrastes ūdeņos, parasti līdz 40 m dziļumam. Lucītis ir tipiska aukstūdens suga, kam, paaugstinoties ūdens temperatūrai, samazinās augšanas ātrums un izdzīvošana."
+    "detailImageTransform": {
+        "left": 150,
+        "top": 350,
+        "width": 751,
+        "angle": 30
     },
-    {
-      "title": "Barība",
-      "content": "Ēd <em>bentiskus</em> vēžveidīgos, tārpus, zivju mazuļus, arī ikrus. "
+    "factTextTransform": {
+        "height": 196,
+        "top": 238,
+        "left": 353,
+        "width": 500
     },
-    {
-      "title": "Attīstība",
-      "content": "Lucītis ir vienīgā dzīvdzemdētājsuga mūsu jūras ūdeņos. Lucīši parasti dzimumgatavību sasniedz otrajā dzīves gadā, kad tie ir 13–18 cm gari. Pārošanās notiek jūlijā–septembrī. Ikri attīstās mātītes organismā vairākus mēnešus, līdz decembrī–februārī piedzimst 30–400 aptuveni 3–5 cm gari mazie lucīši."
-    },
-    {
-      "title": "Zveja",
-      "content": "Lucītis ir nozīmīgs zvejas objekts piekrastes zvejniekiem. Lielākās nozvejas ir Rīgas jūras līča piekrastē vasaras mēnešos. Lucīšus zvejo ar specializētiem lucīšu murdiem un piezvejā citu zivju murdos."
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Lucīti bieži izmanto kā vides indikatoru, jo tas ir dzīvdzemdētājs un veic salīdzinoši nelielas migrācijas, tā labi raksturojot lokālo vides stāvokli. Lucīšu asakas ir zaļganā krāsā.",
-  "thumbnailImageTransform": {
-    "left": -320,
-    "top": 0,
-    "width": 759,
-    "angle": 0
-  },
-  "detailImageTransform": {
-    "left": 45,
-    "top": 392,
-    "width": 906
-  },
-  "factTextTransform": {
-    "height": 254,
-    "top": 239,
-    "left": 353,
-    "width": 429
-  },
-  "familyTextTransform": {
-    "height": 320,
-    "top": 602,
-    "left": 184
-  }
 }

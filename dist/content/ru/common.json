@@ -1,0 +1,25 @@
+{
+  "title": "Жители Балтийского моря",
+  "backButton": "Назад",
+  "order": "Отряд",
+  "family": "Cемейство",
+  "mainFilterButton": "Назад ко всем",
+  "groups": [
+    {
+      "group": 1,
+      "title": "Птицы"
+    },
+    {
+      "group": 2,
+      "title": "Рыба"
+    },
+    {
+      "group": 3,
+      "title": "Ракообразные"
+    },
+    {
+      "group": 4,
+      "title": "Моллюски"
+    }
+  ]
+}

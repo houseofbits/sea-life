@@ -1,0 +1,29 @@
+{
+    "id": 2,
+    "title": "Fourbeard rockling",
+    "order": "Gadiformes",
+    "family": "Gadrosaridae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The fourbeard rockling has a slender body with small scales. Its back can be bluish or brownish grey. Its characteristic feature is an elongated barbel on its chin. In the Baltic Sea, it can reach a maximum size of up to 36 centimetres."
+        },
+        {
+            "title": "Distribution",
+            "content": "Found in the North Atlantic up to Iceland. In the Baltic Sea it occurs up to the Gulf of Finland and the Gulf of Bothnia."
+        },
+        {
+            "title": "Diet",
+            "content": "Eats benthic crustaceans and worms."
+        },
+        {
+            "title": "Development",
+            "content": "Usually spawns from March to August. Both eggs and larvae are pelagic."
+        },
+        {
+            "title": "Fishing",
+            "content": "This species is of minor importance to both commercial fishing and anglers."
+        }
+    ],
+    "fact": "Unlike other fish, the first ray of the fourbeard rockling's dorsal fin is long and prominent, making it easily distinguishable from other fish."
+}

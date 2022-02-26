@@ -1,54 +1,54 @@
 {
-  "id": 15,
-  "group": 2,
-  "title": "Kākaulis",
-  "latinTitle": "Clangula hyemalis",
-  "order": "<small>zosveidīgo</small> Anseriformes",
-  "family": "<small>pīļu</small> Anatidae",
-  "imageFileName": "kaakaulis.png",
-  "identifier": "15",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Ķermeņa garums 37–60 cm, svars 0,4–0,9 kilogrami. Kākauļi ir maza auguma pīles ar mazu galvu un mazu, pelēku knābi. Kākaulim ir raksturīga liela apspalvojuma zīmējuma dažādība. Apspalvojuma pamatkrāsa tēviņiem ir balta, ar brūnu, pelēku un melnu rakstu, kas atkarīgs no dzimuma, vecuma un sezonas. Kākauļi ir unikāli ar to, ka apspalvojumu gan tēviņi, gan mātītes maina trīs reizes gadā. Riesta laikā tēviņi ir baltāki, bet vēlāk, nomainot spalvu, tie kļūst tumšāki. Seja parasti ir balta, spārni tumši, ar baltiem pleciem, pavēdere balta. Mātītes ir brūni raibas, ar gaišu galvu un pavēderi."
+    "id": 15,
+    "latinTitle": "Gasterosteus aculeatus",
+    "title": "Trīsadatu stagars",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "stagaru Gasterosteidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Trīsadatu stagars ir neliela, ūdens augšējos slāņos dzīvojoša zivs. Pieaugušu īpatņu izmērs parasti nepārsniedz 10 centimetrus. Raksturīga pazīme ir 2 - 5 dzeloņi uz pirmās muguras spuras aizsardzībai pret plēsējiem. Ķermeni klāj āda, zvīņu nav. Uz sāniem ir atsevišķas kaula plātnītes. Nārsta periodā tēviņiem raksturīgs košs krāsojums ar sarkanu ķermeņa vēdera daļu un zilas acis."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Dzīvo gan jūrā, gan saldūdeņos. Sastopams Ziemeļu puslodes piekrastes ūdeņos."
+        },
+        {
+            "title": "Barība",
+            "content": "Barojas galvenokārt ar zooplanktonu, taču var baroties arī ar kukaiņiem, zoobentosu, augu izcelsmes barību, kā arī ar zivju ikriem un kāpuriem."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Latvijā nārsto maijā un jūnijā. Ikru skaits ir atkarīgs no mātītes izmēra  -  4,5 cm gara mātīte nārsta sezonā kopā iznērš aptuveni 40 ikru, bet 7 cm gara mātīte var iznērst līdz pat 300 ikriem."
+        },
+        {
+            "title": "Zveja",
+            "content": "Zivju nelielā izmēra dēļ sugai nav būtiskas nozīmes komerciālajā zvejā. Senāk tika zvejota kā izejviela zivju eļļas ražošanai."
+        }
+    ],
+    "fact": "Tēviņi no aļģēm veido tuneļveida nārsta ligzdu, ko pēc tam apsargā. Vienā nārsta sezonā tēviņi var veidot vairākas nārsta ligzdas, uz kurām tie ar raksturīgu zigzagveida deju pievilina mātītes.Saite uz animāciju?",
+    "identifier": "x",
+    "imageFileName": "3trisadatu-stagars.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -170,
+        "top": 15,
+        "width": 585
     },
-    {
-      "title": "Izplatība",
-      "content": "Holarktikas ziemeļu piekrastēs cirkumpolārs. Ziemo ziemeļu reģionu jūru seklumos un piekrastēs, Eiropā sasniedzot Francijas ziemeļus. Atsevišķās vietās ziemo arī iekšzemē, piemēram, Ziemeļamerikā Lielajos ezeros un centrālajā Eiropā. Latvijā lielā skaitā caurceļo un ziemo jūrā. Atsevišķi īpatņi ziemā var uzturēties arī piejūras ezeros vai pat Daugavā. Vasaras mēnešos atsevišķi putni regulāri sastopami jūras piekrastē."
+    "detailImageTransform": {
+        "left": 50,
+        "top": 360,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Barojas ar moluskiem, vēžveidīgajiem, ūdens bezmugurkaulniekiem, arī ar dažādiem augiem un aļģēm. "
+    "factTextTransform": {
+        "height": 235,
+        "top": 238,
+        "left": 491,
+        "width": 428
     },
-    {
-      "title": "Ligzdošana",
-      "content": "Ligzdo pārsvarā tundrā iekšzemes ūdeņos. Ligzda atrodas uz zemes. Tā tiek būvēta no dubļiem un augu daļām, bet pēc tam izklāta ar dūnām. Perē un mazuļus vada tikai mātīte.  Dējumā 6–11 olas. Latvijā neligzdo."
-    },
-    {
-      "title": "Kākaulis un cilvēks",
-      "content": "Latvijā nav medījams putns. Ligzdošanas vietās kākauļus apdraud biotopa pārmaiņas un zudums gan dabisku iemeslu, gan cilvēka darbības (naftas un gāzes ieguve) dēļ, bet ziemošanas vietās – piesārņojums, barības konkurenti un zvejnieku tīkli."
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Pavasarī jūrā kākaulis sauc savu vārdu: “kā-kau-lit, kā-kau-lit”. Var ienirt līdz pat 60 m dziļumam.",
-  "thumbnailImageTransform": {
-    "left": -60,
-    "top": 9,
-    "width": 505
-  },
-  "detailImageTransform": {
-    "left": 184,
-    "top": 301,
-    "width": 614
-  },
-  "factTextTransform": {
-    "height": 375,
-    "top": 171,
-    "left": 278,
-    "width": 400
-  },
-  "familyTextTransform": {
-    "height": 194,
-    "top": 616,
-    "left": 661
-  }
 }

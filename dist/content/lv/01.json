@@ -1,54 +1,54 @@
 {
-  "id": 1,
-  "group": 1,
-  "title": "Trīsadatu stagars",
-  "latinTitle": "Gasterosteus aculeatus",
-  "imageFileName": "3trisadatu-stagars.png",
-  "identifier": "1",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Trīsadatu stagars ir neliela, ūdens augšējos slāņos dzīvojoša zivs. Pieaugušu īpatņu izmērs parasti nepārsniedz 10 centimetrus. Raksturīga pazīme ir 2–5 dzeloņi uz pirmās muguras spuras aizsardzībai pret plēsējiem. Ķermeni klāj āda, zvīņu nav. Uz sāniem ir atsevišķas kaula plātnītes. Nārsta periodā tēviņiem raksturīgs košs krāsojums ar sarkanu ķermeņa vēdera daļu un zilas acis."
+    "id": 1,
+    "latinTitle": "Bucephala clangula",
+    "title": "Gaigala",
+    "order": "zosveidīgo Anseriformes",
+    "family": "pīļu Anatidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Ķermeņa garums 62 - 77 cm, svars 0,5 - 1,2 kilogrami. Gaigala ir vidēji liela pīle ar kompaktu, noapaļotu ķermeni, īsu kaklu, lielu galvu un īsu, tumši pelēku knābi. Sugai piemīt dzimumu dimorfisms: tēviņi ir nedaudz lielāki nekā mātītes, un katram dzimumam ir atšķirīgs apspalvojums. Ligzdošanas sezonas laikā tēviņa galva ir tumši zaļa ar metālisku spīdumu, uz vaigiem pie knābja pamatnes ovāls, balts laukums. Acis koši dzeltenas, zeltainas. Ķermeņa sāni, krūtis un kakls balti, mugura un aste melna, spārni melnbalti. Mātītei ir šokolādes brūna galva, samērā šaura, balta kakla \"apkaklīte\", acis gaiši dzeltenas. Ķermenis pelēkbrūns, ar tumšu muguru, asti un spārniem. Jauni putni ir līdzīgi mātītēm."
+        },
+        {
+            "title": "Izplatība",
+            "content": "No ziemeļu un centrālās Eiropas uz austrumiem pāri Eirāzijai līdz Kamčatkai. Ziemeļamerikā no Aļaskas līdz Labradoras pussalai. Ziemo Ziemeļjūras un Baltijas jūras piekrastēs, uz dienvidiem lielākajā daļā Eiropas, Vidusjūras baseina austrumu daļā, Melnajā un Kaspijas jūrā, Kazahijā, kā arī Ķīnas austrumos. Ziemeļamerikā gar Klusā okeāna piekrasti uz dienvidiem līdz Kalifornijas līcim; iekšzemē uz dienvidiem no ligzdošanas areāla līdz Floridai. Latvijā samērā parasta ligzdotāja, caurceļotāja un ziemotāja. Ligzdo visā teritorijā pie dažādām, pat nelielām ūdenstilpnēm. Vasaras otrajā pusē vietām jūrā koncentrējas lieli spalvmetēju bari. Ceļošanas laikā bieži jūrā, kā arī vietām iekšzemē. Ziemo jūrā gar piekrasti un neaizsalušos iekšzemes ūdeņos."
+        },
+        {
+            "title": "Barība",
+            "content": "Barojas ar ūdens bezmugurkaulniekiem  -  moluskiem, kukaiņu kāpuriem, vabolēm utt."
+        },
+        {
+            "title": "Ligzdošana",
+            "content": "Ligzdo koku dobumos vai piemērotos būros, kas var atrasties pat vairāku kilometru attālumā no tuvāka ūdens. Ligzdas izklājumā pelēkbaltas pūkas. Perē un mazuļus vada tikai mātīte. Dējumā 5 - 11 olas."
+        },
+        {
+            "title": "Gaigala un cilvēks",
+            "content": "Latvijā medījams putns. Cilvēki bieži palīdz gaigalai, uztaisot mākslīgas ligzdvietas."
+        }
+    ],
+    "fact": "Tā spēj nirt līdz 4 m dziļumam.",
+    "identifier": "x",
+    "imageFileName": "gaigala.png",
+    "group": 2,
+    "thumbnailImageTransform": {
+        "left": -110,
+        "top": 18,
+        "width": 539
     },
-    {
-      "title": "Izplatība",
-      "content": "Dzīvo gan jūrā, gan saldūdeņos. Sastopams Ziemeļu puslodes piekrastes ūdeņos."
+    "detailImageTransform": {
+        "left": 184,
+        "top": 255,
+        "width": 614
     },
-    {
-      "title": "Barība",
-      "content": "Barojas galvenokārt ar <em>zooplanktonu</em>, taču var baroties arī ar kukaiņiem, <em>zoobentosu</em>, augu izcelsmes barību, kā arī ar zivju ikriem un kāpuriem. "
+    "factTextTransform": {
+        "height": 421,
+        "top": 171,
+        "left": 278,
+        "width": 446
     },
-    {
-      "title": "Attīstība",
-      "content": "Latvijā nārsto maijā un jūnijā. Ikru skaits ir atkarīgs no mātītes izmēra – 4,5 cm gara mātīte nārsta sezonā kopā iznērš aptuveni 40 ikru, bet 7 cm gara mātīte var iznērst līdz pat 300 ikriem."
-    },
-    {
-      "title": "Zveja",
-      "content": "Zivju nelielā izmēra dēļ sugai nav būtiskas nozīmes komerciālajā zvejā. Senāk tika zvejota kā izejviela zivju eļļas ražošanai."
+    "familyTextTransform": {
+        "height": 164,
+        "top": 548,
+        "left": 645
     }
-  ],
-  "fact": "Tēviņi no aļģēm veido tuneļveida nārsta ligzdu, ko pēc tam apsargā. Vienā nārsta sezonā tēviņi var veidot vairākas nārsta ligzdas, uz kurām tie ar raksturīgu zigzagveida deju pievilina mātītes.",
-  "order": "Scorpaeniformes",
-  "family": "Gasterosteidae",
-  "thumbnailImageTransform": {
-    "left": -170,
-    "top": 15,
-    "width": 585
-  },
-  "detailImageTransform": {
-    "left": 50,
-    "top": 360,
-    "width": 906
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 491,
-    "width": 428
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

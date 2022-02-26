@@ -1,0 +1,29 @@
+{
+    "id": 34,
+    "title": "Whitefish",
+    "order": "Salmoniformes",
+    "family": "Salmonidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The whitefish is a salmonid with a distinctive adipose fin between the dorsal and caudal fins. It can reach a weight of 12 kg."
+        },
+        {
+            "title": "Distribution",
+            "content": "Whitefish are found in the waters around the North Pole. In Europe, it is distributed in both freshwater and marine waters."
+        },
+        {
+            "title": "Diet",
+            "content": "Juveniles initially feed on zooplankton. Adults feed on invertebrates, fish eggs and small fish, mostly gudgeons."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns in October - December, but migrates for spawning as early as June - October. In both rivers and the sea, it prefers to spawn in areas with rocky or gravel substrates."
+        },
+        {
+            "title": "Fishing",
+            "content": "Whitefish have a high commercial and gastronomic value."
+        }
+    ],
+    "fact": "According to today's scientific literature, more than 59 different species of whitefish may occur in Europe and along its coasts."
+}

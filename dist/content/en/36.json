@@ -1,0 +1,29 @@
+{
+    "id": 36,
+    "title": "Fourhorn sculpin",
+    "order": "Scorpaeniformes",
+    "family": "Cottidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The fourhorn sculpin is a bottom-dwelling fish found in both marine and fresh waters. One of the main features of the species are the four 'horns' or bony protuberances on its head. The skin is bare and covered with rows of small bony plates. Females can reach a length of 35 cm, while males can grow to 23 cm and 0.95 kg in weight."
+        },
+        {
+            "title": "Distribution",
+            "content": "The fourhorn sculpin is found in the Northern Hemisphere."
+        },
+        {
+            "title": "Diet",
+            "content": "Mainly eats small crustaceans, occasionally eggs and small fish."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns on the bottom of the body of water, from November to February. Males build a spawning nest and guard the eggs for up to three months until they hatch."
+        },
+        {
+            "title": "Fishing",
+            "content": "Fourhorn sculpins are edible, but are of minor importance in commercial fishing. It is usually caught as bycatch."
+        }
+    ],
+    "fact": "This may have been one of the first marine fish species to enter the Baltic Sea basin around 10 000 years after the end of the last ice age."
+}

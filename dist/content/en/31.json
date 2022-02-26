@@ -1,0 +1,29 @@
+{
+    "id": 31,
+    "title": "Atlantic salmon",
+    "order": "Salmoniformes",
+    "family": "Salmonidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "Salmon are one of the largest fish in the Baltic Sea, and can exceed 1.5 m in length. Juveniles are darker than adults, with 7 - 13 large dark spots on their sides. Juveniles have a single line of red dots along the lateral line. Before spawning, male salmon change their colour, becoming darker and with red spots, and their lower jaw develops an upward curving kype (hook)."
+        },
+        {
+            "title": "Distribution",
+            "content": "Baltic Sea salmon is distributed throughout the Baltic Sea. It spends part of its life in rivers and is therefore classified as a migratory fish. Juvenile salmon live in rivers, while adults spend most of their lives at sea."
+        },
+        {
+            "title": "Diet",
+            "content": "Salmon usually eat sprats, herring and three-spined sticklebacks, less often  -  garfish and cod. Adults do not feed in freshwater, but juveniles feed on the larvae of aquatic insects."
+        },
+        {
+            "title": "Development",
+            "content": "Spawning takes place in autumn in the headwaters of rivers, where salmon lay their eggs on pebbles. The female builds a nest by burying her eggs in the pebbles. The eggs hatch in spring and the juvenile salmon spend 1 - 4 years in rivers that flow into the Baltic Sea."
+        },
+        {
+            "title": "Fishing",
+            "content": "Salmon is popular among anglers. In Latvia, salmon fishing is licensed in the Salaca, Gauja and Venta rivers. Salmon has rarely been caught in fishing nets in recent years."
+        }
+    ],
+    "fact": "Salmon have a strong sense of their own river, returning to the river where they were born to spawn. Human activities, such as dams, have reduced the number of rivers suitable for salmon spawning."
+}

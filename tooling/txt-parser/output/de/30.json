@@ -1,0 +1,29 @@
+{
+    "id": 30,
+    "title": "Europäische Sprotte",
+    "order": "Clupeiformes",
+    "family": "Clupeidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Die Sprotte ist ein kleiner, dem Hering ähnlicher pelagischer Meeresfisch. Im Vergleich zum Hering hat die Sprotte ein breiteres Seitenteil. Im Unterschied zum Hering hat die Sprotte am unteren Bauchteil scharfe Keilschuppen. Kann bis zu 17 cm lang werden, mit einem Gewicht von 25 g."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Sprotten sind in Europa, Nordafrika, im Mittelmeer und in den Gewässern des Schwarzen Meeres verbreitet. Sprotten ziehen im Vergleich zum Hering salzigere Gewässer vor."
+        },
+        {
+            "title": "Nahrung",
+            "content": "Ernährt sich in allen Entwicklungsstufen von Zooplankton. Die Larven leben von winzigem Zooplankton in früheren Entwicklungsstufen. Eine intensivere Fütterung findet nach der Laichzeit im August und September statt."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Die Laichzeit währt vom Februar bis zum August. Der Laich wird mit einem Interval von 8-10 Tagen gelaicht. Die Entwicklung der Eier erfolgt meist in einer Tiefe von 30 - 60 m. Nach dem Schlüpfen verbreiten sich die Larven mit den Bewegungen der Wassermassen. In der Ostsee kann die Europäische Sprotte sogar 21 Jahre alt werden, der Großteil der Fische wird bis zu 5 Jahre alt."
+        },
+        {
+            "title": "Fischfang",
+            "content": "In der Ostsee ist die Sprotte heutzutage die meistgefangene Fischart. Meist werden sie mit Schleppnetzen im offenen Meer gefangen."
+        }
+    ],
+    "fact": "Heutzutage gehört die Sprotte zusammen mit dem Hering zu den dominierenden Fischarten in der Ostsee. Sie sind Nahrung für viele Raubtierarten."
+}

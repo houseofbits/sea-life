@@ -1,0 +1,29 @@
+{
+    "id": 4,
+    "title": "Eisente",
+    "order": "Anseriformes (Gänsevögel)",
+    "family": "Anatidae (Entenvögel)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Körperlänge 37 - 60 cm, Gewicht 0,4 - 0,9 kg. Eisenten sind kleine Enten mit einem kleinen Kopf und einem kleinen, grauen Schnabel. Charakteristisch für die Eisente ist die Vielfalt der Zeichnungen des Gefiederkleides. Die Grundfarbe des Gefieders der Erpel ist weiß, mit braunen, grauen und schwarzen Zeichnungen, abhängig vom Alter und der Saison. Eine Besonderheit der Eisente ist, dass beide Geschlechter ihr Gefieder drei Mal im Jahr wechseln. Zur Brutzeit sind die Erpel heller, doch später wechseln sie ihr Gefieder und werden dunkler. Das Gesicht ist meist weiß, die Flügel dunkel mit weißen Schultern, der Bauch ist weiß. Die Weibchen sind bräunlich bunt, mit einem hellen Kopf und Bauch."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Zirkumpolar an den Küsten der Holarktik. Überwintert in den seichten Meeresgebieten und an den Küsten der Nordregionen, in Europa bis nach Nordfrankreich verbreitet. An einzelnen Stellen überwintert sie auch im Binnenland, z.B. in Nordamerika in den Großen Seen und in Zentraleuropa. In Lettland ist sie ein zahlreicher Durchwanderer und überwintert in der Ostsee. Einzelne Individuen können sich auch in den meeresnahen Seen oder sogar in der Daugava aufhalten. In den Sommermonaten sind einzelne Vögel oft an der Meeresküste anzutreffen."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Ernährt sich von Molusken, Krebsartigen, Wasserweichtieren, sowie von verschiedenen Pflanzen und Algen."
+        },
+        {
+            "title": "Nisten",
+            "content": "Nistet vorwiegend in der Tundra an Binnengewässern. Die Näster befinden sich auf dem Boden. Sie werden aus Schlamm und Pflanzenteile gebaut, danach mit Daunen ausgepolstert. Nur das Weibchen brütet und leitet die Küken. In einer Brut sind 6-11 Eier. In Lettland nistet die Eisente nicht."
+        },
+        {
+            "title": "Die Eisente und der Mensch.",
+            "content": "In Lettland wird die Eisente nicht gejagt. In ihren Nistplätzen wird die Eisente von natürlichen Veränderungen und Verringerungen der Biotope bedroht, als auch von menschlicher Hand (Erdöl- und Gasgewinnung), in den Überwinterungsplätzen  -  von Umweltverschmutzung, Futterkonkurenten und Fischereinetzen."
+        }
+    ],
+    "fact": "Im Frühjahr ruft die Eisente ihren lettischen Namen: \"kā-kau-lit, kā-kau-lit\".Kann in bis zu 60 m Tiefe tauchen."
+}

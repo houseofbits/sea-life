@@ -1,0 +1,30 @@
+{
+    "id": 8,
+    "latinTitle": "Myoxocephalus scorpius",
+    "title": "Ziemeļu jūrasbullis",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "platgalvju Cottidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Atšķirībā no citām līdzīgām zivīm jūrasbullim uz galvas ir trīs dzeloņi. Nārsta laikā tēviņiem vēders ir sarkanīgs, bet mātītēm  -  sarkanīgi dzeltens, ar baltiem plankumiem. Zivs garums ir 20 - 30 centimetri."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sastopams Ziemeļeiropas jūrās."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd vēžveidīgos, tārpus, sīkas zivis, kā arī citu zivju mazuļus."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Nārsto no decembra līdz martam. Ikrus nērš pikās uz akmeņiem."
+        },
+        {
+            "title": "Zveja",
+            "content": "Zvejnieku un makšķernieku lomos šī suga ir maznozīmīga."
+        }
+    ],
+    "fact": "Tēviņš pēc nārsta apsargā ikrus."
+}

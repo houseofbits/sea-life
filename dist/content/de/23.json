@@ -1,0 +1,29 @@
+{
+    "id": 23,
+    "title": "Gefleckter Großer Sandaal",
+    "order": "Perciformes",
+    "family": "Ammodytidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Kleiner Küstenfisch, größere Individuen können eine Länge von 40 cm erreichen. Im Äußeren ähnlich dem Tobiasfisch. Oft ist er grünlich blau gefärbt, kann auch gelblich braun sein."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Der Große Sandaal ist in den Meeren des Nordostatlantik anzutreffen. Er lebt fast in der ganzen Ostsee, außer den entfernteren Gebieten des Finnischen und Bottnischen Meerbusen."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Die kleinen Sandaale leben von Zooplankton, die erwachsenen Tiere fressen Küstengrundel und Larven, sowie Jungtiere von Stinten und Heringen. Sandaale halten sich auf sandigem Grund in den seichten Küstengebieten auf, wo sie mit den kleinen Flundern um Nahrung konkurrieren."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Laicht vom Mai bis zum August. Der Laich wird in kleinen Klumpen auf den Sand gesetzt."
+        },
+        {
+            "title": "Fischfang",
+            "content": "In Lettland wird er in kleinen Mengen gefischt, meist als Beifang beim Heringsfischen. Angler benutzen den Sandaal als Köderfisch. Der Sandaal ist ein bedeutender Fangfisch in der Nordsee."
+        }
+    ],
+    "fact": "Den Großteil ihres Lebens verbringen sie im Sand vergraben, wo sie sich vor Raubtieren  -  Wasservögeln, Robben, Steinbutten, Meerbarschen und Kabeljau verbergen, für die der Sandaal ein beliebtes Nahrungsmittel ist."
+}

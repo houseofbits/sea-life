@@ -1,0 +1,29 @@
+{
+    "id": 16,
+    "title": "Straightnose pipefish",
+    "order": "Syngnathiformes",
+    "family": "Syngnathidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The straightnose pipefish is a small fish that lives along the coast of the sea. During the spawning period, females are brightly coloured with light blue stripes on the head and belly. Males can reach a length of 25 cm, whereas females can grow to 30 cm."
+        },
+        {
+            "title": "Distribution",
+            "content": "The straightnose pipefish is widespread in the East Atlantic region, the European coast, and the Mediterranean and Black Seas."
+        },
+        {
+            "title": "Diet",
+            "content": "Feeds on small zooplankton and invertebrates."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns in summer. The female and male perform a spawning dance before spawning. The female deposits the eggs into the male's brood pouch on his abdomen, where they are then fertilised and develop."
+        },
+        {
+            "title": "Fishing",
+            "content": "Due to its small size, the species is not important for commercial fishing or angling."
+        }
+    ],
+    "fact": "The straightnose pipefish is related to the seahorse, an interesting-looking fish that lives mainly in shallow tropical and temperate coastal seas."
+}

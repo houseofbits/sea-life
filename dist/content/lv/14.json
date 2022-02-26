@@ -1,56 +1,55 @@
 {
-  "id": 14,
-  "group": 1,
-  "title": "Jūrasgrundulis",
-  "latinTitle": "Pomatoschistus microps ",
-  "order": "Perciformes",
-  "family": "Gobiidae",
-  "imageFileName": "jurasgrundulis.png",
-  "identifier": "14",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Piekrastes ūdeņos mītoša zivs, parasti 2–4 cm gara. Jūrasgrunduļiem uz vēdera ir piesūceknis, kas veidojies, saaugot vēdera spurām."
+    "id": 14,
+    "latinTitle": "Liparis liparis",
+    "title": "Plūkšņzivs",
+    "order": "skorpēnveidīgo Scorpaeniformes",
+    "family": "jūrasplūkšņu Liparidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Plūkšņzivs ķermenis izskatās nedaudz caurspīdīgs, garums var sasniegt 27 cm, bet Latvijas ūdeņos vairākumā gadījumu tās izaug līdz 15 cm garumam."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Plūkšņzivs izplatīta Arktikas - Atlantijas okeānu jūrās. Biežāk uzturas vietās ar cietu grunti, kur var nostiprināties ar diskveida spurām, taču ir sastopama arī piekrastē uz smilšaina vai dūņaina substrāta."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd vēžveidīgos, īpaši mizīdas, un tārpus. Var baroties arī ar zivju ikriem."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Plūkšņzivs nārsto piekrastē ziemā no novembra līdz februārim. Ikri tiek nostiprināti pie aļģēm vai cita grunts substrāta. To attīstība ilgst 6 - 8 nedēļas."
+        },
+        {
+            "title": "Zveja",
+            "content": "Nelielā izmēra un salīdzinoši retās sastopamības dēļ sugai nav nozīmes ne komerciālajā zvejā, ne makšķerēšanā."
+        }
+    ],
+    "fact": "Vēdera spuras ir diskveidā saaugušas kopā, atvieglojot nostiprināšanos pie grunts.",
+    "identifier": "x",
+    "imageFileName": "pluksnzivs.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -190,
+        "top": 20,
+        "width": 619,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "Jūrasgrundulis ir sastopams Ziemeļatlantijā. Baltijas jūrā mīt visās piekrastēs, izņemot Botnijas un Somu līča piekrastes. "
+    "detailImageTransform": {
+        "left": 45,
+        "top": 358,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Jūrasgrunduļu mazuļi barojas ar <em>zooplanktonu</em>, bet pieaugušie jūrasgrunduļi ēd arī nelielus <em>vēžveidīgos</em>."
+    "factTextTransform": {
+        "height": 215,
+        "top": 239,
+        "left": 353,
+        "width": 429
     },
-    {
-      "title": "Attīstība",
-      "content": "Nārsto vasaras otrajā pusē. Mātītes iznērš ikrus zem tukšiem gliemeņu vākiem, kur tēviņi tos apsargā. Grunduļa tēviņi ar asti ikrus apskalina ar svaigu ūdeni, tādējādi nodrošinot tiem pietiekamu skābekļa daudzumu."
-    },
-    {
-      "title": "Zveja",
-      "content": "Jūrasgrunduļiem nav rūpnieciskas nozīmes un tie netiek arī makšķerēti."
+    "familyTextTransform": {
+        "height": 295,
+        "top": 622,
+        "left": 184
     }
-  ],
-  "fact": "Jūrasgrunduļi ir nozīmīga ekosistēmas sastāvdaļa piekrastes ūdeņos. Plēsīgajām zivīm tie parasti ir pirmie lielākie barības objekti. ",
-  "thumbnailImageTransform": {
-    "left": -260,
-    "top": -30,
-    "width": 677,
-    "angle": 3
-  },
-  "detailImageTransform": {
-    "left": 50,
-    "top": 374,
-    "width": 906,
-    "angle": 3
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 491,
-    "width": 428
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

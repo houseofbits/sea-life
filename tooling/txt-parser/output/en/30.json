@@ -1,0 +1,29 @@
+{
+    "id": 30,
+    "title": "European sprat",
+    "order": "Clupeiformes",
+    "family": "Clupeidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The sprat is a small, herring-like pelagic marine fish. Compared to the herring, the sprat has a wider flank. Unlike herring, the sprat has a row of sharp scales along its belly. It can reach a length of 17 cm and a weight of 25 g."
+        },
+        {
+            "title": "Distribution",
+            "content": "Sprats can be found in the waters of the European, North African, Mediterranean and Black Seas. Sprats prefer to live in saltier waters than herring."
+        },
+        {
+            "title": "Diet",
+            "content": "Sprats feed on zooplankton at all stages of development. Larvae feed on smaller zooplankton still in the early stages of development. Feeding is most intense during the post-spawning period, in August and September."
+        },
+        {
+            "title": "Development",
+            "content": "The spawning season lasts from February to August. Eggs are spawned in intervals 8 - 10 days apart. Development usually takes place at depths of 30 - 60 m. After hatching, the larvae are dispersed by the movement of the water. In the Baltic Sea, sprats can reach 21 years of age, but the majority of fish are under 5 years old."
+        },
+        {
+            "title": "Fishing",
+            "content": "Today the sprat is the most fished species in the Baltic Sea. Sprats are mainly caught by trawling in the open sea."
+        }
+    ],
+    "fact": "Sprats and herring are currently the dominant fish species in the Baltic Sea. Many predatory species feed on them."
+}

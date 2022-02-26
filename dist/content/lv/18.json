@@ -1,55 +1,55 @@
 {
-  "id": 18,
-  "group": 1,
-  "title": "Lasis",
-  "latinTitle": "Salmo salar",
-  "order": "Salmoniformes",
-  "family": "Salmonidae",
-  "imageFileName": "lasis.png",
-  "identifier": "18",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Lasis ir viena no lielākajām Baltijas jūras zivīm, var pārsniegt 1,5 m garumu. Mazuļi ir tumšāki nekā pieaugušie, ar 7–13 lieliem tumšiem plankumiem uz sāniem. Gar sānu līniju lašu mazuļiem vienā rindā ir sarkani punkti. Pirms nārsta lašu tēviņi maina ķermeņa krāsu – kļūst tumšāki, ar sarkaniem plankumiem, bet apakšžoklis tiem kāšveidā ieliecas."
+    "id": 18,
+    "latinTitle": "Scophthalmus maximus",
+    "title": "Akmeņplekste",
+    "order": "plekstveidīgo Pleuronectiformes",
+    "family": "akmeņplekstu Scophthalmidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Akmeņplekste ir otra lielākā plekstveidīgo zivju suga Ziemeļu puslodē aiz paltusa. Tā izaug lielāka nekā plekstes. Ķermeņa kreiso pusi klāj kaulveida izaugumi  -  no kā cēlies nosaukums \"akmeņplekste\". Lielākā Latvijas piekrastē konstatētā akmeņplekste ir bijusi 61 cm gara. Ķermeņa krāsu spēj pieskaņot jūras gruntij."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Akmeņplekstes ir izplatītas Eiropas jūru piekrastēs līdz Arktiskajam lokam. Sastopama visā Baltijas jūrā, izņemot Botnijas līci."
+        },
+        {
+            "title": "Barība",
+            "content": "Akmeņplekstu kāpuri un vismazākie mazuļi barojas ar ūdenī brīvi peldošu zooplanktonu. No otrā dzīves gada akmeņplekstes ēd zivis."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Aktīvākais nārsts Latvijas piekrastē ir jūnija beigās. Pēc 7 - 8 dienām no ikriem izšķiļas peldoši kāpuri. Kāpuri un ikri uzturas 0,5 - 1 m dziļumā."
+        },
+        {
+            "title": "Zveja",
+            "content": "Akmeņplekste jeb āte ir nozīmīgs zvejas objekts. Tā ir viena no visdārgākajām Baltijas jūras zivīm. Specifiskās ķermeņa formas dēļ ir nepieciešami specializēti tīkli ar lielu acs izmēru, lai ķertu legāla izmēra akmeņplekstes (30 cm)."
+        }
+    ],
+    "fact": "Izsķiļoties akmeņplekstes mazulis ir ar acīm abās ķermeņa pusēs. Pieaugot līdz 27 mm, notiek izmaiņas: galvas labā puse augstumā sāk augt ātrāk nekā kreisā, un abas acis novietojas kreisajā pusē. Labā puse kļūst akla. Kopš šī attīstības posma mazuļiem jau ir muguras - vēdera virzienā saplacināts ķermenis un tie dzīvo uz jūras gultnes.",
+    "identifier": "x",
+    "imageFileName": "akmenplekste.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -150,
+        "top": 0,
+        "width": 530,
+        "angle": -5
     },
-    {
-      "title": "Izplatība",
-      "content": "Baltijas jūras lasis ir izplatīts visā Baltijas jūrā. Daļu savas dzīves tas pavada upēs, tāpēc tiek pieskaitīts pie ceļotājzivīm. Lašu mazuļi uzturas upēs, bet pieaugušās zivis lielāko dzīves daļu pavada jūrā."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 254,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Parasti ēd brētliņas, reņģes un trīsadatu stagarus, retāk vējzivis un mencas. Pieaugušās zivis saldūdenī nebarojas, bet mazuļu barība ir ūdens kukaiņu kāpuri."
+    "factTextTransform": {
+        "height": 230,
+        "top": 110,
+        "left": 337,
+        "width": 660
     },
-    {
-      "title": "Attīstība",
-      "content": "Nārsts notiek rudenī upju straujtecēs, kur uz oļiem laši izdēj ikrus. Mātīte veido ligzdu, ierokot ikrus oļos. Ikri izšķiļas pavasarī, un lašu mazuļi Baltijas jūras upēs pavada 1–4 gadus."
-    },
-    {
-      "title": "Zveja",
-      "content": "Lasis ir populārs makšķerēšanas objekts. Latvijā lašu licencēta makšķerēšana ir atļauta Salacā, Gaujā un Ventā. Zvejnieku lomos lasis pēdējos gados gadās reti. "
+    "familyTextTransform": {
+        "height": 274,
+        "top": 673,
+        "left": 184
     }
-  ],
-  "fact": "Lašiem ir izteikta savas upes izjūta, uz nārstu tas atgriežas tieši uz to upi, kur piedzimis. Cilvēka darbības rezultātā, piemēram, veidojot aizsprostus, lašu nārstam piemērotu upju skaits ir samazinājies.",
-  "thumbnailImageTransform": {
-    "left": -430,
-    "top": -60,
-    "width": 840,
-    "angle": 0
-  },
-  "detailImageTransform": {
-    "left": 46,
-    "top": 351,
-    "width": 904
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 353,
-    "width": 445
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }

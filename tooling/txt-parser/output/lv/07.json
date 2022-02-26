@@ -1,0 +1,30 @@
+{
+    "id": 7,
+    "latinTitle": "Halichoerus grypus",
+    "title": "Pelēkais ronis",
+    "order": "plēsēju Carnivora",
+    "family": "roņu Phocidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Lielākais no Baltijas jūras roņiem. Mātītes ir mazākas par tēviņiem. Masa 100  -  310 kg. Apmatojuma krāsa var būt mainīga, tomēr dominē pelēkie toņi."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sastopams Atlantijas okeāna ziemeļdaļā. Galvenokārt uzturas salu apkaimē. Vasarā atpūšas piekrastē, ziemā uz ledus."
+        },
+        {
+            "title": "Barība",
+            "content": "Medī ūdenī. Zivis: mencas, butes, renģes, laši, retāk vēžveidīgie un gliemji."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Baltijas jūras pelēkajiem roņiem mazuļi parasti dzimst februārī un martā uz ledus. Ja tā nav, tad jūras piekrastē vai uz salām."
+        },
+        {
+            "title": "Medības",
+            "content": "Savulaik roņi intensīvi medīti galvenokārt tauku un kažokādu ieguvei, kas noveda pie krasas skaita samazināšanās 20. gs. sākumā."
+        }
+    ],
+    "fact": "Pieaugušie dzīvnieki zem ūdens spēj uzturēties ilgāk nekā desmit minūtes. Mazuļu baltais, pūkainais apmatojums nav ūdensdrošs."
+}

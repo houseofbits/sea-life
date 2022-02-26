@@ -1,0 +1,21 @@
+{
+    "id": 24,
+    "title": "Sand gaper",
+    "order": "Myidae (soft-shell clams)",
+    "family": "Bivalvia",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The largest bivalve in the Baltic Sea, in Latvia it has a shell length of 50 - 60 mm, whereas it can grow up to 120 mm in the more saline waters of other seas. The shell is white to yellowish, oval, and has a smooth surface."
+        },
+        {
+            "title": "Distribution",
+            "content": "The sand gaper inhabits the Arctic Ocean, the northern Atlantic and Pacific Oceans, and the Black, Azov, Marmara and Mediterranean Seas. It was first found in the Baltic Sea in the 18[th] century, probably introduced from North America.In Latvia, washed-up shells are often found along the coast of the Baltic Sea  -  less frequently in the Gulf of Riga."
+        },
+        {
+            "title": "Ecology",
+            "content": "The sand gaper inhabits marine waters to a depth of 75 m, where it burrows into the sandy bottom to a depth of 10 - 15 cm."
+        }
+    ],
+    "fact": "The maximum known lifespan of this bivalve mollusc is 28 years. They are edible."
+}

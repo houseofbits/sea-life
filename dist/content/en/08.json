@@ -1,0 +1,29 @@
+{
+    "id": 8,
+    "title": "Bull-rout",
+    "order": "Scorpaeniformes",
+    "family": "Cottidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "Unlike other similar fish, the bull-rout has three spines on its head. When spawning, males have a reddish belly, whereas females have a reddish-yellow belly with white spots. The fish is 20 - 30 centimetres long."
+        },
+        {
+            "title": "Distribution",
+            "content": "Found in the seas of northern Europe."
+        },
+        {
+            "title": "Diet",
+            "content": "Eats crustaceans, worms, small fish and juveniles of other fish."
+        },
+        {
+            "title": "Development",
+            "content": "Spawns from December to March. It deposits its eggs in clumps on rocks."
+        },
+        {
+            "title": "Fishing",
+            "content": "This species is of minor importance to both commercial fishing and anglers."
+        }
+    ],
+    "fact": "The male guards the eggs after spawning."
+}

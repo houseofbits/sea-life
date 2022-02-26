@@ -1,0 +1,29 @@
+{
+    "id": 9,
+    "title": "Flounder",
+    "order": "Pleuronectiformes",
+    "family": "Pleuronectidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "Flounder can grow up to 50 cm long. Females are usually larger, males rarely exceed 35 cm in length. Flounder are able to change their body colour to match the colour of the seabed."
+        },
+        {
+            "title": "Distribution",
+            "content": "Flounder inhabit the Atlantic's northeast coastal areas. It is well adapted to waters with low salinity and is therefore widespread throughout the Baltic Sea."
+        },
+        {
+            "title": "Diet",
+            "content": "The main food of flounder larvae is plankton floating freely in the sea. As the juveniles grow up, they start feeding on molluscs. Larger flounder will also eat small fish."
+        },
+        {
+            "title": "Development",
+            "content": "Flounder spawn from March to June. The larvae are pelagic, and with eyes on both sides of the body. When they reach a length of 7 - 10 mm, the larvae change from a symmetrical fish to a flat one, seemingly \"flopping\" over to one side, with both eyes on top of the body."
+        },
+        {
+            "title": "Fishing",
+            "content": "Flounder is an important fishery and angling species; it is fished from the shore using bottom fishing rods."
+        }
+    ],
+    "fact": "Using genetic sequencing, scientists discovered in 2018 that there are two flounder species that are similar in appearance but differ in their spawning behaviour. European flounder spawn at depth and have free-floating eggs, whereas Baltic flounder spawn in the shallows and deposit their eggs on the seabed."
+}

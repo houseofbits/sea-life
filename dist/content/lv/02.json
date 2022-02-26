@@ -1,55 +1,54 @@
 {
-  "id": 2,
-  "group": 1,
-  "title": "Akmeņplekste",
-  "latinTitle": "Scophthalmus maximus",
-  "imageFileName": "akmenplekste.png",
-  "identifier": "2",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Akmeņplekste ir otra lielākā plekstveidīgo zivju suga Ziemeļu puslodē aiz paltusa. Tā izaug lielāka nekā plekstes. Ķermeņa kreiso pusi klāj kaulveida izaugumi – no kā cēlies nosaukums “akmeņplekste”. Lielākā Latvijas piekrastē konstatētā akmeņplekste ir bijusi 61 cm gara. Ķermeņa krāsu spēj pieskaņot jūras gruntij."
+    "id": 2,
+    "latinTitle": "Enchelyopus cimbrius",
+    "title": "Četrtaustekļu jūrasvēdzele",
+    "order": "mencveidīgās Gadiformes",
+    "family": "mencu Gadidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Jūrasvēdzelei ir slaids ķermenis ar mazām zvīņām. Mugura var būt gan zilgani, gan brūngani pelēcīga. Jūrasvēdzelei ir 4 gari taustekļi: viens uz apakšžokļa, viens augšlūpas centrā un divi katrā pusē pie ārējās nāss malas. Baltijas jūrā maksimālais izmērs var būt līdz 36 centimetriem."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sastopama Ziemeļatlantijā līdz Islandei. Baltijas jūrā  -  līdz Somu jūras līcim un Botnijas līcim."
+        },
+        {
+            "title": "Barība",
+            "content": "Ēd bentiskus jūras vēžveidīgos un tārpus."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Parasti nārsto no marta līdz augustam. Gan ikri, gan kāpuri ir pelaģiski."
+        },
+        {
+            "title": "Zveja",
+            "content": "Zvejnieku un makšķernieku lomos šīs sugas nozīme ir nebūtiska."
+        }
+    ],
+    "fact": "Atšķirībā no citām zivīm no pirmās muguras spuras labi attīstīts ir pirmais stars, kas padara šo zivi viegli atšķiramu no citām.",
+    "identifier": "x",
+    "imageFileName": "jurasvedzele.png",
+    "group": 2,
+    "thumbnailImageTransform": {
+        "left": -280,
+        "top": 10,
+        "width": 700
     },
-    {
-      "title": "Izplatība",
-      "content": "Akmeņplekstes ir izplatītas Eiropas jūru piekrastēs līdz Arktiskajam lokam. Sastopama visā Baltijas jūrā, izņemot Botnijas līci."
+    "detailImageTransform": {
+        "left": 100,
+        "top": 400,
+        "width": 900
     },
-    {
-      "title": "Barība",
-      "content": "Akmeņplekstu kāpuri un vismazākie mazuļi barojas ar ūdenī brīvi peldošu <em>zooplanktonu</em>. No otrā dzīves gada akmeņplekstes ēd zivis."
+    "factTextTransform": {
+        "height": 350,
+        "top": 171,
+        "left": 278,
+        "width": 446
     },
-    {
-      "title": "Attīstība",
-      "content": "Aktīvākais nārsts Latvijas piekrastē ir jūnija beigās. Pēc 7–8 dienām no ikriem izšķiļas peldoši kāpuri. Kāpuri un ikri uzturas 0,5–1 m dziļumā."
-    },
-    {
-      "title": "Zveja",
-      "content": "Akmeņplekste jeb āte ir nozīmīgs zvejas objekts. Tā ir viena no visdārgākajām Baltijas jūras zivīm. Specifiskās ķermeņa formas dēļ ir nepieciešami specializēti tīkli ar lielu acs izmēru, lai ķertu legāla izmēra akmeņplekstes (30 cm)."
+    "familyTextTransform": {
+        "height": 164,
+        "top": 650,
+        "left": 645
     }
-  ],
-  "fact": "Izsķiļoties akmeņplekstes mazulis ir ar acīm abās ķermeņa pusēs. Pieaugot līdz 27 mm, notiek izmaiņas: galvas labā puse augstumā sāk augt ātrāk nekā kreisā, un abas acis novietojas kreisajā pusē. Labā puse kļūst akla. Kopš šī attīstības posma mazuļiem jau ir muguras–vēdera virzienā saplacināts ķermenis un tie dzīvo uz jūras gultnes.",
-  "order": "Pleuronectiformes",
-  "family": "Scophthalmidae",
-  "thumbnailImageTransform": {
-    "left": -150,
-    "top": 0,
-    "width": 530,
-    "angle": -5
-  },
-  "detailImageTransform": {
-    "left": 46,
-    "top": 254,
-    "width": 906
-  },
-  "factTextTransform": {
-    "height": 230,
-    "top": 110,
-    "left": 337,
-    "width": 660
-  },
-  "familyTextTransform": {
-    "height": 274,
-    "top": 673,
-    "left": 184
-  }
 }

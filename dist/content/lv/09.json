@@ -1,54 +1,56 @@
 {
-  "id": 9,
-  "group": 2,
-  "title": "Gaigala",
-  "latinTitle": "Bucephala clangula",
-  "order": "<small>zosveidīgo</small> Anseriformes",
-  "family": "<small>pīļu</small> Anatidae",
-  "imageFileName": "gaigala.png",
-  "identifier": "9",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Ķermeņa garums 62–77 cm, svars 0,5–1,2 kilogrami. Gaigala ir vidēji liela pīle ar kompaktu, noapaļotu ķermeni, īsu kaklu, lielu galvu un īsu, tumši pelēku knābi. Sugai piemīt dzimumu dimorfisms: tēviņi ir nedaudz lielāki nekā mātītes, un katram dzimumam ir atšķirīgs apspalvojums. Ligzdošanas sezonas laikā tēviņa galva ir tumši zaļa ar metālisku spīdumu, uz vaigiem pie knābja pamatnes ovāls, balts laukums. Acis koši dzeltenas, zeltainas. Ķermeņa sāni, krūtis un kakls balti, mugura un aste melna, spārni melnbalti. Mātītei ir šokolādes brūna galva, samērā šaura, balta kakla “apkaklīte”, acis gaiši dzeltenas. Ķermenis pelēkbrūns, ar tumšu muguru, asti un spārniem. Jauni putni ir līdzīgi mātītēm."
+    "id": 9,
+    "latinTitle": "Platichthys sp.",
+    "title": "Plekste",
+    "order": "plekstveidīgo Pleuronectiformes",
+    "family": "plekšu Pleuronectidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Plekste var izaugt līdz 50 cm gara. Mātītes parasti ir lielākas, tēviņi reti pārsniedz 35 cm garumu. Plekstes spēj mainīt ķermeņa krāsu, pielāgojoties jūras dibena krāsai."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Plekste apdzīvo Atlantijas okeāna ziemeļaustrumu piekrastes rajonus. Tā ir labi pielāgojusies ūdeņiem ar zemu sāļuma saturu, tāpēc tā ir izplatīta visā Baltijas jūrā."
+        },
+        {
+            "title": "Barība",
+            "content": "Plekstes kāpuru galvenā barība ir jūrā brīvi peldošs planktons. Mazuļi paaugoties sāk baroties ar moluskiem. Lielāko plekstu barības sastāvā ietilpst arī mazas zivtiņas."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Plekstes nārsto no marta līdz jūnijam. Plekstu kāpuri ir pelaģiski, to acis atrodas abās ķermeņa pusēs. Sasniedzot 7 - 10 mm garumu, kāpura organismā notiek izmaiņas, un tie no simetriskas zivs pamazām pārvēršas plakanā mazulī, it kā \"noguļoties\" uz viena sāna, un abas acis novietojas ķermeņa virspusē."
+        },
+        {
+            "title": "Zveja",
+            "content": "Plekste ir nozīmīgs zvejas un makšķerēšanas objekts, to makšķerē no krasta, izmantojot grunts makšķeres."
+        }
+    ],
+    "fact": "2018. gadā zinātnieki, izmantojot ģenētiskās metodes, atklāja, ka ir divas izskatā līdzīgas, bet nārsta uzvedībā atšķirīgas sugas. Eiropas plekstes (Platichthys flesus) nārsto dziļumā un tām ir brīvi peldoši ikri, bet Baltijas plekstes (Platichthys solemdali) nārsto seklumā un to ikri noguļas uz jūras grunts.",
+    "identifier": "x",
+    "imageFileName": "plekste.png",
+    "group": 1,
+    "thumbnailImageTransform": {
+        "left": -200,
+        "top": 0,
+        "width": 600,
+        "angle": 0
     },
-    {
-      "title": "Izplatība",
-      "content": "No ziemeļu un centrālās Eiropas uz austrumiem pāri Eirāzijai līdz Kamčatkai. Ziemeļamerikā no Aļaskas līdz Labradoras pussalai. Ziemo Ziemeļjūras un Baltijas jūras piekrastēs, uz dienvidiem lielākajā daļā Eiropas, Vidusjūras baseina austrumu daļā, Melnajā un Kaspijas jūrā, Kazahijā, kā arī Ķīnas austrumos. Ziemeļamerikā gar Klusā okeāna piekrasti uz dienvidiem līdz Kalifornijas līcim; iekšzemē uz dienvidiem no ligzdošanas areāla līdz Floridai. Latvijā samērā parasta ligzdotāja, caurceļotāja un ziemotāja. Ligzdo visā teritorijā pie dažādām, pat nelielām ūdenstilpnēm. Vasaras otrajā pusē vietām jūrā koncentrējas lieli spalvmetēju bari. Ceļošanas laikā bieži jūrā, kā arī vietām iekšzemē. Ziemo jūrā gar piekrasti un neaizsalušos iekšzemes ūdeņos."
+    "detailImageTransform": {
+        "left": 46,
+        "top": 286,
+        "width": 906
     },
-    {
-      "title": "Barība",
-      "content": "Barojas ar ūdens bezmugurkaulniekiem – moluskiem, kukaiņu kāpuriem, vabolēm utt."
+    "factTextTransform": {
+        "height": 260,
+        "top": 150,
+        "left": 337,
+        "width": 520
     },
-    {
-      "title": "Ligzdošana",
-      "content": "Ligzdo koku dobumos vai piemērotos būros, kas var atrasties pat vairāku kilometru attālumā no tuvāka ūdens. Ligzdas izklājumā pelēkbaltas pūkas. Perē un mazuļus vada tikai mātīte. Dējumā 5–11 olas."
-    },
-    {
-      "title": "Gaigala un cilvēks",
-      "content": "Latvijā medījams putns. Cilvēki bieži palīdz gaigalai, uztaisot mākslīgas ligzdvietas."
+    "familyTextTransform": {
+        "height": 290,
+        "top": 679,
+        "left": 184,
+        "width": 600
     }
-  ],
-  "fact": "Tā spēj nirt līdz 4 m dziļumam.",
-  "thumbnailImageTransform": {
-    "left": -110,
-    "top": 18,
-    "width": 539
-  },
-  "detailImageTransform": {
-    "left": 184,
-    "top": 255,
-    "width": 614
-  },
-  "factTextTransform": {
-    "height": 421,
-    "top": 171,
-    "left": 278,
-    "width": 446
-  },
-  "familyTextTransform": {
-    "height": 164,
-    "top": 548,
-    "left": 645
-  }
 }

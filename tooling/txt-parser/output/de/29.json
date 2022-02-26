@@ -1,0 +1,29 @@
+{
+    "id": 29,
+    "title": "Gewöhnlicher Schweinswal",
+    "order": "Wae Cetacea",
+    "family": "Phocoenidae (Schweinswale)",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Körperlänge bis zu 200 cm, Körpermasse bis zu 75 kg. Der Kopf ist relativ klein, mit einer kurzen, platten Schnauze."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Der Schweinswal lebt in den seichten Gebieten der Küstengewässer der Ozeane und Meere. Verirrt sich meist aus der Nordsee in die Ostsee. Bildet keine große Gruppen. Heutzutage wird deren Anzahl in der Ostsee auf 500 Tiere geschätzt, an der lettischen Küste sind in den letzten 50 Jahren einige gesichtet worden."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Ernährt sich hauptsächlich von in Schwärmen schwimmenden Fischen  -  Sprotten, Heringen und Kabeljau. Seltener frisst er Muscheln. Er sucht seine Nahrung mithilfe der Echolokation."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Fast immer wird ein Junges geboren, mit einer Länge von 85 cm, und einem Gewicht von bis zu 10 kg. Nach der Geburt weichen das Muttertier und ihr Junges ihren Artengenossen aus. Das Junge wird bis zu ein Jahr lang gesäugt; nach dem Zahnen ernährt sich das Junge selbständig."
+        },
+        {
+            "title": "Der Schweinswal und der Mensch",
+            "content": "In den Küstendörfern Lettlands wurde der Schweinswal schon vor mehreren Jahrtausenden als Nahrungsmittel gefangen. Die größte Gefahr liegt in deren Verfangen und Ertrinken in Fischnetzen."
+        }
+    ],
+    "fact": "Er springt nicht aus dem Wasser wie andere Delfine. Wegen dem kleinen Kopf und der stumpfen Schnauze wird der Schweinswal auch als Seeschwein bezeichnet."
+}

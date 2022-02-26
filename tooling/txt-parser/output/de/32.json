@@ -1,0 +1,29 @@
+{
+    "id": 32,
+    "title": "Atlantischer Hering",
+    "order": "Clupeiformes",
+    "family": "Clupeidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "In der Rigaer Bucht erreicht der Atlantische Hering meist eine Länge von bis zu 18 cm, er kann aber bis zu 30 cm lang werden."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Der Atlantische Hering ist im Nordatlantik weit verbreitet. Er kann sich sehr verschiedenen Meeresbedingungen anpassen und auch in Gebieten mit einem verminderten Salzgehalt leben."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Heringe ernähren sich meist von kleinen krebsartigen Organismen, Zooplankton, die größeren Fische können sich auch von Fischlarven ernähren. Sie legen täglich eine vertikale Migration zurück, indem sie den Nahrungsorganismen folgen."
+        },
+        {
+            "title": "Fortpflanzung",
+            "content": "Die Hauptlaichzeit ist im Mai und Juni. Der Hering laicht in den Küstengebieten und bei Untiefen im offenen Meer, der Laich wird meist an Stellen gelegt, wo auf dem Grund Algenbewuchs zu finden ist."
+        },
+        {
+            "title": "Fischfang",
+            "content": "Der Hering ist ein sehr bedeutender Fisch im kommerziellen Fischfang in der Ostsee."
+        }
+    ],
+    "fact": "Ārpus Baltijas jūras dzīvojošo reņģi latviski parasti sauc par siļķi."
+}

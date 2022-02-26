@@ -1,56 +1,56 @@
 {
-  "id": 7,
-  "group": 3,
-  "title": "Cūkdelfīns",
-  "latinTitle": "Phocoena phocoena",
-  "order": "<small>vaļveidīgo</small> Cetacea",
-  "family": "<small>cūkdelfīnu</small> Phocoenidae",
-  "imageFileName": "cukdelfins.png",
-  "identifier": "7",
-  "content": [
-    {
-      "title": "Ārējais izskats",
-      "content": "Ķermeņa garums līdz 200 cm, svars līdz 75 kilogramiem. Galva relatīvi neliela, purns īss, strups."
+    "id": 7,
+    "latinTitle": "Halichoerus grypus",
+    "title": "Pelēkais ronis",
+    "order": "plēsēju Carnivora",
+    "family": "roņu Phocidae",
+    "content": [
+        {
+            "title": "Ārējais izskats",
+            "content": "Lielākais no Baltijas jūras roņiem. Mātītes ir mazākas par tēviņiem. Masa 100  -  310 kg. Apmatojuma krāsa var būt mainīga, tomēr dominē pelēkie toņi."
+        },
+        {
+            "title": "Izplatība",
+            "content": "Sastopams Atlantijas okeāna ziemeļdaļā. Galvenokārt uzturas salu apkaimē. Vasarā atpūšas piekrastē, ziemā uz ledus."
+        },
+        {
+            "title": "Barība",
+            "content": "Medī ūdenī. Zivis: mencas, butes, renģes, laši, retāk vēžveidīgie un gliemji."
+        },
+        {
+            "title": "Attīstība",
+            "content": "Baltijas jūras pelēkajiem roņiem mazuļi parasti dzimst februārī un martā uz ledus. Ja tā nav, tad jūras piekrastē vai uz salām."
+        },
+        {
+            "title": "Medības",
+            "content": "Savulaik roņi intensīvi medīti galvenokārt tauku un kažokādu ieguvei, kas noveda pie krasas skaita samazināšanās 20. gs. sākumā."
+        }
+    ],
+    "fact": "Pieaugušie dzīvnieki zem ūdens spēj uzturēties ilgāk nekā desmit minūtes. Mazuļu baltais, pūkainais apmatojums nav ūdensdrošs.",
+    "identifier": "x",
+    "imageFileName": "cukdelfins.png",
+    "group": 3,
+    "thumbnailImageTransform": {
+        "left": -390,
+        "top": -50,
+        "width": 822,
+        "angle": 18
     },
-    {
-      "title": "Izplatība",
-      "content": "Cūkdelfīns mīt okeānu un jūru seklās piekrastes joslas ūdeņos. Baltijas jūrā visbiežāk ieklejo no Ziemeļjūras. Lielus barus neveido. Mūsdienās to skaits Baltijas jūrā tiek lēsts ap 500 dzīvniekiem, Latvijas piekrastē pēdējos 50 gados ir daži novērojumi."
+    "detailImageTransform": {
+        "left": 100,
+        "top": 380,
+        "width": 826,
+        "angle": 18
     },
-    {
-      "title": "Barība",
-      "content": "Barojas galvenokārt ar baros peldošām zivīm – reņģēm, brētliņām un mencām. Retāk ēd gliemjus. Barību meklē ar eholokācijas palīdzību."
+    "factTextTransform": {
+        "height": 235,
+        "top": 238,
+        "left": 353,
+        "width": 429
     },
-    {
-      "title": "Attīstība",
-      "content": "Gandrīz vienmēr dzimst viens mazulis. Tā garums līdz 85 cm, svars līdz 10 kilogramiem. Pēc dzemdībām māte un mazulis cenšas izvairīties no sugasbrāļiem. Zīdīšanas ilgums līdz 1 gadam; kad mazulim izaug zobi, tas sāk baroties patstāvīgi."
-    },
-    {
-      "title": "Cūkdelfīns un cilvēks",
-      "content": "Latvijas piejūras ciematos cūkdelfīnu pārtikā izmantoja jau pirms vairākiem tūkstošiem gadu. Lielāko apdraudējumu rada to sapīšanās un noslīkšana zvejas tīklos."
+    "familyTextTransform": {
+        "height": 238,
+        "top": 679,
+        "left": 184
     }
-  ],
-  "fact": "Nelec ārā no ūdens kā citi delfīni. Mazās galvas un strupā purna dēļ cūkdelfīnu sauc arī par jūrascūku.",
-  "thumbnailImageTransform": {
-    "left": -390,
-    "top": -50,
-    "width": 822,
-    "angle": 18
-  },
-  "detailImageTransform": {
-    "left": 100,
-    "top": 380,
-    "width": 826,
-    "angle": 18
-  },
-  "factTextTransform": {
-    "height": 235,
-    "top": 238,
-    "left": 353,
-    "width": 429
-  },
-  "familyTextTransform": {
-    "height": 238,
-    "top": 679,
-    "left": 184
-  }
 }
