@@ -38,11 +38,61 @@
     }
 }
 
+@keyframes slideINUp {
+    from {
+        top: 1080px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideOUTUp {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -1080px;
+    }
+}
+
+@keyframes slideINDown {
+    from {
+        top: -1080px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slideOUTDown {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 1080px;
+    }
+}
+
 .full-slider-container {
     position: absolute;
     width: 1920px;
     height: 1080px;
-    left: 1920px;
+    top:0;
+    left: 0;
+
+    &.initial-right {
+        top: 0;
+        left: 1920px;
+    }
+    &.initial-bottom {
+        top: 1080px;
+        left: 0;
+    }
 
     &.in-left {
         animation-duration: 500ms;
@@ -55,6 +105,7 @@
         animation-duration: 500ms;
         animation-timing-function: ease-in-out;
         animation-name: slideOUTLeft;
+        animation-fill-mode: forwards;
     }
 
     &.in-right {
@@ -68,6 +119,34 @@
         animation-duration: 500ms;
         animation-timing-function: ease-in-out;
         animation-name: slideOUTRight;
+        animation-fill-mode: forwards;
     }
 
+    &.in-up {
+        animation-duration: 500ms;
+        animation-name: slideINUp;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &.out-up {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTUp;
+        animation-fill-mode: forwards;
+    }
+
+    &.in-down {
+        animation-duration: 500ms;
+        animation-name: slideINDown;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &.out-down {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTDown;
+        animation-fill-mode: forwards;
+    }
 }

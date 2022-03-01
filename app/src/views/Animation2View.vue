@@ -40,7 +40,7 @@ function navigateToAnimation1(): void {
       </template>
     </navigation-bar>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container" :class="[getAnimationState(index)]">
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right" :class="[getAnimationState(index)]">
       <component :is="component"/>
     </div>
 

@@ -18,7 +18,7 @@ const pageComponents = [
     Page5
 ];
 
-const {getAnimationState} = NumericPagination();
+const {getAnimationState, isSelectedPage, selectNextPage, selectPage} = NumericPagination();
 
 function back(): void {
   router.push('/game');
@@ -47,8 +47,8 @@ function navigateToAnimation2(): void {
       </template>
     </navigation-bar>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container" :class="[getAnimationState(index)]">
-      <component :is="component"/>
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right" :class="[getAnimationState(index)]">
+      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @restart="selectPage(0)"/>
     </div>
 
   </div>

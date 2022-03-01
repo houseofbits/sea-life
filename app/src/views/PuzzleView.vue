@@ -56,7 +56,7 @@ function navigateToStep(step: number): void {
       <span>Sākt no sākuma</span>
     </div>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container"
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right "
          :class="[getAnimationState(index)]">
       <component :key="index + '-' + key" :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
     </div>

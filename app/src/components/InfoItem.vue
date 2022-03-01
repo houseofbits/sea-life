@@ -49,7 +49,7 @@ watch(() => props.isSelected, (isSelected: boolean) => {
     />
 
     <div class="icon-content" :data-item-id="item.id">
-      <h1>{{ item.title }} {{ item.id }}</h1>
+      <h1>{{ item.title }}</h1>
       <em v-html="item.latinTitle"/>
       <span class="identifier">{{ item.identifier }}</span>
     </div>
