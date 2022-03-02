@@ -1,6 +1,6 @@
 
 .video-1 {
-    filter: contrast(105%);
+    //filter: contrast(105%);
     position: absolute;
     width: 1016px;
     height: 1019px;
@@ -12,10 +12,10 @@
 .globe-border {
     pointer-events: none;
     position: absolute;
-    width: 797px;
-    height: 797px;
-    top: 77px;
-    left: 109px;
+    width: 805px;
+    height: 805px;
+    top: 68px;
+    left: 102px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' rx='50%' ry='50%' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='10%2c10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     z-index: 11;
 }
@@ -111,7 +111,7 @@
 
 .page1-callout1 {
     top: 358px;
-    right: 985px;
+    right: 994px;
 
     &.active {
         width: 604px;
@@ -169,7 +169,7 @@
 
 .page1-callout2 {
     top: 536px;
-    right: 1020px;
+    right: 1027px;
 
     &.active {
         width: 711px;
@@ -181,7 +181,7 @@
 
 .page1-callout3 {
     top: 714px;
-    right: 972px;
+    right: 977px;
 
     &.active {
         width: 595px;
@@ -193,7 +193,7 @@
 
 .page2-callout {
     top: 281px;
-    right: 932px;
+    right: 945px;
     z-index: 11;
     transition-property: width, opacity;
 
@@ -206,15 +206,16 @@
     &.active {
         transition-duration: 700ms, 0ms;
         transition-delay: 0ms;
-        width: 925px;
+        width: 910px;
         opacity: 1;
     }
 
     .content {
-        width: 561px;
+        width: 581px;
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        margin-right: 20px;
 
         .fixed-text {
             width: 561px;
@@ -339,8 +340,10 @@
     }
 
     .globe-border {
-        top: 77px;
-        left: 109px;
+        width: 815px;
+        height: 815px;
+        top: 68px;
+        left: 98px;
         transition: all 300ms;
         transition-delay: 0ms;
         opacity: 0;
@@ -457,4 +460,63 @@
     &.faded {
         opacity: 0;
     }
+}
+.anim1-page2-bg{
+    pointer-events: none;
+    z-index: 0;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .page2-video {
+        position: absolute;
+        top:248px;
+        left: 714px;
+        width: 1007px;
+        height: 648px;
+        z-index: 0;
+
+        video {
+            width: 100%;
+        }
+    }
+}
+
+.anim1-page2-header {
+    position: absolute;
+    width: 543px;
+    height: 79px;
+    left: 219px;
+    top: 144px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.1px;
+    color: #22324B;
+    border-left: solid 1px black;
+    padding-left: 16px;
+
+    strong {
+        color: #729DB7;
+    }
+}
+
+.anim1-page2-details {
+    position: absolute;
+    width: 598px;
+    height: 320px;
+    left: 200px;
+    top: 412px;
+
+
+
+
+
 }

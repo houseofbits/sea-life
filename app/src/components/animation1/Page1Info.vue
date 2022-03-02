@@ -1,16 +1,55 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {ref, watch} from "vue";
 
-const infoVideo1 = ref(null);
-const infoVideo2 = ref(null);
-const infoVideo3 = ref(null);
+const infoVideo1 = ref<HTMLMediaElement | null>(null);
+const infoVideo2 = ref<HTMLMediaElement | null>(null);
+const infoVideo3 = ref<HTMLMediaElement | null>(null);
 
 const emit = defineEmits(['main', 'next']);
+const props = defineProps({
+  isActive: {
+    type: Boolean,
+    required: true
+  }
+});
 
 const activeElement = ref<number | null>(null);
 
-function selectElement(id: number): void {
+function stopAllVideo(): void {
+  if (infoVideo1.value) {
+    infoVideo1.value.pause();
+    infoVideo1.value.currentTime = 0;
+  }
+  if (infoVideo2.value) {
+    infoVideo2.value.pause();
+    infoVideo2.value.currentTime = 0;
+  }
+  if (infoVideo3.value) {
+    infoVideo3.value.pause();
+    infoVideo3.value.currentTime = 0;
+  }
+}
+
+function selectElement(id: number): void {0
+  stopAllVideo();
+
   activeElement.value = id;
+
+  if (infoVideo1.value) {
+    if (id === 1) {
+      infoVideo1.value.play();
+    }
+  }
+  if (infoVideo2.value) {
+    if (id === 2) {
+      infoVideo2.value.play();
+    }
+  }
+  if (infoVideo3.value) {
+    if (id === 3) {
+      infoVideo3.value.play();
+    }
+  }
 }
 
 function getCardClasses(id: number): object {
@@ -30,6 +69,13 @@ function getCardClasses(id: number): object {
   };
 }
 
+watch(() => props.isActive, (value: boolean) => {
+  if (activeElement.value != null) {
+    selectElement(activeElement.value);
+  }
+});
+
+
 function getCalloutClasses(id: number): object {
   return {
     active: activeElement.value === id,
@@ -37,7 +83,13 @@ function getCalloutClasses(id: number): object {
   };
 }
 
+function nextPage(): void {
+  stopAllVideo();
+  emit('next');
+}
+
 function returnMain(): void {
+  stopAllVideo();
   emit('main');
 }
 
@@ -58,7 +110,7 @@ function returnMain(): void {
 
       <div class="card-video">
         <video muted ref="infoVideo1">
-          <source src="/images/Globuss_2.mp4" type="video/mp4">
+          <source src="/video/Globuss_Aug_Jura_Narsto_Okeana_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -76,7 +128,7 @@ function returnMain(): void {
 
       <div class="card-video">
         <video muted ref="infoVideo2">
-          <source src="/images/Globuss_2.mp4" type="video/mp4">
+          <source src="/video/Globuss_Aug_Jura_Narsto_Upes_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -93,7 +145,7 @@ function returnMain(): void {
 
       <div class="card-video">
         <video muted ref="infoVideo3">
-          <source src="/images/Globuss_2.mp4" type="video/mp4">
+          <source src="/video/Globuss_Aug_Narsto_Jura_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -144,7 +196,7 @@ function returnMain(): void {
 
   <div class="info-zero-state-title" :class="{faded: activeElement !== null}">Zivju vairošanās – Nārsts</div>
 
-  <div v-if="activeElement" class="page-navigation-link horizontal right" @click="emit('next')">
+  <div v-if="activeElement" class="page-navigation-link horizontal right" @click="nextPage">
     <span>Turpināt</span>
     <img src="@images/chevron-right.svg" alt="" :class="{'bounce-right-anim': (activeElement !== null)}">
   </div>

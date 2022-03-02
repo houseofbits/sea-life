@@ -53,10 +53,10 @@ function restart(): void {
 <template>
 
   <div class="full-slider-container" :class="mainViewSliderClass()">
-    <page1-main :is-active="props.isActive" @info="showInfo" @next="emit('next')"/>
+    <page1-main :is-active="props.isActive && activeView === 0" @info="showInfo" @next="emit('next')"/>
   </div>
   <div class="full-slider-container initial-bottom" :class="infoViewSliderClass()">
-    <page1-info @main="showMain" @next="emit('next')"/>
+    <page1-info :is-active="props.isActive && activeView === 1" @main="showMain" @next="emit('next')"/>
   </div>
 
   <div class="back-filter" @click="restart">

@@ -1,5 +1,11 @@
 <script setup lang="ts">
-
+const emit = defineEmits(['next', 'restart']);
+const props = defineProps({
+  isActive: {
+    type: Boolean,
+    required: true
+  }
+});
 </script>
 <template>
 

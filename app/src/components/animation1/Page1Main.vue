@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watch} from "vue";
 
 const emit = defineEmits(['info', 'next']);
 const props = defineProps({
@@ -8,12 +8,27 @@ const props = defineProps({
     required: true
   }
 });
+const mainVideo = ref<HTMLMediaElement | null>(null);
 
 const callout1Active = ref(false);
 const callout2Active = ref(false);
 const callout3Active = ref(false);
 
+watch(() => props.isActive, (value: boolean) => {
+  if (mainVideo.value) {
+    if (value) {
+      mainVideo.value.play();
+    } else {
+      mainVideo.value.pause();
+    }
+  }
+});
+
 onMounted(() => {
+  if (mainVideo.value) {
+    mainVideo.value.play();
+  }
+
   setTimeout(() => {
     callout1Active.value = true;
 
@@ -32,8 +47,8 @@ onMounted(() => {
 
   <div class="video-1">
     <div class="globe-border"></div>
-    <video width="1016" height="1019" muted loop>
-      <source src="/images/Globuss_2.mp4" type="video/mp4">
+    <video width="1016" height="1019" muted loop ref="mainVideo">
+      <source src="/video/Globuss.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
