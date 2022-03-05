@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import Page1Main from "@src/components/animation1/Page1Main.vue";
 import Page1Info from "@src/components/animation1/Page1Info.vue";
-import {ref} from "vue";
+import {ref, watch} from "vue";
 
-const emit = defineEmits(['next', 'restart']);
+const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
   isActive: {
     type: Boolean,
@@ -49,6 +49,13 @@ function restart(): void {
   emit('restart');
 }
 
+watch(() => props.isActive, (active) => {
+  if (active) {
+    activeView.value = null;
+    previousView.value = null;
+  }
+});
+
 </script>
 <template>
 
@@ -57,11 +64,6 @@ function restart(): void {
   </div>
   <div class="full-slider-container initial-bottom" :class="infoViewSliderClass()">
     <page1-info :is-active="props.isActive && activeView === 1" @main="showMain" @next="emit('next')"/>
-  </div>
-
-  <div class="back-filter" @click="restart">
-    <img src="@images/arrow-left.svg" alt="">
-    <span>Izvēlne</span>
   </div>
 
 </template>

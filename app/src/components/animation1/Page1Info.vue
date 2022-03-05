@@ -109,7 +109,7 @@ function returnMain(): void {
       <div class="globe-border info"></div>
 
       <div class="card-video">
-        <video muted ref="infoVideo1">
+        <video muted loop ref="infoVideo1">
           <source src="/video/Globuss_Aug_Jura_Narsto_Okeana_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -127,7 +127,7 @@ function returnMain(): void {
       <div class="globe-border info"></div>
 
       <div class="card-video">
-        <video muted ref="infoVideo2">
+        <video muted loop ref="infoVideo2">
           <source src="/video/Globuss_Aug_Jura_Narsto_Upes_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -144,7 +144,7 @@ function returnMain(): void {
       <div class="globe-border info"></div>
 
       <div class="card-video">
-        <video muted ref="infoVideo3">
+        <video muted loop ref="infoVideo3">
           <source src="/video/Globuss_Aug_Narsto_Jura_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>

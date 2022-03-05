@@ -11,23 +11,25 @@ import NumericPagination from "@src/composables/NumericPagination";
 const router = useRouter();
 
 const pageComponents = [
-    Page1,
-    Page2,
-    Page3,
-    Page4,
-    Page5
+  Page1,
+  Page2,
+  Page3,
+  Page4,
+  Page5
 ];
 
-const {getAnimationState, isSelectedPage, selectNextPage, selectPage} = NumericPagination();
+const {getAnimationState, isSelectedPage, selectNextPage, selectPrevPage, selectPage} = NumericPagination();
 
 function back(): void {
   router.push('/game');
 
 }
+
 function navigateToPuzzle(): void {
   router.push('/game/puzzle');
 
 }
+
 function navigateToAnimation2(): void {
   router.push('/game/anim2');
 
@@ -47,8 +49,10 @@ function navigateToAnimation2(): void {
       </template>
     </navigation-bar>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right" :class="[getAnimationState(index)]">
-      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @restart="selectPage(0)"/>
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right"
+         :class="[getAnimationState(index)]">
+      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"
+                 @restart="selectPage(0)"/>
     </div>
 
   </div>
