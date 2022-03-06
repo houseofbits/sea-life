@@ -2,8 +2,8 @@
     "id": 18,
     "latinTitle": "Scophthalmus maximus",
     "title": "Akmeņplekste",
-    "order": "plekstveidīgo Pleuronectiformes",
-    "family": "akmeņplekstu Scophthalmidae",
+    "order": "<small>plekstveidīgo</small> Pleuronectiformes",
+    "family": "<small>akmeņplekstu</small> Scophthalmidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Izsķiļoties akmeņplekstes mazulis ir ar acīm abās ķermeņa pusēs. Pieaugot līdz 27 mm, notiek izmaiņas: galvas labā puse augstumā sāk augt ātrāk nekā kreisā, un abas acis novietojas kreisajā pusē. Labā puse kļūst akla. Kopš šī attīstības posma mazuļiem jau ir muguras - vēdera virzienā saplacināts ķermenis un tie dzīvo uz jūras gultnes.",
-    "identifier": "x",
+    "identifier": "19",
     "imageFileName": "akmenplekste.png",
     "group": 1,
     "thumbnailImageTransform": {

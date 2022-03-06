@@ -1,8 +1,8 @@
 {
     "id": 7,
     "title": "Серый тюлень",
-    "order": "хищники Carnivora",
-    "family": "тюленей Phocidae",
+    "order": "<small>хищники</small> Carnivora",
+    "family": "<small>тюленей</small> Phocidae",
     "content": [
         {
             "title": "Внешний вид",

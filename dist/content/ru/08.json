@@ -1,8 +1,8 @@
 {
     "id": 8,
     "title": "Европейский керчак",
-    "order": "скорпенообразных Scorpaeniformes",
-    "family": "керчаковых Cottidae",
+    "order": "<small>скорпенообразных</small> Scorpaeniformes",
+    "family": "<small>керчаковых</small> Cottidae",
     "content": [
         {
             "title": "Внешний вид",

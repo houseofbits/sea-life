@@ -1,8 +1,8 @@
 {
     "id": 3,
     "title": "Küstenseeschwalbe",
-    "order": "Charadriiformes (Regenpfeiferartige)",
-    "family": "Sternidae (Seeschwalben)",
+    "order": "Charadriiformes <small>(Regenpfeiferartige)</small>",
+    "family": "Sternidae <small>(Seeschwalben)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

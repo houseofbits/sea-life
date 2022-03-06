@@ -1,8 +1,8 @@
 {
     "id": 36,
     "title": "Четырёхрогий керчак",
-    "order": "скорпенообразные Scorpaeniformes",
-    "family": "керчаковые Cottidae",
+    "order": "<small>скорпенообразные</small> Scorpaeniformes",
+    "family": "<small>керчаковые</small> Cottidae",
     "content": [
         {
             "title": "Внешний вид",

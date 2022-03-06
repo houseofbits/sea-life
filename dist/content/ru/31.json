@@ -1,8 +1,8 @@
 {
     "id": 31,
     "title": "Лосось",
-    "order": "лососёвые Salmoniformes",
-    "family": "лососёвые Salmonidae",
+    "order": "<small>лососёвые</small> Salmoniformes",
+    "family": "<small>лососёвые</small> Salmonidae",
     "content": [
         {
             "title": "Внешний вид",

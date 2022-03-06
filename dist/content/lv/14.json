@@ -2,8 +2,8 @@
     "id": 14,
     "latinTitle": "Liparis liparis",
     "title": "Plūkšņzivs",
-    "order": "skorpēnveidīgo Scorpaeniformes",
-    "family": "jūrasplūkšņu Liparidae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>jūrasplūkšņu</small> Liparidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Vēdera spuras ir diskveidā saaugušas kopā, atvieglojot nostiprināšanos pie grunts.",
-    "identifier": "x",
+    "identifier": "15",
     "imageFileName": "pluksnzivs.png",
     "group": 1,
     "thumbnailImageTransform": {

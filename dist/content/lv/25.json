@@ -2,8 +2,8 @@
     "id": 25,
     "latinTitle": "Ammodytes tobianus",
     "title": "Tūbīte",
-    "order": "čūskzivjveidīgo Trachiniformes",
-    "family": "tūbīšu Ammodytidae",
+    "order": "<small>čūskzivjveidīgo</small> Trachiniformes",
+    "family": "<small>tūbīšu</small> Ammodytidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Tūbītes ir nozīmīgas zivis piekrastes ekosistēmā, tās uzturā izmanto gan piekrastes plēsīgās zivis, gan arī ūdensputni un roņi. Diennakts gaišo daļu tūbītes lielākoties pavada, ierakušās smiltīs.",
-    "identifier": "x",
+    "identifier": "25",
     "imageFileName": "tubite.png",
     "group": 1,
     "thumbnailImageTransform": {

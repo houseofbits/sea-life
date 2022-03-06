@@ -2,8 +2,8 @@
     "id": 17,
     "latinTitle": "Taurulus bubalis",
     "title": "Jūras dzeloņgalve",
-    "order": "skorpēnveidīgo Scorpaeniformes",
-    "family": "platgalvju Cottidae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>platgalvju</small> Cottidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Zivs neilgu laiku spēj elpot gaisu ārpus ūdens. Spēj ļoti labi maskēties, pielāgojot ķermeņa krāsojumu apkārtējai videi.",
-    "identifier": "x",
+    "identifier": "18",
     "imageFileName": "Juras dzelongalve.png",
     "group": 1,
     "thumbnailImageTransform": {

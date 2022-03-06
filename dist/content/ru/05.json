@@ -1,8 +1,8 @@
 {
     "id": 5,
     "title": "Большой крохаль",
-    "order": "гусеобразные Anseriformes",
-    "family": "утиные Anatidae",
+    "order": "<small>гусеобразные</small> Anseriformes",
+    "family": "<small>утиные</small> Anatidae",
     "content": [
         {
             "title": "Внешний вид",

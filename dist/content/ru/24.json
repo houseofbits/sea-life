@@ -1,8 +1,8 @@
 {
     "id": 24,
     "title": "Mия песчаная",
-    "order": "двустворчатые Bivalvia",
-    "family": "мии Myidae",
+    "order": "<small>двустворчатые</small> Bivalvia",
+    "family": "<small>мии</small> Myidae",
     "content": [
         {
             "title": "Внешний вид",

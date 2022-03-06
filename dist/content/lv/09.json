@@ -2,8 +2,8 @@
     "id": 9,
     "latinTitle": "Platichthys sp.",
     "title": "Plekste",
-    "order": "plekstveidīgo Pleuronectiformes",
-    "family": "plekšu Pleuronectidae",
+    "order": "<small>plekstveidīgo</small> Pleuronectiformes",
+    "family": "<small>plekšu</small> Pleuronectidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "2018. gadā zinātnieki, izmantojot ģenētiskās metodes, atklāja, ka ir divas izskatā līdzīgas, bet nārsta uzvedībā atšķirīgas sugas. Eiropas plekstes (Platichthys flesus) nārsto dziļumā un tām ir brīvi peldoši ikri, bet Baltijas plekstes (Platichthys solemdali) nārsto seklumā un to ikri noguļas uz jūras grunts.",
-    "identifier": "x",
+    "identifier": "10",
     "imageFileName": "plekste.png",
     "group": 1,
     "thumbnailImageTransform": {

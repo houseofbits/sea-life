@@ -1,8 +1,8 @@
 {
     "id": 19,
-    "title": "Jūraskrauklis",
-    "order": "pelikānveidīgo Pelecaniformes",
-    "family": "jūraskraukļu Phalacrocoracidae",
+    "title": "Kormoran",
+    "order": "Pelecaniformes",
+    "family": "Phalacrocoracidae <small>(Kormorane)</small>",
     "content": [
         {
             "title": "Kormoran Phalacrocorax carbo",

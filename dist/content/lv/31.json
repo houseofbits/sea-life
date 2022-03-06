@@ -2,8 +2,8 @@
     "id": 31,
     "latinTitle": "Salmo salar",
     "title": "Lasis",
-    "order": "lašveidīgo Salmoniformes",
-    "family": "lašu Salmonidae",
+    "order": "<small>lašveidīgo</small> Salmoniformes",
+    "family": "<small>lašu</small> Salmonidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Lašiem ir izteikta savas upes izjūta, uz nārstu tas atgriežas tieši uz to upi, kur piedzimis. Cilvēka darbības rezultātā, piemēram, veidojot aizsprostus, lašu nārstam piemērotu upju skaits ir samazinājies.",
-    "identifier": "x",
+    "identifier": "4",
     "imageFileName": "lasis.png",
     "group": 1,
     "thumbnailImageTransform": {

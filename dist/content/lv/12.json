@@ -2,8 +2,8 @@
     "id": 12,
     "latinTitle": "Cyclopterus lumpus",
     "title": "Zaķzivs",
-    "order": "skorpēnveidīgo  Scorpaeniformes",
-    "family": "zaķzivju Cyclopteridae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>zaķzivju</small> Cyclopteridae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Zaķzivīm nav peldpūšļa. Vēdera spuras ir saaugušas, veidojot piesūcekni, ar ko zaķzivis var piestiprināties pie akmeņaina substrāta.",
-    "identifier": "x",
+    "identifier": "13",
     "imageFileName": "Juras zakis.png",
     "group": 1,
     "thumbnailImageTransform": {

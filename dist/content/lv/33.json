@@ -2,8 +2,8 @@
     "id": 33,
     "latinTitle": "Belone belone",
     "title": "Vējzivs",
-    "order": "vējzivjveidīgo Beloniformes",
-    "family": "vējzivju Belonidae",
+    "order": "<small>vējzivjveidīgo</small> Beloniformes",
+    "family": "<small>vējzivju</small> Belonidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Vējzivs kauli zilganzaļā krāsā, ko rada īpašs pigments  -  biliverdīns. Neraugoties uz savdabīgo asaku krāsu, zivi var droši lietot uzturā.",
-    "identifier": "x",
+    "identifier": "6",
     "imageFileName": "vejzivs.png",
     "group": 1,
     "thumbnailImageTransform": {

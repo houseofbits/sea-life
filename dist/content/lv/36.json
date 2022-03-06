@@ -2,8 +2,8 @@
     "id": 36,
     "latinTitle": "Myoxocephalus quadricornis",
     "title": "Četrragu buļļzivs",
-    "order": "skorpēnveidīgo Scorpaeniformes",
-    "family": "platgalvju Cottidae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>platgalvju</small> Cottidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Iespējams, ka šī bijusi viena no pirmajām jūras zivju sugām, kas pirms aptuveni 10 tūkstošiem gadu pēc ledus laikmeta beigām ienāca Baltijas jūras baseinā.",
-    "identifier": "x",
+    "identifier": "9",
     "imageFileName": "cetrragu bulzivs.png",
     "group": 1,
     "thumbnailImageTransform": {

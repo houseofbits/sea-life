@@ -2,8 +2,8 @@
     "id": 28,
     "latinTitle": "Macoma balthica",
     "title": "Baltijas plakangliemene",
-    "order": "plakangliemeņu Tellinidae",
-    "family": "gliemeņu Bivalvia",
+    "order": "<small>plakangliemeņu</small> Tellinidae",
+    "family": "<small>gliemeņu</small> Bivalvia",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -19,7 +19,7 @@
         }
     ],
     "fact": "Ziemeļamerikā dzīvo cita, bet pēc izskata ļoti līdzīga suga - Macoma petalum.",
-    "identifier": "x",
+    "identifier": "28",
     "imageFileName": "Baltijas plakangliemene 1.png",
     "group": 4,
     "thumbnailImageTransform": {

@@ -1,8 +1,8 @@
 {
     "id": 8,
     "title": "Seeskorpion",
-    "order": "Scorpaeniformes (Drachenkopfartige)",
-    "family": "Cottidae (Groppen)",
+    "order": "Scorpaeniformes <small>(Drachenkopfartige)</small>",
+    "family": "Cottidae <small>(Groppen)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

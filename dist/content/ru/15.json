@@ -1,8 +1,8 @@
 {
     "id": 15,
     "title": "Трёхиглая колюшка",
-    "order": "скорпенообразные Scorpaeniformes",
-    "family": "колюшковые Gasterosteidae",
+    "order": "<small>скорпенообразные</small> Scorpaeniformes",
+    "family": "<small>колюшковые</small> Gasterosteidae",
     "content": [
         {
             "title": "Внешний вид",

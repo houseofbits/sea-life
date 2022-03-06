@@ -2,8 +2,8 @@
     "id": 34,
     "latinTitle": "Coregonus sp.",
     "title": "Sīga",
-    "order": "lašveidīgo Salmoniformes",
-    "family": "lašu Salmonidae",
+    "order": "<small>lašveidīgo</small> Salmoniformes",
+    "family": "<small>lašu</small> Salmonidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Mūsdienu literatūrā pastāv uzskats, ka Eiropā un tās piekrastē var būt sastopamas nevis viena, bet pat vairāk nekā 59 dažādas sīgu sugas.",
-    "identifier": "x",
+    "identifier": "7",
     "imageFileName": "siga.png",
     "group": 1,
     "thumbnailImageTransform": {

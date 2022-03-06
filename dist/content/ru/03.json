@@ -1,8 +1,8 @@
 {
     "id": 3,
     "title": "Полярная крачка",
-    "order": "ржанкообразные Charadriiformes",
-    "family": "крачковые  Sternidae",
+    "order": "<small>ржанкообразные</small> Charadriiformes",
+    "family": "<small>крачковые</small> Sternidae",
     "content": [
         {
             "title": "Внешний вид",

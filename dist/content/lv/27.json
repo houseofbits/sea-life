@@ -2,8 +2,8 @@
     "id": 27,
     "latinTitle": "Pomatoschistus microps",
     "title": "Jūrasgrundulis",
-    "order": "jūrasgrunduļveidīgo Gobiiformes",
-    "family": "jūrasgrunduļu Gobiidae",
+    "order": "<small>jūrasgrunduļveidīgo</small> Gobiiformes",
+    "family": "<small>jūrasgrunduļu</small> Gobiidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Jūrasgrunduļi ir nozīmīga ekosistēmas sastāvdaļa piekrastes ūdeņos. Plēsīgajām zivīm tie parasti ir pirmie lielākie barības objekti.",
-    "identifier": "x",
+    "identifier": "27",
     "imageFileName": "jurasgrundulis.png",
     "group": 1,
     "thumbnailImageTransform": {

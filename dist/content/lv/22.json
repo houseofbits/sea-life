@@ -2,8 +2,8 @@
     "id": 22,
     "latinTitle": "Gadus morhua",
     "title": "Menca",
-    "order": "mencveidīgo Gadiformes",
-    "family": "mencu Gadidae",
+    "order": "<small>mencveidīgo</small> Gadiformes",
+    "family": "<small>mencu</small> Gadidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Mencai salīdzinājumā ar citām zivīm ir liels ikru daudzums, sezonā iznēršot ap 0,2 - 2,4 miljoniem ikru.",
-    "identifier": "x",
+    "identifier": "22",
     "imageFileName": "menca.png",
     "group": 1,
     "thumbnailImageTransform": {

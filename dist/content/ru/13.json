@@ -1,8 +1,8 @@
 {
     "id": 13,
     "title": "Европейская бельдюга",
-    "order": "окунеообразные Perciformes",
-    "family": "бельдюговые",
+    "order": "<small>окунеообразные</small> Perciformes",
+    "family": "<small>бельдюговые</small> Zoarcidae",
     "content": [
         {
             "title": "Внешний вид",

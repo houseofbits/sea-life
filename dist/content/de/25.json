@@ -1,8 +1,8 @@
 {
     "id": 25,
     "title": "Tobiasfisch",
-    "order": "Perciformes (Barschartige)",
-    "family": "Ammodytidae (Sandaale)",
+    "order": "Perciformes <small>(Barschartige)</small>",
+    "family": "Ammodytidae <small>(Sandaale)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

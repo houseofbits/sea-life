@@ -2,8 +2,8 @@
     "id": 19,
     "latinTitle": "Phalacrocorax carbo",
     "title": "Jūraskrauklis",
-    "order": "pelikānveidīgo Pelecaniformes",
-    "family": "jūraskraukļu Phalacrocoracidae",
+    "order": "<small>pelikānveidīgo</small> Pelecaniformes",
+    "family": "<small>jūraskraukļu</small> Phalacrocoracidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Lidojot barā, nereti izkārtojas kāsī vai ierindā. Nezinoši cilvēki bieži tos lidojumā sajauc ar zosīm.",
-    "identifier": "x",
+    "identifier": "1",
     "imageFileName": "juraskrauklis.png",
     "group": 2,
     "thumbnailImageTransform": {

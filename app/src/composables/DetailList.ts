@@ -98,7 +98,7 @@ export default () => {
         }
     }
 
-    function getAnimationState(page: DetailListPageStructure): string {
+    function getAnimationState(page: DetailListPageStructure): string | null {
         if (previousPageId.value !== null && currentPageId.value !== null) {
             const isOnLeft = previousPageId.value < currentPageId.value;
             if (page.id === currentPageId.value) {
@@ -112,7 +112,7 @@ export default () => {
         if (page.id === currentPageId.value) {
             return 'in-left';
         }
-        return '';
+        return null;
     }
 
     function isActivePage(page: DetailListPageStructure): boolean {

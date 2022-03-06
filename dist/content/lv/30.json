@@ -2,8 +2,8 @@
     "id": 30,
     "latinTitle": "Sprattus sprattus",
     "title": "Brētliņa",
-    "order": "siļķveidīgo Clupeiformes",
-    "family": "siļķu Clupeidae",
+    "order": "<small>siļķveidīgo</small> Clupeiformes",
+    "family": "<small>siļķu</small> Clupeidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Mūsdienās brētliņas kopā ar reņģēm ir dominējošās zivju sugas Baltijas jūrā. Ar tām barojas daudzas plēsīgās sugas.",
-    "identifier": "x",
+    "identifier": "3",
     "imageFileName": "bretlina.png",
     "group": 1,
     "thumbnailImageTransform": {

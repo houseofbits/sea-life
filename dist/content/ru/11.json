@@ -1,8 +1,8 @@
 {
     "id": 11,
     "title": "Каспийский бычок-кругляк",
-    "order": "бычкообразные Gobiiformes",
-    "family": "бычковые Gobiidae",
+    "order": "<small>бычкообразные</small> Gobiiformes",
+    "family": "<small>бычковые</small> Gobiidae",
     "content": [
         {
             "title": "Внешний вид",

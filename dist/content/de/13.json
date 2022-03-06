@@ -1,8 +1,8 @@
 {
     "id": 13,
     "title": "Aalmutter",
-    "order": "Perciformes (Barschartige)",
-    "family": "Zoarcidae (Aalmuttern)",
+    "order": "Perciformes <small>(Barschartige)</small>",
+    "family": "Zoarcidae <small>(Aalmuttern)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

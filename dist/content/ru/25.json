@@ -1,8 +1,8 @@
 {
     "id": 25,
     "title": "Песчанка",
-    "order": "драконообразные Trachiniformes",
-    "family": "песчанковые Ammodytidae",
+    "order": "<small>драконообразные</small> Trachiniformes",
+    "family": "<small>песчанковые</small> Ammodytidae",
     "content": [
         {
             "title": "Внешний вид",

@@ -2,8 +2,8 @@
     "id": 16,
     "latinTitle": "Nerophis ophidion",
     "title": "Čūskzivs",
-    "order": "adatzivjveidīgo Syngnathiformes",
-    "family": "adatzivju Syngnathidae",
+    "order": "<small>adatzivjveidīgo</small> Syngnathiformes",
+    "family": "<small>adatzivju</small> Syngnathidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Čūskzivs ir radniecīga jūraszirdziņiem  -  īpaša izskata zivīm, kas galvenokārt mājo seklās tropu un mērenās joslas piekrastes jūrās.",
-    "identifier": "x",
+    "identifier": "17",
     "imageFileName": "cuskzivs.png",
     "group": 1,
     "thumbnailImageTransform": {

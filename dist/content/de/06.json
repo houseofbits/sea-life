@@ -1,8 +1,8 @@
 {
     "id": 6,
     "title": "Prachttaucher",
-    "order": "Gaviiformes (Seetaucherartige)",
-    "family": "Gaviidae (Seetaucher)",
+    "order": "Gaviiformes <small>(Seetaucherartige)</small>",
+    "family": "Gaviidae <small>(Seetaucher)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

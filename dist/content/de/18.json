@@ -1,8 +1,8 @@
 {
     "id": 18,
     "title": "Steinbutt",
-    "order": "Pleuronectiformes (Plattfische)",
-    "family": "Scophthalmidae (Steinbutte)",
+    "order": "Pleuronectiformes <small>(Plattfische)</small>",
+    "family": "Scophthalmidae <small>(Steinbutte)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

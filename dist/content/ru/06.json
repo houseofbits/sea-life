@@ -1,8 +1,8 @@
 {
     "id": 6,
     "title": "Чернозобая гагара",
-    "order": "гагарообразные Gaviiformes",
-    "family": "гагаровые Gaviidae",
+    "order": "<small>гагарообразные</small> Gaviiformes",
+    "family": "<small>гагаровые</small> Gaviidae",
     "content": [
         {
             "title": "Внешний вид",

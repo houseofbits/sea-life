@@ -2,8 +2,8 @@
     "id": 20,
     "latinTitle": "Fucus vesiculosus",
     "title": "Pūšļu fuks",
-    "order": "brūnaļģu Phaeophyceae",
-    "family": "fuku Fucales",
+    "order": "<small>brūnaļģu</small> Phaeophyceae",
+    "family": "<small>fuku</small> Fucales",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Pūšļu fuka audzes ir nozīmīga dzīvotne daudzām bezmugurkaulnieku sugām, kā arī svarīga zivju nārsta vieta. Audzes apdraud ūdens caurredzamības samazināšanās eitrofikācijas rezultātā, jo to augšanai ir nepieciešama gaisma. Fuka audzes iznīkst pēc avārijām, kurās ūdenī ir nokļuvuši naftas produkti.",
-    "identifier": "x",
+    "identifier": "20",
     "imageFileName": "puslu fuks.png",
     "group": 0,
     "thumbnailImageTransform": {

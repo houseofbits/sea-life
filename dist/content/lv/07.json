@@ -2,8 +2,8 @@
     "id": 7,
     "latinTitle": "Halichoerus grypus",
     "title": "Pelēkais ronis",
-    "order": "plēsēju Carnivora",
-    "family": "roņu Phocidae",
+    "order": "<small>plēsēju</small> Carnivora",
+    "family": "<small>roņu</small> Phocidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Pieaugušie dzīvnieki zem ūdens spēj uzturēties ilgāk nekā desmit minūtes. Mazuļu baltais, pūkainais apmatojums nav ūdensdrošs.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "cukdelfins.png",
     "group": 3,
     "thumbnailImageTransform": {

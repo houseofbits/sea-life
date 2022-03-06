@@ -1,8 +1,8 @@
 {
     "id": 9,
     "title": "Flunder",
-    "order": "Pleuronectiformes (Plattfisch)",
-    "family": "Pleuronectidae (Scholle)",
+    "order": "Pleuronectiformes <small>(Plattfisch)</small>",
+    "family": "Pleuronectidae <small>(Scholle)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

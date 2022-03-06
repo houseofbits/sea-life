@@ -2,8 +2,8 @@
     "id": 32,
     "latinTitle": "Clupea harengus",
     "title": "Reņģe",
-    "order": "siļķveidīgo Clupeiformes",
-    "family": "siļķu Clupeidae",
+    "order": "<small>siļķveidīgo</small> Clupeiformes",
+    "family": "<small>siļķu</small> Clupeidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Ārpus Baltijas jūras dzīvojošo reņģi latviski parasti sauc par siļķi.",
-    "identifier": "x",
+    "identifier": "5",
     "imageFileName": "renge.png",
     "group": 1,
     "thumbnailImageTransform": {

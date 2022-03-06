@@ -2,8 +2,8 @@
     "id": 23,
     "latinTitle": "Hyperoplus lanceolatus",
     "title": "Nigliņš",
-    "order": "čūskzivjveidīgo Trachiniformes",
-    "family": "tūbīšu Ammodytidae",
+    "order": "<small>čūskzivjveidīgo</small> Trachiniformes",
+    "family": "<small>tūbīšu</small> Ammodytidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Lielāko dzīves daļu tie pavada, ierakušies smiltīs, kur tie slēpjas no plēsējiem  -  ūdensputniem, roņiem, asariem, akmeņplekstēm un mencām, kas labprāt tos izmanto uzturā.",
-    "identifier": "x",
+    "identifier": "23",
     "imageFileName": "niglins.png",
     "group": 1,
     "thumbnailImageTransform": {

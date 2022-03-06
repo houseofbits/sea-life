@@ -1,8 +1,8 @@
 {
     "id": 12,
     "title": "Пинагор",
-    "order": "скорпенообразных Scorpaeniformes",
-    "family": "пинагоровых Cyclopteridae",
+    "order": "<small>скорпенообразных</small> Scorpaeniformes",
+    "family": "<small>пинагоровых</small> Cyclopteridae",
     "content": [
         {
             "title": "Внешний вид",

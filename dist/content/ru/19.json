@@ -1,8 +1,8 @@
 {
     "id": 19,
     "title": "Большой баклан",
-    "order": "пеликанообразные Pelecaniformes",
-    "family": "баклановые Phalacrocoracidae",
+    "order": "<small>пеликанообразные</small> Pelecaniformes",
+    "family": "<small>баклановые</small> Phalacrocoracidae",
     "content": [
         {
             "title": "Внешний вид",

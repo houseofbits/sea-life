@@ -1,8 +1,8 @@
 {
     "id": 34,
     "title": "Сиг",
-    "order": "лососёвообразные Salmoniformes",
-    "family": "лососёвые Salmonidae",
+    "order": "<small>лососёвообразные</small> Salmoniformes",
+    "family": "<small>лососёвые</small> Salmonidae",
     "content": [
         {
             "title": "Внешний вид",

@@ -1,8 +1,8 @@
 {
     "id": 16,
     "title": "Kleine Schlangennadel",
-    "order": "Syngnathiformes (Seenadelartige)",
-    "family": "Syngnathidae (Seenadeln)",
+    "order": "Syngnathiformes <small>(Seenadelartige)</small>",
+    "family": "Syngnathidae <small>(Seenadeln)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

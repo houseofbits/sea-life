@@ -2,8 +2,8 @@
     "id": 10,
     "latinTitle": "Mytilus trossulus",
     "title": "Parastā ēdamgliemene",
-    "order": "gliemeņu Bivalvia",
-    "family": "ēdamgliemeņu Mytilidae",
+    "order": "<small>gliemeņu</small> Bivalvia",
+    "family": "<small>ēdamgliemeņu</small> Mytilidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -19,7 +19,7 @@
         }
     ],
     "fact": "Suga veido hibrīdus ar ziemeļu ēdamgliemeni, kas sastopama Baltijas jūras dienvidrietumu daļā (Polijas un Vācijas teritorijā). Ēdamgliemenes daudzviet lieto pārtikā, daudzās zemēs arī audzē.",
-    "identifier": "x",
+    "identifier": "11",
     "imageFileName": "parasta_ edamgliemene.png",
     "group": 4,
     "thumbnailImageTransform": {

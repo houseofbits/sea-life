@@ -2,8 +2,8 @@
     "id": 2,
     "latinTitle": "Enchelyopus cimbrius",
     "title": "Četrtaustekļu jūrasvēdzele",
-    "order": "mencveidīgās Gadiformes",
-    "family": "mencu Gadidae",
+    "order": "<small>mencveidīgās</small> Gadiformes",
+    "family": "<small>mencu</small> Gadidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,9 +27,9 @@
         }
     ],
     "fact": "Atšķirībā no citām zivīm no pirmās muguras spuras labi attīstīts ir pirmais stars, kas padara šo zivi viegli atšķiramu no citām.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "jurasvedzele.png",
-    "group": 2,
+    "group": 1,
     "thumbnailImageTransform": {
         "left": -280,
         "top": 10,

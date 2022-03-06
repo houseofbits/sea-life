@@ -1,8 +1,8 @@
 {
     "id": 22,
     "title": "Атлантическая треска",
-    "order": "трескообразные  Gadiformes",
-    "family": "тресковые Gadidae",
+    "order": "<small>трескообразные</small> Gadiformes",
+    "family": "<small>тресковые</small> Gadidae",
     "content": [
         {
             "title": "Внешний вид",

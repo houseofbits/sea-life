@@ -1,8 +1,8 @@
 {
     "id": 11,
     "title": "Schwarzmund-Grundel",
-    "order": "Gobiiformes (Grundelartige)",
-    "family": "Gobiidae (Grundeln)",
+    "order": "Gobiiformes <small>(Grundelartige)</small>",
+    "family": "Gobiidae <small>(Grundeln)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

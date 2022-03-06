@@ -1,8 +1,8 @@
 {
     "id": 2,
     "title": "Четырехусый морской налим",
-    "order": "трескобразные Gadiformes",
-    "family": "тресковые Gadidae",
+    "order": "<small>трескобразные</small> Gadiformes",
+    "family": "<small>тресковые</small> Gadidae",
     "content": [
         {
             "title": "Внешний вид",

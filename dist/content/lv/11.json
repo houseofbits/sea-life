@@ -2,8 +2,8 @@
     "id": 11,
     "latinTitle": "Neogobius melanostomus",
     "title": "Apaļais jūrasgrundulis",
-    "order": "jūrasgrunduļveidīgo Gobiiformes",
-    "family": "jūrasgrunduļu Gobiidae",
+    "order": "<small>jūrasgrunduļveidīgo</small> Gobiiformes",
+    "family": "<small>jūrasgrunduļu</small> Gobiidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Baltijas jūra ir labi piemērota vide apaļajam jūrasgrundulim, par ko liecina zivju lielāki izmēri un garāks dzīves ilgums salīdzinājumā ar zivīm to dabiskajā izplatības areālā.",
-    "identifier": "x",
+    "identifier": "12",
     "imageFileName": "apalais-jurasgrundulis.png",
     "group": 1,
     "thumbnailImageTransform": {

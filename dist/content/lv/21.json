@@ -2,8 +2,8 @@
     "id": 21,
     "latinTitle": "Eriocheir sinensis",
     "title": "Ķīnas cimdiņkrabis",
-    "order": "desmitkājvēžu Decapoda",
-    "family": "krastkrabju Varunidae",
+    "order": "<small>desmitkājvēžu</small> Decapoda",
+    "family": "<small>krastkrabju</small> Varunidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Konstatēts, ka dabīgajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu  -  gliemeņu, nematožu, vēžveidīgo  -  izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
-    "identifier": "x",
+    "identifier": "21",
     "imageFileName": "KINAS CIMDINKRABIS.png",
     "group": 4,
     "thumbnailImageTransform": {

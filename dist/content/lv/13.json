@@ -2,8 +2,8 @@
     "id": 13,
     "latinTitle": "Zoarces viviparus",
     "title": "Lucītis",
-    "order": "asarveidīgo Perciformes",
-    "family": "lucīšu Zoarcidae",
+    "order": "<small>asarveidīgo</small> Perciformes",
+    "family": "<small>lucīšu</small> Zoarcidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Lucīti bieži izmanto kā vides indikatoru, jo tas ir dzīvdzemdētājs un veic salīdzinoši nelielas migrācijas, tā labi raksturojot lokālo vides stāvokli. Lucīšu asakas ir zaļganā krāsā.",
-    "identifier": "x",
+    "identifier": "14",
     "imageFileName": "lucitis.png",
     "group": 1,
     "thumbnailImageTransform": {

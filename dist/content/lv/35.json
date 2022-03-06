@@ -2,8 +2,8 @@
     "id": 35,
     "latinTitle": "Acipenser sp.",
     "title": "Store",
-    "order": "storveidīgo Acipenseriformes",
-    "family": "storu Acipenseridae",
+    "order": "<small>storveidīgo</small> Acipenseriformes",
+    "family": "<small>storu</small> Acipenseridae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,19 +27,19 @@
         }
     ],
     "fact": "Mūsdienās storu populācijas Eiropā ir kritiski apdraudētas pārzvejas, upju aizsprostošanas, piesārņojuma un klimata pārmaiņu rezultātā. Saistībā ar reintrodukcijas programmu zvejnieki Latvijā jūras ūdeņos nozvejo neliela izmēra iezīmētas stores.",
-    "identifier": "x",
+    "identifier": "8",
     "imageFileName": "store.png",
     "group": 1,
     "thumbnailImageTransform": {
         "left": -640,
-        "top": -10,
+        "top": -140,
         "width": 1088,
         "angle": 0
     },
     "detailImageTransform": {
         "left": 47,
-        "top": 428,
-        "width": 904
+        "top": 380,
+        "width": 1000
     },
     "factTextTransform": {
         "height": 235,

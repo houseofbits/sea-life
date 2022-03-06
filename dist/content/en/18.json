@@ -1,8 +1,8 @@
 {
     "id": 18,
     "title": "Turbot",
-    "order": "flatfish Pleuronectiformes",
-    "family": "turbots Scophthalmidae",
+    "order": "<small>flatfish</small> Pleuronectiformes",
+    "family": "<small>turbots</small> Scophthalmidae",
     "content": [
         {
             "title": "External appearance",

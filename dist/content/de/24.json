@@ -1,8 +1,8 @@
 {
     "id": 24,
     "title": "Sandklaffmuschel",
-    "order": "Myidae (Klaffmuscheln)",
-    "family": "Bivalvia (Muscheln)",
+    "order": "Myidae <small>(Klaffmuscheln)</small>",
+    "family": "Bivalvia <small>(Muscheln)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

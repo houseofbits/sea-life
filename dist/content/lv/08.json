@@ -2,8 +2,8 @@
     "id": 8,
     "latinTitle": "Myoxocephalus scorpius",
     "title": "Ziemeļu jūrasbullis",
-    "order": "skorpēnveidīgo Scorpaeniformes",
-    "family": "platgalvju Cottidae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>platgalvju</small> Cottidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Tēviņš pēc nārsta apsargā ikrus.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "ziemelu bulzivs.png",
     "group": 1,
     "thumbnailImageTransform": {

@@ -2,8 +2,8 @@
     "id": 1,
     "latinTitle": "Bucephala clangula",
     "title": "Gaigala",
-    "order": "zosveidīgo Anseriformes",
-    "family": "pīļu Anatidae",
+    "order": "<small>zosveidīgo</small> Anseriformes",
+    "family": "<small>pīļu</small> Anatidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Tā spēj nirt līdz 4 m dziļumam.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "gaigala.png",
     "group": 2,
     "thumbnailImageTransform": {

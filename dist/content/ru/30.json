@@ -1,8 +1,8 @@
 {
     "id": 30,
     "title": "Килька",
-    "order": "сельдеобразные Clupeiformes",
-    "family": "сельдевые Clupeidae",
+    "order": "<small>сельдеобразные</small> Clupeiformes",
+    "family": "<small>сельдевые</small> Clupeidae",
     "content": [
         {
             "title": "Внешний вид",

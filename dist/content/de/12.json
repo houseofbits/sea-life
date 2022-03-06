@@ -1,8 +1,8 @@
 {
     "id": 12,
     "title": "Seehase",
-    "order": "Scorpaeniformes (Drachenkopfartige)",
-    "family": "Cyclopteridae (Seehasen)",
+    "order": "Scorpaeniformes <small>(Drachenkopfartige)</small>",
+    "family": "Cyclopteridae <small>(Seehasen)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

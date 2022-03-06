@@ -2,8 +2,8 @@
     "id": 24,
     "latinTitle": "Mya arenaria",
     "title": "Lielā smilšgliemene",
-    "order": "gliemeņu Bivalvia",
-    "family": "smilšgliemeņu Myidae",
+    "order": "<small>gliemeņu</small> Bivalvia",
+    "family": "<small>smilšgliemeņu</small> Myidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -19,7 +19,7 @@
         }
     ],
     "fact": "Maksimālais šīs gliemenes zināmais dzīves ilgums ir 28 gadi. Tā tiek izmantota pārtikā.",
-    "identifier": "x",
+    "identifier": "24",
     "imageFileName": "lielaa smilsgliemene.png",
     "group": 4,
     "thumbnailImageTransform": {

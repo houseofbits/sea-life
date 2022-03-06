@@ -1,8 +1,8 @@
 {
     "id": 15,
     "title": "Dreistachliger Stichling",
-    "order": "Scorpaeniformes (Drachenkopfartige)",
-    "family": "Gasterosteidae (Stichlinge)",
+    "order": "Scorpaeniformes <small>(Drachenkopfartige)</small>",
+    "family": "Gasterosteidae <small>(Stichlinge)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

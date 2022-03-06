@@ -1,8 +1,8 @@
 {
     "id": 26,
     "title": "Lagunen Herzmuschel",
-    "order": "Cardiidae (Herzmuscheln)",
-    "family": "Bivalvia (Muscheln)",
+    "order": "Cardiidae <small>(Herzmuscheln)</small>",
+    "family": "Bivalvia <small>(Muscheln)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

@@ -2,8 +2,8 @@
     "id": 29,
     "latinTitle": "Phocoena phocoena",
     "title": "Cūkdelfīns",
-    "order": "vaļveidīgo Cetacea",
-    "family": "cūkdelfīnu Phocoenidae",
+    "order": "<small>vaļveidīgo</small> Cetacea",
+    "family": "<small>cūkdelfīnu</small> Phocoenidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Nelec ārā no ūdens kā citi delfīni. Mazās galvas un strupā purna dēļ cūkdelfīnu sauc arī par jūrascūku.",
-    "identifier": "x",
+    "identifier": "2",
     "imageFileName": "cukdelfins.png",
     "group": 3,
     "thumbnailImageTransform": {

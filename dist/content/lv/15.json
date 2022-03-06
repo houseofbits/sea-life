@@ -2,8 +2,8 @@
     "id": 15,
     "latinTitle": "Gasterosteus aculeatus",
     "title": "Trīsadatu stagars",
-    "order": "skorpēnveidīgo Scorpaeniformes",
-    "family": "stagaru Gasterosteidae",
+    "order": "<small>skorpēnveidīgo</small> Scorpaeniformes",
+    "family": "<small>stagaru</small> Gasterosteidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Tēviņi no aļģēm veido tuneļveida nārsta ligzdu, ko pēc tam apsargā. Vienā nārsta sezonā tēviņi var veidot vairākas nārsta ligzdas, uz kurām tie ar raksturīgu zigzagveida deju pievilina mātītes.Saite uz animāciju?",
-    "identifier": "x",
+    "identifier": "16",
     "imageFileName": "3trisadatu-stagars.png",
     "group": 1,
     "thumbnailImageTransform": {

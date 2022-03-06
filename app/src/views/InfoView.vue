@@ -150,14 +150,15 @@ const itemLatinTitle = computed<string>(() => {
     <div
         v-for="page in allPages"
         :key="page.id"
-        class="full-slider-container cards-container"
+        class="full-slider-container cards-container initial-right"
         :class="[getAnimationState(page)]"
         :style="getPageStyle(page)"
     >
 
       <info-item
           v-for="item in page.items"
-          :key="item.id"
+          v-if="getAnimationState(page)"
+          :key="page.id + '-' + item.id"
           :item="item.getTranslatedItem(selectedLanguage)"
           :is-selected="isItemSelected(item)"
           @close="closeItem"

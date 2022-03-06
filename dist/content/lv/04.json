@@ -2,8 +2,8 @@
     "id": 4,
     "latinTitle": "Clangula hyemalis",
     "title": "Kākaulis",
-    "order": "zosveidīgo Anseriformes",
-    "family": "pīļu Anatidae",
+    "order": "<small>zosveidīgo</small> Anseriformes",
+    "family": "<small>pīļu</small> Anatidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Pavasarī jūrā kākaulis sauc savu vārdu: \"kā-kau-lit, kā-kau-lit\".Var ienirt līdz pat 60 m dziļumam.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "kaakaulis.png",
     "group": 2,
     "thumbnailImageTransform": {

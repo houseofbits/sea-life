@@ -1,8 +1,8 @@
 {
     "id": 29,
     "title": "Морская свинья",
-    "order": "китообразные Cetacea",
-    "family": "морских свиней Phocoenidae",
+    "order": "<small>китообразные</small> Cetacea",
+    "family": "<small>морских свиней</small> Phocoenidae",
     "content": [
         {
             "title": "Внешний вид",

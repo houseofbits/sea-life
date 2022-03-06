@@ -1,8 +1,8 @@
 {
     "id": 35,
     "title": "Осётр",
-    "order": "осетрообразные Acipenseriformes",
-    "family": "осетровые Acipenseridae",
+    "order": "<small>осетрообразные</small> Acipenseriformes",
+    "family": "<small>осетровые</small> Acipenseridae",
     "content": [
         {
             "title": "Внешний вид",

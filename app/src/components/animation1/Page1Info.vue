@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, watch} from "vue";
+import {onMounted, ref, watch} from "vue";
 
 const infoVideo1 = ref<HTMLMediaElement | null>(null);
 const infoVideo2 = ref<HTMLMediaElement | null>(null);
@@ -21,8 +21,10 @@ function stopAllVideo(): void {
     infoVideo1.value.currentTime = 0;
   }
   if (infoVideo2.value) {
-    infoVideo2.value.pause();
-    infoVideo2.value.currentTime = 0;
+    if (!infoVideo2.value.paused) {
+      infoVideo2.value.pause();
+    }
+    infoVideo2.value.currentTime = 0.2;
   }
   if (infoVideo3.value) {
     infoVideo3.value.pause();
@@ -30,7 +32,7 @@ function stopAllVideo(): void {
   }
 }
 
-function selectElement(id: number): void {0
+function selectElement(id: number): void {
   stopAllVideo();
 
   activeElement.value = id;
@@ -75,6 +77,9 @@ watch(() => props.isActive, (value: boolean) => {
   }
 });
 
+onMounted(() => {
+  stopAllVideo();
+});
 
 function getCalloutClasses(id: number): object {
   return {
@@ -92,6 +97,7 @@ function returnMain(): void {
   stopAllVideo();
   emit('main');
 }
+
 
 </script>
 <template>

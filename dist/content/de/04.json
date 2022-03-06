@@ -1,8 +1,8 @@
 {
     "id": 4,
     "title": "Eisente",
-    "order": "Anseriformes (Gänsevögel)",
-    "family": "Anatidae (Entenvögel)",
+    "order": "Anseriformes <small>(Gänsevögel)</small>",
+    "family": "Anatidae <small>(Entenvögel)</small>",
     "content": [
         {
             "title": "Äußere Merkmale",

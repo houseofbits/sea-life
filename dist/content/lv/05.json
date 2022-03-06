@@ -2,8 +2,8 @@
     "id": 5,
     "latinTitle": "Mergus merganser",
     "title": "Lielā gaura",
-    "order": "zosveidīgo Anseriformes",
-    "family": "pīļu Anatidae",
+    "order": "<small>zosveidīgo</small> Anseriformes",
+    "family": "<small>pīļu</small> Anatidae",
     "content": [
         {
             "title": "Ārējais izskats",
@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Ļoti bieži vairākas mātītes apvienojas lielākā barā un mazuļus uzmana kopā. Lielā gaura zem ūdens spēj pavadīt līdz pat divām minūtēm.",
-    "identifier": "x",
+    "identifier": "?",
     "imageFileName": "lielaa gaura.png",
     "group": 2,
     "thumbnailImageTransform": {
