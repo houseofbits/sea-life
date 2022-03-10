@@ -636,8 +636,10 @@
     width: 590px;
 
     .text-collapse {
+        transition-duration: 800ms;
+        
         &.active {
-            height: 120px;
+            height: 200px;
         }
     }
 
@@ -658,8 +660,10 @@
     width: 590px;
 
     .text-collapse {
+        transition-duration: 800ms;
+
         &.active {
-            height: 120px;
+            height: 200px;
         }
     }
 

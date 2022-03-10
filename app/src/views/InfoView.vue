@@ -46,6 +46,7 @@ const {
 
 const isPanning = ref(false);
 const panOffset = ref(0);
+const isLoading = ref(true);
 
 function getPageStyle(page: DetailListPageStructure): any {
   // if (isActivePage(page) && isPanning.value) {
@@ -63,6 +64,8 @@ onMounted(() => {
     setTranslations(result.translatedCommon);
     createPageGroupsFromItems(result.items);
     selectGroup();
+  }).finally(() => {
+    isLoading.value = false;
   });
 
   TimeoutService.registerCallback(() => {
@@ -123,8 +126,7 @@ const itemLatinTitle = computed<string>(() => {
 </script>
 
 <template>
-
-  <div class="content-1080p detail-list">
+  <div v-show="!isLoading" class="content-1080p detail-list">
 
     <navigation-bar :languages="languages" @selectLanguage="selectLanguage">
 
@@ -190,6 +192,9 @@ const itemLatinTitle = computed<string>(() => {
       <span>{{ translations.mainFilterButton }}</span>
     </div>
 
+  </div>
+  <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
+    Loading
   </div>
 
 </template>

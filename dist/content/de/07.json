@@ -1,8 +1,29 @@
 {
     "id": 7,
-    "title": "",
-    "order": "",
-    "family": "",
-    "content": [],
-    "fact": ""
+    "title": "Kegelrobbe",
+    "order": "<small>Raubtiere</small> Carnivora",
+    "family": "<small>Robben</small> Phocidae",
+    "content": [
+        {
+            "title": "Äußere Merkmale",
+            "content": "Die größte Robbe in der Ostsee. Die Weibchen sind kleiner als die Männchen. Erreichen eine Masse von 100 – 310 kg. Die Fellfarbe kann variieren, es dominieren aber graue Töne."
+        },
+        {
+            "title": "Verbreitung",
+            "content": "Im nördlichen Teil des Atlantiks anzutreffen. Hält sich meist in Inselgegenden auf, im Sommer ruht sie sich an der Küste aus, im Winter auf dem Eis."
+        },
+        {
+            "title": "Ernährung",
+            "content": "Fängt im Wasser Fische: Kabeljau, Butt, Hering, Lachs, seltener Krebsartige und Muscheln."
+        },
+        {
+            "title": "Entwicklung",
+            "content": "Die Kegelrobbe gebährt In der Ostsee meist im Februar und März auf dem Eis. Wenn es kein Eis gibt, werden die Jungen an der Küste oder auf Inseln geboren."
+        },
+        {
+            "title": "Jagd",
+            "content": "Früher wurden Kegelrobben wegen der Fett- und Fellgewinnung intensiv gejagt, was zu einem starken Zahlenrückgang Anfang des 20. Jahrhunderts führte."
+        }
+    ],
+    "fact": "Die erwachsenen Tiere können sich mehr als 10 Minuten unter Wasser\naufhalten. Das weiße, flaumige Fell der Jungen ist nicht wasserfest."
 }

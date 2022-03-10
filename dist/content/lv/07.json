@@ -27,13 +27,13 @@
         }
     ],
     "fact": "Pieaugušie dzīvnieki zem ūdens spēj uzturēties ilgāk nekā desmit minūtes. Mazuļu baltais, pūkainais apmatojums nav ūdensdrošs.",
-    "identifier": "?",
-    "imageFileName": "cukdelfins.png",
+    "identifier": "34",
+    "imageFileName": "rona galvaskauss.png",
     "group": 3,
     "thumbnailImageTransform": {
-        "left": -390,
-        "top": -50,
-        "width": 822,
+        "left": -100,
+        "top": 20,
+        "width": 500,
         "angle": 18
     },
     "detailImageTransform": {
@@ -43,9 +43,9 @@
         "angle": 18
     },
     "factTextTransform": {
-        "height": 235,
-        "top": 238,
-        "left": 353,
+        "height": 200,
+        "top": 170,
+        "left": 450,
         "width": 429
     },
     "familyTextTransform": {

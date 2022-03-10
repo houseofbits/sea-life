@@ -1,8 +1,29 @@
 {
     "id": 7,
-    "title": "",
-    "order": "",
-    "family": "",
-    "content": [],
-    "fact": ""
+    "title": "Grey seal",
+    "order": "<small>carnivores</small> Carnivora",
+    "family": "<small>earless seals</small> Phocidae",
+    "content": [
+        {
+            "title": "External appearance",
+            "content": "The largest of the Baltic Sea seals. Females are smaller than males. Weighs 100–310 kg. Coat colour can vary, but grey predominates."
+        },
+        {
+            "title": "Distribution",
+            "content": "Found in the North Atlantic. Mainly found around islands. In summer they haul out on shore, in winter – on the ice."
+        },
+        {
+            "title": "Diet",
+            "content": "Seals hunt for fish in the water: cod, flounder, herring, salmon; less frequently – crustaceans and molluscs."
+        },
+        {
+            "title": "Development",
+            "content": "Baltic grey seals usually give birth to pups on the ice in February and March. If there is no ice, they will give birth on shore or on islands."
+        },
+        {
+            "title": "Hunting",
+            "content": "Seals were once hunted intensively, mainly for their blubber and fur, which led to a sharp decline in numbers in the early 20 th century."
+        }
+    ],
+    "fact": "Adults can stay underwater for more than ten minutes. The white, fluffy coat\nof pups is not waterproof."
 }

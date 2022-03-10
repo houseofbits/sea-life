@@ -25,7 +25,7 @@ class DetailViewService extends HttpService {
             structure.translatedCommon[language] = await this.fetchCommonTexts(language);
         }
 
-        this.preloadImages(structure.items);
+        // this.preloadImages(structure.items);
 
         return structure;
     }

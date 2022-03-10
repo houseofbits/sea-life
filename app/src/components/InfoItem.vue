@@ -16,6 +16,7 @@ const props = defineProps({
 });
 
 const isOpenOrLoading = ref(false);
+
 // const isImageLoaded = ref(false);
 
 function getImageTransform(item: DetailListItem): string {
@@ -31,6 +32,7 @@ watch(() => props.isSelected, (isSelected: boolean) => {
     setTimeout(() => isOpenOrLoading.value = false, 500);
   }
 });
+
 
 </script>
 <template>
@@ -51,7 +53,11 @@ watch(() => props.isSelected, (isSelected: boolean) => {
     <div class="icon-content" :data-item-id="item.id">
       <h1>{{ item.title }}</h1>
       <em v-html="item.latinTitle"/>
-      <span class="identifier">{{ item.identifier }}</span>
+      <template v-if="Array.isArray(item.identifier)">
+        <span class="identifier">{{ item.identifier[1] }}</span>
+        <span class="identifier-2">{{ item.identifier[0] }}</span>
+      </template>
+      <span v-else class="identifier">{{ item.identifier }}</span>
     </div>
     <info-detail-view v-if="isOpenOrLoading" :item="item" @close="emit('close')"/>
   </div>

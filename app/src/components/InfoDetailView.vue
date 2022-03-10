@@ -133,7 +133,16 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="large-identifier">
+
+    <template v-if="Array.isArray(item.identifier)">
+      <div class="large-identifier">
+        {{ item.identifier[0] }}
+      </div>
+      <div class="large-identifier-2">
+        {{ item.identifier[1] }}
+      </div>
+    </template>
+    <div v-else class="large-identifier">
       {{ item.identifier }}
     </div>
 
