@@ -15,8 +15,26 @@ export default class HttpService {
     }
 
     async get(url: string): Promise<any> {
-        const result = await this.axiosInstance.get('/content/' + url);
-        return result.data;
+        let result = null;
+        try {
+            result = await this.axiosInstance.get('/content/' + url);
+        }catch (e: any) {
+            throw new Error("Failed to load 'content/" + url + "'. " + e.message);
+        }
+
+        if (typeof result.data === 'string'){
+            try {
+                return JSON.parse(result.data);
+            } catch (e: any) {
+                throw new Error("Failed to parse JSON data for 'content/" + url + "'. " + e.message)
+            }
+        }
+
+        if (typeof result.data === 'object') {
+            return result.data;
+        }
+
+        throw new Error("Unknown data type for fetched result of 'content/" + url + "'");
     }
 
     getContent(language: string, filename: string): Promise<any> {

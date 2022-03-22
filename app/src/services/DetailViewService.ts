@@ -37,11 +37,7 @@ class DetailViewService extends HttpService {
         const additionalLanguages = config.languages.filter(lang => lang !== config.baseLanguage);
 
         for (const additionalLanguage of additionalLanguages) {
-            try {
-                item.translatedItems[additionalLanguage] = await this.getContent(additionalLanguage, filename);
-            } catch (e: any) {
-                console.error('Failed to load content of ' + additionalLanguage + ', ' + filename);
-            }
+            item.translatedItems[additionalLanguage] = await this.getContent(additionalLanguage, filename);
         }
 
         return item;

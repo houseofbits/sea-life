@@ -47,6 +47,7 @@ const {
 const isPanning = ref(false);
 const panOffset = ref(0);
 const isLoading = ref(true);
+const errorMessage = ref<string | null>(null);
 
 function getPageStyle(page: DetailListPageStructure): any {
   // if (isActivePage(page) && isPanning.value) {
@@ -64,6 +65,8 @@ onMounted(() => {
     setTranslations(result.translatedCommon);
     createPageGroupsFromItems(result.items);
     selectGroup();
+  }).catch(e => {
+    errorMessage.value = e.message;
   }).finally(() => {
     isLoading.value = false;
   });
@@ -195,6 +198,10 @@ const itemLatinTitle = computed<string>(() => {
   </div>
   <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
     Loading
+  </div>
+  <div v-if="errorMessage" class="content-1080p detail-list-error">
+    <span>Error while fetching data from the server.</span>
+    <span><strong>With message:</strong> {{ errorMessage }}</span>
   </div>
 
 </template>

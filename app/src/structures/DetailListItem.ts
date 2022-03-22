@@ -12,6 +12,7 @@ export default class DetailListItem {
     order: string;
     family: string;
     imageFileName: string;
+    videoFileName: string | null;
     thumbnailImageTransform: ElementTransform;
     detailImageTransform: ElementTransform;
     content: Array<DetailItemContent>;
@@ -29,6 +30,7 @@ export default class DetailListItem {
         this.order = params?.order || '';
         this.family = params?.family || '';
         this.imageFileName = params?.imageFileName || '';
+        this.videoFileName = params?.videoFileName || null;
         this.thumbnailImageTransform = new ElementTransform(params?.thumbnailImageTransform || {});
         this.detailImageTransform = new ElementTransform(params?.detailImageTransform || {});
         this.familyTextTransform = new ElementTransform(params?.familyTextTransform || {});

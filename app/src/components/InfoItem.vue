@@ -2,6 +2,8 @@
 import InfoDetailView from "@src/components/InfoDetailView.vue";
 import DetailListItem from "@src/structures/DetailListItem";
 import {watch, ref} from "vue";
+import IconContent from "@src/components/info/IconContent.vue";
+import InfoVideo from "@src/components/info/InfoVideo.vue";
 
 const emit = defineEmits(['close']);
 const props = defineProps({
@@ -17,7 +19,38 @@ const props = defineProps({
 
 const isOpenOrLoading = ref(false);
 
-// const isImageLoaded = ref(false);
+const activeView = ref<number | null>(null);
+const previousView = ref<number | null>(null);
+
+function mainViewSliderClass(): string {
+  if (activeView.value == 0) {
+    return 'in-down';
+  }
+  if (activeView.value !== 0 && previousView.value !== activeView.value) {
+    return 'out-up'
+  }
+  return '';
+}
+
+function infoViewSliderClass(): string {
+  if (activeView.value == 1) {
+    return 'in-up';
+  }
+  if (activeView.value !== 1 && previousView.value !== activeView.value) {
+    return 'out-down'
+  }
+  return '';
+}
+
+function showInfo(): void {
+  activeView.value = 1;
+  previousView.value = 0;
+}
+
+function showMain(): void {
+  activeView.value = 0;
+  previousView.value = 1;
+}
 
 function getImageTransform(item: DetailListItem): string {
   return props.isSelected
@@ -28,11 +61,11 @@ function getImageTransform(item: DetailListItem): string {
 watch(() => props.isSelected, (isSelected: boolean) => {
   if (isSelected) {
     isOpenOrLoading.value = true;
+    showMain();
   } else {
     setTimeout(() => isOpenOrLoading.value = false, 500);
   }
 });
-
 
 </script>
 <template>
@@ -41,24 +74,27 @@ watch(() => props.isSelected, (isSelected: boolean) => {
       :class="{active: props.isSelected, 'on-top': isOpenOrLoading}"
   >
     <div class="icon-background"/>
-    <img
-        loading="eager"
-        decoding="sync"
-        class="main-image"
-        :src="'/images/' + item.imageFileName"
-        :style="getImageTransform(item)"
-        alt=""
-    />
 
-    <div class="icon-content" :data-item-id="item.id">
-      <h1>{{ item.title }}</h1>
-      <em v-html="item.latinTitle"/>
-      <template v-if="Array.isArray(item.identifier)">
-        <span class="identifier">{{ item.identifier[1] }}</span>
-        <span class="identifier-2">{{ item.identifier[0] }}</span>
-      </template>
-      <span v-else class="identifier">{{ item.identifier }}</span>
+    <div class="full-slider-container" :class="mainViewSliderClass()" style="pointer-events: none">
+      <img
+          loading="eager"
+          decoding="sync"
+          class="main-image"
+          :src="'/images/' + item.imageFileName"
+          :style="getImageTransform(item)"
+          alt=""
+      />
+      <info-detail-view v-if="isOpenOrLoading" style="pointer-events: all" :item="item" @close="emit('close')"/>
+
+      <div v-if="item.videoFileName" class="page-navigation-link vertical bottom" @click="showInfo"  style="pointer-events: all">
+        <span>Video</span>
+        <img src="@images/chevron-down.svg" alt="" class="bounce-up-anim">
+      </div>
     </div>
-    <info-detail-view v-if="isOpenOrLoading" :item="item" @close="emit('close')"/>
+    <div v-if="item.videoFileName" class="full-slider-container initial-bottom" :class="infoViewSliderClass()">
+      <info-video :item="props.item" :is-active="activeView===1" @main="showMain"/>
+    </div>
+
+    <icon-content :item="props.item" />
   </div>
 </template>
