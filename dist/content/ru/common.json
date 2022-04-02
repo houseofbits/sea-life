@@ -4,6 +4,7 @@
   "order": "Отряд",
   "family": "Cемейство",
   "mainFilterButton": "Назад ко всем",
+  "map": "Kарта",
   "groups": [
     {
       "group": 1,

@@ -11,6 +11,8 @@ import InputHandlerService from "@src/services/InputHandlerService";
 import DetailListPageStructure from "@src/structures/DetailListPageStructure";
 import {ref} from "vue";
 import NavigationBar from "@src/components/NavigationBar.vue";
+import NavigationModal from "@src/components/info/NavigationModal.vue";
+import DetailListItem from "@src/structures/DetailListItem";
 
 const {
   isItemSelected,
@@ -46,8 +48,10 @@ const {
 
 const isPanning = ref(false);
 const panOffset = ref(0);
+const isMapModalOpen = ref(false);
 const isLoading = ref(true);
 const errorMessage = ref<string | null>(null);
+const allItems = ref<Array<DetailListItem>>([]);
 
 function getPageStyle(page: DetailListPageStructure): any {
   // if (isActivePage(page) && isPanning.value) {
@@ -58,8 +62,17 @@ function getPageStyle(page: DetailListPageStructure): any {
   return {};
 }
 
+function openMapModal(): void {
+  isMapModalOpen.value = true;
+}
+
+function closeMapModal(): void {
+  isMapModalOpen.value = false;
+}
+
 onMounted(() => {
   DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
+    allItems.value = result.items;
     setLanguages(result.config.languages);
     selectLanguage(result.config.languages[0]);
     setTranslations(result.translatedCommon);
@@ -167,6 +180,7 @@ const itemLatinTitle = computed<string>(() => {
           :item="item.getTranslatedItem(selectedLanguage)"
           :is-selected="isItemSelected(item)"
           @close="closeItem"
+          @map="openMapModal"
       />
 
     </div>
@@ -194,6 +208,13 @@ const itemLatinTitle = computed<string>(() => {
       <img src="@images/arrow-left.svg" alt="">
       <span>{{ translations.mainFilterButton }}</span>
     </div>
+
+    <navigation-modal
+        v-if="isMapModalOpen"
+        :selected-item-id="parseInt(selectedItemId)"
+        :items="allItems"
+        @close="closeMapModal"
+    />
 
   </div>
   <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">

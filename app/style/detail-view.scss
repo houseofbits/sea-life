@@ -49,6 +49,7 @@
             margin-right: 16px;
             filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
         }
+
         img:last-child {
             margin-right: 43px;
         }
@@ -322,7 +323,7 @@
 
         img.main-image {
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
             max-width: 1080px;
             pointer-events: none;
@@ -391,9 +392,11 @@
         .back-filter {
             opacity: 1;
         }
+
         .family-detail {
             opacity: 1;
         }
+
         .fact-detail {
             opacity: 1;
         }
@@ -487,9 +490,11 @@
             line-height: 24px;
             display: flex;
             justify-content: space-between;
+
             span {
                 align-self: center;
             }
+
             img {
                 align-self: flex-end;
             }
@@ -511,13 +516,19 @@
     }
 }
 
-.large-identifier {
+.info-identifier-section {
     position: absolute;
+    height: 64px;
+    left: 46px;
+    top: 970px;
+    display: flex;
+    align-items: center;
+}
+
+.large-identifier {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    bottom: 46px;
-    left: 46px;
     border-radius: 50%;
     background: #54598B;
     color: white;
@@ -527,15 +538,13 @@
     font-weight: normal;
     font-size: 24px;
     letter-spacing: 0.15px;
+    margin-left: 24px;
 }
 
 .large-identifier-2 {
-    position: absolute;
     width: 40px;
     height: 40px;
     line-height: 40px;
-    bottom: 46px;
-    left: 96px;
     border-radius: 50%;
     background: #54598B;
     color: white;
@@ -545,6 +554,36 @@
     font-weight: normal;
     font-size: 24px;
     letter-spacing: 0.15px;
+    margin-left: 12px;
+}
+
+.map-button {
+    pointer-events: all;
+    width: auto;
+    height: 64px;
+    display: flex;
+    border: 1px solid #222222;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: start;
+    padding: 12px;
+
+    & img {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    & span {
+        height: 28px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.15px;
+        color: #000000;
+    }
 }
 
 .latin-title {
@@ -553,12 +592,8 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 20px;
-
     letter-spacing: 0.005em;
-
     color: #8A9094;
-
-
 }
 
 .image-placeholder {
@@ -572,8 +607,85 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     video {
         width: 80%;
         max-height: 1080px;
     }
+}
+
+.navigation-modal {
+    z-index: 250;
+
+    & .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 27, 27, 0.6);
+        transition: opacity 300ms;
+        opacity: 0;
+
+        &.active{
+            opacity: 1;
+        }
+    }
+
+    & .window {
+        position: absolute;
+        width: 1400px;
+        height: 830px;
+        left: 260px;
+        top: 145px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        background: #FFFFFF url('@images/modal-bg.jpg') no-repeat bottom;
+        color: #22324B;
+        transition: all 300ms;
+        opacity: 0;
+        transform: scale(0.5);
+
+        &.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        & .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 88px;
+            border-bottom: 1px solid #729DB7;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 88px;
+
+            & .identifiers {
+                display: flex;
+            }
+
+            & img {
+                margin: 32px;
+                width: 23px;
+                height: 23px;
+            }
+        }
+
+        & .map-info-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(1%) contrast(50%);
+            transition: filter 400ms;
+
+            &.active {
+              filter: none;
+            }
+        }
+    }
+
+
 }

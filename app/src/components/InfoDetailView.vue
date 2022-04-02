@@ -10,7 +10,7 @@ const props = defineProps({
   }
 });
 
-const emit = defineEmits(['close']);
+const emit = defineEmits(['close', 'map']);
 
 const active = ref(false);
 const selectedSection = ref<number | null>(null);
@@ -133,22 +133,28 @@ onMounted(() => {
       </div>
     </div>
 
+    <div class="info-identifier-section">
+      <div class="map-button" @click="emit('map')">
+        <img src="@images/map.svg" alt="">
+        <span>{{ translations.map }}</span>
+      </div>
 
-    <template v-if="Array.isArray(item.identifier)">
-      <div class="large-identifier">
-        {{ item.identifier[0] }}
+      <template v-if="Array.isArray(item.identifier)">
+        <div class="large-identifier">
+          {{ item.identifier[0] }}
+        </div>
+        <div class="large-identifier-2">
+          {{ item.identifier[1] }}
+        </div>
+      </template>
+      <div v-else class="large-identifier">
+        {{ item.identifier }}
       </div>
-      <div class="large-identifier-2">
-        {{ item.identifier[1] }}
-      </div>
-    </template>
-    <div v-else class="large-identifier">
-      {{ item.identifier }}
     </div>
 
     <div class="back-filter" @click="close">
       <img src="@images/arrow-left.svg" alt="">
-      <span>{{ translations.backButton}}</span>
+      <span>{{ translations.backButton }}</span>
     </div>
 
   </div>

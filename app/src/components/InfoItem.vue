@@ -5,7 +5,7 @@ import {watch, ref} from "vue";
 import IconContent from "@src/components/info/IconContent.vue";
 import InfoVideo from "@src/components/info/InfoVideo.vue";
 
-const emit = defineEmits(['close']);
+const emit = defineEmits(['close', 'map']);
 const props = defineProps({
   item: {
     type: DetailListItem,
@@ -61,7 +61,7 @@ function getImageTransform(item: DetailListItem): string {
 watch(() => props.isSelected, (isSelected: boolean) => {
   if (isSelected) {
     isOpenOrLoading.value = true;
-    showMain();
+    activeView.value = null;
   } else {
     setTimeout(() => isOpenOrLoading.value = false, 500);
   }
@@ -80,11 +80,11 @@ watch(() => props.isSelected, (isSelected: boolean) => {
           loading="eager"
           decoding="sync"
           class="main-image"
-          :src="'/images/' + item.imageFileName"
+          :src="'/images/large/' + item.imageFileName"
           :style="getImageTransform(item)"
           alt=""
       />
-      <info-detail-view v-if="isOpenOrLoading" style="pointer-events: all" :item="item" @close="emit('close')"/>
+      <info-detail-view v-if="isOpenOrLoading" style="pointer-events: all" :item="item" @close="emit('close')" @map="emit('map')"/>
 
       <div v-if="item.videoFileName" class="page-navigation-link vertical bottom" @click="showInfo"  style="pointer-events: all">
         <span>Video</span>

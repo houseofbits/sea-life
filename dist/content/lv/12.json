@@ -51,5 +51,10 @@
         "height": 274,
         "top": 673,
         "left": 184
+    },
+    "mapImageTransform": {
+        "width": 50,
+        "top": 100,
+        "left": 100
     }
 }

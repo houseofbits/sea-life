@@ -4,6 +4,7 @@
   "order": "Order",
   "family": "Family",
   "mainFilterButton": "Back to all",
+  "map": "Map",
   "groups": [
     {
       "group": 1,
