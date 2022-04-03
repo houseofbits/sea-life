@@ -21,6 +21,7 @@
     "fact": "Suga veido hibrīdus ar ziemeļu ēdamgliemeni, kas sastopama Baltijas jūras dienvidrietumu daļā (Polijas un Vācijas teritorijā). Ēdamgliemenes daudzviet lieto pārtikā, daudzās zemēs arī audzē.",
     "identifier": "11",
     "imageFileName": "parasta_ edamgliemene.png",
+    "mapImageFileName": "ziemelu edamgliemenes daudz.png",
     "group": 4,
     "thumbnailImageTransform": {
         "left": 0,
@@ -47,8 +48,10 @@
         "width": 554
     },
     "mapImageTransform": {
-        "width": 50,
-        "top": 100,
-        "left": 100
+        "width": 37,
+        "height": 26,
+        "top": 596,
+        "left": 276,
+        "angle": 3
     }
 }

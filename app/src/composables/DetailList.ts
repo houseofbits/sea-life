@@ -74,8 +74,10 @@ export default () => {
     }
 
     function selectPage(page: DetailListPageStructure): void {
-        previousPageId.value = currentPageId.value;
-        currentPageId.value = page.id;
+        if (currentPageId.value !== page.id) {
+            previousPageId.value = currentPageId.value;
+            currentPageId.value = page.id;
+        }
     }
 
     function selectNextPage(): void {

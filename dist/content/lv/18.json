@@ -53,8 +53,10 @@
         "left": 184
     },
     "mapImageTransform": {
-        "width": 50,
-        "top": 100,
-        "left": 100
+        "width": 72,
+        "height": 51,
+        "top": 607,
+        "left": 535,
+        "angle": -26
     }
 }

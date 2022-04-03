@@ -54,8 +54,9 @@
         "left": 184
     },
     "mapImageTransform": {
-        "width": 50,
-        "top": 100,
-        "left": 100
+        "width": 51,
+        "height": 17,
+        "top": 622,
+        "left": 745
     }
 }

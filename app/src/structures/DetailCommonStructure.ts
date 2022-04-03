@@ -7,6 +7,7 @@ export default class DetailCommonStructure {
     family: string = '';
     mainFilterButton: string = '';
     map: string = '';
+    learnMoreButton: string = '';
     groups: Array<{group: number, title: string}> = [];
 
     constructor(params: Partial<DetailCommonStructure>) {

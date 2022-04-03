@@ -138,6 +138,18 @@ const itemLatinTitle = computed<string>(() => {
   return '';
 });
 
+function selectItemFromModal(itemId: number): void {
+
+  const page = allPages.value.find(page => {
+    return page.group === null && !!page.items.find(item => item.id === itemId);
+  });
+  if (page) {
+    selectPage(page);
+  }
+  closeItem();
+  isMapModalOpen.value = false;
+  setTimeout(() => selectItem(itemId), 500);
+}
 
 </script>
 
@@ -214,7 +226,13 @@ const itemLatinTitle = computed<string>(() => {
         :selected-item-id="parseInt(selectedItemId)"
         :items="allItems"
         @close="closeMapModal"
+        @select="selectItemFromModal"
     />
+
+    <div class="map-button info-map" @click="openMapModal">
+      <img src="@images/map.svg" alt="">
+      <span>{{ translations.map }}</span>
+    </div>
 
   </div>
   <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
