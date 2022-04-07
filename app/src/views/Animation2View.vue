@@ -12,7 +12,14 @@ const pageComponents = [
   Page2
 ];
 
-const {getAnimationState, currentPage} = NumericPagination();
+const {
+  getAnimationState,
+  isSelectedPage,
+  selectNextPage,
+  selectPrevPage,
+  selectPage,
+  currentPage
+} = NumericPagination();
 
 function back(): void {
   router.push('/game');
@@ -44,14 +51,18 @@ function navigateToMain(): void {
       </template>
     </navigation-bar>
 
-    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right" :class="[getAnimationState(index)]">
-      <component :is="component"/>
+    <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right"
+         :class="[getAnimationState(index)]">
+      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
     </div>
 
     <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
       <img src="@images/arrow-left.svg" alt="">
-      <span>Atpakaļ</span>
+      <span>Izvēlne</span>
     </div>
-
+    <div v-else class="back-filter" @click="selectPage(0)">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>Uz sākumu</span>
+    </div>
   </div>
 </template>

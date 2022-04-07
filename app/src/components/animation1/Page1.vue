@@ -1,69 +1,102 @@
 <script setup lang="ts">
-import Page1Main from "@src/components/animation1/Page1Main.vue";
-import Page1Info from "@src/components/animation1/Page1Info.vue";
-import {ref, watch} from "vue";
+import {onMounted, ref, watch} from "vue";
 
-const emit = defineEmits(['next', 'prev', 'restart']);
+const emit = defineEmits(['info', 'next']);
 const props = defineProps({
   isActive: {
     type: Boolean,
     required: true
   }
 });
+const mainVideo = ref<HTMLMediaElement | null>(null);
 
-const activeView = ref<number | null>(null);
-const previousView = ref<number | null>(null);
+const callout1Active = ref(false);
+const callout2Active = ref(false);
+const callout3Active = ref(false);
 
-function mainViewSliderClass(): string {
-  if (activeView.value == 0) {
-    return 'in-down';
+watch(() => props.isActive, (value: boolean) => {
+  if (mainVideo.value) {
+    if (value) {
+      mainVideo.value.play();
+    } else {
+      mainVideo.value.pause();
+    }
   }
-  if (activeView.value !== 0 && previousView.value !== activeView.value) {
-    return 'out-up'
+});
+
+onMounted(() => {
+  if (mainVideo.value) {
+    mainVideo.value.play();
   }
-  return '';
-}
 
-function infoViewSliderClass(): string {
-  if (activeView.value == 1) {
-    return 'in-up';
-  }
-  if (activeView.value !== 1 && previousView.value !== activeView.value) {
-    return 'out-down'
-  }
-  return '';
-}
+  setTimeout(() => {
+    callout1Active.value = true;
 
-function showInfo(): void {
-  activeView.value = 1;
-  previousView.value = 0;
-}
+    setTimeout(() => {
+      callout2Active.value = true;
 
-function showMain(): void {
-  activeView.value = 0;
-  previousView.value = 1;
-}
-
-function restart(): void {
-  activeView.value = 0;
-  emit('restart');
-}
-
-watch(() => props.isActive, (active) => {
-  if (active) {
-    activeView.value = null;
-    previousView.value = null;
-  }
+      setTimeout(() => {
+        callout3Active.value = true;
+      }, 500);
+    }, 500);
+  }, 500);
 });
 
 </script>
 <template>
 
-  <div class="full-slider-container" :class="mainViewSliderClass()">
-    <page1-main :is-active="props.isActive && activeView === 0" @info="showInfo" @next="emit('next')"/>
+  <div class="video-1">
+    <div class="globe-border"></div>
+    <video width="1016" height="1019" muted loop ref="mainVideo">
+      <source src="/video/Globuss.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
-  <div class="full-slider-container initial-bottom" :class="infoViewSliderClass()">
-    <page1-info :is-active="props.isActive && activeView === 1" @main="showMain" @next="emit('next')"/>
+
+  <div class="ball-callout page1-callout1" :class="{active: callout1Active}">
+    <div class="ball">
+      <div></div>
+    </div>
+    <div class="line"></div>
+
+    <div class="content">
+      <div class="fraction">
+        <span>1</span>
+        <span>4</span>
+      </div>
+      <div class="text">
+        <span>Pasaulē dzīvo aptuveni</span>
+        <span>MILJONA</span>
+        <span>dažādu zivju sugu</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="ball-callout page1-callout2" :class="{active: callout2Active}">
+    <div class="ball">
+      <div></div>
+    </div>
+    <div class="line"></div>
+
+    <div class="content">
+      Tās izšķiļas no ikriem, <span class="link">aug un attīstās</span>, līdz kļūst pieaugušas.
+    </div>
+  </div>
+
+  <div class="ball-callout page1-callout3" :class="{active: callout3Active}">
+    <div class="ball">
+      <div></div>
+    </div>
+    <div class="line"></div>
+
+    <div class="content">
+      Tad tās ir <span class="link">gatavas laist pasaulē pēcnācējus</span> un dzīves cikls var turpināties.
+    </div>
+  </div>
+
+  <div class="page-navigation-link horizontal right" @click="emit('next')">
+    <span>Turpināt</span>
+    <img src="@images/chevron-right.svg" class="bounce-right-anim" alt="">
   </div>
 
 </template>
