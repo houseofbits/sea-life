@@ -22,6 +22,7 @@ const props = defineProps({
 
 const isOpen = ref(false);
 const selectedItemId = ref<number | null>(props.selectedItemId);
+const hasChanged = ref(false);
 
 const selectedItem = computed<DetailListItem | null>(() => {
   if (selectedItemId.value !== null) {
@@ -47,8 +48,15 @@ const itemLatinTitle = computed<string>(() => {
       : '';
 });
 
-function selectItem(): void {
+function selectClose(): void {
   emit('select', selectedItemId.value);
+}
+
+function selectItem(itemId: number): void {
+  if (props.selectedItemId !== itemId) {
+    hasChanged.value = true;
+  }
+  selectedItemId.value = itemId;
 }
 
 function getCircleTransform(item: DetailListItem): any {
@@ -115,13 +123,13 @@ onMounted(() => {
             decoding="sync"
             :src="'/images/map/' + item.mapImageFileName"
             :alt="item.id"
-            @click="selectedItemId = item.id"
+            @click="selectItem(item.id)"
         >
 
         <div class="circle" :style="getCircleTransform(item)"></div>
       </div>
 
-      <div v-if="selectedItemId" class="learn-more-button" @click="selectItem">{{ translations.learnMoreButton }}</div>
+      <div v-if="hasChanged" class="learn-more-button" @click="selectClose">{{ translations.learnMoreButton }}</div>
 
     </div>
   </div>

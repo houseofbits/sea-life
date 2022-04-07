@@ -5,7 +5,7 @@ const infoVideo1 = ref<HTMLMediaElement | null>(null);
 const infoVideo2 = ref<HTMLMediaElement | null>(null);
 const infoVideo3 = ref<HTMLMediaElement | null>(null);
 
-const emit = defineEmits(['main', 'next']);
+const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
   isActive: {
     type: Boolean,
@@ -116,7 +116,7 @@ function returnMain(): void {
 
       <div class="card-video">
         <video muted loop ref="infoVideo1">
-          <source src="/video/Globuss_Aug_Jura_Narsto_Okeana_2.mp4" type="video/mp4">
+          <source src="/video/Globuss_Aug_Narsto_Jura_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -151,7 +151,7 @@ function returnMain(): void {
 
       <div class="card-video">
         <video muted loop ref="infoVideo3">
-          <source src="/video/Globuss_Aug_Narsto_Jura_2.mp4" type="video/mp4">
+          <source src="/video/Globuss_Aug_Jura_Narsto_Okeana_2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -207,9 +207,9 @@ function returnMain(): void {
     <img src="@images/chevron-right.svg" alt="" :class="{'bounce-right-anim': (activeElement !== null)}">
   </div>
 
-  <div class="page-navigation-link vertical top" @click="returnMain">
-    <img src="@images/chevron-up.svg" alt="">
-    <span>Sākuma skats</span>
+  <div class="back-filter" @click="emit('restart')">
+    <img src="@images/arrow-left.svg" alt="">
+    <span>Uz sākumu</span>
   </div>
 
 </template>

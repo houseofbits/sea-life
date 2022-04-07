@@ -339,6 +339,12 @@
         }
     }
 
+    .card-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .globe-border {
         width: 815px;
         height: 815px;

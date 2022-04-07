@@ -93,12 +93,12 @@ onMounted(() => {
 
   const input = new InputHandlerService(document.querySelector('.detail-list'));
   input.onSwipeLeft(() => {
-    if (!selectedItemId.value) {
+    if (!selectedItemId.value && !isMapModalOpen.value) {
       selectPrevPage();
     }
   });
   input.onSwipeRight(() => {
-    if (!selectedItemId.value) {
+    if (!selectedItemId.value && !isMapModalOpen.value) {
       selectNextPage();
     }
   });
@@ -140,14 +140,20 @@ const itemLatinTitle = computed<string>(() => {
 
 function selectItemFromModal(itemId: number): void {
 
+  isMapModalOpen.value = false;
+
+  if (selectedItemId.value == itemId) {
+    return;
+  }
+
   const page = allPages.value.find(page => {
     return page.group === null && !!page.items.find(item => item.id === itemId);
   });
   if (page) {
+    selectGroup(null);
     selectPage(page);
   }
   closeItem();
-  isMapModalOpen.value = false;
   setTimeout(() => selectItem(itemId), 500);
 }
 

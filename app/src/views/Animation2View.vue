@@ -12,7 +12,7 @@ const pageComponents = [
   Page2
 ];
 
-const {getAnimationState} = NumericPagination();
+const {getAnimationState, currentPage} = NumericPagination();
 
 function back(): void {
   router.push('/game');
@@ -26,9 +26,13 @@ function navigateToAnimation1(): void {
   router.push('/game/anim1');
 }
 
+function navigateToMain(): void {
+  router.push('/game');
+}
+
 </script>
 <template>
-  <div class="content-1080p">
+  <div class="content-1080p bg-white">
     <navigation-bar>
       <span>Stagara riests</span>
       <template #links>
@@ -42,6 +46,11 @@ function navigateToAnimation1(): void {
 
     <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right" :class="[getAnimationState(index)]">
       <component :is="component"/>
+    </div>
+
+    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>Atpakaļ</span>
     </div>
 
   </div>

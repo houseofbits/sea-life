@@ -94,7 +94,7 @@ watch(() => props.isActive, (active) => {
     <span>Uz sākumu</span>
   </div>
 
-  <div class="page-navigation-link horizontal right" @click="emit('restart')">
+  <div class="page-navigation-link horizontal right" @click="emit('restart', true)">
     <span>Beigas</span>
     <img src="@images/chevron-right.svg" alt="">
   </div>

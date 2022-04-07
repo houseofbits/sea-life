@@ -40,6 +40,7 @@ export default () => {
         selectPage,
         selectNextPage,
         selectPrevPage,
-        isSelectedPage
+        isSelectedPage,
+        currentPage
     };
 };

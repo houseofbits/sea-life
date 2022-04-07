@@ -94,11 +94,6 @@ onMounted(() => {
     </div>
   </div>
 
-  <div class="page-navigation-link vertical bottom" @click="emit('info')">
-    <span>Uzzināt vairāk</span>
-    <img src="@images/chevron-down.svg" alt="" class="bounce-up-anim">
-  </div>
-
   <div class="page-navigation-link horizontal right" @click="emit('next')">
     <span>Turpināt</span>
     <img src="@images/chevron-right.svg" alt="">
