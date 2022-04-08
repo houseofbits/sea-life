@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {onMounted, ref, watch} from "vue";
 
-const emit = defineEmits(['info', 'next']);
+const emit = defineEmits(['prev', 'next', 'restart']);
 const props = defineProps({
   isActive: {
     type: Boolean,

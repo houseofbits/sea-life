@@ -673,7 +673,12 @@
                 display: flex;
             }
 
-            & img {
+            & img.map {
+                width: 40px;
+                margin-left: 32px;
+            }
+
+            & img.close {
                 margin: 32px;
                 width: 23px;
                 height: 23px;

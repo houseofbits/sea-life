@@ -8,6 +8,8 @@ import Page4 from "@src/components/animation2/Page4.vue";
 import Page5 from "@src/components/animation2/Page5.vue";
 import Page6 from "@src/components/animation2/Page6.vue";
 import NumericPagination from "@src/composables/NumericPagination";
+import {onMounted} from "vue";
+import InputHandlerService from "@src/services/InputHandlerService";
 
 const router = useRouter();
 
@@ -45,9 +47,23 @@ function navigateToMain(): void {
   router.push('/game');
 }
 
+onMounted(() => {
+  const input = new InputHandlerService(document.querySelector('.anim2-container'));
+  input.onSwipeRight(() => {
+    if (currentPage.value < 5) {
+      selectNextPage();
+    }
+  });
+  input.onSwipeLeft(() => {
+    if (currentPage.value > 0) {
+      selectPrevPage();
+    }
+  });
+});
+
 </script>
 <template>
-  <div class="content-1080p bg-white">
+  <div class="content-1080p bg-white anim2-container">
     <navigation-bar>
       <span>Stagara riests</span>
       <template #links>

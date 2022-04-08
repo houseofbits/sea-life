@@ -9,6 +9,8 @@ import Page1 from "@src/components/animation1/Page1.vue";
 import Page2 from "@src/components/animation1/Page2.vue";
 
 import NumericPagination from "@src/composables/NumericPagination";
+import {onMounted} from "vue";
+import InputHandlerService from "@src/services/InputHandlerService";
 
 const router = useRouter();
 
@@ -57,9 +59,23 @@ function restart(exit: boolean = false) {
   }
 }
 
+onMounted(() => {
+  const input = new InputHandlerService(document.querySelector('.anim1-container'));
+  input.onSwipeRight(() => {
+    if (currentPage.value < 5) {
+      selectNextPage();
+    }
+  });
+  input.onSwipeLeft(() => {
+    if (currentPage.value > 0) {
+      selectPrevPage();
+    }
+  });
+});
+
 </script>
 <template>
-  <div class="content-1080p bg-white">
+  <div class="content-1080p bg-white anim1-container">
     <navigation-bar>
       <span>Attīstība</span>
       <template #links>

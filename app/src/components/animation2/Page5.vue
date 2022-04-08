@@ -47,7 +47,7 @@ function prevPage(): void {
     </video>
   </div>
 
-  <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
+  <div class="text-collapse-horizontal page5-text1" :class="{active: active1}">
     <div>Pēc pēdējo ikriņu apaugļošanas <strong>tēviņš apsargā ligzdu</strong>, apgadā ar svaigu ūdeni, kustinādams
       krūšu spuras.
     </div>

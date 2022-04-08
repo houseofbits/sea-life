@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import NavigationBar from "@src/components/NavigationBar.vue";
+import {onMounted} from "vue";
+import TimeoutService from "@src/services/TimeoutService";
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+
+onMounted(() => {
+  TimeoutService.registerCallback(() => {
+    router.push('/game');
+  });
+});
 
 </script>
 <template>

@@ -49,7 +49,7 @@ onMounted(() => {
     </video>
   </div>
 
-  <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
+  <div class="text-collapse-horizontal page4-text1" :class="{active: active1}">
     <div>Kad ligzda gatava, tēviņš ar <strong>dejas palīdzību</strong> ievilina tajā mātīti un tā <strong>iznērš ap
       100</strong> gaiši dzeltenus ikriņus.
     </div>

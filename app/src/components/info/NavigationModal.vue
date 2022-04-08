@@ -89,25 +89,36 @@ onMounted(() => {
     <div class="overlay" :class="{active: isOpen}" @click="emit('close')"></div>
     <div class="window" :class="{active: isOpen}">
       <div class="header" @click="emit('close')">
-        <div class="identifiers" v-if="selectedItem">
-          <template v-if="Array.isArray(selectedItem.identifier)">
-            <div class="large-identifier">
-              {{ selectedItem.identifier[0] }}
+
+        <template v-if="selectedItem">
+          <div class="identifiers">
+            <template v-if="Array.isArray(selectedItem.identifier)">
+              <div class="large-identifier">
+                {{ selectedItem.identifier[0] }}
+              </div>
+              <div class="large-identifier-2">
+                {{ selectedItem.identifier[1] }}
+              </div>
+            </template>
+            <div v-else class="large-identifier">
+              {{ selectedItem.identifier }}
             </div>
-            <div class="large-identifier-2">
-              {{ selectedItem.identifier[1] }}
-            </div>
-          </template>
-          <div v-else class="large-identifier">
-            {{ selectedItem.identifier }}
           </div>
-        </div>
-        <div class="title">
-          {{ itemTitle }}
-          <span class="latin-title" v-html="itemLatinTitle"></span>
-        </div>
-        <img src="@images/cross.svg" alt="">
+          <div class="title">
+            {{ itemTitle }}
+            <span class="latin-title" v-html="itemLatinTitle"></span>
+          </div>
+        </template>
+        <template v-else>
+          <img class="map" src="@images/map.svg" alt="">
+          <div class="title">{{ translations.map }}</div>
+        </template>
+
+        <img class="close" src="@images/cross.svg" alt="">
+
+
       </div>
+
 
       <div
           class="map-info-item"
