@@ -1,0 +1,66 @@
+
+.text-collapse-horizontal {
+
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #222222;
+    padding-left: 12px;
+    width: 0;
+    overflow: hidden;
+    transition: opacity 1000ms ease-in 0ms, width 800ms ease-in 700ms;
+    opacity: 0;
+
+    & div {
+        height: 100%;
+        width: 800px;
+    }
+
+    & div > strong {
+        color: #729DB7;
+    }
+
+    &.active {
+        opacity: 1;
+        border-left: solid 1px #222222;
+        width: 800px;
+    }
+
+    &.page1-text1 {
+        top: 144px;
+        left: 200px;
+        height: 48px;
+        & div {
+            width: 505px;
+        }
+    }
+    &.page1-text2 {
+        top: 738px;
+        left: 814px;
+        height: 72px;
+        & div {
+            width: 628px;
+        }
+    }
+    &.page4-text2 {
+        top: 504px;
+        left: 814px;
+        height: 178px;
+        & div {
+            width: 546px;
+        }
+    }
+    &.page5-text2 {
+        top: 602px;
+        left: 814px;
+        height: 96px;
+        & div {
+            width: 463px;
+        }
+    }
+
+
+}

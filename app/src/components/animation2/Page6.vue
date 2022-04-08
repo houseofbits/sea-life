@@ -11,8 +11,6 @@ const props = defineProps({
 
 const mainVideo = ref<HTMLMediaElement | null>(null);
 const active1 = ref(false);
-const active2 = ref(false);
-const continueBounce = ref(false);
 
 function stopVideo(): void {
   if (mainVideo.value) {
@@ -25,6 +23,7 @@ watch(() => props.isActive, (value: boolean) => {
   if (mainVideo.value) {
     if (value) {
       mainVideo.value.play();
+      setTimeout(() => active1.value = true, 1000);
     } else {
       stopVideo();
     }
@@ -34,9 +33,6 @@ watch(() => props.isActive, (value: boolean) => {
 onMounted(() => {
   if (mainVideo.value) {
     mainVideo.value.play();
-    setTimeout(() => active1.value = true, 1000);
-    setTimeout(() => active2.value = true, 8000);
-    setTimeout(() => continueBounce.value = true, 10000);
   }
 });
 
@@ -44,22 +40,18 @@ onMounted(() => {
 <template>
   <div class="content-1080p">
     <video width="1920" height="1080" muted loop ref="mainVideo">
-      <source src="/video/stagars/1_Paliek_Kosaks.mp4" type="video/mp4">
+      <source src="/video/stagars/6_Tuksa_Ala_Tevini_Dejo_1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 
   <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
-    <div>Trīsadatu <strong>stagars ir sīka zivtiņa</strong>, kas Latvijā sastopama gan saldūdeņos, gan jūrā.</div>
+    <div>Kad <strong>mazuļi</strong> ir paaugušies un <strong>devušies prom</strong> no ligzdas, tēviņš <strong>atsāk</strong> mātīšu <strong>pievilināšanu</strong>.</div>
   </div>
 
-  <div class="text-collapse-horizontal page1-text2" :class="{active: active2}">
-    <div><strong>Tuvojoties riesta laikam</strong> (kāzām) vairāku sugu <strong>zivis maina krāsu</strong>,  tai skaitā stagaru tēviņi. Tiem iekrāsojas gaiši zilas acis, koši sarkans vēders un zila mugura.</div>
-  </div>
-
-  <div class="page-navigation-link horizontal right" @click="emit('next')">
-    <span>Turpināt</span>
-    <img src="@images/chevron-right.svg"  :class="{'bounce-right-anim':continueBounce}" alt="">
+  <div class="page-navigation-link horizontal right" @click="emit('restart', true)">
+    <span>Beigas</span>
+    <img src="@images/chevron-right.svg" alt="">
   </div>
 
 </template>

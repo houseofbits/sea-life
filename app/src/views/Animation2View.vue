@@ -3,13 +3,21 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 import {useRouter} from "vue-router";
 import Page1 from "@src/components/animation2/Page1.vue";
 import Page2 from "@src/components/animation2/Page2.vue";
+import Page3 from "@src/components/animation2/Page3.vue";
+import Page4 from "@src/components/animation2/Page4.vue";
+import Page5 from "@src/components/animation2/Page5.vue";
+import Page6 from "@src/components/animation2/Page6.vue";
 import NumericPagination from "@src/composables/NumericPagination";
 
 const router = useRouter();
 
 const pageComponents = [
   Page1,
-  Page2
+  Page2,
+  Page3,
+  Page4,
+  Page5,
+  Page6,
 ];
 
 const {
@@ -53,7 +61,7 @@ function navigateToMain(): void {
 
     <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right"
          :class="[getAnimationState(index)]">
-      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"/>
+      <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage" @restart="navigateToMain"/>
     </div>
 
     <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">

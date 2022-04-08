@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {onMounted, ref, watch} from "vue";
+import {ref, watch} from "vue";
 
 const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
@@ -11,7 +11,6 @@ const props = defineProps({
 
 const mainVideo = ref<HTMLMediaElement | null>(null);
 const active1 = ref(false);
-const active2 = ref(false);
 const continueBounce = ref(false);
 
 function stopVideo(): void {
@@ -25,41 +24,40 @@ watch(() => props.isActive, (value: boolean) => {
   if (mainVideo.value) {
     if (value) {
       mainVideo.value.play();
+      setTimeout(() => active1.value = true, 1000);
+      setTimeout(() => continueBounce.value = true, 5000);
     } else {
       stopVideo();
     }
   }
 });
 
-onMounted(() => {
-  if (mainVideo.value) {
-    mainVideo.value.play();
-    setTimeout(() => active1.value = true, 1000);
-    setTimeout(() => active2.value = true, 8000);
-    setTimeout(() => continueBounce.value = true, 10000);
-  }
-});
+function prevPage(): void {
+  emit('prev');
+}
 
 </script>
 <template>
   <div class="content-1080p">
     <video width="1920" height="1080" muted loop ref="mainVideo">
-      <source src="/video/stagars/1_Paliek_Kosaks.mp4" type="video/mp4">
+      <source src="/video/stagars/3_Buve_Ligdzu.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 
   <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
-    <div>Trīsadatu <strong>stagars ir sīka zivtiņa</strong>, kas Latvijā sastopama gan saldūdeņos, gan jūrā.</div>
-  </div>
-
-  <div class="text-collapse-horizontal page1-text2" :class="{active: active2}">
-    <div><strong>Tuvojoties riesta laikam</strong> (kāzām) vairāku sugu <strong>zivis maina krāsu</strong>,  tai skaitā stagaru tēviņi. Tiem iekrāsojas gaiši zilas acis, koši sarkans vēders un zila mugura.</div>
+    <div>Stagaru tēviņš no augu atliekām <strong>būvē ligzdu</strong>, salīmējot ar <strong>paša veidotu līmi</strong>.
+    </div>
   </div>
 
   <div class="page-navigation-link horizontal right" @click="emit('next')">
     <span>Turpināt</span>
-    <img src="@images/chevron-right.svg"  :class="{'bounce-right-anim':continueBounce}" alt="">
+    <img src="@images/chevron-right.svg" :class="{'bounce-right-anim':continueBounce}" alt="">
+  </div>
+
+  <div class="page-navigation-link horizontal left" @click="prevPage">
+    <img src="@images/chevron-left.svg" alt="">
+    <span>Atpakaļ</span>
   </div>
 
 </template>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {ref, watch} from "vue";
 
-const emit = defineEmits(['next', 'prev']);
+const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
   isActive: {
     type: Boolean,
@@ -10,6 +10,8 @@ const props = defineProps({
 });
 
 const mainVideo = ref<HTMLMediaElement | null>(null);
+const active1 = ref(false);
+const continueBounce = ref(false);
 
 function stopVideo(): void {
   if (mainVideo.value) {
@@ -22,6 +24,8 @@ watch(() => props.isActive, (value: boolean) => {
   if (mainVideo.value) {
     if (value) {
       mainVideo.value.play();
+      setTimeout(() => active1.value = true, 1000);
+      setTimeout(() => continueBounce.value = true, 5000);
     } else {
       stopVideo();
     }
@@ -41,12 +45,13 @@ function prevPage(): void {
     </video>
   </div>
 
-
-
+  <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
+    <div>Nārsta laikā stagaru <strong>tēviņi iekaro savu teritoriju</strong> un aizstāv to no citiem tēviņiem.</div>
+  </div>
 
   <div class="page-navigation-link horizontal right" @click="emit('next')">
     <span>Turpināt</span>
-    <img src="@images/chevron-right.svg" class="bounce-right-anim" alt="">
+    <img src="@images/chevron-right.svg" :class="{'bounce-right-anim':continueBounce}" alt="">
   </div>
 
   <div class="page-navigation-link horizontal left" @click="prevPage">
