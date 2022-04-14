@@ -6,8 +6,10 @@ import PuzzleElement from "@src/components/PuzzleElement.vue";
 import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import {onMounted, reactive, watch, ref} from "vue";
 import OuterPartsInformation from "@src/components/puzzle/OuterPartsInformation.vue";
+import {useRouter} from "vue-router";
 
 const emit = defineEmits(['prev', 'next']);
+const router = useRouter();
 
 const props = defineProps({
   isActive: {
@@ -34,6 +36,10 @@ function elementPlaced(name: string, dragable: Draggable): void {
 
 function isElementComplete(name: string): boolean {
   return elementCompletionState[name];
+}
+
+function navigateToMain(): void {
+  router.push('/game');
 }
 
 watch(() => props.isActive, () => {
@@ -81,7 +87,12 @@ onMounted(() => {
 
   <outer-parts-information v-if="isComplete"/>
 
-  <span class="bottom-info-line fade-fast" :class="{faded: isComplete}">Saliec ārējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>
-  <span class="bottom-info-line fade-fast" :class="{faded: !isComplete}">Uzzini vairāk par katru no zivs ārējās uzbūves daļām</span>
+<!--  <span class="bottom-info-line fade-fast" :class="{faded: isComplete}">Saliec ārējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>-->
+<!--  <span class="bottom-info-line fade-fast" :class="{faded: !isComplete}">Uzzini vairāk par katru no zivs ārējās uzbūves daļām</span>-->
+
+  <div class="page-navigation-link horizontal right" @click="navigateToMain">
+    <span>Beigas</span>
+    <img src="@images/chevron-right.svg" alt="">
+  </div>
 
 </template>

@@ -166,7 +166,7 @@ onMounted(() => {
 
   <img v-if="!isComplete" class="information-icon" src="@images/information-outline.svg" @click="toggleInfo" alt="">
 
-  <span class="bottom-info-line fade-fast" :class="{faded: isInfoVisible}">Saliec iekšējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>
-  <span class="bottom-info-line fade-fast" :class="{faded: !isInfoVisible}">Uzzini vairāk par kādu no zivs iekšējās uzbūves daļām</span>
+<!--  <span class="bottom-info-line fade-fast" :class="{faded: isInfoVisible}">Saliec iekšējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>-->
+<!--  <span class="bottom-info-line fade-fast" :class="{faded: !isInfoVisible}">Uzzini vairāk par kādu no zivs iekšējās uzbūves daļām</span>-->
 
 </template>

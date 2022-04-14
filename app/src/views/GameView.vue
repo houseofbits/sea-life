@@ -29,8 +29,8 @@ onMounted(() => {
         <img src="@images/Main1.png" alt="">
       </div>
 
-      <div class="card-title">Saliec mencu</div>
-      <div class="card-subtitle">Pārbaudi savas zināšanas mencas uzbūvē</div>
+      <div class="card-title">Kā veidota menca?</div>
+      <div class="card-subtitle">Saliec mencu</div>
     </router-link>
 
     <router-link to="/game/anim1" class="expandable-card card2">
@@ -40,8 +40,8 @@ onMounted(() => {
         <img src="@images/Main2.png" alt="">
       </div>
 
-      <div class="card-title">Attīstība</div>
-      <div class="card-subtitle">Uzzini vairāk par jūtas iemītnieku attīstību un vairošanos</div>
+      <div class="card-title">Kā izaug zivis?</div>
+      <div class="card-subtitle">Ieskaties un pēti zivju vairošanos un attīstību</div>
     </router-link>
 
     <router-link to="/game/anim2" class="expandable-card card3">
@@ -51,7 +51,7 @@ onMounted(() => {
         <img src="@images/Main3.png" alt="">
       </div>
 
-      <div class="card-title">Stagara riests</div>
+      <div class="card-title">Kā riesto stagari?</div>
       <div class="card-subtitle">Stagara romantiskais vairošanās stāsts</div>
     </router-link>
 

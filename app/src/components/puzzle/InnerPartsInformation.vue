@@ -18,7 +18,7 @@ const text = [
   'Žultspūslī uzkrājas žults, kas piedalās barības sašķelšanā.',
   'Urīnpūslī pirms izvadīšanas uzkrājas urīns',
   'Nieres izvada vielmaiņas galaproduktus',
-  'Zarnās notiek uzņemtās barības sašķelšana.',
+  'Barības vadā notiek uzņemtās barības sašķelšana.',
   'Liesa piedalās organisma imūnsistemas darbībā, noārda organismā iekļuvušos mikroorganismus un noārda novecojušos eritrocītus.',
   'Muguras aorta apgādā ar asinīm muskuļus un iekšējos orgānus',
   'Kunģī nokļūst uzņemtā barība. Ir zivju sugas, kurām kunģa nav.'
@@ -158,7 +158,7 @@ onMounted(() => {
       v-for="(config, index) in callouts"
       :config="config"
       :hidden="!isVisible(index)">
-    <template #text>{{ text[index] }}</template>
+    <template #text>{{ index }} {{ text[index] }}</template>
   </target-callout>
 
   <svg width="1717" style="z-index:1000; position: absolute; left: 101px; top: 115px;" height="951"
@@ -199,12 +199,14 @@ onMounted(() => {
     <path @click="openInfoCallout(11)"
           d="M464.808 468.991L457.371 451.328L478.752 455.047L523.374 464.808L533.6 471.78L592.166 482.935L609.364 484.33L603.321 524.303L576.827 528.022L565.671 519.19L554.981 517.331L544.29 514.077H528.022L512.218 521.514L476.893 531.74H434.13L455.047 515.472L464.808 468.991Z"
           fill="black" fill-opacity="0"/>
-    <path @click="openInfoCallout(12)"
-          d="M594.024 591.7L595.884 584.263L636.322 591.7L649.337 597.278L719.058 593.559L780.878 577.291L799.005 584.263L819.457 588.446H862.684L881.277 619.124L804.118 629.35L668.394 634.927L588.447 627.026L595.884 606.109L594.024 591.7Z"
-          fill="black" fill-opacity="0"/>
-    <path @click="openInfoCallout(13)"
-          d="M523.374 464.344L457.836 451.329L443.892 417.863L466.667 422.046L513.148 429.948L549.403 431.342L577.756 424.835L598.208 414.609H633.998L686.986 417.863L777.159 412.285L824.104 424.835L832.471 438.314L802.723 429.948H647.013L573.573 433.202L516.866 440.638L507.57 447.611V453.653L516.866 457.372H523.374V464.344Z"
-          fill="black" fill-opacity="0"/>
+<!--    Liesa -->
+<!--    <path @click="openInfoCallout(12)"-->
+<!--          d="M594.024 591.7L595.884 584.263L636.322 591.7L649.337 597.278L719.058 593.559L780.878 577.291L799.005 584.263L819.457 588.446H862.684L881.277 619.124L804.118 629.35L668.394 634.927L588.447 627.026L595.884 606.109L594.024 591.7Z"-->
+<!--          fill="black" fill-opacity="0"/>-->
+<!--    Muguras aorta -->
+<!--    <path @click="openInfoCallout(13)"-->
+<!--          d="M523.374 464.344L457.836 451.329L443.892 417.863L466.667 422.046L513.148 429.948L549.403 431.342L577.756 424.835L598.208 414.609H633.998L686.986 417.863L777.159 412.285L824.104 424.835L832.471 438.314L802.723 429.948H647.013L573.573 433.202L516.866 440.638L507.57 447.611V453.653L516.866 457.372H523.374V464.344Z"-->
+<!--          fill="black" fill-opacity="0"/>-->
     <path @click="openInfoCallout(14)"
           d="M602.856 523.839L577.756 528.022L581.474 536.389L609.828 542.896L635.392 532.205L648.872 518.261L659.098 523.839V532.205L672.577 527.093H684.662L686.521 542.896H767.398L772.511 528.022L778.554 515.472L693.958 489.908L648.872 486.189L609.828 484.33L602.856 523.839Z"
           fill="black" fill-opacity="0"/>

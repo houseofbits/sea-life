@@ -6,8 +6,9 @@ import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 export default [
     new DraggableElement({
         name: 'item1',
-        size: new Vector2(280, 74),
-        initialPosition: new Vector2(240, 659),
+        size: new Vector2(260, 74),
+        // initialPosition: new Vector2(240, 659),
+        initialPosition: new Vector2(180, 752),
         targetPosition: new Vector2(900, 272),
         metadata: {
             text: "Muskuļi",
@@ -21,11 +22,12 @@ export default [
     }),
     new DraggableElement({
         name: 'item2',
-        size: new Vector2(266, 74),
-        initialPosition: new Vector2(180, 752),
+        size: new Vector2(320, 74),
+        // initialPosition: new Vector2(180, 752),
+        initialPosition: new Vector2(259, 851),
         targetPosition: new Vector2(605, 302),
         metadata: {
-            text: "Zarnas",
+            text: "Barības vads",   //Zarnas
             callout: new CalloutConfigStructure({
                 position: new Vector2(605, 302),
                 size: new Vector2(0, 205),
@@ -34,21 +36,21 @@ export default [
             group: 1,
         }
     }),
-    new DraggableElement({
-        name: 'item3',
-        size: new Vector2(382, 74),
-        initialPosition: new Vector2(259, 851),
-        targetPosition: new Vector2(616, 253),
-        metadata: {
-            text: "Muguras aorta",
-            callout: new CalloutConfigStructure({
-                position: new Vector2(616, 253),
-                size: new Vector2(0, 223),
-                type: CalloutTypeEnum.TOP_LEFT
-            }),
-            group: 2,
-        }
-    }),
+    // new DraggableElement({
+    //     name: 'item3',
+    //     size: new Vector2(382, 74),
+    //     initialPosition: new Vector2(259, 851),
+    //     targetPosition: new Vector2(616, 253),
+    //     metadata: {
+    //         text: "Muguras aorta",
+    //         callout: new CalloutConfigStructure({
+    //             position: new Vector2(616, 253),
+    //             size: new Vector2(0, 223),
+    //             type: CalloutTypeEnum.TOP_LEFT
+    //         }),
+    //         group: 2,
+    //     }
+    // }),
     new DraggableElement({
         name: 'item4',
         size: new Vector2(352, 74),
@@ -220,7 +222,7 @@ export default [
         initialPosition: new Vector2(1473, 754),
         targetPosition: new Vector2(853, 726),
         metadata: {
-            text: "Liesa",
+            text: "Zarnas",      //Liesa
             callout: new CalloutConfigStructure({
                 position: new Vector2(853, 618),
                 size: new Vector2(0, 106),
