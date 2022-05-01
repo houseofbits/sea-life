@@ -101,7 +101,7 @@ function getFamilyStyle(): any {
 const {
   translations
 } = DetailTranslations();
-0
+
 onMounted(() => {
   setTimeout(() => {
     active.value = true;

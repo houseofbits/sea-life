@@ -1,0 +1,52 @@
+
+.item {
+    @apply
+    bg-gray-50
+    text-xl font-bold
+    flex items-start content-start justify-start
+    rounded
+}
+
+.loader {
+    border-top-color: #3498db;
+    -webkit-animation: spinner 1.5s linear infinite;
+    animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.language-active {
+    @apply
+    text-blue-600
+    rounded-t-lg
+    border-b-2
+    border-blue-600
+}
+
+button {
+    @apply text-base bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 pl-4 pr-4 rounded flex
+}
+
+button.secondary {
+    @apply text-base bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 pl-4 pr-4 rounded flex
+}
+
+button:disabled {
+    @apply opacity-50 cursor-not-allowed
+}

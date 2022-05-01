@@ -5,6 +5,7 @@ export default class DetailItemContent {
     content: string = '';
 
     constructor(params: Partial<DetailItemContent>) {
-        Object.assign(this, params);
+        this.title = params.title ?? '';
+        this.content = params.content ?? '';
     }
 }

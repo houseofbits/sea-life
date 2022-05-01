@@ -33,6 +33,7 @@ class DetailViewService extends HttpService {
     async fetchItem(filename: string, config: DetailViewConfigStructure): Promise<DetailListItem> {
 
         const item = new DetailListItem(await this.getContent(config.baseLanguage, filename));
+        item.sourceFileName = filename;
 
         const additionalLanguages = config.languages.filter(lang => lang !== config.baseLanguage);
 

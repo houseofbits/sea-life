@@ -3,6 +3,7 @@ import {DetailItemType} from "@src/helpers/DetailItemType";
 import DetailItemContent from "@src/structures/DetailItemContent";
 
 export default class DetailListItem {
+    sourceFileName: string = '';
     id: number;
     group: DetailItemType;
     title: string;
@@ -52,5 +53,9 @@ export default class DetailListItem {
             return new DetailListItem(Object.assign({}, this, translated));
         }
         return this;
+    }
+
+    getLanguageItem(language: string): Partial<DetailListItem> | null {
+        return this.translatedItems[language] || null;
     }
 };
