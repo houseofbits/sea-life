@@ -7,8 +7,8 @@ class ItemUpdateService extends HttpService {
         let result = null;
         try {
             result = await this.axiosInstance.post('/edit.php', {sourceFileName, isBaseLanguage, language, formData});
-        } catch (e: any) {
-            throw new Error(e.message);
+        } catch (error: any) {
+            throw new Error(error.response.statusText);
         }
     }
 }

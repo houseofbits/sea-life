@@ -84,7 +84,7 @@ async function updateData(): Promise<any> {
   error.value = null;
   setLoading(true);
   try {
-    // await ItemUpdateService.update(props.item.sourceFileName, props.isBaseLanguage, props.selectedLanguage, formValues);
+    await ItemUpdateService.update(props.item.sourceFileName, props.isBaseLanguage, props.selectedLanguage, formValues);
     updateParentItem();
     setUnsavedChangesPending(false);
     initialData.value = new EditItemFormValuesStructure(formValues);
