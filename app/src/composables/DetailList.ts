@@ -1,6 +1,9 @@
 import {computed, reactive, ref} from "vue";
 import DetailListItem from "@src/structures/DetailListItem";
 import DetailListPageStructure from "@src/structures/DetailListPageStructure";
+import DetailContentStructure from "@src/structures/DetailContentStructure";
+
+const detailContent = ref<DetailContentStructure>();
 
 export default () => {
 
@@ -151,6 +154,7 @@ export default () => {
         hasPrevPage,
         isActivePage,
         getAnimationState,
-        isActiveGroup
+        isActiveGroup,
+        detailContent
     };
 };

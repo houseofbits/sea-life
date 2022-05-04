@@ -13,6 +13,7 @@ import {ref} from "vue";
 import NavigationBar from "@src/components/NavigationBar.vue";
 import NavigationModal from "@src/components/info/NavigationModal.vue";
 import DetailListItem from "@src/structures/DetailListItem";
+import {useRouter} from "vue-router";
 
 const {
   isItemSelected,
@@ -28,10 +29,10 @@ const {
   languages,
   selectedLanguage,
   selectLanguage,
-  isLanguageSelected,
 } = DetailTranslations();
 
 const {
+  detailContent,
   allPages,
   pages,
   createPageGroupsFromItems,
@@ -46,19 +47,14 @@ const {
   isActiveGroup
 } = DetailList();
 
-const isPanning = ref(false);
-const panOffset = ref(0);
+const router = useRouter();
+
 const isMapModalOpen = ref(false);
-const isLoading = ref(true);
-const errorMessage = ref<string | null>(null);
+// const isLoading = ref(true);
+// const errorMessage = ref<string | null>(null);
 const allItems = ref<Array<DetailListItem>>([]);
 
 function getPageStyle(page: DetailListPageStructure): any {
-  // if (isActivePage(page) && isPanning.value) {
-  //     return {
-  //       marginLeft: panOffset.value + 'px'
-  //     };
-  // }
   return {};
 }
 
@@ -71,25 +67,34 @@ function closeMapModal(): void {
 }
 
 onMounted(() => {
-  DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
-    allItems.value = result.items;
-    setLanguages(result.config.languages);
-    selectLanguage(result.config.languages[0]);
-    setTranslations(result.translatedCommon);
-    createPageGroupsFromItems(result.items);
-    selectGroup();
-  }).catch(e => {
-    errorMessage.value = e.message;
-  }).finally(() => {
-    isLoading.value = false;
-  });
+  // DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
+  //   allItems.value = result.items;
+  //   setLanguages(result.config.languages);
+  //   selectLanguage(result.config.languages[0]);
+  //   setTranslations(result.translatedCommon);
+  //   createPageGroupsFromItems(result.items);
+  //   selectGroup();
+  // }).catch(e => {
+  //   errorMessage.value = e.message;
+  // }).finally(() => {
+  //   isLoading.value = false;
+  // });
 
-  TimeoutService.registerCallback(() => {
-    closeItem();
-    selectLanguage(languages.value[0]);
-    selectGroup(null);
-    selectPage(pages.value[0]);
-  });
+    if (detailContent.value) {
+      allItems.value = detailContent.value.items;
+      setLanguages(detailContent.value.config.languages);
+      selectLanguage(detailContent.value.config.languages[0]);
+      setTranslations(detailContent.value.translatedCommon);
+      createPageGroupsFromItems(detailContent.value.items);
+      selectGroup();
+    }
+
+  // TimeoutService.registerCallback(() => {
+  //   closeItem();
+  //   selectLanguage(languages.value[0]);
+  //   selectGroup(null);
+  //   selectPage(pages.value[0]);
+  // });
 
   const input = new InputHandlerService(document.querySelector('.detail-list'));
   input.onSwipeLeft(() => {
@@ -103,19 +108,6 @@ onMounted(() => {
     }
   });
   input.onSelectItem(selectItem);
-
-  // input.onPan((e: any) => {
-  //   if (e.isFinal) {
-  //     isPanning.value = false;
-  //     panOffset.value = 0;
-  //   } else {
-  //     isPanning.value = true;
-  //     panOffset.value = e.deltaX;
-  //
-  //     console.log(e);
-  //   }
-  // });
-
 });
 
 const itemTitle = computed<string>(() => {
@@ -157,10 +149,14 @@ function selectItemFromModal(itemId: number): void {
   setTimeout(() => selectItem(itemId), 500);
 }
 
+function navigateToMain(): void {
+  router.push('/game');
+}
+
 </script>
 
 <template>
-  <div v-show="!isLoading" class="content-1080p detail-list">
+  <div class="content-1080p detail-list">
 
     <navigation-bar :languages="languages" @selectLanguage="selectLanguage">
 
@@ -240,13 +236,18 @@ function selectItemFromModal(itemId: number): void {
       <span>{{ translations.map }}</span>
     </div>
 
+    <div v-if="!selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>Izvēlne</span>
+    </div>
+
   </div>
-  <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
-    Loading
-  </div>
-  <div v-if="errorMessage" class="content-1080p detail-list-error">
-    <span>Error while fetching data from the server.</span>
-    <span><strong>With message:</strong> {{ errorMessage }}</span>
-  </div>
+<!--  <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">-->
+<!--    Loading-->
+<!--  </div>-->
+<!--  <div v-if="errorMessage" class="content-1080p detail-list-error">-->
+<!--    <span>Error while fetching data from the server.</span>-->
+<!--    <span><strong>With message:</strong> {{ errorMessage }}</span>-->
+<!--  </div>-->
 
 </template>

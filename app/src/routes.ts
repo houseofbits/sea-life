@@ -9,7 +9,7 @@ export default [
     {
         path: "/",
         name: "Home",
-        component: IndexView,
+        component: GameView,
     },
     {
         path: "/info",

@@ -1,5 +1,9 @@
 <script setup lang="ts">
 
+import {useRouter} from "vue-router";
+
+const router = useRouter();
+
 const props = defineProps({
   languages: {
     type: Array,
@@ -17,7 +21,7 @@ function selectLanguage(language: string): void {
 </script>
 <template>
   <div class="navigation-bar">
-    <img src="@images/logo.svg" alt="" width="64">
+    <img src="@images/logo.svg" alt="" width="64" @click="router.push('/game')">
     <div class="header-title">
       <slot/>
     </div>

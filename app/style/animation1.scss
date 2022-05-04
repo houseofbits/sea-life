@@ -390,6 +390,30 @@
             left: 436px;
         }
     }
+
+    &.start-screen {
+        width: 424px;
+        height: 477px;
+        overflow: hidden;
+
+        &.card1 {
+            left: 49px;
+            top: 286px;
+        }
+        &.card2 {
+            left: 514px;
+            top: 286px;
+        }
+        &.card3 {
+            left: 981px;
+            top: 286px;
+        }
+        &.card4 {
+            left: 1445px;
+            top: 286px;
+        }
+    }
+
 }
 
 .anim1-info-bg1 {
