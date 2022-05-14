@@ -1,6 +1,7 @@
 {
     "id": 10,
     "title": "Pazifische Miesmuschel",
+    "orderTitle": "Klasse",
     "order": "Mytilidae <small>(Miesmuscheln)</small>",
     "family": "Bivalvia <small>(Muscheln)</small>",
     "content": [

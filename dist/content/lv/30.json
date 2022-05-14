@@ -26,7 +26,7 @@
             "content": "Baltijas jūrā mūsdienās brētliņa ir viszvejotākā zivju suga. Brētliņas pamatā tiek zvejotas ar traļiem atklātā jūrā."
         }
     ],
-    "fact": "Mūsdienās brētliņas kopā ar reņģēm ir dominējošās zivju sugas Baltijas jūrā. Ar tām barojas daudzas plēsīgās sugas.",
+    "fact": "Mūsdienās brētliņas un reņģes ir dominējošās zivju sugas Baltijas jūrā. Ar tām barojas daudzas plēsīgās sugas.",
     "identifier": "3",
     "imageFileName": "bretlina.png",
     "group": 1,
@@ -45,7 +45,7 @@
         "height": 178,
         "top": 282,
         "left": 645,
-        "width": 289
+        "width": 320
     },
     "familyTextTransform": {
         "height": 238,

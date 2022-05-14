@@ -7,7 +7,7 @@
     "content": [
         {
             "title": "Ārējais izskats",
-            "content": "Čūskzivs ir neliela jūras piekrastē dzīvojoša zivs. Nārsta periodā mātītēm raksturīgs košs krāsojums ar gaišzilām svītrām galvas un vēdera daļā. Tēviņi var sasniegt 25 cm, bet mātītes  -  30 cm garumu."
+            "content": "Čūskzivs ir neliela jūras piekrastē dzīvojoša zivs. Nārsta periodā mātītēm raksturīgs košs krāsojums ar gaišzilām svītrām galvas un vēdera daļā. Tēviņi var sasniegt 25 cm, bet <br>mātītes - 30 cm garumu."
         },
         {
             "title": "Izplatība",
@@ -26,7 +26,7 @@
             "content": "Nelielā izmēra dēļ sugai nav nozīmes ne komerciālajā zvejā, ne makšķerēšanā."
         }
     ],
-    "fact": "Čūskzivs ir radniecīga jūraszirdziņiem  -  īpaša izskata zivīm, kas galvenokārt mājo seklās tropu un mērenās joslas piekrastes jūrās.",
+    "fact": "Čūskzivs ir radniecīga jūraszirdziņiem - īpaša izskata zivīm, kas galvenokārt mājo seklās tropu un mērenās joslas piekrastes jūrās.",
     "identifier": "17",
     "imageFileName": "cuskzivs.png",
     "group": 1,

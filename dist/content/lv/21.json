@@ -2,6 +2,7 @@
     "id": 21,
     "latinTitle": "Eriocheir sinensis",
     "title": "Ķīnas cimdiņkrabis",
+    "orderTitle": "Klase",
     "order": "<small>desmitkājvēžu</small> Decapoda",
     "family": "<small>krastkrabju</small> Varunidae",
     "content": [
@@ -19,14 +20,14 @@
         },
         {
             "title": "Attīstība",
-            "content": "Dzimumgatavību Eiropas upēs krabis sasniedz 3 - 5 gadu vecumā, Ķīnas piekrastē 1 - 2 gadu vecumā. Olas tiek dētas vienu reizi mūžā vasaras beigās sālsūdenī un tiek piestiprinātas zem mātītes ķermeņa. Mātīte dodas uz upju iztekām, kur izšķiļas kāpuri, kas vēlāk turpina attīstību saldūdenī. Vienā perēšanas reizē krabju mātīte var veidot no simt tūkstošiem līdz pat miljonam olu."
+            "content": "Dzimumgatavību Eiropas upēs krabis sasniedz 3 - 5 gadu vecumā, Ķīnas piekrastē 1 - 2 gadu vecumā. Olas tiek dētas vienu reizi mūžā vasaras beigās sālsūdenī un tiek piestiprinātas zem mātītes ķermeņa. Mātīte dodas uz upju iztekām, kur izšķiļas kāpuri, kas vēlāk turpina attīstību saldūdenī. Vienā perēšanas reizē krabju mātīte var izdēt no simt tūkstošiem līdz pat miljonam olu."
         },
         {
             "title": "Zveja",
             "content": "Latvijā krabis bojā zivju tīklus un apēd vai apgrauž tajos esošās zivis."
         }
     ],
-    "fact": "Konstatēts, ka dabīgajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu  -  gliemeņu, nematožu, vēžveidīgo  -  izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
+    "fact": "Konstatēts, ka dabiskajā izplatības areālā īpatņi ir pārvietojušies pat 1400 km lielā attālumā. Sekmē citu svešzemju sugu - gliemeņu, nematožu, vēžveidīgo  -  izplatību, kas apdzīvo matiņiem klātās cimdiņkrabja spīles.",
     "identifier": "21",
     "imageFileName": "KINAS CIMDINKRABIS.png",
     "group": 4,

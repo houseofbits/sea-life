@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {onMounted, ref} from 'vue';
+import {computed, onMounted, ref} from 'vue';
 import DetailListItem from "@src/structures/DetailListItem";
 import DetailTranslations from "@src/composables/DetailTranslations";
 
@@ -102,6 +102,13 @@ const {
   translations
 } = DetailTranslations();
 
+const orderTitle = computed<string>(() => {
+  if (props.item.orderTitle) {
+    return props.item.orderTitle;
+  }
+  return translations.value.order;
+});
+
 onMounted(() => {
   setTimeout(() => {
     active.value = true;
@@ -115,7 +122,7 @@ onMounted(() => {
 
     <div class="family-detail" :style="getFamilyStyle()">
       <span class="latin-name" v-html="item.latinTitle"/>
-      <span class="latin-detail"><strong>{{ translations.order }}: </strong><em v-html="item.order"/></span>
+      <span class="latin-detail"><strong>{{ orderTitle }}: </strong><em v-html="item.order"/></span>
       <span class="latin-detail"><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
     </div>
 

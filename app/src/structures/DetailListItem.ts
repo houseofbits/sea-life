@@ -10,6 +10,7 @@ export default class DetailListItem {
     latinTitle: string;
     identifier: string;
     fact: string;
+    orderTitle: string | null;
     order: string;
     family: string;
     imageFileName: string;
@@ -30,6 +31,7 @@ export default class DetailListItem {
         this.latinTitle = params?.latinTitle || '';
         this.identifier = params?.identifier || '';
         this.fact = params?.fact || '';
+        this.orderTitle = params?.orderTitle || null;
         this.order = params?.order || '';
         this.family = params?.family || '';
         this.imageFileName = params?.imageFileName || '';

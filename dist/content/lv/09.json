@@ -26,7 +26,7 @@
             "content": "Plekste ir nozīmīgs zvejas un makšķerēšanas objekts, to makšķerē no krasta, izmantojot grunts makšķeres."
         }
     ],
-    "fact": "2018. gadā zinātnieki, izmantojot ģenētiskās metodes, atklāja, ka ir divas izskatā līdzīgas, bet nārsta uzvedībā atšķirīgas sugas. Eiropas plekstes (Platichthys flesus) nārsto dziļumā un tām ir brīvi peldoši ikri, bet Baltijas plekstes (Platichthys solemdali) nārsto seklumā un to ikri noguļas uz jūras grunts.",
+    "fact": "2018. gadā zinātnieki, izmantojot ģenētiskās metodes, atklāja, ka ir divas izskatā līdzīgas, bet nārsta uzvedībā atšķirīgas sugas. Eiropas plekstes (<em>Platichthys flesus</em>) nārsto dziļumā un tām ir brīvi peldoši ikri, bet Baltijas plekstes (<em>Platichthys solemdali</em>) nārsto seklumā un to ikri noguļas uz jūras grunts.",
     "identifier": "10",
     "imageFileName": "plekste.png",
     "group": 1,

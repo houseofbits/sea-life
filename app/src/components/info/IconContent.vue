@@ -11,7 +11,7 @@ const props = defineProps({
 <template>
   <div class="icon-content" :data-item-id="item.id">
     <h1>{{ item.title }}</h1>
-    <em v-html="item.latinTitle"/>
+    <span class="icon-latin-title" v-html="item.latinTitle"/>
     <template v-if="Array.isArray(item.identifier)">
       <span class="identifier">{{ item.identifier[1] }}</span>
       <span class="identifier-2">{{ item.identifier[0] }}</span>
