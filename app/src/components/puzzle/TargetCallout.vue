@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
-import {computed} from "vue";
+import {computed, onMounted, ref} from "vue";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 
 const props = defineProps({
@@ -10,6 +10,10 @@ const props = defineProps({
     required: true
   },
   hidden: {
+    type: Boolean,
+    default: false
+  },
+  isPointVisible: {
     type: Boolean,
     default: false
   }
@@ -62,10 +66,31 @@ const classes = computed(() => {
   return params;
 });
 
+const innerClasses = computed(() => {
+  const params: string[] = [];
+  if (showPoint.value && props.hidden) {
+    params.push('active');
+  }
+  return params;
+});
+
+const showPoint = ref(false);
+
+onMounted(() => {
+  setTimeout(() => showPoint.value = props.isPointVisible, 100);
+});
+
 </script>
 <template>
   <div class="icon-callout" :class="classes" :style="style">
-    <div class="ball"><div></div></div>
+
+    <div class="ball inner" :class="innerClasses">
+      <div></div>
+    </div>
+
+    <div class="ball">
+      <div></div>
+    </div>
     <div class="line"></div>
 
     <span class="text">

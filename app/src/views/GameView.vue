@@ -40,12 +40,23 @@ onMounted(() => {
   <div v-show="!isLoading" class="content-1080p bg-white">
 
     <navigation-bar>
-      <span>Interaktīvā jūra</span>
+      <span>Baltijas jūra un tās iemītnieki</span>
     </navigation-bar>
 
     <img class="anim1-info-bg1" src="@images/anim1-info-bg1.svg" alt="">
 
-    <router-link to="/game/puzzle" class="expandable-card start-screen card1">
+    <router-link to="/info" class="expandable-card start-screen card1">
+      <div class="globe-border info"></div>
+
+      <div class="card-image">
+        <img src="@images/Main4.png" alt="">
+      </div>
+
+      <div class="card-title">Baltijas jūras iemītnieki</div>
+      <div class="card-subtitle">Izpēti vitrīnās izvietoto sugu aprakstus</div>
+    </router-link>
+
+    <router-link to="/game/puzzle" class="expandable-card start-screen card2">
       <div class="globe-border info"></div>
 
       <div class="card-image">
@@ -56,7 +67,7 @@ onMounted(() => {
       <div class="card-subtitle">Saliec mencu</div>
     </router-link>
 
-    <router-link to="/game/anim1" class="expandable-card start-screen card2">
+    <router-link to="/game/anim1" class="expandable-card start-screen card3">
       <div class="globe-border info"></div>
 
       <div class="card-image">
@@ -67,7 +78,7 @@ onMounted(() => {
       <div class="card-subtitle">Ieskaties un pēti zivju vairošanos un attīstību</div>
     </router-link>
 
-    <router-link to="/game/anim2" class="expandable-card start-screen card3">
+    <router-link to="/game/anim2" class="expandable-card start-screen card4">
       <div class="globe-border info"></div>
 
       <div class="card-image">
@@ -75,19 +86,9 @@ onMounted(() => {
       </div>
 
       <div class="card-title">Kā riesto stagari?</div>
-      <div class="card-subtitle">Stagara romantiskais vairošanās stāsts</div>
+      <div class="card-subtitle">Uzzini romantisko stagara vairošanās stāstu</div>
     </router-link>
 
-    <router-link to="/info" class="expandable-card start-screen card4">
-      <div class="globe-border info"></div>
-
-      <div class="card-image">
-        <img src="@images/Main3.png" alt="">
-      </div>
-
-      <div class="card-title">Baltijas jūras iemītnieki</div>
-      <div class="card-subtitle"></div>
-    </router-link>
 
     <router-view/>
   </div>

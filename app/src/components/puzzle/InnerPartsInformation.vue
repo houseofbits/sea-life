@@ -19,8 +19,8 @@ const text = [
   'Urīnpūslī pirms izvadīšanas uzkrājas urīns',
   'Nieres izvada vielmaiņas galaproduktus',
   'Barības vadā notiek uzņemtās barības sašķelšana.',
-  'Liesa piedalās organisma imūnsistemas darbībā, noārda organismā iekļuvušos mikroorganismus un noārda novecojušos eritrocītus.',
-  'Muguras aorta apgādā ar asinīm muskuļus un iekšējos orgānus',
+  // 'Liesa piedalās organisma imūnsistemas darbībā, noārda organismā iekļuvušos mikroorganismus un noārda novecojušos eritrocītus.',
+  // 'Muguras aorta apgādā ar asinīm muskuļus un iekšējos orgānus',
   'Kunģī nokļūst uzņemtā barība. Ir zivju sugas, kurām kunģa nav.'
 ];
 
@@ -85,16 +85,16 @@ const callouts = [
     size: new Vector2(310, 290),
     type: CalloutTypeEnum.BOTTOM_LEFT
   }),
-  new CalloutConfigStructure({
-    position: new Vector2(864, 710),
-    size: new Vector2(400, 185),
-    type: CalloutTypeEnum.BOTTOM_LEFT
-  }),
-  new CalloutConfigStructure({
-    position: new Vector2(594, 290),
-    size: new Vector2(340, 275),
-    type: CalloutTypeEnum.TOP_LEFT
-  }),
+  // new CalloutConfigStructure({
+  //   position: new Vector2(864, 710),
+  //   size: new Vector2(400, 185),
+  //   type: CalloutTypeEnum.BOTTOM_LEFT
+  // }),
+  // new CalloutConfigStructure({
+  //   position: new Vector2(594, 290),
+  //   size: new Vector2(340, 275),
+  //   type: CalloutTypeEnum.TOP_LEFT
+  // }),
   new CalloutConfigStructure({
     position: new Vector2(788, 624),
     size: new Vector2(340, 255),
@@ -103,26 +103,25 @@ const callouts = [
 ];
 
 const pairingExclude: { [key: number]: number[] } = {
-  0: [1, 2, 3, 7, 8, 9, 11, 12, 14],
-  1: [0, 3, 9, 12, 14],
-  2: [0, 6, 7, 11, 14, 8],
-  3: [0, 1, 7, 8, 9, 12, 14],
-  4: [13, 5, 10],
+  0: [1, 2, 3, 7, 8, 9, 11, 12],
+  1: [0, 3, 9, 12],
+  2: [0, 6, 7, 11, 12, 8],
+  3: [0, 1, 7, 8, 9, 12],
+  4: [5, 10],
   5: [4, 10],
   6: [2, 11],
-  7: [0, 2, 3, 8, 11, 12, 14],
-  8: [0, 2, 3, 7, 11, 12, 14],
-  9: [0, 1, 3, 12, 14],
-  10: [4, 5, 13],
-  11: [0, 2, 6, 7, 8, 14],
-  12: [0, 1, 3, 7, 8, 9, 14],
-  13: [4, 10],
-  14: [0, 1, 3, 9, 11, 12, 7, 8],
+  7: [0, 2, 3, 8, 11, 12],
+  8: [0, 2, 3, 7, 11, 12],
+  9: [0, 1, 3, 12],
+  10: [4, 5],
+  11: [0, 2, 6, 7, 8, 12],
+  12: [0, 1, 3, 9, 11, 7, 8],
 };
 
 const calloutVisibilityStack = ref(new Array<number>());
 
 function openInfoCallout(id: number): void {
+  console.log('ōpen '+id);
   if (!calloutVisibilityStack.value.includes(id)) {
     calloutVisibilityStack.value.push(id);
   }
@@ -157,8 +156,10 @@ onMounted(() => {
   <target-callout
       v-for="(config, index) in callouts"
       :config="config"
-      :hidden="!isVisible(index)">
-    <template #text>{{ index }} {{ text[index] }}</template>
+      :hidden="!isVisible(index)"
+      :is-point-visible="true"
+  >
+    <template #text>{{ text[index] }}</template>
   </target-callout>
 
   <svg width="1717" style="z-index:1000; position: absolute; left: 101px; top: 115px;" height="951"
@@ -199,17 +200,10 @@ onMounted(() => {
     <path @click="openInfoCallout(11)"
           d="M464.808 468.991L457.371 451.328L478.752 455.047L523.374 464.808L533.6 471.78L592.166 482.935L609.364 484.33L603.321 524.303L576.827 528.022L565.671 519.19L554.981 517.331L544.29 514.077H528.022L512.218 521.514L476.893 531.74H434.13L455.047 515.472L464.808 468.991Z"
           fill="black" fill-opacity="0"/>
-<!--    Liesa -->
-<!--    <path @click="openInfoCallout(12)"-->
-<!--          d="M594.024 591.7L595.884 584.263L636.322 591.7L649.337 597.278L719.058 593.559L780.878 577.291L799.005 584.263L819.457 588.446H862.684L881.277 619.124L804.118 629.35L668.394 634.927L588.447 627.026L595.884 606.109L594.024 591.7Z"-->
-<!--          fill="black" fill-opacity="0"/>-->
-<!--    Muguras aorta -->
-<!--    <path @click="openInfoCallout(13)"-->
-<!--          d="M523.374 464.344L457.836 451.329L443.892 417.863L466.667 422.046L513.148 429.948L549.403 431.342L577.756 424.835L598.208 414.609H633.998L686.986 417.863L777.159 412.285L824.104 424.835L832.471 438.314L802.723 429.948H647.013L573.573 433.202L516.866 440.638L507.57 447.611V453.653L516.866 457.372H523.374V464.344Z"-->
-<!--          fill="black" fill-opacity="0"/>-->
-    <path @click="openInfoCallout(14)"
+    <path @click="openInfoCallout(12)"
           d="M602.856 523.839L577.756 528.022L581.474 536.389L609.828 542.896L635.392 532.205L648.872 518.261L659.098 523.839V532.205L672.577 527.093H684.662L686.521 542.896H767.398L772.511 528.022L778.554 515.472L693.958 489.908L648.872 486.189L609.828 484.33L602.856 523.839Z"
           fill="black" fill-opacity="0"/>
+
   </svg>
 
 </template>

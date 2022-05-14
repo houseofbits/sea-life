@@ -1,9 +1,25 @@
 <script setup lang="ts">
 import TextCallout from "@src/components/TextCallout.vue";
+import TargetCallout from "@src/components/puzzle/TargetCallout.vue";
 import Vector2 from "@src/structures/Vector2";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import {onMounted, ref} from "vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
+
+const text = [
+  'Mencas lielā mute liecina par to, ka zivs ir plēsīga un ķer citas zivis.',
+  'Nāsis zivīm kalpo tikai kā ožas orgāns.',
+  'Zivju acis atšķir ne tikai formas, bet arī krāsas. Redzi izmanto, lai izvairītos no plēsējiem, meklētu barību un atrastu partneri.',
+  'Žaunu vāki pasargā žaunas no ārējiem bojājumiem un piedalās ūdens plūsmas apmaiņā tajās.',
+  'Krūšu spuras izmanto straujai virziena un ātruma maiņai peldēšanas laikā.',
+  'Vēdera spuras stabilizē zivi, peldot augšup vai lejup.',
+  'Anālā spura stabilizē zivi peldēšanas laikā.',
+  'Astes spura nodrošina zivs kustību uz priekšu.',
+  'Muguras spura saglabā zivs stabilitāti peldot.',
+  'Sānu līnijā atrodas atveres īpasiem kanāliem, kas atrodas ādā. Tajos atrodas ļoti jutīgas šūnas, ar kuram zivs\n' +
+  'uztver ūdens spiediena maiņu. Tās ļauj sajust ūdens kustību, medījuma vai ienaidnieka kustību.',
+  'Zvīņas aizsargā zivs ķermeni, un dažam zivīm tās var izmantot to vecuma noteikšanai.',
+];
 
 const callouts = [
   new CalloutConfigStructure({
@@ -112,61 +128,12 @@ onMounted(() => {
 <template>
 
   <text-callout
-      :config="callouts[0]"
-      :hidden="!isVisible(0)">
-    Mencas lielā mute liecina par to, ka zivs ir plēsīga un ķer citas zivis.
-  </text-callout>
-  <text-callout
-      :config="callouts[1]"
-      :hidden="!isVisible(1)">
-    Nāsis zivīm kalpo tikai kā ožas orgāns.
-  </text-callout>
-  <text-callout
-      :config="callouts[2]"
-      :hidden="!isVisible(2)">
-    Zivju acis atšķir ne tikai formas, bet arī krāsas. Redzi izmanto, lai izvairītos no plēsējiem, meklētu barību un
-    atrastu partneri.
-  </text-callout>
-  <text-callout
-      :config="callouts[3]"
-      :hidden="!isVisible(3)">
-    Žaunu vāki pasargā žaunas no ārējiem bojājumiem un piedalās ūdens plūsmas apmaiņā tajās.
-  </text-callout>
-  <text-callout
-      :config="callouts[4]"
-      :hidden="!isVisible(4)">
-    Krūšu spuras izmanto straujai virziena un ātruma maiņai peldēšanas laikā.
-  </text-callout>
-  <text-callout
-      :config="callouts[5]"
-      :hidden="!isVisible(5)">
-    Vēdera spuras stabilizē zivi, peldot augšup vai lejup.
-  </text-callout>
-  <text-callout
-      :config="callouts[6]"
-      :hidden="!isVisible(6)">
-    Anālā spura stabilizē zivi peldēšanas laikā.
-  </text-callout>
-  <text-callout
-      :config="callouts[7]"
-      :hidden="!isVisible(7)">
-    Astes spura nodrošina zivs kustību uz priekšu.
-  </text-callout>
-  <text-callout
-      :config="callouts[8]"
-      :hidden="!isVisible(8)">
-    Muguras spura saglabā zivs stabilitāti peldot.
-  </text-callout>
-  <text-callout
-      :config="callouts[9]"
-      :hidden="!isVisible(9)">
-    Sānu līnijā atrodas atveres īpasiem kanāliem, kas atrodas ādā. Tajos atrodas ļoti jutīgas šūnas, ar kuram zivs
-    uztver ūdens spiediena maiņu. Tās ļauj sajust ūdens kustību, medījuma vai ienaidnieka kustību.
-  </text-callout>
-  <text-callout
-      :config="callouts[10]"
-      :hidden="!isVisible(10)">
-    Zvīņas aizsargā zivs ķermeni, un dažam zivīm tās var izmantot to vecuma noteikšanai.
+      v-for="(config, index) in callouts"
+      :config="config"
+      :hidden="!isVisible(index)"
+      :is-point-visible="true"
+  >
+    {{ text[index] }}
   </text-callout>
 
   <svg style="z-index:1000; position: absolute; left: 261px; top: 324px;" width="1417" height="507"

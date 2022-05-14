@@ -17,7 +17,7 @@ export default [
                 size: new Vector2(0, 108),
                 type: CalloutTypeEnum.TOP_LEFT
             }),
-            group: 0,
+            group: 2,
         }
     }),
     new DraggableElement({
@@ -78,7 +78,7 @@ export default [
                 size: new Vector2(0, 190),
                 type: CalloutTypeEnum.BOTTOM_LEFT
             }),
-            group: 2,
+            group: 0,
         }
     }),
     new DraggableElement({
@@ -138,7 +138,7 @@ export default [
                 size: new Vector2(0, 189),
                 type: CalloutTypeEnum.BOTTOM_LEFT
             }),
-            group: 0,
+            group: 2,
         }
     }),
     new DraggableElement({
@@ -228,7 +228,7 @@ export default [
                 size: new Vector2(0, 106),
                 type: CalloutTypeEnum.BOTTOM_LEFT
             }),
-            group: 2,
+            group: 0,
         }
     }),
 ];

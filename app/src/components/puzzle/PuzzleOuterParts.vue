@@ -87,9 +87,6 @@ onMounted(() => {
 
   <outer-parts-information v-if="isComplete"/>
 
-<!--  <span class="bottom-info-line fade-fast" :class="{faded: isComplete}">Saliec ārējās uzbūves daļu nosaukumus to atbilstošajās vietās</span>-->
-<!--  <span class="bottom-info-line fade-fast" :class="{faded: !isComplete}">Uzzini vairāk par katru no zivs ārējās uzbūves daļām</span>-->
-
   <div class="page-navigation-link horizontal right" @click="navigateToMain">
     <span>Beigas</span>
     <img src="@images/chevron-right.svg" alt="">

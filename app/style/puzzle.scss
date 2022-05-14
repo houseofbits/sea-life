@@ -364,7 +364,7 @@
         justify-content: center;
         margin-left: 0;
 
-        div {
+        & div {
             transition: all;
             transition-duration: 500ms;
             transition-delay: 300ms;
@@ -375,6 +375,27 @@
             border-radius: 50%;
         }
 
+        &.inner {
+            transition:none;
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            top: -19px;
+            left: -19px;
+            opacity: 0;
+
+            div {
+                width: 17px;
+                height: 17px;
+            }
+
+            &.active {
+                transition: opacity;
+                transition-duration: 500ms;
+                transition-delay: 1000ms;
+                opacity: 1;
+            }
+        }
     }
 
     .line {
