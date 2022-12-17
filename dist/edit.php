@@ -32,7 +32,6 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])
 </head>
 <body>
 <div id="gui"></div>
-<script src="/edit.js"></script>
 </body>
 </html>
 

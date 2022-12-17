@@ -40,6 +40,7 @@ class ContentFileUpdateRequestService
         $jsonData['order'] = $data->formData->order;
         $jsonData['family'] = $data->formData->family;
         $jsonData['content'] = $data->formData->content;
+        $jsonData['fact'] = $data->formData->fact;
 
         $outputData = json_encode($jsonData,  JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 

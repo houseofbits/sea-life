@@ -24,9 +24,21 @@ const props = defineProps({
   }
 });
 
+const isSuccess = ref(false);
 const error = ref<string | null>(null);
 const initialData = ref<EditItemFormValuesStructure | null>(null);
 const formValues = reactive<EditItemFormValuesStructure>(new EditItemFormValuesStructure());
+let successMessageTimeout: any = null;
+
+function setSaveSuccess(): void {
+  if (  successMessageTimeout) {
+    clearTimeout(successMessageTimeout);
+  }
+  isSuccess.value = true;
+  successMessageTimeout = setTimeout(() => {
+    isSuccess.value = false;
+  }, 2000);
+}
 
 function selectLanguage(language: string | null = null) {
   if (props.isBaseLanguage) {
@@ -88,6 +100,7 @@ async function updateData(): Promise<any> {
     updateParentItem();
     setUnsavedChangesPending(false);
     initialData.value = new EditItemFormValuesStructure(formValues);
+    setSaveSuccess();
   } catch (e: any) {
     error.value = e.message;
   } finally {
@@ -136,6 +149,17 @@ function updateParentItem(): void {
       </svg>
       <div class="ml-3 text-sm font-medium text-red-700">
         Failed to save data. {{ error }}
+      </div>
+    </div>
+
+    <div v-if="isSuccess" id="success-border-2" class="flex p-4 mb-4 bg-green-100 border-t-4 border-green-500 dark:bg-green-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-5 h-5 text-green-700" fill="currentColor" viewBox="0 0 512 512">
+        <path
+            d="M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z"/>
+      </svg>
+
+      <div class="ml-3 text-sm font-medium text-green-700">
+        {{ props.item.title }} - {{ selectedLanguage.toUpperCase() }} updated
       </div>
     </div>
 
@@ -216,7 +240,8 @@ function updateParentItem(): void {
 
     <h3 class="mt-6">Content</h3>
 
-    <item-form-content-section v-for="(content, index) in formValues.content" v-model:content="formValues.content[index]"/>
+    <item-form-content-section v-for="(content, index) in formValues.content"
+                               v-model:content="formValues.content[index]"/>
 
   </div>
 </template>

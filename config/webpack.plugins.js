@@ -10,17 +10,17 @@ module.exports = {
             chunkFilename: '[id].css'
         }),
         new VueLoaderPlugin(),
-        new HtmlWebpackPlugin({
-            template: '/dist/index.html',
-            inject: true,
-            chunks: ['main'],
-            filename: 'index.html'
-        }),
-        new HtmlWebpackPlugin({
-            template: '/dist/edit.html',
-            inject: true,
-            chunks: ['edit'],
-            filename: 'edit.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: '/dist/index.html',
+        //     inject: true,
+        //     chunks: ['main'],
+        //     filename: 'index.html'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     template: '/dist/edit.html',
+        //     inject: true,
+        //     chunks: ['edit'],
+        //     filename: 'edit.html'
+        // }),
     ]
 };

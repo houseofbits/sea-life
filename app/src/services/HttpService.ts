@@ -9,8 +9,11 @@ export default class HttpService {
         this.axiosInstance = axios.create({
             baseURL: window.location.origin,      //"http://beta.dizainsuninterjers.lv/",//http://0.0.0.0:9001/",
             headers: {
-                "Content-type": "text/html",
-                "X-Requested-With": "XMLHttpRequest"
+                'Content-type': 'text/json',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache',
+                'Expires': '0',
             }
         });
     }
