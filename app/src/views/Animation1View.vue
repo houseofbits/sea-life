@@ -33,22 +33,22 @@ const {
 } = NumericPagination();
 
 function back(): void {
-  router.push('/game');
+  router.push('/');
 
 }
 
 function navigateToPuzzle(): void {
-  router.push('/game/puzzle');
+  router.push('/puzzle');
 
 }
 
 function navigateToAnimation2(): void {
-  router.push('/game/anim2');
+  router.push('/animation2');
 
 }
 
 function navigateToMain(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 function restart(exit: boolean = false) {

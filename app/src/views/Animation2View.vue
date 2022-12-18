@@ -32,19 +32,19 @@ const {
 } = NumericPagination();
 
 function back(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 function navigateToPuzzle(): void {
-  router.push('/game/puzzle');
+  router.push('/puzzle');
 }
 
 function navigateToAnimation1(): void {
-  router.push('/game/anim1');
+  router.push('/animation1');
 }
 
 function navigateToMain(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 onMounted(() => {

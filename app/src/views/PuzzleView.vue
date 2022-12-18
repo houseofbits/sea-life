@@ -25,15 +25,15 @@ function restart(): void {
 }
 
 function navigateToMain(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 function navigateToAnimation1(): void {
-  router.push('/game/anim1');
+  router.push('/animation1');
 }
 
 function navigateToAnimation2(): void {
-  router.push('/game/anim2');
+  router.push('/animation2');
 }
 
 function navigateToStep(step: number): void {

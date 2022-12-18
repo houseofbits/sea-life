@@ -21,7 +21,7 @@ function selectLanguage(language: string): void {
 </script>
 <template>
   <div class="navigation-bar">
-    <img src="@images/logo.svg" alt="" width="64" @click="router.push('/game')">
+    <img src="@images/logo.svg" alt="" width="64" @click="router.push('/')">
     <div class="header-title">
       <slot/>
     </div>

@@ -150,7 +150,7 @@ function selectItemFromModal(itemId: number): void {
 }
 
 function navigateToMain(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 </script>

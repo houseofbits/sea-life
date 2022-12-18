@@ -39,7 +39,7 @@ function isElementComplete(name: string): boolean {
 }
 
 function navigateToMain(): void {
-  router.push('/game');
+  router.push('/');
 }
 
 watch(() => props.isActive, () => {
