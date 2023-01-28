@@ -1,6 +1,3 @@
-# W.I.P.
+## [The Latvian Museum of Natural History](https://www.dabasmuzejs.gov.lv/) - Baltic Sea
 
-TODO: 
-
-Map button
-
+Web application for FullHD touchscreen device.
