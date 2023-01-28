@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {ref, watch} from "vue";
 
-const emit = defineEmits(['prev', 'next', 'restart']);
+const emit = defineEmits(['prev', 'next', 'restart', 'show-detail']);
 const props = defineProps({
     isActive: {
         type: Boolean,

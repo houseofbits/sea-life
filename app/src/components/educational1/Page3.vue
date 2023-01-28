@@ -6,9 +6,8 @@ import InfoItemsListComposable from "@src/composables/InfoItemsList";
 import DetailListItem from "@src/structures/DetailListItem";
 import InputHandlerService from "@src/services/InputHandlerService";
 import DetailList from "@src/composables/DetailList";
-import DetailTranslations from "@src/composables/DetailTranslations";
 
-const emit = defineEmits(['prev', 'next', 'restart']);
+const emit = defineEmits(['prev', 'next', 'restart', 'show-detail']);
 const props = defineProps({
     isActive: {
         type: Boolean,
@@ -17,6 +16,7 @@ const props = defineProps({
 });
 
 const active1 = ref(false);
+const species = ref<DetailListItem[]>([]);
 
 const {
     isItemSelected,
@@ -30,16 +30,20 @@ const {
     detailContent
 } = DetailList();
 
-const specie1 = ref<DetailListItem | null>(null);
-const specie2 = ref<DetailListItem | null>(null);
-
 const isSpeciesSelected = computed(() => {
     return !!selectedItemId.value;
 });
 
+function initContent(): void {
+    let item = findItemByIdentifier("8");
+    item ? species.value.push(item) : null;
+
+    item = findItemByIdentifier("12");
+    item ? species.value.push(item) : null;
+}
+
 watch(() => detailContent.value, (value) => {
-    specie1.value = findItemByIdentifier("8");
-    specie2.value = findItemByIdentifier("12");
+    initContent();
 });
 
 watch(() => props.isActive, (value: boolean) => {
@@ -54,12 +58,24 @@ function prevPage(): void {
     emit('prev');
 }
 
+function selectItemLocal(itemId: number): void {
+    selectItem(itemId);
+    const selectedItem = species.value.find((item: DetailListItem) => item.id == itemId);
+    if (selectedItem) {
+        emit('show-detail', true, selectedItem);
+    }
+}
+
+function closeItemLocal(): void {
+    closeItem();
+    emit('show-detail', false, null);
+}
+
 onMounted(() => {
-    specie1.value = findItemByIdentifier("8");
-    specie2.value = findItemByIdentifier("12");
+    initContent();
 
     const input = new InputHandlerService(document.querySelector('.edu1-page3-species-block'));
-    input.onSelectItem(selectItem);
+    input.onSelectItem(selectItemLocal);
 });
 
 </script>
@@ -100,21 +116,12 @@ onMounted(() => {
 
     <div class="content-1080p edu1-page3-species-block">
         <InfoItem
+            v-for="item in species"
             class="edu1-page3-species"
-            v-if="specie1"
-            :item="specie1"
-            :is-selected="isItemSelected(specie1)"
+            :item="item"
+            :is-selected="isItemSelected(item)"
             :is-map-visible="false"
-            @close="closeItem"
-        />
-
-        <InfoItem
-            class="edu1-page3-species"
-            v-if="specie2"
-            :item="specie2"
-            :is-selected="isItemSelected(specie2)"
-            :is-map-visible="false"
-            @close="closeItem"
+            @close="closeItemLocal"
         />
     </div>
 

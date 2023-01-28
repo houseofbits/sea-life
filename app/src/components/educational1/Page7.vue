@@ -2,7 +2,7 @@
 import {onMounted, ref, watch} from "vue";
 import WaterLevel from "@src/components/educational1/WaterLevel.vue";
 
-const emit = defineEmits(['prev', 'next', 'restart']);
+const emit = defineEmits(['prev', 'next', 'restart', 'show-detail']);
 const props = defineProps({
     isActive: {
         type: Boolean,

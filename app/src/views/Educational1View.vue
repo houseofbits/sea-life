@@ -9,8 +9,9 @@ import Page5 from "@src/components/educational1/Page5.vue";
 import Page6 from "@src/components/educational1/Page6.vue";
 import Page7 from "@src/components/educational1/Page7.vue";
 import NumericPagination from "@src/composables/NumericPagination";
-import {onMounted} from "vue";
+import {onMounted, ref} from "vue";
 import InputHandlerService from "@src/services/InputHandlerService";
+import DetailListItem from "@src/structures/DetailListItem";
 
 const router = useRouter();
 
@@ -33,6 +34,8 @@ const {
     currentPage
 } = NumericPagination();
 
+const selectedItem = ref<DetailListItem | null>(null);
+
 function back(): void {
     router.push('/');
 }
@@ -47,6 +50,10 @@ function navigateToAnimation1(): void {
 
 function navigateToMain(): void {
     router.push('/');
+}
+
+function showDetail(isOpen: boolean, detail: DetailListItem | null): void {
+    selectedItem.value = detail;
 }
 
 onMounted(() => {
@@ -74,13 +81,29 @@ onMounted(() => {
 <template>
     <div class="content-1080p bg-white anim2-container">
         <navigation-bar>
-            <span>Baltijas Jūra</span>
+            <span v-if="selectedItem">
+                {{ selectedItem.title }}
+                <span class="latin-title" v-html="selectedItem.latinTitle"></span>
+            </span>
+            <span v-else>
+                Baltijas Jūra
+            </span>
         </navigation-bar>
 
-        <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right"
-             :class="[getAnimationState(index)]">
-            <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage"
-                       @restart="navigateToMain"/>
+        <div
+            v-for="(component, index) in pageComponents"
+            :key="index"
+            class="full-slider-container initial-right"
+            :class="[getAnimationState(index)]"
+        >
+            <component
+                :is="component"
+                :is-active="isSelectedPage(index)"
+                @next="selectNextPage"
+                @prev="selectPrevPage"
+                @restart="navigateToMain"
+                @show-detail="showDetail"
+            />
         </div>
 
         <svg viewBox="0 0 1920 1080" class="edubg1" :data-page="currentPage" :class="{step1:(currentPage===1)}">

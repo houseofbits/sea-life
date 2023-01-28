@@ -138,13 +138,13 @@ function navigateToMain(): void {
 
         <navigation-bar :languages="languages" @selectLanguage="selectLanguage">
 
-      <span v-if="!selectedItemId" @click="selectGroup(null)">
-        {{ translations.title }}
-      </span>
+          <span v-if="!selectedItemId" @click="selectGroup(null)">
+            {{ translations.title }}
+          </span>
             <span v-else>
-        {{ itemTitle }}
-        <span class="latin-title" v-html="itemLatinTitle"></span>
-      </span>
+                {{ itemTitle }}
+                <span class="latin-title" v-html="itemLatinTitle"></span>
+              </span>
 
             <template #links v-if="!selectedItemId">
         <span class="group-links">
