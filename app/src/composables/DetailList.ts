@@ -124,6 +124,10 @@ export default () => {
         return page.id === currentPageId.value;
     }
 
+    function findItemByIdentifier(identifier: string): DetailListItem | null {
+        return detailContent.value?.items.find((item: DetailListItem) => item.identifier === identifier) ?? null;
+    }
+
     const pages = computed<Array<DetailListPageStructure>>((): Array<DetailListPageStructure> => {
         return filterAllPages(currentGroup.value);
     });
@@ -155,6 +159,7 @@ export default () => {
         isActivePage,
         getAnimationState,
         isActiveGroup,
-        detailContent
+        detailContent,
+        findItemByIdentifier
     };
 };

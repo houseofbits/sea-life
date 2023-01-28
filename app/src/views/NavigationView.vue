@@ -44,6 +44,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
         </router-link>
 
         <router-link to="/animation2" class="expandable-card start-screen card4">
+<!--        <router-link to="/edu1" class="expandable-card start-screen card4">-->
             <div class="globe-border info"></div>
 
             <div class="card-image">

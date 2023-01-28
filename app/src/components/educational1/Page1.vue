@@ -1,0 +1,85 @@
+<script setup lang="ts">
+import {onMounted, ref, watch} from "vue";
+import WaterLevel from "@src/components/educational1/WaterLevel.vue";
+
+const emit = defineEmits(['prev', 'next', 'restart']);
+const props = defineProps({
+    isActive: {
+        type: Boolean,
+        required: true
+    }
+});
+
+const active1 = ref(false);
+
+onMounted(() => {
+    setTimeout(() => active1.value = true, 1000);
+});
+
+watch(() => props.isActive, (value: boolean) => {
+    if (value) {
+       setTimeout(() => active1.value = true, 500);
+    } else {
+        active1.value = false;
+    }
+});
+
+
+</script>
+<template>
+
+    <div class="edu1-information-block">
+        <div class="small-header">Ar ko Baltijas jūra ir īpaša?</div>
+
+        <div class="text-block">Baltijas jūra ir iesāļūdens jūra. Tajā spēj izdzīvot tikai tās zivju sugas, kas spēj
+            pielāgoties mainīgajiem vides apstākļiem – samazinātajam sāļumam un krasajām temperatūras sezonālajām
+            svārstībām. Savdabīgie vides apstākļi ietekmē zivju augšanu. Daudzas jūras zivju sugas Baltijas jūrā
+            nesasniedz tik lielu ķermeņa izmēru, kā citās jūrās un okeānos. Savukārt atsevišķām saldūdens zivju sugām,
+            piemēram līdakām un asariem, Baltijas jūras iesāļais ūdens un bagātīgā barības bāze dažos jūras rajonos ļauj
+            sasniegt ievērojamus ķermeņa izmērus.
+        </div>
+
+        <div class="cards-block">
+            <div class="card">
+                <div class="title">Pasaules jūras un okeāni</div>
+
+                <div class="water-level-wrapper">
+                    <WaterLevel :is-active="active1" :wave-x="-40" :wave-y="20">
+                        30-35
+                    </WaterLevel>
+                    <div class="units-sign">‰</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">Baltijas jūrā pie Latvijas</div>
+
+                <div class="water-level-wrapper">
+                    <WaterLevel :is-active="active1" :wave-x="-70" :wave-y="40">
+                        7-12
+                    </WaterLevel>
+                    <div class="units-sign">‰</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">Rīgas jūras līcī</div>
+
+                <div class="water-level-wrapper">
+                    <WaterLevel :is-active="active1" :wave-x="-300" :wave-y="50">
+                        3-7
+                    </WaterLevel>
+                    <div class="units-sign">‰</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">Apskatāms jūru aptuvens jūru sāļums. Mērvienība : miligrami uz litru</div>
+    </div>
+
+    <div class="edu1-page1-map">Karte</div>
+
+    <div class="page-navigation-link horizontal right" @click="emit('next')">
+        <span>Turpināt</span>
+        <img src="@images/chevron-right.svg" class="bounce-right-anim" alt="">
+    </div>
+
+</template>

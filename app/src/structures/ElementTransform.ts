@@ -14,6 +14,16 @@ export default class ElementTransform {
         this.angle = params?.angle || null;
     }
 
+    getScaled(scale: number): ElementTransform {
+        return new ElementTransform({
+            left: this.left ? this.left * scale : this.left,
+            top: this.top ? this.top * scale : this.top,
+            width: this.width ? this.width * scale : this.width,
+            height: this.height ? this.height * scale : this.height,
+            angle: this.angle ? this.angle * scale : this.angle
+        });
+    }
+
     getAsStyle(): any {
         return {
             left: this.getPixelValue(this.left),

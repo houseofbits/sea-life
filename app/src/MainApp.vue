@@ -5,6 +5,7 @@ import {useRouter} from "vue-router";
 import DetailViewService from "@src/services/DetailViewService";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
 const router = useRouter();
 
@@ -12,21 +13,28 @@ const {
     detailContent
 } = DetailList();
 
+const {
+    setTranslations,
+    setLanguages,
+    selectLanguage
+} = DetailTranslations();
+
 const isLoading = ref(true);
 const errorMessage = ref<string | null>(null);
 
 onMounted(() => {
-    if (!detailContent.value) {
-        DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
-            detailContent.value = result;
-        }).catch(e => {
-            errorMessage.value = e.message;
-        }).finally(() => {
-            isLoading.value = false;
-        });
-    } else {
+    // isLoading.value = false;
+
+    DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
+        detailContent.value = result;
+        setLanguages(detailContent.value.config.languages);
+        selectLanguage(detailContent.value.config.languages[0]);
+        setTranslations(detailContent.value.translatedCommon);
+    }).catch(e => {
+        errorMessage.value = e.message;
+    }).finally(() => {
         isLoading.value = false;
-    }
+    });
 
     TimeoutService.registerCallback(() => {
         router.push('/');
@@ -35,7 +43,7 @@ onMounted(() => {
 
 </script>
 <template>
-    <router-view v-show="!isLoading" />
+    <router-view v-show="!isLoading"/>
     <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
         Loading
     </div>

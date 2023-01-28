@@ -5,6 +5,7 @@ import "@style/detail-view.scss";
 import "@style/puzzle.scss";
 import "@style/animation1.scss";
 import "@style/animation2.scss";
+import "@style/educational1.scss";
 import {createApp} from 'vue';
 import {createWebHistory, createRouter} from "vue-router";
 import MainApp from "@src/MainApp.vue";
