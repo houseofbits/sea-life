@@ -3,10 +3,18 @@ import EditItemFormValuesStructure from "@src/structures/EditItemFormValuesStruc
 
 class ItemUpdateService extends HttpService {
 
-    async update(sourceFileName: string, isBaseLanguage: boolean, language: string, formData: EditItemFormValuesStructure): Promise<any> {
+    async update(sourceFileName: string, isBaseLanguage: boolean, language: string, formData: EditItemFormValuesStructure, password: string): Promise<any> {
         let result = null;
         try {
-            result = await this.axiosInstance.post('/edit.php', {sourceFileName, isBaseLanguage, language, formData});
+            result = await this.axiosInstance.post('/edit.php', {sourceFileName, isBaseLanguage, language, formData, password});
+        } catch (error: any) {
+            throw new Error(error.response.statusText);
+        }
+    }
+
+    async authenticate(password: string): Promise<any> {
+        try {
+            await this.axiosInstance.post('/edit.php', {authenticate:true, password});
         } catch (error: any) {
             throw new Error(error.response.statusText);
         }

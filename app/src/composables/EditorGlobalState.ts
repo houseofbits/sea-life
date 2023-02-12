@@ -1,9 +1,13 @@
 import {ref} from "vue";
+import ItemUpdateService from "@src/services/ItemUpdateService";
 
 const isLoading = ref<boolean>(false);
 const isLeavingPromptVisible = ref<boolean>(false);
+const isAuthPromptVisible = ref<boolean>(true);
 const hasUnsavedChangesPending = ref<boolean>(false);
 const leaveCallback = ref<CallableFunction | null>(null);
+const passphrase = ref<string|null>(null);
+const authenticationErrorMessage = ref<string|null>(null);
 
 export default () => {
 
@@ -32,12 +36,29 @@ export default () => {
         isLeavingPromptVisible.value = false;
     }
 
+    async function authenticate(password: string) {
+        authenticationErrorMessage.value = null;
+        try {
+            await ItemUpdateService.authenticate(password);
+            isAuthPromptVisible.value = false;
+            passphrase.value = password;
+        }  catch (e: any) {
+            authenticationErrorMessage.value = e.message;
+        } finally {
+
+        }
+    }
+
     return {
         leavePage,
         promptPageLeave,
         setUnsavedChangesPending,
         isLeavingPromptVisible,
         isLoading,
-        setLoading
+        setLoading,
+        isAuthPromptVisible,
+        authenticate,
+        passphrase,
+        authenticationErrorMessage
     };
 }

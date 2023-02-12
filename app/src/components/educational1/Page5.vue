@@ -9,13 +9,26 @@ const props = defineProps({
     }
 });
 
+const mainVideo = ref<HTMLMediaElement | null>(null);
 const active1 = ref(false);
+const isVideoOpen = ref(false);
 
 watch(() => props.isActive, (value: boolean) => {
     if (value) {
         setTimeout(() => active1.value = true, 500);
     } else {
         active1.value = false;
+    }
+});
+
+watch(() => isVideoOpen.value, (value: boolean) => {
+    if (mainVideo.value) {
+        if (value) {
+            mainVideo.value.play();
+        } else {
+            mainVideo.value.pause();
+            mainVideo.value.currentTime = 0;
+        }
     }
 });
 
@@ -53,8 +66,16 @@ function prevPage(): void {
         </div>
     </div>
 
-    <div class="edu1-page5-video">
-        VIDEO NO DAPA ar jūras gultni, mizīdām utt.
+    <div class="edu1-page5-video" :class="{active: isVideoOpen}" @click="isVideoOpen = !isVideoOpen">
+        <div class="video-wrapper">
+            <video width="1016" height="1019" muted loop ref="mainVideo">
+                <source src="/video/LHEI_2021.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-thumbnail">
+            <img src="@images/edu1-video-thumb.png" alt="video thumbnail"/>
+        </div>
     </div>
 
     <div class="page-navigation-link horizontal right" @click="emit('next')">

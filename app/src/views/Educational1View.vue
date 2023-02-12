@@ -69,10 +69,10 @@ onMounted(() => {
         }
     });
 
-    // selectNextPage();
-    // selectNextPage();
-    // selectNextPage();
-    // selectNextPage();
+    selectNextPage();
+    selectNextPage();
+    selectNextPage();
+    selectNextPage();
     // selectNextPage();
     // selectNextPage();
 });
