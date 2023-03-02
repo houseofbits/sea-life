@@ -37,9 +37,9 @@ onMounted(() => {
     //     isLoading.value = false;
     // });
 
-    TimeoutService.registerCallback(() => {
-        router.push('/');
-    });
+    // TimeoutService.registerCallback(() => {
+    //     router.push('/');
+    // });
 });
 
 </script>

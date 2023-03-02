@@ -746,6 +746,7 @@
             margin-left: -19px;
             margin-top: -19px;
             min-width: 38px;
+            min-height: 38px;
 
             div {
                 width: 17px;
@@ -761,7 +762,7 @@
         flex-grow: 1;
     }
 
-    .second, .third {
+    .second, .third, .fourth, .fifth {
         display: flex;
         flex-direction: column;
         height: 0;
@@ -789,6 +790,16 @@
         }
     }
     .third {
+        &.active {
+            height: 130px;
+        }
+    }
+    .fourth {
+        &.active {
+            height: 130px;
+        }
+    }
+    .fifth {
         &.active {
             height: 130px;
         }
