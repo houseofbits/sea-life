@@ -17,6 +17,11 @@ body {
     overflow: hidden;
 }
 
+strong {
+    font-weight: 700;
+    color: #729DB7;
+}
+
 .screen {
     width: 1920px;
     height: 1080px;

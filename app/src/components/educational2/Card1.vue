@@ -32,7 +32,7 @@ function close(): void {
     <div class="edu2-card card1" :class="{active: isActive, 'view-active': isViewActive}" @click="close">
         <div class="card-thumbnail">
             <div class="icon">
-                <img src="@images/ronis1.png" alt="Icon">
+                <img src="@images/edu2-icon1.png" alt="Icon">
             </div>
 
             <div>

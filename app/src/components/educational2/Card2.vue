@@ -32,7 +32,7 @@ function close(): void {
     <div class="edu2-card card2" :class="{active: isActive, 'view-active': isViewActive}" @click="close">
         <div class="card-thumbnail">
             <div class="icon">
-                <img src="@images/ronis1.png" alt="Icon">
+                <img src="@images/edu2-icon2.png" alt="Icon">
             </div>
 
             <div>
@@ -55,6 +55,25 @@ function close(): void {
                     fill="#D4E1E9" stroke="#D4E1E9"/>
             </svg>
 
+            <div class="text-frame">
+                <div><strong>Jūras ūdeņus izmanto ap 30 ūdensputnu</strong> un jūras putnu sugu. Lielākā sugu daudzveidība ir piekrastes joslā. Mazāk sugu, bet lielākā skaitā sastopamas 5–30 m dziļuma zonā. </div>
+
+                <div class="box">
+                    <svg width="650" height="94" viewBox="0 0 650 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M402.896 37.6901C228.267 49.5956 137.134 1.32998 25.6364 0.0428993C14.6032 -0.084463 4.23006 0.0756812 -5.5 0.471206V94H655.5V10.4679C650.137 10.4783 644.678 10.541 639.128 10.6613C535.268 12.9137 577.525 25.7846 402.896 37.6901Z" fill="#D4E1E9"/>
+                    </svg>
+
+                    <div>Peldpīles, nirpīles, gauras, gaigalas un jūraskraukļi parasti sastopami tuvāk piekrastei. Vairums jūras pīļu (piemēram, kākauļi, tumšās pīles un melnās pīles) barojas ar grunts virskārtā sastopamajiem bezmugurkaulniekiem 10–20 m dziļumā. </div>
+                </div>
+
+                <div><strong>Vistālāk no piekrastes uzturas jūras zivju patērētāji</strong> – gārgales un alki. Kaiju sugas sastopamas vienmērīgi (piemēram, kajaks) vai barības objektu masveida uzturēšanās vietās (piemēram, mazais ķīris), savukārt kuģu ceļu, zvejas rajonu un ostu tuvumā pieaug sudrabkaiju skaits. </div>
+            </div>
+
+            <div class="image-frame">
+                <img alt="" src="@images/edu2-image2.png" />
+
+                <div>Lielākā daļa jūras ūdeņus izmantojošo putnu ligzdo citur un pie mums sastopami caurceļošanas laikā un ziemā.</div>
+            </div>
 
         </div>
     </div>
