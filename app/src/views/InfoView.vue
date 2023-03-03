@@ -213,10 +213,10 @@ function navigateToMain(): void {
             <span>{{ translations.map }}</span>
         </div>
 
-        <div v-if="!selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">
-            <img src="@images/arrow-left.svg" alt="">
-            <span>Izvēlne</span>
-        </div>
+<!--        <div v-if="!selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">-->
+<!--            <img src="@images/arrow-left.svg" alt="">-->
+<!--            <span>Izvēlne</span>-->
+<!--        </div>-->
 
     </div>
 </template>

@@ -2,7 +2,6 @@
 import NavigationBar from "@src/components/NavigationBar.vue";
 import {useRouter} from "vue-router";
 import {ref, onMounted, computed} from "vue";
-import TargetCallout from "@src/components/puzzle/TargetCallout.vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
 import Vector2 from "@src/structures/Vector2";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
@@ -66,9 +65,9 @@ onMounted(() => {
         <Card3 :is-active="isCard3Active" :is-view-active="isViewActive" @click="isCard3Active = !isCard3Active"/>
         <Card4 :is-active="isCard4Active" :is-view-active="isViewActive" @click="isCard4Active = !isCard4Active"/>
 
-        <div class="back-filter" @click="navigateToMain">
-            <img src="@images/arrow-left.svg" alt="">
-            <span>Izvēlne</span>
-        </div>
+<!--        <div class="back-filter" @click="navigateToMain">-->
+<!--            <img src="@images/arrow-left.svg" alt="">-->
+<!--            <span>Izvēlne</span>-->
+<!--        </div>-->
     </div>
 </template>

@@ -55,11 +55,11 @@ function navigateToStep(step: number): void {
       </template>
     </navigation-bar>
 
-    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
-      <img src="@images/arrow-left.svg" alt="">
-      <span>Izvēlne</span>
-    </div>
-    <div v-else class="back-filter" @click="restart">
+<!--    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">-->
+<!--      <img src="@images/arrow-left.svg" alt="">-->
+<!--      <span>Izvēlne</span>-->
+<!--    </div>-->
+    <div v-if="currentPage!==0" class="back-filter" @click="restart">
       <img src="@images/arrow-left.svg" alt="">
       <span>Uz sākumu</span>
     </div>
