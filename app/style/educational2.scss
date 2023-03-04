@@ -33,6 +33,11 @@
     justify-content: center;
     overflow: hidden;
 
+    & strong {
+        font-weight: 700;
+        color: #729DB7;
+    }
+
     &.card1 {
         left: 47px;
     }
