@@ -11,6 +11,7 @@ const props = defineProps({
 });
 
 const active1 = ref(false);
+const isMapOpen = ref(false);
 
 onMounted(() => {
     setTimeout(() => active1.value = true, 1000);
@@ -19,6 +20,7 @@ onMounted(() => {
 watch(() => props.isActive, (value: boolean) => {
     if (value) {
         setTimeout(() => active1.value = true, 500);
+        isMapOpen.value = false;
     } else {
         active1.value = false;
     }
@@ -58,7 +60,14 @@ function prevPage(): void {
         </div>
     </div>
 
-    <div class="edu1-page6-map">Karte ar aizsargājamām jūras teritorijām</div>
+    <div class="modal-background-overlay" :class="{active:isMapOpen}"></div>
+    <div class="edu1-expandable-circle page7" :class="{active:isMapOpen}" @click="isMapOpen=!isMapOpen">
+        <div class="status-bar">
+            <span>Karte ar aizsagājamām jūras teritorijām</span>
+            <img class="close" src="@images/cross.svg" alt="">
+        </div>
+        <img class="content" alt="" src="@images/edu1-map2.png" />
+    </div>
 
     <div class="edu1-page6-note">Projekta „REEF - Jūras aizsargājamo biotopu izpēte un nepieciešamā aizsardzības statusa
         noteikšana Latvijas ekskluzīvajā ekonomiskajā zonā” ietvaros tiek pētītas vēl trīs teritorijas, lai iekļautu tās

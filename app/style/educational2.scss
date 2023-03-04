@@ -8,7 +8,7 @@
     background: black;
     z-index: 501;
     transition: all;
-    transition-duration: 700ms;
+    transition-duration: 500ms;
     pointer-events: none;
     transition-timing-function: ease-in-out;
 
@@ -26,7 +26,7 @@
     width: 410px;
     height: 200px;
     top: 414px;
-    transition: all 700ms, z-index 1400ms;
+    transition: all 500ms, z-index 1400ms;
     transition-timing-function: ease-in-out;
     z-index: 500;
     display: flex;
@@ -64,7 +64,7 @@
         z-index: 502;
         border-radius: 16px;
         box-shadow: none;
-        transition: all 700ms, z-index 1ms;
+        transition: all 500ms, z-index 1ms;
 
         &.card1 {
             width: 1600px;
@@ -662,4 +662,20 @@
     &.view-active {
         top: 390px;
     }
+}
+
+.white-link {
+    position: absolute;
+    top: 1006px;
+    width: 100%;
+    height: 28px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
 }

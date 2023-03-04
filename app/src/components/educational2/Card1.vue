@@ -55,13 +55,13 @@ function close(): void {
             <div class="text">Baltijas jūras un Rīgas jūras līča ūdens iemītnieku sugu sastāvs atkarīgs no dziļuma, ūdens temperatūras un sāļuma.</div>
 
             <div class="small-card first">
-                <img alt="" src=""/>
+                <img alt="" src="@images/edu2-image1.png"/>
                 <div>Fitoplanktons</div>
                 <div>Organisko vielu ražotāji - mikroskopiskās aļģes</div>
             </div>
 
             <div class="small-card second">
-                <img alt="" src=""/>
+                <img alt="" src="@images/edu2-image5.png"/>
                 <div>Zooplanktons</div>
                 <div>ūdenī pasīvi peldošie mikroskopiskie dzīvnieki</div>
             </div>

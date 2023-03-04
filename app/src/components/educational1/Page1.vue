@@ -11,14 +11,16 @@ const props = defineProps({
 });
 
 const active1 = ref(false);
+const isMapOpen = ref(false);
 
 onMounted(() => {
-    setTimeout(() => active1.value = true, 1000);
+    setTimeout(() => active1.value = true, 500);
 });
 
 watch(() => props.isActive, (value: boolean) => {
     if (value) {
-       setTimeout(() => active1.value = true, 500);
+        setTimeout(() => active1.value = true, 500);
+        isMapOpen.value = false;
     } else {
         active1.value = false;
     }
@@ -75,7 +77,14 @@ watch(() => props.isActive, (value: boolean) => {
         <div class="note">Apskatāms jūru aptuvens jūru sāļums. Mērvienība : miligrami uz litru</div>
     </div>
 
-    <div class="edu1-page1-map">Karte</div>
+    <div class="modal-background-overlay" :class="{active:isMapOpen}"></div>
+    <div class="edu1-expandable-circle page1" :class="{active:isMapOpen}" @click="isMapOpen=!isMapOpen">
+        <div class="status-bar">
+            <span>Baltijas jūras sāļums</span>
+            <img class="close" src="@images/cross.svg" alt="">
+        </div>
+        <img class="content" alt="" src="@images/edu1-map1.png"/>
+    </div>
 
     <div class="page-navigation-link horizontal right" @click="emit('next')">
         <span>Turpināt</span>

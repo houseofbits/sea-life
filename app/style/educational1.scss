@@ -409,105 +409,152 @@
     }
 }
 
-.edu1-page1-map {
+.edu1-expandable-circle {
     box-sizing: border-box;
     position: absolute;
-    width: 600px;
-    height: 600px;
-    left: 1115px;
-    top: 272px;
     background: #FFFFFF;
     border: 1px solid #D4E1E9;
     border-radius: 50%;
+    transition: all;
+    transition-duration: 400ms;
+    z-index: 1500;
+    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.edu1-page5-video {
-    box-sizing: border-box;
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    left: 1015px;
-    top: 222px;
-    background: #FFFFFF;
-    border: 1px solid #D4E1E9;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: all;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
+    & .content {
+        transition: all;
+        transition-duration: 400ms;
+    }
 
-    &.active {
-        width: 100%;
-        height: 100%;
-        top:0;
-        left:0;
-        border-radius: 0;
-        z-index: 1002;
-        border: none;
+    &.page1 {
+        width: 600px;
+        height: 600px;
+        left: 1115px;
+        top: 272px;
 
-        & .video-thumbnail {
-            opacity: 0;
+        &.active {
+            width: 1050px;
+            height: 1032px;
+            left: 435px;
+            top: 24px;
         }
 
-        & .video-wrapper {
-            opacity: 1;
+        & .content {
+            height: 100%;
         }
     }
 
-    & .video-wrapper {
-        position: absolute;
-        top:0;
-        left:0;
-        background: white;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: all;
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
+    &.page5 {
+        width: 600px;
+        height: 600px;
+        left: 1115px;
+        top: 270px;
 
-        & video {
-            width: 100%;
-            height: 100%;
+        &.active {
+            width: 1707px;
+            height: 1032px;
+            left: 100px;
+            top: 24px;
+
+            & .content {
+                filter: none;
+                opacity: 1;
+                width: 1707px;
+                height: 960px;
+                max-width: none;
+            }
+
+            & .play-button {
+                opacity: 0;
+                transition-delay: 0ms;
+            }
+        }
+
+        & .content {
+            filter: blur(10px);
+            opacity: 0.6;
+            width: 1066px;
+            height: 600px;
+            max-width: none;
+        }
+
+        & .play-button {
+            position: absolute;
+            left: 37.92%;
+            right: 37.92%;
+            top: 37.92%;
+            bottom: 37.92%;
+            opacity: 1;
+            transition: opacity;
+            transition-duration: 200ms;
+            transition-delay: 400ms;
+        }
+    }
+
+    &.page7 {
+        width: 600px;
+        height: 600px;
+        left: 1115px;
+        top: 270px;
+
+        &.active {
+            width: 1351px;
+            height: 1032px;
+            left: 285px;
+            top: 24px;
+
+            & .content {
+                width: 1351px;
+                height: 960px;
+            }
+        }
+
+        & .content {
+            width: 850px;
+            height: 622px;
             max-width: none;
         }
     }
 
-    & .video-thumbnail {
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all;
-        transition-duration: 200ms;
-        transition-timing-function: ease-out;
-    }
-}
+    &.active {
+        border-radius: 16px;
+        border: none;
 
-.edu1-page6-map {
-    box-sizing: border-box;
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    left: 1015px;
-    top: 222px;
-    background: #FFFFFF;
-    border: 1px solid #D4E1E9;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        & .status-bar {
+            height: 72px;
+            padding: 24px;
+            border-bottom: 1px solid #D4E1E9;
+        }
+    }
+
+    & .status-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        border-bottom: none;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #22324B;
+        background-color: white;
+        transition: all;
+        transition-duration: 400ms;
+        max-height: 72px;
+    }
 }
 
 .edu1-page6-note {

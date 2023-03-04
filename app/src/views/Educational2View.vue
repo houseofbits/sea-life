@@ -32,8 +32,8 @@ function back(): void {
     router.push('/');
 }
 
-function navigateToMain(): void {
-    router.push('/');
+function navigateToInfo(): void {
+    router.push('/info');
 }
 
 onMounted(() => {
@@ -64,6 +64,8 @@ onMounted(() => {
         <Card2 :is-active="isCard2Active" :is-view-active="isViewActive" @click="isCard2Active = !isCard2Active"/>
         <Card3 :is-active="isCard3Active" :is-view-active="isViewActive" @click="isCard3Active = !isCard3Active"/>
         <Card4 :is-active="isCard4Active" :is-view-active="isViewActive" @click="isCard4Active = !isCard4Active"/>
+
+        <div @click="navigateToInfo" class="white-link">Jūras iemītnieku detalizēti apraksti</div>
 
 <!--        <div class="back-filter" @click="navigateToMain">-->
 <!--            <img src="@images/arrow-left.svg" alt="">-->
