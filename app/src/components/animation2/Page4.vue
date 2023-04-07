@@ -51,13 +51,13 @@ onMounted(() => {
 
   <div class="text-collapse-horizontal page4-text1" :class="{active: active1}">
     <div>Kad ligzda gatava, tēviņš ar <strong>dejas palīdzību</strong> ievilina tajā mātīti un tā <strong>iznērš ap
-      100</strong> gaiši dzeltenus ikriņus.
+      100</strong> gaiši dzeltenus ikrus.
     </div>
   </div>
 
   <div class="text-collapse-horizontal page4-text2" :class="{active: active2}">
     <div>Tad tēviņs mātīti <strong>padzen</strong>, apaugļo ikriņus, <strong>un sāk vilināt jaunu</strong> mātīti. Viena
-      tēviņa <strong>ligzdā</strong> bieži savus ikriņus atstaj <strong>trīs vai četras mātītes.</strong></div>
+      tēviņa <strong>ligzdā</strong> bieži savus ikrus iznērš <strong>trīs vai četras mātītes.</strong></div>
   </div>
 
   <div class="page-navigation-link horizontal right" @click="emit('next')">

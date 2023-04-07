@@ -80,10 +80,11 @@ onMounted(() => {
       <component :is="component" :is-active="isSelectedPage(index)" @next="selectNextPage" @prev="selectPrevPage" @restart="navigateToMain"/>
     </div>
 
-<!--    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">-->
-<!--      <img src="@images/arrow-left.svg" alt="">-->
-<!--      <span>Izvēlne</span>-->
-<!--    </div>-->
+    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>Atpakaļ</span>
+    </div>
+
     <div v-if="currentPage!==0" class="back-filter" @click="selectPage(0)">
       <img src="@images/arrow-left.svg" alt="">
       <span>Uz sākumu</span>

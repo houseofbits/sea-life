@@ -53,7 +53,7 @@ function close(): void {
             </svg>
 
             <div class="text-frame">
-                <div>No zīdītājiem jūras ūdeņos sastopams <strong>pelēkais ronis</strong> (Halichoerus grypus), retāk – <strong>pogainais ronis</strong> (Pusa hispida). Atsevišķos gadījumos novēroti <strong>cūkdelfīni</strong> (Phocaena phocaena) un <strong>plankumainais ronis</strong> (Pusa vitulina). Pateicoties labvēlīgiem barošanās apstākļiem, pelēko roņu populācija ir labā stāvoklī.</div>
+                <div>No zīdītājiem jūras ūdeņos sastopams <strong>pelēkais ronis</strong>, retāk – <strong>pogainais ronis</strong>. Atsevišķos gadījumos novēroti <strong>cūkdelfīni</strong> un <strong>plankumainais ronis</strong>. Pateicoties labvēlīgiem barošanās apstākļiem, pelēko roņu populācija ir labā stāvoklī.</div>
 
                 <div class="box">
                     <div class="circle">

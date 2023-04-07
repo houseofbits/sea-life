@@ -91,8 +91,8 @@ function close(): void {
             <div class="bullet-texts">
                 <div>Atklātajos ūdeņos galvenie primārie producenti (organisko vielu ražotāji) ir <strong>fitoplanktons</strong> – mikroskopiskās aļģes.</div>
                 <div>No fitoplanktona pārtiek <strong>zooplanktons</strong> – ūdenī pasīvi peldošie mikroskopiskie dzīvnieki.</div>
-                <div><strong>Zooplanktons</strong> savukārt ir pelagiāles <strong>zivju</strong> (brīvā ūdenī un nevis uz grunts dzīvojošo zivju) <strong>barība</strong>. </div>
-                <div>No tām nozīmīgākās ir reņģes un siļķes. Tās savukārt kļūst par plēsēju – mencu, lašu un citu – pārtiku. Ar zivīm barojas arī jūras zīdītāji, piemēram, roņi un cūkdelfīni.</div>
+                <div><strong>Zooplanktons</strong> savukārt ir pelagiāles <strong>zivju</strong> (brīvi ūdenī un nevis uz grunts dzīvojošo zivju) <strong>barību</strong>. </div>
+                <div>No tām nozīmīgākās ir reņģes un siļķes. Tās savukārt kļūst par plēsēju – mencu, lašu un citu – barību. Ar zivīm barojas arī jūras zīdītāji, piemēram, roņi un cūkdelfīni.</div>
                 <div>Vienlaikus liels daudzums planktona iet bojā „dabiskā nāvē”, nogrimst jūras dibenā, kur <strong>kļūst par barību</strong> bentosam – sugām, kuras dzīvo pie paša jūras dibena.</div>
             </div>
         </div>

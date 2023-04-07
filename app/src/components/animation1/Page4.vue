@@ -118,7 +118,7 @@ watch(() => props.isActive, (value: boolean) => {
 <template>
 
   <div class="anim1-page2-header">
-    <span>Pēc nārsta <strong>ikriņi</strong> dažādām zivīm </span>
+    <span>Pēc nārsta <strong>ikri</strong> dažādām zivīm </span>
     <strong>attīstās dažādās vietās. </strong>
   </div>
 
@@ -152,7 +152,7 @@ watch(() => props.isActive, (value: boolean) => {
       </video>
     </div>
     <div class="title">Lasis</div>
-    <div class="description">Ikriņus ierok oļos</div>
+    <div class="description">Ikrus ierok oļos</div>
   </div>
 
   <div class="page3-card" :style="cardTransform(3)" @click="selectCard(3)">

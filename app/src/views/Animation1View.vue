@@ -93,10 +93,10 @@ onMounted(() => {
                  @restart="restart"/>
     </div>
 
-<!--    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">-->
-<!--      <img src="@images/arrow-left.svg" alt="">-->
-<!--      <span>Izvēlne</span>-->
-<!--    </div>-->
+    <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
+      <img src="@images/arrow-left.svg" alt="">
+      <span>Atpakaļ</span>
+    </div>
 
   </div>
 </template>

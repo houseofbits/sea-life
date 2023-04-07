@@ -33,7 +33,7 @@ watch(() => props.isActive, (value: boolean) => {
     <div class="edu1-information-block">
         <div class="small-header">Ar ko Baltijas jūra ir īpaša?</div>
 
-        <div class="text-block">Baltijas jūra ir iesāļūdens jūra. Tajā spēj izdzīvot tikai tās zivju sugas, kas spēj
+        <div class="text-block">Baltijas jūra ir <strong>iesāļūdens jūra</strong>. Tajā spēj izdzīvot tikai tās zivju sugas, kas spēj
             pielāgoties mainīgajiem vides apstākļiem – samazinātajam sāļumam un krasajām temperatūras sezonālajām
             svārstībām. Savdabīgie vides apstākļi ietekmē zivju augšanu. Daudzas jūras zivju sugas Baltijas jūrā
             nesasniedz tik lielu ķermeņa izmēru, kā citās jūrās un okeānos. Savukārt atsevišķām saldūdens zivju sugām,
@@ -46,7 +46,7 @@ watch(() => props.isActive, (value: boolean) => {
                 <div class="title">Pasaules jūras un okeāni</div>
 
                 <div class="water-level-wrapper">
-                    <WaterLevel :is-active="active1" :wave-x="-40" :wave-y="20">
+                    <WaterLevel :is-active="active1" :wave-x="-40" :wave-y="20" fill="#e2a3a0">
                         30-35
                     </WaterLevel>
                     <div class="units-sign">‰</div>
@@ -56,7 +56,7 @@ watch(() => props.isActive, (value: boolean) => {
                 <div class="title">Baltijas jūrā pie Latvijas</div>
 
                 <div class="water-level-wrapper">
-                    <WaterLevel :is-active="active1" :wave-x="-70" :wave-y="40">
+                    <WaterLevel :is-active="active1" :wave-x="-70" :wave-y="40" fill="#ffe9bf">
                         7-12
                     </WaterLevel>
                     <div class="units-sign">‰</div>
@@ -74,7 +74,7 @@ watch(() => props.isActive, (value: boolean) => {
             </div>
         </div>
 
-        <div class="note">Apskatāms jūru aptuvens jūru sāļums. Mērvienība : miligrami uz litru</div>
+        <div class="note">Apskatāms aptuvens jūru sāļums. Mērvienība: miligrami uz litru</div>
     </div>
 
     <div class="modal-background-overlay" :class="{active:isMapOpen}"></div>

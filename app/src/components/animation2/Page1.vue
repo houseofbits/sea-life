@@ -50,11 +50,11 @@ onMounted(() => {
   </div>
 
   <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
-    <div>Trīsadatu <strong>stagars ir sīka zivtiņa</strong>, kas Latvijā sastopama gan saldūdeņos, gan jūrā.</div>
+    <div>Trīsadatu <strong>stagars ir neliela zivtiņa</strong>, kas Latvijā sastopama gan saldūdeņos, gan jūrā.</div>
   </div>
 
   <div class="text-collapse-horizontal page1-text2" :class="{active: active2}">
-    <div><strong>Tuvojoties riesta laikam</strong> (kāzām) vairāku sugu <strong>zivis maina krāsu</strong>,  tai skaitā stagaru tēviņi. Tiem iekrāsojas gaiši zilas acis, koši sarkans vēders un zila mugura.</div>
+    <div><strong>Tuvojoties riesta laikam</strong> vairāku sugu <strong>zivis maina krāsu</strong>,  tai skaitā stagaru tēviņi. Tiem iekrāsojas gaiši zilas acis, koši sarkans vēders un zila mugura.</div>
   </div>
 
   <div class="page-navigation-link horizontal right" @click="emit('next')">

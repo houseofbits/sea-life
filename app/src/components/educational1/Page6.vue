@@ -30,14 +30,14 @@ function prevPage(): void {
         <div class="small-header">Aizsargājamie biotopi Baltijas jūrā</div>
 
         <div class="text-block">Latvijas piekrastē Baltijas jūrā sastopami divi Eiropas Savienības nozīmes aizsargājamie
-            biotopi <strong>1110 Smilšu sēkļi jūrā</strong> un <strong>1170 Akmeņu sēkļi jūrā</strong>.
+            biotopi <strong>Smilšu sēkļi jūrā</strong> un <strong>Akmeņu sēkļi jūrā</strong>.
         </div>
 
         <div class="box-wrapper">
             <div class="box">
                 <img class="image" alt="" src=""/>
 
-                <div class="title">Biotops 1110</div>
+                <div class="title">Smilšu sēkļi jūrā</div>
 
                 <div class="text">Smilšu sēkļi jūrā ir garenas, apaļas vai neregulāras formas reljefa veidojumi, kurus
                     pastāvīgi klāj jūras ūdens. Šo biotopu veido galvenokārt smiltis ar grants, oļu, akmeņu un dūņu
@@ -49,7 +49,7 @@ function prevPage(): void {
             <div class="box">
                 <img class="image" alt="" src=""/>
 
-                <div class="title">Biotops 1170</div>
+                <div class="title">Akmeņu sēkļi jūrā</div>
 
                 <div class="text">Akmeņu sēkļi jūrā ir viens no ievērojamākajiem un ekoloģiski nozīmīgākajiem biotopu
                     veidiem Baltijas jūras austrumu daļā, kas ir cieta substrāta teritorijas (akmeņi, laukakmeņi, oļi)

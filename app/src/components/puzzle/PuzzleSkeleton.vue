@@ -6,7 +6,7 @@ import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import Vector2 from "@src/structures/Vector2";
-import {onMounted, reactive, ref} from "vue";
+import {onMounted, reactive, ref, watch} from "vue";
 import Draggable from "@src/services/Draggable";
 
 const emit = defineEmits(['prev', 'next']);
@@ -56,10 +56,16 @@ function isElementComplete(name: string): boolean {
   return elementCompletionState[name];
 }
 
+watch(() => props.isActive, () => {
+    setTimeout(() => {
+        isActive.value = true;
+    }, 150);
+});
+
 onMounted(() => {
-  setTimeout(() => {
-    isActive.value = true;
-  }, 500);
+  // setTimeout(() => {
+  //   isActive.value = true;
+  // }, 500);
 });
 
 </script>
@@ -81,6 +87,11 @@ onMounted(() => {
   </puzzle-element>
 
   <icon-callout v-for="callout in calloutConf" :config="callout" :hidden="!isActive"/>
+
+    <div class="prev-puzzle-button" @click="emit('prev')">
+        <img src="@images/chevron-left.svg" alt="">
+        <span>Ārējā uzbūve</span>
+    </div>
 
   <div class="next-puzzle-button" @click="emit('next')">
     <span>Iekšējā uzbūve</span>

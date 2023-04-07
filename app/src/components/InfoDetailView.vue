@@ -137,8 +137,8 @@ onMounted(() => {
         <div class="info-detail">
             <div class="detail-collapsible" v-for="(content, index) in item.content" @click="select(index)">
                 <div class="detail-header"><span>{{ content.title }}</span>
-                    <img v-if="isSectionSelected(index)" src="@images/chevron-up.svg" alt="">
-                    <img v-else src="@images/chevron-down.svg" alt="">
+                    <img v-if="isSectionSelected(index)" src="@images/chevron-up.svg" alt="" oncontextmenu="return false;">
+                    <img v-else src="@images/chevron-down.svg" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="detail-text" :style="getStyle(index)" :ref="el => setElem(el, index)"
                      v-html="content.content"/>
@@ -147,7 +147,7 @@ onMounted(() => {
 
         <div class="info-identifier-section">
             <div v-if="isMapVisible" class="map-button" @click="emit('map')">
-                <img src="@images/map.svg" alt="">
+                <img src="@images/map.svg" alt="" oncontextmenu="return false;">
                 <span>{{ translations.map }}</span>
             </div>
 
@@ -165,7 +165,7 @@ onMounted(() => {
         </div>
 
         <div class="back-filter" @click="close">
-            <img src="@images/arrow-left.svg" alt="">
+            <img src="@images/arrow-left.svg" alt="" oncontextmenu="return false;">
             <span>{{ translations.backButton }}</span>
         </div>
 

@@ -14,9 +14,11 @@ const router = useRouter();
 const props = defineProps({
   isActive: {
     type: Boolean,
-    default: false
+    default: true
   }
 });
+
+const isActive = ref(false);
 
 const isInitialized = ref(false);
 const elementCompletionState = reactive<{ [key: string]: boolean }>({});
@@ -42,16 +44,24 @@ function navigateToMain(): void {
   router.push('/');
 }
 
+watch(() => isActive.value, () => {
+    if (isActive && !isInitialized.value) {
+        setTimeout(() => {
+            isInitialized.value = true;
+        }, 500);
+    }
+});
+
 watch(() => props.isActive, () => {
-  if (props.isActive && !isInitialized.value) {
-    setTimeout(() => {
-      isInitialized.value = true;
-    }, 500);
-  }
+    isActive.value = props.isActive;
 });
 
 onMounted(() => {
   initGroupState();
+
+    setTimeout(() => {
+        isActive.value = true;
+    }, 200);
 });
 
 </script>
@@ -80,15 +90,15 @@ onMounted(() => {
 
   </template>
 
-  <div class="prev-puzzle-button" @click="emit('prev')">
-    <img src="@images/chevron-left.svg" alt="">
-    <span>Iekšējā uzbūve</span>
-  </div>
+<!--  <div class="prev-puzzle-button" @click="emit('prev')">-->
+<!--    <img src="@images/chevron-left.svg" alt="">-->
+<!--    <span>Iekšējā uzbūve</span>-->
+<!--  </div>-->
 
   <outer-parts-information v-if="isComplete"/>
 
-  <div class="page-navigation-link horizontal right" @click="navigateToMain">
-    <span>Beigas</span>
+  <div class="page-navigation-link horizontal right" @click="emit('next')">
+    <span>Skelets</span>
     <img src="@images/chevron-right.svg" alt="">
   </div>
 

@@ -84,8 +84,8 @@ onMounted(() => {
     <div class="edu1-information-block page3-position">
         <div class="small-header">Latvijas ihtiofaunas izmaiņas</div>
 
-        <div class="text-block">Latvijas ihtiofaunas (zivju sugu) sastāvs laika gaitā mainījies gan dabisku faktoru, gan
-            cilvēka darbības dēļ. Vairāku sugu sastopamība ir bijusi saistīta ar to introdukciju. Arī mūsdienās jūras
+        <div class="text-block">Latvijas ihtiofaunas (zivju sugu) sastāvs laika gaitā mainījies <strong>gan dabisku faktoru, gan
+            cilvēka darbības</strong> dēļ. Vairāku sugu sastopamība ir bijusi saistīta ar to introdukciju. Arī mūsdienās jūras
             zivju sabiedrība ir gana dinamiska – nereti Baltijas jūrā ieceļo zivju sugas no Ziemeļjūras, piemēram,
             anšovi, Atlantijas makreles, merlangi, kefales un citas. Latvijas piekrastē vairākas reizes atrastas arī
             izskalotas zobenzivis.

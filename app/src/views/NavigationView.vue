@@ -13,7 +13,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
         <div class="start-screen-cards">
             <router-link to="/info" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-info.png" alt="">
+                    <img src="@images/main-icons-info.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Baltijas jūras iemītnieki</div>
@@ -23,7 +23,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 
             <router-link to="/puzzle" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-puzzle.png" alt="">
+                    <img src="@images/main-icons-puzzle.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Kā veidota menca?</div>
@@ -33,7 +33,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 
             <router-link to="/animation1" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-anim1.png" alt="">
+                    <img src="@images/main-icons-anim1.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Kā izaug zivis?</div>
@@ -43,7 +43,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 
             <router-link to="/animation2" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-anim2.png" alt="">
+                    <img src="@images/main-icons-anim2.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Kā riesto stagari?</div>
@@ -53,7 +53,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 
             <router-link to="/edu1" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-edu1.png" alt="">
+                    <img src="@images/main-icons-edu1.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Baltijas jūra</div>
@@ -63,7 +63,7 @@ import NavigationBar from "@src/components/NavigationBar.vue";
 
             <router-link to="/edu2" class="card">
                 <div class="card-image">
-                    <img src="@images/main-icons-edu2.png" alt="">
+                    <img src="@images/main-icons-edu2.png" alt="" oncontextmenu="return false;">
                 </div>
                 <div class="text">
                     <div class="title">Barības ķēdes Baltijas jūrā</div>

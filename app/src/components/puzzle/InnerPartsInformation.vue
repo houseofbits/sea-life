@@ -21,7 +21,7 @@ const text = [
   'Barības vadā notiek uzņemtās barības sašķelšana.',
   // 'Liesa piedalās organisma imūnsistemas darbībā, noārda organismā iekļuvušos mikroorganismus un noārda novecojušos eritrocītus.',
   // 'Muguras aorta apgādā ar asinīm muskuļus un iekšējos orgānus',
-  'Kunģī nokļūst uzņemtā barība. Ir zivju sugas, kurām kunģa nav.'
+  'Kuņģī nokļūst uzņemtā barība. Ir zivju sugas, kurām kuņģa nav.'
 ];
 
 const callouts = [

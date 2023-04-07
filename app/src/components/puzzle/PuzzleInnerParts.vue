@@ -157,10 +157,10 @@ onMounted(() => {
     <span>Skelets</span>
   </div>
 
-  <div class="next-puzzle-button" @click="emit('next')">
-    <span>Ārējā uzbūve</span>
-    <img src="@images/chevron-right.svg" alt="" :class="{'bounce-right-anim': isComplete}">
-  </div>
+<!--  <div class="next-puzzle-button" @click="emit('next')">-->
+<!--    <span>Ārējā uzbūve</span>-->
+<!--    <img src="@images/chevron-right.svg" alt="" :class="{'bounce-right-anim': isComplete}">-->
+<!--  </div>-->
 
   <inner-parts-information v-if="isInfoVisible"/>
 

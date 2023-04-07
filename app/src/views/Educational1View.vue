@@ -86,7 +86,7 @@ onMounted(() => {
                 <span class="latin-title" v-html="selectedItem.latinTitle"></span>
             </span>
             <span v-else>
-                Baltijas Jūra
+                Baltijas jūra
             </span>
         </navigation-bar>
 
@@ -114,10 +114,11 @@ onMounted(() => {
             />
         </svg>
 
-<!--        <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">-->
-<!--            <img src="@images/arrow-left.svg" alt="">-->
-<!--            <span>Izvēlne</span>-->
-<!--        </div>-->
+        <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
+            <img src="@images/arrow-left.svg" alt="">
+            <span>Atpakaļ</span>
+        </div>
+
         <div v-if="currentPage!==0" class="back-filter" @click="selectPage(0)">
             <img src="@images/arrow-left.svg" alt="">
             <span>Uz sākumu</span>

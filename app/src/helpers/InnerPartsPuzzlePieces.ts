@@ -207,7 +207,7 @@ export default [
         initialPosition: new Vector2(1678, 952),
         targetPosition: new Vector2(810, 747),
         metadata: {
-            text: "Kunģis",
+            text: "Kuņģis",
             callout: new CalloutConfigStructure({
                 position: new Vector2(810, 532),
                 size: new Vector2(0, 218),

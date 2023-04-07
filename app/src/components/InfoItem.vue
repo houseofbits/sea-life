@@ -107,6 +107,7 @@ watch(() => props.isSelected, (isSelected: boolean) => {
                 :src="'/images/large/' + item.imageFileName"
                 :style="getImageTransform(item)"
                 alt=""
+                oncontextmenu="return false;"
             />
             <info-detail-view
                 v-if="isOpenOrLoading"
