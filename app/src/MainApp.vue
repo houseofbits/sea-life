@@ -24,22 +24,22 @@ const errorMessage = ref<string | null>(null);
 
 onMounted(() => {
 
-    isLoading.value = false;
+    isLoading.value = true;
 
-    // DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
-    //     detailContent.value = result;
-    //     setLanguages(detailContent.value.config.languages);
-    //     selectLanguage(detailContent.value.config.languages[0]);
-    //     setTranslations(detailContent.value.translatedCommon);
-    // }).catch(e => {
-    //     errorMessage.value = e.message;
-    // }).finally(() => {
-    //     isLoading.value = false;
-    // });
+    DetailViewService.fetchAllContent().then((result: DetailContentStructure) => {
+        detailContent.value = result;
+        setLanguages(detailContent.value.config.languages);
+        selectLanguage(detailContent.value.config.languages[0]);
+        setTranslations(detailContent.value.translatedCommon);
+    }).catch(e => {
+        errorMessage.value = e.message;
+    }).finally(() => {
+        isLoading.value = false;
+    });
 
-    // TimeoutService.registerCallback(() => {
-    //     router.push('/');
-    // });
+    TimeoutService.registerCallback(() => {
+        router.push('/');
+    });
 });
 
 </script>

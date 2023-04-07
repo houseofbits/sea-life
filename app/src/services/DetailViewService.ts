@@ -3,6 +3,7 @@ import DetailViewConfigStructure from "@src/structures/DetailViewConfigStructure
 import DetailListItem from "@src/structures/DetailListItem";
 import DetailCommonStructure from "@src/structures/DetailCommonStructure";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
+import {isArray} from "lodash";
 
 class DetailViewService extends HttpService {
 
@@ -21,11 +22,15 @@ class DetailViewService extends HttpService {
             structure.items.push(item);
         }
 
+        structure.items.sort((a: DetailListItem, b: DetailListItem) => {
+            const aVal = isArray(a.identifier) ? parseInt(a.identifier[0]) : parseInt(a.identifier);
+            const bVal = isArray(b.identifier) ? parseInt(b.identifier[0]) : parseInt(b.identifier);
+            return aVal - bVal;
+        });
+
         for (const language of structure.config.languages) {
             structure.translatedCommon[language] = await this.fetchCommonTexts(language);
         }
-
-        // this.preloadImages(structure.items);
 
         return structure;
     }

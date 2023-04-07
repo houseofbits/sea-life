@@ -48,9 +48,9 @@ watch(() => props.isActive, (active) => {
       active2.value = true
       setTimeout(() => {
         active3.value = true
-      }, 1000);
-    }, 800);
-  }, 300);
+      }, 8000);
+    }, 4000);
+  }, 1000);
 });
 
 </script>

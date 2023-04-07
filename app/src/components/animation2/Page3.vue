@@ -45,7 +45,7 @@ function prevPage(): void {
         </video>
     </div>
 
-    <div class="text-collapse-horizontal page1-text1" :class="{active: active1}">
+    <div class="text-collapse-horizontal page3-text1" :class="{active: active1}">
         <div>Stagaru tēviņš no augu gabaliņiem <strong>būvē ligzdu</strong>, salīmējot ar <strong>veidotiem lipīgiem
             izdalījumiem</strong>.
         </div>

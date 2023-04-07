@@ -40,8 +40,8 @@ watch(() => props.isActive, (active) => {
     active1.value = true
     setTimeout(() => {
       active2.value = true
-    }, 700);
-  }, 200);
+    }, 2500);
+  }, 1000);
 });
 
 </script>
