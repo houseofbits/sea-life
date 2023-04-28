@@ -4,6 +4,7 @@ import DetailListItem from "@src/structures/DetailListItem";
 import DetailCommonStructure from "@src/structures/DetailCommonStructure";
 import DetailContentStructure from "@src/structures/DetailContentStructure";
 import {isArray} from "lodash";
+import MapItemStructure from "@src/structures/MapItemStructure";
 
 class DetailViewService extends HttpService {
 
@@ -15,6 +16,8 @@ class DetailViewService extends HttpService {
         const structure = new DetailContentStructure();
 
         structure.config = await this.fetchConfig();
+
+        structure.mapItems = await this.fetchMapItems();
 
         structure.items = [];
         for (const listItemFilename of structure.config.listItems) {
@@ -51,6 +54,17 @@ class DetailViewService extends HttpService {
 
     async fetchCommonTexts(language: string = 'lv'): Promise<DetailCommonStructure> {
         return new DetailCommonStructure(await this.getContent(language, 'common.json'));
+    }
+
+    async fetchMapItems(): Promise<Array<MapItemStructure>> {
+        const items = await this.get('map.json');
+
+        const mapItems = [];
+        for (const item of items) {
+            mapItems.push(new MapItemStructure(item));
+        }
+
+        return mapItems;
     }
 
     preloadImages(translatedItems: Array<DetailListItem>): void {

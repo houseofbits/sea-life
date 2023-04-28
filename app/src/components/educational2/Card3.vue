@@ -65,7 +65,7 @@ function close(): void {
                     <div class="text">Ļoti reti Baltijas jūrā var novērot vaļus. Piemēram, 1976. gadā pie Kauguriem bija izskalots finvalis, bet 2006. gadā netālu no Duntes konstatēts miris kuprvalis.</div>
                 </div>
 
-                <div>Vitrīnās var aplūkot cūkdelfīnu un tā galvaskausu, pelēkā roņa galvaskausu. Ekspozīcijā kreisajā pusē apskatāms gan plankumainais, gan pelēkais ronis.</div>
+                <div>Pašā apakšā apskatāmi roņi.</div>
             </div>
 
             <div class="image-frame">

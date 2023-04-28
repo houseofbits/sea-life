@@ -1,0 +1,390 @@
+[
+  {
+    "itemId": 1,
+    "imageFileName": "map/gaigala.png",
+    "transform": {
+      "width": 86,
+      "height": 89,
+      "top": 330,
+      "left": 1140
+    }
+  },
+  {
+    "itemId": 2,
+    "imageFileName": "map/jurasvedzele.png",
+    "transform": {
+      "width": 110,
+      "height": 44,
+      "top": 555,
+      "left": 1060,
+      "angle": 45
+    }
+  },
+  {
+    "itemId": 3,
+    "imageFileName": "map/juras zirins.png",
+    "transform": {
+      "width": 93,
+      "height": 63,
+      "top": 438,
+      "left": 1136
+    }
+  },
+  {
+    "itemId": 4,
+    "imageFileName": "map/kaakaulis.png",
+    "transform": {
+      "width": 100,
+      "height": 88,
+      "top": 339,
+      "left": 1064
+    }
+  },
+  {
+    "itemId": 5,
+    "imageFileName": "map/lielaa gaura.png",
+    "transform": {
+      "width": 97,
+      "height": 87,
+      "top": 241,
+      "left": 1073
+    }
+  },
+  {
+    "itemId": 6,
+    "imageFileName": "map/melnkakla gargale.png",
+    "transform": {
+      "width": 78,
+      "height": 94,
+      "top": 236,
+      "left": 1149
+    }
+  },
+  {
+    "itemId": 7,
+    "imageFileName": "map/rona galvaskauss.png",
+    "transform": {
+      "width": 68,
+      "height": 33,
+      "top": 435,
+      "left": 1110,
+      "angle": 33
+    }
+  },
+  {
+    "itemId": 8,
+    "imageFileName": "map/ziemelu bulzivs.png",
+    "transform": {
+      "width": 87,
+      "height": 41,
+      "top": 540,
+      "left": 1145,
+      "angle": -40
+    }
+  },
+  {
+    "itemId": 9,
+    "imageFileName": "map/plekste.png",
+    "transform": {
+      "width": 65,
+      "height": 41,
+      "top": 535,
+      "left": 256,
+      "angle": 20
+    }
+  },
+  {
+    "itemId": 10,
+    "imageFileName": "map/ziemelu edamgliemenes daudz.png",
+    "transform": {
+      "width": 37,
+      "height": 26,
+      "top": 596,
+      "left": 276,
+      "angle": 3
+    }
+  },
+  {
+    "itemId": 11,
+    "imageFileName": "map/apalais-jurasgrundulis.png",
+    "transform": {
+      "width": 62,
+      "height": 33,
+      "top": 559,
+      "left": 330,
+      "angle": -12
+    }
+  },
+  {
+    "itemId": 12,
+    "imageFileName": "map/Juras zakis.png",
+    "transform": {
+      "width": 54,
+      "height": 38,
+      "top": 586,
+      "left": 325
+    }
+  },
+  {
+    "itemId": 13,
+    "imageFileName": "map/lucitis.png",
+    "transform": {
+      "width": 81,
+      "height": 33,
+      "top": 547,
+      "left": 392
+    }
+  },
+  {
+    "itemId": 14,
+    "imageFileName": "map/pluksnzivs.png",
+    "transform": {
+      "width": 45,
+      "height": 21,
+      "top": 580,
+      "left": 428
+    }
+  },
+  {
+    "itemId": 15,
+    "imageFileName": "map/3trisadatu-stagars.png",
+    "transform": {
+      "width": 40,
+      "height": 20,
+      "top": 639,
+      "left": 790
+    }
+  },
+  {
+    "itemId": 16,
+    "imageFileName": "map/cuskzivs.png",
+    "transform": {
+      "width": 79,
+      "height": 15,
+      "top": 615,
+      "left": 430,
+      "angle": -10
+    }
+  },
+  {
+    "itemId": 17,
+    "imageFileName": "map/Juras dzelongalve.png",
+    "transform": {
+      "width": 44,
+      "height": 31,
+      "top": 582,
+      "left": 471
+    }
+  },
+  {
+    "itemId": 18,
+    "imageFileName": "map/akmenplekste.png",
+    "transform": {
+      "width": 72,
+      "height": 51,
+      "top": 607,
+      "left": 535,
+      "angle": -26
+    }
+  },
+  {
+    "itemId": 19,
+    "imageFileName": "map/juraskrauklis.png",
+    "transform": {
+      "width": 144,
+      "height": 115,
+      "top": 232,
+      "left": 188
+    }
+  },
+  {
+    "itemId": 20,
+    "imageFileName": "map/puslu fuks.png",
+    "transform": {
+      "width": 102,
+      "height": 84,
+      "top": 540,
+      "left": 555,
+      "angle": 4
+    }
+  },
+  {
+    "itemId": 21,
+    "imageFileName": "map/KINAS CIMDINKRABIS.png",
+    "transform": {
+      "width": 62,
+      "height": 45,
+      "top": 625,
+      "left": 620,
+      "angle": -145
+    }
+  },
+  {
+    "itemId": 22,
+    "imageFileName": "map/menca.png",
+    "transform": {
+      "width": 156,
+      "height": 73,
+      "top": 492,
+      "left": 610,
+      "angle": 15
+    }
+  },
+  {
+    "itemId": 23,
+    "imageFileName": "map/niglins.png",
+    "transform": {
+      "width": 74,
+      "height": 18,
+      "top": 626,
+      "left": 667,
+      "angle": 8
+    }
+  },
+  {
+    "itemId": 24,
+    "imageFileName": "map/lielaa smilsgliemene.png",
+    "transform": {
+      "width": 46,
+      "height": 29,
+      "top": 646,
+      "left": 684,
+      "angle": -5
+    }
+  },
+  {
+    "itemId": 25,
+    "imageFileName": "map/tubite.png",
+    "transform": {
+      "width": 51,
+      "height": 17,
+      "top": 622,
+      "left": 745
+    }
+  },
+  {
+    "itemId": 26,
+    "imageFileName": "map/Lamarka sirsniņgliemene.png",
+    "transform": {
+      "width": 30,
+      "height": 23,
+      "top": 661,
+      "left": 797
+    }
+  },
+  {
+    "itemId": 27,
+    "imageFileName": "map/jurasgrundulis.png",
+    "transform": {
+      "width": 69,
+      "height": 31,
+      "top": 613,
+      "left": 370
+    }
+  },
+  {
+    "itemId": 28,
+    "imageFileName": "map/Baltijas plakangliemene 1.png",
+    "transform": {
+      "width": 32,
+      "height": 23,
+      "top": 639,
+      "left": 753
+    }
+  },
+  {
+    "itemId": 29,
+    "imageFileName": "map/cukdelfins2.png",
+    "transform": {
+      "width": 292,
+      "height": 146,
+      "top": 365,
+      "left": 130,
+      "angle": 5
+    }
+  },
+  {
+    "itemId": 29,
+    "imageFileName": "map/cukdelfina galvaskauss.png",
+    "transform": {
+      "width": 82,
+      "height": 42,
+      "top": 455,
+      "left": 1070,
+      "angle": 20
+    }
+  },
+  {
+    "itemId": 30,
+    "imageFileName": "map/bretlina.png",
+    "transform": {
+      "width": 76,
+      "height": 43,
+      "top": 282,
+      "left": 448
+    }
+  },
+  {
+    "itemId": 31,
+    "imageFileName": "map/lasis.png",
+    "transform": {
+      "width": 145,
+      "height": 71,
+      "top": 309,
+      "left": 530
+    }
+  },
+  {
+    "itemId": 32,
+    "imageFileName": "map/renge.png",
+    "transform": {
+      "width": 77,
+      "height": 65,
+      "top": 250,
+      "left": 664
+    }
+  },
+  {
+    "itemId": 33,
+    "imageFileName": "map/vejzivs.png",
+    "transform": {
+      "width": 136,
+      "height": 26,
+      "top": 335,
+      "left": 730
+    }
+  },
+  {
+    "itemId": 34,
+    "imageFileName": "map/siga.png",
+    "transform": {
+      "width": 84,
+      "height": 26,
+      "top": 530,
+      "left": 815,
+      "angle": -10
+    }
+  },
+  {
+    "itemId": 35,
+    "imageFileName": "map/store.png",
+    "transform": {
+      "width": 122,
+      "height": 57,
+      "top": 536,
+      "left": 129,
+      "angle": -10
+    }
+  },
+  {
+    "itemId": 36,
+    "imageFileName": "map/cetrragu bulzivs.png",
+    "transform": {
+      "width": 66,
+      "height": 32,
+      "top": 571,
+      "left": 216,
+      "angle": -5
+    }
+  }
+]

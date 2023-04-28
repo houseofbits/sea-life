@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Tēviņš pēc nārsta apsargā ikrus.",
-    "identifier": "37",
+    "identifier": "36",
     "imageFileName": "ziemelu bulzivs.png",
     "group": 1,
     "thumbnailImageTransform": {
@@ -51,12 +51,5 @@
         "height": 295,
         "top": 622,
         "left": 184
-    },
-    "mapImageTransform": {
-        "width": 87,
-        "height": 41,
-        "top": 573,
-        "left": 1072,
-        "angle": -5
     }
 }

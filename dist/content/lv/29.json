@@ -28,19 +28,20 @@
     ],
     "fact": "Nelec ārā no ūdens kā citi delfīni. Mazās galvas un strupā purna dēļ cūkdelfīnu sauc arī par jūrascūku.",
     "identifier": ["2", "35"],
-    "imageFileName": "cukdelfins.png",
+    "imageFileName": "cukdelfins2.png",
+    "mapImageFileName": "cukdelfins2.png",
     "group": 3,
     "thumbnailImageTransform": {
-        "left": -390,
-        "top": -50,
+        "left": -400,
+        "top": -130,
         "width": 822,
-        "angle": 18
+        "angle": 6
     },
     "detailImageTransform": {
-        "left": 100,
-        "top": 380,
-        "width": 826,
-        "angle": 18
+        "left": 76,
+        "top": 191,
+        "width": 991,
+        "angle": 0
     },
     "factTextTransform": {
         "height": 235,
@@ -52,12 +53,5 @@
         "height": 238,
         "top": 679,
         "left": 184
-    },
-    "mapImageTransform": {
-        "width": 292,
-        "height": 146,
-        "top": 365,
-        "left": 130,
-        "angle": 5
     }
 }

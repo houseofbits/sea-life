@@ -11,8 +11,9 @@
     padding-left: 12px;
     width: 0;
     overflow: hidden;
-    transition: opacity 1000ms ease-in 0ms, width 800ms ease-in 700ms;
+    transition: opacity 1000ms ease-in 0ms, width 800ms ease-in 700ms, border-left-width 300ms, border-left-color 300ms;
     opacity: 0;
+    box-sizing: content-box;
 
     & div {
         height: 100%;
@@ -27,6 +28,18 @@
         opacity: 1;
         border-left: solid 1px #222222;
         width: 800px;
+    }
+
+    &.faded {
+        opacity: 0.4;
+
+        &.active {
+            opacity: 0.4;
+        }
+
+        &.hilight {
+            opacity: 1;
+        }
     }
 
     &.page1-text1 {

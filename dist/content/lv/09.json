@@ -52,12 +52,5 @@
         "top": 679,
         "left": 184,
         "width": 600
-    },
-    "mapImageTransform": {
-        "width": 65,
-        "height": 41,
-        "top": 535,
-        "left": 256,
-        "angle": 20
     }
 }

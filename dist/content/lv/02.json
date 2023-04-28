@@ -27,7 +27,7 @@
         }
     ],
     "fact": "Atšķirībā no citām zivīm no pirmās muguras spuras labi attīstīts ir pirmais stars, kas padara šo zivi viegli atšķiramu no citām.",
-    "identifier": "36",
+    "identifier": "37",
     "imageFileName": "jurasvedzele.png",
     "group": 1,
     "thumbnailImageTransform": {
@@ -50,12 +50,5 @@
         "height": 164,
         "top": 650,
         "left": 645
-    },
-    "mapImageTransform": {
-        "width": 110,
-        "height": 44,
-        "top": 530,
-        "left": 1098,
-        "angle": 24
     }
 }

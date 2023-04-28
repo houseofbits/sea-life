@@ -22,7 +22,7 @@ export default class DetailListItem {
     familyTextTransform: ElementTransform;
     factTextTransform: ElementTransform;
     translatedItems: { [key: string]: Partial<DetailListItem> } = {};
-    mapImageTransform: ElementTransform;
+    // mapImageTransform: ElementTransform;
 
     constructor(params: Partial<DetailListItem>) {
         this.id = params?.id || 0;
@@ -38,7 +38,7 @@ export default class DetailListItem {
         this.mapImageFileName = params?.mapImageFileName || this.imageFileName;
         this.videoFileName = params?.videoFileName || null;
         this.thumbnailImageTransform = new ElementTransform(params?.thumbnailImageTransform || {});
-        this.mapImageTransform = new ElementTransform(params?.mapImageTransform || {});
+        // this.mapImageTransform = new ElementTransform(params?.mapImageTransform || {});
         this.detailImageTransform = new ElementTransform(params?.detailImageTransform || {});
         this.familyTextTransform = new ElementTransform(params?.familyTextTransform || {});
         this.factTextTransform = new ElementTransform(params?.factTextTransform || {});
