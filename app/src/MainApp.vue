@@ -38,6 +38,7 @@ onMounted(() => {
     });
 
     TimeoutService.registerCallback(() => {
+        selectLanguage('lv');
         router.push('/');
     });
 });

@@ -124,7 +124,7 @@ watch(() => props.isActive, (value: boolean) => {
 
   <div class="page3-card" :style="cardTransform(0)" @click="selectCard(0)">
     <div class="video page3-card-video">
-      <video muted loop ref="page3Video0">
+      <video muted loop ref="page3Video0" disablePictureInPicture>
         <source src="/video/Kartina_4.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -135,7 +135,7 @@ watch(() => props.isActive, (value: boolean) => {
 
   <div class="page3-card" :style="cardTransform(1)" @click="selectCard(1)">
     <div class="video page3-card-video">
-      <video muted loop ref="page3Video1">
+      <video muted loop ref="page3Video1" disablePictureInPicture>
         <source src="/video/Kartina_2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -146,7 +146,7 @@ watch(() => props.isActive, (value: boolean) => {
 
   <div class="page3-card" :style="cardTransform(2)" @click="selectCard(2)">
     <div class="video page3-card-video">
-      <video muted loop ref="page3Video2">
+      <video muted loop ref="page3Video2" disablePictureInPicture>
         <source src="/video/Kartina_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -157,7 +157,7 @@ watch(() => props.isActive, (value: boolean) => {
 
   <div class="page3-card" :style="cardTransform(3)" @click="selectCard(3)">
     <div class="video page3-card-video">
-      <video muted loop ref="page3Video3">
+      <video muted loop ref="page3Video3" disablePictureInPicture>
         <source src="/video/Kartina_5.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -170,7 +170,7 @@ watch(() => props.isActive, (value: boolean) => {
 
   <div class="page3-card" :style="cardTransform(4)" @click="selectCard(4)">
     <div class="video page3-card-video">
-      <video muted loop ref="page3Video4">
+      <video muted loop ref="page3Video4" disablePictureInPicture>
         <source src="/video/Kartina_3.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>

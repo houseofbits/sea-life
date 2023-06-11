@@ -59,7 +59,7 @@ watch(() => props.isActive, (active) => {
     <img src="@images/anim1-page2-bg.svg" alt="">
 
     <div class="video page2-video">
-      <video muted loop ref="page2Video">
+      <video muted loop ref="page2Video" disablePictureInPicture>
         <source src="/video/Mamma_Tetis.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>

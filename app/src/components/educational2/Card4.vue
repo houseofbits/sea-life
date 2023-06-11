@@ -51,8 +51,8 @@ function close(): void {
             <svg class="background" width="1090" height="662" viewBox="0 0 1090 662" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
-                    d="M984.691 71.33C702.844 305.181 641.541 716.6 317.537 601.692C204.783 561.703 95.4544 596.674 2 662.421L1089.5 662.421L1089.5 1.49998C1055.08 25.3791 1019.98 42.054 984.691 71.33Z"
-                    fill="#D4E1E9" stroke="#D4E1E9"/>
+                        d="M984.691 71.33C702.844 305.181 641.541 716.6 317.537 601.692C204.783 561.703 95.4544 596.674 2 662.421L1089.5 662.421L1089.5 1.49998C1055.08 25.3791 1019.98 42.054 984.691 71.33Z"
+                        fill="#D4E1E9" stroke="#D4E1E9"/>
             </svg>
 
             <div class="text-frame">
@@ -70,35 +70,36 @@ function close(): void {
                     </div>
                     <div class="sub-text">Zem sārtaļģu joslas augi vairs nav atrodami, taču ir sastopami dzīvnieki.
                     </div>
-                    <div class="small-cards">
-                        <div>
-                            <svg width="200" height="57" viewBox="0 0 200 57" fill="none"
+
+                    <div class="single-card">
+                        <div class="absolute-wrapper">
+                            <svg width="853" height="244" viewBox="0 0 853 244" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M200.5 57H-0.50293V23.4374C10.0202 12.5396 32.7903 0.929738 76.2823 0.063795C143.932 -1.28313 164.601 19.1031 200.5 22.9796V57Z"
-                                    fill="#D4E1E9"/>
+                                <g clip-path="url(#clip0_1312_772)">
+                                    <rect width="853" height="244" fill="white"/>
+                                    <path d="M578.563 -4.82649C224.568 -20.4216 7.53394 -3.4576 -224.943 4.26002C-301.253 6.79333 -345.486 -0.0960721 -403.638 -12.3349L-404.387 152.746L875.296 158.551L867.49 -20.7595C778.751 -31.5497 703.374 0.672048 578.563 -4.82649Z"
+                                          fill="#D4E1E9"/>
+                                    <path d="M382.881 46.6724C-102.788 28.0051 -187.237 67.2956 -422.738 82.9909C-500.041 88.1429 -560.255 85.0182 -619.628 79.1703L-614.97 193.075L903 161L957.5 43.5679L679.001 43.5679C588.657 40.0839 482.351 50.4956 382.881 46.6724Z"
+                                          fill="#C8D7E0"/>
+                                    <path d="M971.696 124.717C489.588 63.118 401.991 94.7764 166.026 89.5571C88.5701 87.8439 23.4236 89.2731 -35.1988 78.1909L-35.1988 182.187L1262.32 244.235L1266.93 147.845C1177.25 136.375 1070.44 137.333 971.696 124.717Z"
+                                          fill="#BFCED7"/>
+                                    <path d="M348 121.499C191.5 82 143.5 105.001 62.4999 67.5C23.4792 49.4345 17.9999 31 -11.5001 31L-225 248L406.317 280.743L1038 294.5L864 186.5L645.499 162.999C589 155 401.905 135.105 348 121.499Z"
+                                          fill="white" stroke="#D4E1E9"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1312_772">
+                                        <rect width="853" height="244" fill="white"/>
+                                    </clipPath>
+                                </defs>
                             </svg>
-                            <span>Zaļaļģes</span>
-                        </div>
-                        <div>
-                            <svg width="200" height="80" viewBox="0 0 200 80" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M163.392 28.2777C114.856 31.4111 99.5639 -1.80308 21.7739 0.0769701C13.4366 0.278467 5.86547 0.962119 -1 2.02877V79.5H200V23.8397C187.081 25.8908 174.728 27.5458 163.392 28.2777Z"
-                                    fill="#D4E1E9"/>
-                            </svg>
-                            <span>Brūnaļģes</span>
-                        </div>
-                        <div>
-                            <svg width="200" height="106" viewBox="0 0 200 106" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M154.896 2.05179C116.845 -5.37807 66.2772 28.5868 29.728 33.8938C17.7308 35.6359 8.43086 30.7447 -0.72168 23.5001V107H200.5V17.3828C186.539 11.0985 170.307 5.06088 154.896 2.05179Z"
-                                    fill="#D4E1E9"/>
-                            </svg>
-                            <span>Sārtaļģes</span>
+
+                            <div class="text first">Zaļaļģes</div>
+                            <div class="text second">Brūnaļģes</div>
+                            <div class="text third">Sārtaļģes</div>
+                            <div class="text note">Gultne</div>
                         </div>
                     </div>
+
                     <div class="annotation">*Ilustrācijā redzamas dažādas dziļumu joslas kurās sastopamas aļģes</div>
                 </div>
 

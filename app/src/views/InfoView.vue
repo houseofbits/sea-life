@@ -127,6 +127,10 @@ function selectItemFromModal(itemId: number): void {
     setTimeout(() => selectItem(itemId), 500);
 }
 
+const isBackButtonVisible = computed(() => {
+    return selectedLanguage.value === 'lv';
+});
+
 function navigateToMain(): void {
     router.push('/');
 }
@@ -213,7 +217,7 @@ function navigateToMain(): void {
             <span>{{ translations.map }}</span>
         </div>
 
-        <div v-if="!selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">
+        <div v-if="isBackButtonVisible && !selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">
             <img src="@images/arrow-left.svg" alt="">
             <span>Atpakaļ</span>
         </div>

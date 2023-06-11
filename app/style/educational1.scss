@@ -47,7 +47,8 @@
 
     &.page2-position {
         left: 200px;
-        top: 278px;
+        top: 250px;
+        width: 752px;
     }
 
     &.page3-position {
@@ -202,6 +203,32 @@
         margin-bottom: 24px;
     }
 
+    .mb40 {
+        margin-bottom: 40px;
+    }
+
+    .numeric-row-half {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+
+        & .numeric-row {
+            max-width: 356px;
+        }
+
+        & .line-l {
+            height: 40px;
+            width: 170px;
+            border-right: 1px solid #D4E1E9;
+        }
+        & .line-r {
+            height: 40px;
+            width: 170px;
+            border-left: 1px solid #D4E1E9;
+        }
+    }
+
     & .card {
         background-color: white;
         box-sizing: border-box;
@@ -215,6 +242,40 @@
         border-radius: 10px;
         margin-right: 40px;
 
+        &.numeric-row {
+            flex-direction: row;
+            padding: 24px;
+            width: 100%;
+            flex-grow: 1;
+            margin: 0;
+            justify-content: flex-start;
+
+            & .number {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.1px;
+                color: #729DB7;
+                margin-right: 24px;
+            }
+
+            & .text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.1px;
+                color: #729DB7;
+                border-left: 1px solid #D4E1E9;
+                padding-left: 24px;
+            }
+        }
 
         & .title {
             font-style: normal;

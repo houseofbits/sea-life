@@ -47,7 +47,7 @@ onMounted(() => {
 
   <div class="video-1">
     <div class="globe-border"></div>
-    <video width="1016" height="1019" muted loop ref="mainVideo">
+    <video width="1016" height="1019" muted loop ref="mainVideo" disablePictureInPicture>
       <source src="/video/Globuss.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>

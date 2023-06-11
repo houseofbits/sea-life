@@ -94,21 +94,38 @@ onMounted(() => {
             sāļums ir tik neliels, ka te ir sastopamas praktiski visas mūsu saldūdens zivju sugas.
         </div>
 
-        <div class="cards-block">
-            <div class="card">
-                <div class="title">Baltijas jūrā kopumā</div>
-
-                <WaterLevel :is-active="active1" :wave-x="-350" :wave-y="10" :wave-scale="2.0">240</WaterLevel>
+        <div class="mb40">
+            <div class="card numeric-row">
+                <div class="number">240</div>
+                <div class="text">Zivju sugas Baltijas jūrā kopumā</div>
             </div>
-            <div class="card">
-                <div class="title">Attiecināms uz Baltijas jūru</div>
 
-                <WaterLevel :is-active="active1" :wave-x="-240" :wave-y="50" :wave-scale="2.0">152</WaterLevel>
+            <div class="numeric-row-half">
+                <div class="line-l"></div>
+                <div class="line-r"></div>
             </div>
-            <div class="card">
-                <div class="title">Uz pārejas ūdeņiem ar Ziemeļjūru</div>
 
-                <WaterLevel :is-active="active1" :wave-x="-270" :wave-y="20" :wave-scale="2.0">88</WaterLevel>
+            <div class="numeric-row-half">
+                <div class="card numeric-row">
+                    <div class="number">152</div>
+                    <div class="text">Attiecināmas uz Baltijas jūru</div>
+                </div>
+
+                <div class="card numeric-row">
+                    <div class="number">88</div>
+                    <div class="text">Uz pārējiem ūdeņiem ar Ziemeļjūru</div>
+                </div>
+            </div>
+
+            <div class="numeric-row-half">
+                <div class="line-l"></div>
+            </div>
+
+            <div class="numeric-row-half">
+                <div class="card numeric-row">
+                    <div class="number">32</div>
+                    <div class="text">Latvijas ūdeņos sastopamās sugas</div>
+                </div>
             </div>
         </div>
 

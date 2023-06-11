@@ -28,7 +28,7 @@ watch(() => props.isActive, (value: boolean) => {
 </script>
 <template>
     <div class="info-video-1">
-      <video muted loop ref="infoVideo">
+      <video muted loop ref="infoVideo" disablePictureInPicture>
         <source :src="props.item.videoFileName" type="video/mp4">
         Your browser does not support the video tag.
       </video>

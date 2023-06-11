@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import NavigationBar from "@src/components/NavigationBar.vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
+
+const {
+    translations,
+    languages,
+    selectedLanguage,
+    selectLanguage,
+} = DetailTranslations();
+
 </script>
 <template>
     <div class="content-1080p bg-white">

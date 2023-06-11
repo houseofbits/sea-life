@@ -79,7 +79,7 @@ function prevPage(): void {
             <span>Video no DAPa ar Baltijas jūras gultni</span>
             <img class="close" src="@images/cross.svg" alt="">
         </div>
-        <video class="content" muted loop ref="mainVideo">
+        <video class="content" muted loop ref="mainVideo" disablePictureInPicture>
             <source src="/video/LHEI_2021.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
