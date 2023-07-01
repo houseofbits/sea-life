@@ -9,8 +9,10 @@ spl_autoload_register(function ($class_name) {
     include './editor/' . $class_name . '.php';
 });
 
-$encoded_passphrase = '$2y$10$an9ZyXTrqC1F9a04dcTpLOR/yxXhIUfRijM6dlr2bRqp5hVlb1GA.';
-//var_dump(password_hash('krists', PASSWORD_DEFAULT));
+$encoded_passphrase = file_get_contents('../edit.pass');
+if (empty($encoded_passphrase)) {
+    $encoded_passphrase = '$2y$10$TzwCk685VY5oVqCdSMW1kO95C6Z5FgQPXaP7QG.9UiufsUu5MFwl6';       //var_dump(password_hash('80L9CUh@XSH6oZjSMh', PASSWORD_DEFAULT)); exit
+}
 
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])
     && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
