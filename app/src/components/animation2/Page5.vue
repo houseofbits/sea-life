@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref, watch} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
     isActive: {
@@ -48,25 +50,21 @@ function prevPage(): void {
     </div>
 
     <div class="text-collapse-horizontal page5-text1" :class="{active: active1}">
-        <div>Pēc pēdējo ikriņu apaugļošanas <strong>tēviņš apsargā ligzdu</strong>, apgādā ar svaigu, ar skābekli bagātu
-            ūdeni, kustinādams krūšu spuras.
-        </div>
+        <div v-html="lang('anim2.page5.text1')"/>
     </div>
 
     <div class="text-collapse-horizontal page5-text2" :class="{active: active2}">
-        <div>Kad no ikriņiem <strong>izšķīlušies</strong> kāpuri, tēviņš apmēram <strong>nedēļu aizsargā</strong> arī
-            tos.
-        </div>
+        <div v-html="lang('anim2.page5.text2')"/>
     </div>
 
     <div class="page-navigation-link horizontal right" @click="emit('next')">
-        <span>Turpināt</span>
+        <span>{{ lang('common.continue') }}</span>
         <img src="@images/chevron-right.svg" :class="{'bounce-right-anim':continueBounce}" alt="">
     </div>
 
     <div class="page-navigation-link horizontal left" @click="prevPage">
         <img src="@images/chevron-left.svg" alt="">
-        <span>Atpakaļ</span>
+        <span>{{ lang('common.back') }}</span>
     </div>
 
 </template>

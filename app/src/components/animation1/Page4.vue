@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref, watch} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
   isActive: {
@@ -117,10 +119,7 @@ watch(() => props.isActive, (value: boolean) => {
 </script>
 <template>
 
-  <div class="anim1-page2-header">
-    <span>Pēc nārsta <strong>ikri</strong> dažādām zivīm </span>
-    <strong>attīstās dažādās vietās. </strong>
-  </div>
+  <div class="anim1-page2-header" v-html="lang('anim1.page4.title')"></div>
 
   <div class="page3-card" :style="cardTransform(0)" @click="selectCard(0)">
     <div class="video page3-card-video">
@@ -129,8 +128,8 @@ watch(() => props.isActive, (value: boolean) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="title">Plekstes</div>
-    <div class="description">Ikri brīvi peld virs grunts</div>
+    <div class="title">{{ lang('anim1.page4.card1.title') }}</div>
+    <div class="description">{{ lang('anim1.page4.card1.text') }}</div>
   </div>
 
   <div class="page3-card" :style="cardTransform(1)" @click="selectCard(1)">
@@ -140,8 +139,8 @@ watch(() => props.isActive, (value: boolean) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="title">Mencas</div>
-    <div class="description">Ikri ir peldoši</div>
+      <div class="title">{{ lang('anim1.page4.card2.title') }}</div>
+      <div class="description">{{ lang('anim1.page4.card2.text') }}</div>
   </div>
 
   <div class="page3-card" :style="cardTransform(2)" @click="selectCard(2)">
@@ -151,8 +150,8 @@ watch(() => props.isActive, (value: boolean) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="title">Lasis</div>
-    <div class="description">Ikrus ierok oļos</div>
+      <div class="title">{{ lang('anim1.page4.card3.title') }}</div>
+      <div class="description">{{ lang('anim1.page4.card3.text') }}</div>
   </div>
 
   <div class="page3-card" :style="cardTransform(3)" @click="selectCard(3)">
@@ -162,10 +161,8 @@ watch(() => props.isActive, (value: boolean) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="title">Vējzivs</div>
-    <div class="description">ikriem ir daudz pavedieniņu, ar kuriem tie piestiprinēs pie augiem vai peldošiem
-      priekšmetiem.
-    </div>
+      <div class="title">{{ lang('anim1.page4.card4.title') }}</div>
+      <div class="description">{{ lang('anim1.page4.card4.text') }}</div>
   </div>
 
   <div class="page3-card" :style="cardTransform(4)" @click="selectCard(4)">
@@ -175,8 +172,8 @@ watch(() => props.isActive, (value: boolean) => {
         Your browser does not support the video tag.
       </video>
     </div>
-    <div class="title">Reņģes</div>
-    <div class="description">Savējos pielipina pie aļģēm</div>
+      <div class="title">{{ lang('anim1.page4.card5.title') }}</div>
+      <div class="description">{{ lang('anim1.page4.card5.text') }}</div>
   </div>
 
   <div class="page3-navigator">
@@ -185,19 +182,17 @@ watch(() => props.isActive, (value: boolean) => {
   </div>
 
   <div class="page-navigation-link horizontal right" @click="nextPage">
-    <span>Turpināt</span>
+    <span>{{ lang('common.continue') }}</span>
     <img src="@images/chevron-right.svg" alt="" class="bounce-right-anim">
   </div>
 
   <div class="page-navigation-link horizontal left" @click="prevPage">
     <img src="@images/chevron-left.svg" alt="">
-    <span>Atpakaļ</span>
+    <span>{{ lang('common.back') }}</span>
   </div>
 
   <div class="back-filter" @click="emit('restart')">
     <img src="@images/arrow-left.svg" alt="">
-    <span>Uz sākumu</span>
+    <span>{{ lang('common.toBeginning') }}</span>
   </div>
-
-
 </template>

@@ -24,6 +24,7 @@ const {
     languages,
     selectedLanguage,
     selectLanguage,
+    lang
 } = DetailTranslations();
 
 const {
@@ -143,7 +144,7 @@ function navigateToMain(): void {
         <navigation-bar :languages="languages" @selectLanguage="selectLanguage">
 
           <span v-if="!selectedItemId" @click="selectGroup(null)">
-            {{ translations.title }}
+            {{ lang('species.title') }}
           </span>
             <span v-else>
                 {{ itemTitle }}
@@ -151,31 +152,31 @@ function navigateToMain(): void {
               </span>
 
             <template #links v-if="!selectedItemId">
-        <span class="group-links">
-          <a href="#" v-for="group in translations.groups" @click="selectGroup(group.group)"
-             :class="{active: isActiveGroup(group.group)}">
-            {{ group.title }}
-          </a>
-        </span>
+              <span class="group-links">
+                <a href="#" @click="selectGroup(1)" :class="{active: isActiveGroup(1)}">{{ lang('species.group1') }}</a>
+                <a href="#" @click="selectGroup(2)" :class="{active: isActiveGroup(2)}">{{ lang('species.group2') }}</a>
+                <a href="#" @click="selectGroup(3)" :class="{active: isActiveGroup(3)}">{{ lang('species.group3') }}</a>
+                <a href="#" @click="selectGroup(4)" :class="{active: isActiveGroup(4)}">{{ lang('species.group4') }}</a>
+              </span>
             </template>
 
         </navigation-bar>
 
         <div
-            v-for="page in allPages"
-            :key="page.id"
-            class="full-slider-container cards-container initial-right"
-            :class="[getAnimationState(page)]"
+                v-for="page in allPages"
+                :key="page.id"
+                class="full-slider-container cards-container initial-right"
+                :class="[getAnimationState(page)]"
         >
 
             <info-item
-                v-for="item in page.items"
-                v-if="getAnimationState(page)"
-                :key="page.id + '-' + item.id"
-                :item="item.getTranslatedItem(selectedLanguage)"
-                :is-selected="isItemSelected(item)"
-                @close="closeItem"
-                @map="openMapModal"
+                    v-for="item in page.items"
+                    v-if="getAnimationState(page)"
+                    :key="page.id + '-' + item.id"
+                    :item="item.getTranslatedItem(selectedLanguage)"
+                    :is-selected="isItemSelected(item)"
+                    @close="closeItem"
+                    @map="openMapModal"
             />
 
         </div>
@@ -189,10 +190,10 @@ function navigateToMain(): void {
 
         <ul class="footer" v-if="pages.length > 1">
             <li
-                v-for="page in pages"
-                :key="'ul-' + page.id"
-                :class="{active: isActivePage(page)}"
-                @click="selectPage(page)"
+                    v-for="page in pages"
+                    :key="'ul-' + page.id"
+                    :class="{active: isActivePage(page)}"
+                    @click="selectPage(page)"
             ></li>
 
         </ul>
@@ -201,25 +202,26 @@ function navigateToMain(): void {
              @click="selectGroup(null)"
              v-if="!selectedItemId && !isActiveGroup(null)">
             <img src="@images/arrow-left.svg" alt="">
-            <span>{{ translations.mainFilterButton }}</span>
+            <span>{{ lang('species.mainFilterButton') }}</span>
         </div>
 
         <navigation-modal
-            v-if="isMapModalOpen"
-            :selected-item-id="parseInt(selectedItemId)"
-            :items="allItems"
-            @close="closeMapModal"
-            @select="selectItemFromModal"
+                v-if="isMapModalOpen"
+                :selected-item-id="parseInt(selectedItemId)"
+                :items="allItems"
+                @close="closeMapModal"
+                @select="selectItemFromModal"
         />
 
         <div class="map-button info-map" @click="openMapModal">
             <img src="@images/map.svg" alt="">
-            <span>{{ translations.map }}</span>
+            <span>{{ lang('species.map') }}</span>
         </div>
 
-        <div v-if="isBackButtonVisible && !selectedItemId && isActiveGroup(null)" class="back-filter" @click="navigateToMain">
+        <div v-if="isBackButtonVisible && !selectedItemId && isActiveGroup(null)" class="back-filter"
+             @click="navigateToMain">
             <img src="@images/arrow-left.svg" alt="">
-            <span>Atpakaļ</span>
+            <span>{{ lang('common.back') }}</span>
         </div>
 
     </div>

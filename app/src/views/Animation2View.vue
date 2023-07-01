@@ -10,8 +10,10 @@ import Page6 from "@src/components/animation2/Page6.vue";
 import NumericPagination from "@src/composables/NumericPagination";
 import {onMounted} from "vue";
 import InputHandlerService from "@src/services/InputHandlerService";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
 const router = useRouter();
+const {lang} = DetailTranslations();
 
 const pageComponents = [
   Page1,
@@ -65,12 +67,12 @@ onMounted(() => {
 <template>
   <div class="content-1080p bg-white anim2-container">
     <navigation-bar>
-      <span>Stagara riests</span>
+      <span>{{ lang('anim2.title') }}</span>
       <template #links>
         <span class="group-links">
-          <a href="#" @click="navigateToPuzzle">Saliec mencu</a>
-          <a href="#" @click="navigateToAnimation1">Attīstība</a>
-          <a href="#" class="active">Stagara riests</a>
+          <a href="#" @click="navigateToPuzzle">{{ lang('puzzle.title') }}</a>
+          <a href="#" @click="navigateToAnimation1">{{ lang('anim1.title') }}</a>
+          <a href="#" class="active">{{ lang('anim2.title') }}</a>
         </span>
       </template>
     </navigation-bar>
@@ -82,12 +84,12 @@ onMounted(() => {
 
     <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
       <img src="@images/arrow-left.svg" alt="">
-      <span>Atpakaļ</span>
+      <span>{{ lang('common.back') }}</span>
     </div>
 
     <div v-if="currentPage!==0" class="back-filter" @click="selectPage(0)">
       <img src="@images/arrow-left.svg" alt="">
-      <span>Uz sākumu</span>
+      <span>{{ lang('common.toBeginning') }}</span>
     </div>
   </div>
 </template>

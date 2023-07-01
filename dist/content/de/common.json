@@ -1,27 +1,13 @@
 {
-  "title": "Bewohner der Ostsee",
-  "backButton": "Zurück",
-  "order": "Ordnung",
-  "family": "Familie",
-  "mainFilterButton": "Zurück zu allen",
-  "map": "Karte",
-  "learnMoreButton": "Finde mehr heraus",
-  "groups": [
-    {
-      "group": 1,
-      "title": "Vögel"
-    },
-    {
-      "group": 2,
-      "title": "Fisch"
-    },
-    {
-      "group": 3,
-      "title": "Krebstiere"
-    },
-    {
-      "group": 4,
-      "title": "Muscheln"
-    }
-  ]
+  "species.title": "Bewohner der Ostsee",
+  "species.backButton": "Zurück",
+  "species.order": "Ordnung",
+  "species.family": "Familie",
+  "species.mainFilterButton": "Zurück zu allen",
+  "species.map": "Karte",
+  "species.learnMoreButton": "Finde mehr heraus",
+  "species.group1": "Fisch",
+  "species.group2": "Vögel",
+  "species.group3": "Krebstiere",
+  "species.group4": "Muscheln"
 }

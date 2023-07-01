@@ -7,7 +7,9 @@ import IconCallout from "@src/components/puzzle/IconCallout.vue";
 import {onMounted, reactive, watch, ref} from "vue";
 import OuterPartsInformation from "@src/components/puzzle/OuterPartsInformation.vue";
 import {useRouter} from "vue-router";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['prev', 'next']);
 const router = useRouter();
 
@@ -79,7 +81,7 @@ onMounted(() => {
         @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
         @drag:start="dragStart(element)">
 
-      <div>{{ element.metadata.text }}</div>
+      <div>{{ lang(element.metadata.text) }}</div>
     </puzzle-element>
 
     <icon-callout
@@ -98,7 +100,7 @@ onMounted(() => {
   <outer-parts-information v-if="isComplete"/>
 
   <div class="page-navigation-link horizontal right" @click="emit('next')">
-    <span>Skelets</span>
+    <span>{{ lang('puzzle.title2') }}</span>
     <img src="@images/chevron-right.svg" alt="">
   </div>
 

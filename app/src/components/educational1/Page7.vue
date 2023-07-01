@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import {onMounted, ref, watch} from "vue";
 import WaterLevel from "@src/components/educational1/WaterLevel.vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['prev', 'next', 'restart', 'show-detail']);
 const props = defineProps({
     isActive: {
@@ -34,53 +36,44 @@ function prevPage(): void {
 <template>
 
     <div class="edu1-information-block page7">
-        <div class="small-header">Aizsargājamās teritorijas Baltijas jūrā</div>
+        <div class="small-header">{{ lang('edu1.page7.title') }}</div>
 
-        <div class="text-block">Aizsargājamās jūras teritorijas veidotas bentisko jeb jūras dibena biotopu un sugu
-            saglabāšanai, kā arī migrējošām putnu sugām nozīmīgu barošanās un ziemošanas vietu aizsardzībai.
-        </div>
+        <div class="text-block" v-html="lang('edu1.page7.text')" />
 
         <div class="card">
-            <div class="title">Latvijā aizsargājamās teritorijas</div>
+            <div class="title">{{ lang('edu1.page7.subtitle') }}</div>
 
-            <div class="sub-title">Latvijā ir izveidotas vairākas jūras aizsargājamās teritorijas, un tās aizņem 32,5%
-                no Latvijas teritoriālās jūras kopplatības.
-            </div>
+            <div class="sub-title" v-html="lang('edu1.page7.subtitle.text')" />
 
             <div class="water-level-wrapper">
                 <WaterLevel :is-active="active1" :wave-x="-40" :wave-y="40">
-                    32,5
+                    {{ lang('edu1.page7.subtitle.value') }}
                 </WaterLevel>
-                <div class="units-sign">‰</div>
+                <div class="units-sign">{{ lang('edu1.page7.subtitle.sign') }}</div>
             </div>
 
-            <div class="note">Vislielākās aizsargājamās jūras teritorijas: Ainaži-Salacgrīva, Akmensrags, Irbes šaurums,
-                Nida-Pērkone, Rīgas līča rietumu piekraste, Selga uz rietumiem no Tūjas, Vitrupe-Tūja.
-            </div>
+            <div class="note" v-html="lang('edu1.page7.note')" />
         </div>
     </div>
 
     <div class="modal-background-overlay" :class="{active:isMapOpen}"></div>
     <div class="edu1-expandable-circle page7" :class="{active:isMapOpen}" @click="isMapOpen=!isMapOpen">
         <div class="status-bar">
-            <span>Karte ar aizsagājamām jūras teritorijām</span>
+            <span>{{ lang('edu1.page7.modalTitle') }}</span>
             <img class="close" src="@images/cross.svg" alt="">
         </div>
         <img class="content" alt="" src="@images/edu1-map2.png" />
     </div>
 
-    <div class="edu1-page6-note">Projekta „REEF - Jūras aizsargājamo biotopu izpēte un nepieciešamā aizsardzības statusa
-        noteikšana Latvijas ekskluzīvajā ekonomiskajā zonā” ietvaros tiek pētītas vēl trīs teritorijas, lai iekļautu tās
-        aizsargājamo tīklā.
-    </div>
+    <div class="edu1-page6-note" v-html="lang('edu1.page7.modalSubtitle')" />
 
     <div class="page-navigation-link horizontal left" @click="prevPage">
         <img src="@images/chevron-left.svg" alt="">
-        <span>Atpakaļ</span>
+        <span>{{ lang('common.back') }}</span>
     </div>
 
     <div class="page-navigation-link horizontal right" @click="emit('restart', true)">
-        <span>Beigas</span>
+        <span>{{ lang('common.finish') }}</span>
         <img src="@images/chevron-right.svg" alt="">
     </div>
 

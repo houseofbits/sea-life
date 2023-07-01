@@ -49,7 +49,7 @@ onMounted(() => {
     <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
         Loading
     </div>
-    <div v-if="errorMessage" class="content-1080p detail-list-error">
+    <div v-if="errorMessage" class="content-1080p detail-list-error bg-white">
         <span>Error while fetching data from the server.</span>
         <span><strong>With message:</strong> {{ errorMessage }}</span>
     </div>

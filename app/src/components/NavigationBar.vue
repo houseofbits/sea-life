@@ -12,6 +12,7 @@ const {
     selectedLanguage,
     selectLanguage,
     isLanguageSelected,
+    lang
 } = DetailTranslations();
 
 const props = defineProps({
@@ -57,7 +58,7 @@ function selectLanguageAction(language: string): void {
                               fill="#729DB7"/>
                     </g>
                 </svg>
-                <span>Sākums</span>
+                <span>{{ lang('common.start') }}</span>
             </div>
         </div>
         <div class="header-title">

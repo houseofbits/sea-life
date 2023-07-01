@@ -11,6 +11,17 @@ export default () => {
         commonTranslations.value = translations;
     }
 
+    function lang(key: string, defaultValue: string|null = null): string
+    {
+        if (commonTranslations.value[selectedLanguage.value]
+        && commonTranslations.value[selectedLanguage.value].translations.hasOwnProperty(key)
+        ) {
+            return commonTranslations.value[selectedLanguage.value].translations[key];
+        }
+
+        return defaultValue || key;
+    }
+
     const translations = computed(() => {
         return commonTranslations.value[selectedLanguage.value] || new DetailCommonStructure({});
     });
@@ -34,6 +45,7 @@ export default () => {
         languages,
         selectedLanguage,
         isLanguageSelected,
-        selectLanguage
+        selectLanguage,
+        lang
     };
 }

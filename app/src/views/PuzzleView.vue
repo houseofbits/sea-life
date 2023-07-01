@@ -6,7 +6,9 @@ import NumericPagination from "@src/composables/NumericPagination";
 import PuzzleSkeleton from "@src/components/puzzle/PuzzleSkeleton.vue";
 import PuzzleInnerParts from "@src/components/puzzle/PuzzleInnerParts.vue";
 import PuzzleOuterParts from "@src/components/puzzle/PuzzleOuterParts.vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const router = useRouter();
 
 const pageComponents = [
@@ -52,24 +54,24 @@ function navigateToStep(step: number): void {
     <div class="content-1080p puzzle-view">
 
         <navigation-bar>
-            <span>Saliec mencu</span>
+            <span>{{ lang('puzzle.title') }}</span>
             <template #links>
         <span class="group-links">
-          <a href="#" class="active">Saliec mencu</a>
-          <a href="#" @click="navigateToAnimation1">Attīstība</a>
-          <a href="#" @click="navigateToAnimation2">Stagara riests</a>
+          <a href="#" class="active">{{ lang('puzzle.title') }}</a>
+          <a href="#" @click="navigateToAnimation1">{{ lang('anim1.title') }}</a>
+          <a href="#" @click="navigateToAnimation2">{{ lang('anim2.title') }}</a>
         </span>
             </template>
         </navigation-bar>
 
         <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
-          <img src="@images/arrow-left.svg" alt="">
-          <span>Atpakaļ</span>
+            <img src="@images/arrow-left.svg" alt="">
+            <span>{{ lang('common.back') }}</span>
         </div>
 
         <div v-if="currentPage!==0" class="back-filter" @click="restart">
             <img src="@images/arrow-left.svg" alt="">
-            <span>Uz sākumu</span>
+            <span>{{ lang('common.toBeginning') }}</span>
         </div>
 
         <div v-for="(component, index) in pageComponents" :key="index" class="full-slider-container initial-right "
@@ -81,23 +83,22 @@ function navigateToStep(step: number): void {
         <div class="progress-indicator">
             <div class="step" :class="{active: isSelectedPage(0)}" @click="() => navigateToStep(0)">
                 <div><span>1</span></div>
-                <span class="name">Ārējā uzbūve</span>
+                <span class="name">{{ lang('puzzle.title1') }}</span>
             </div>
 
             <div class="divider"></div>
 
             <div class="step" :class="{active: isSelectedPage(1)}" @click="() => navigateToStep(1)">
                 <div><span>2</span></div>
-                <span class="name">Skelets</span>
+                <span class="name">{{ lang('puzzle.title2') }}</span>
             </div>
 
             <div class="divider"></div>
 
             <div class="step" :class="{active: isSelectedPage(2)}" @click="() => navigateToStep(2)">
                 <div><span>3</span></div>
-                <span class="name">Iekšējā uzbūve</span>
+                <span class="name">{{ lang('puzzle.title3') }}</span>
             </div>
         </div>
-
     </div>
 </template>

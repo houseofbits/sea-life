@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {onMounted, ref, watch} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['next', 'prev', 'restart']);
 const props = defineProps({
     isActive: {
@@ -65,18 +67,15 @@ onMounted(() => {
     </div>
 
     <div class="text-collapse-horizontal page1-text1 faded" :class="{active: active1, hilight: isText1Hilighted}">
-        <div>Trīsadatu <strong>stagars ir neliela zivtiņa</strong>, kas Latvijā sastopama gan saldūdeņos, gan jūrā.
-        </div>
+        <div v-html="lang('anim2.page1.text1')"/>
     </div>
 
     <div class="text-collapse-horizontal page1-text2 faded" :class="{active: active2, hilight: isText2Hilighted}">
-        <div><strong>Tuvojoties riesta laikam</strong> vairāku sugu <strong>zivis maina krāsu</strong>, tai skaitā
-            stagaru tēviņi. Tiem iekrāsojas gaiši zilas acis, koši sarkans vēders un zila mugura.
-        </div>
+        <div v-html="lang('anim2.page1.text2')"/>
     </div>
 
     <div class="page-navigation-link horizontal right" @click="emit('next')">
-        <span>Turpināt</span>
+        <span>{{ lang('common.continue') }}</span>
         <img src="@images/chevron-right.svg" :class="{'bounce-right-anim':continueBounce}" alt="">
     </div>
 

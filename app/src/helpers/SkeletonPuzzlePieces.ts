@@ -12,7 +12,7 @@ export default [
         finalLayer: PuzzleLayersEnum.LAYER1,
         isAlignedCenter: true,
         metadata: {
-            text: "Aste",
+            text: "puzzle.skeleton.item1",
         }
     }),
     new DraggableElement({
@@ -24,7 +24,7 @@ export default [
         finalLayer: PuzzleLayersEnum.LAYER1,
         isAlignedCenter: true,
         metadata: {
-            text: "Mugurkauls",
+            text: "puzzle.skeleton.item2",
         }
     }),
     new DraggableElement({
@@ -36,7 +36,7 @@ export default [
         finalLayer: PuzzleLayersEnum.LAYER1,
         isAlignedCenter: true,
         metadata: {
-            text: "Spuru stari",
+            text: "puzzle.skeleton.item3",
         }
     }),
     new DraggableElement({
@@ -48,7 +48,7 @@ export default [
         finalLayer: PuzzleLayersEnum.LAYER1,
         isAlignedCenter: true,
         metadata: {
-            text: "Galvaskauss",
+            text: "puzzle.skeleton.item4",
         }
     }),
 ];

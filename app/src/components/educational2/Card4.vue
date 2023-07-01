@@ -3,7 +3,9 @@ import TargetCallout from "@src/components/puzzle/TargetCallout.vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
 import Vector2 from "@src/structures/Vector2";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['close']);
 
 const props = defineProps({
@@ -37,14 +39,14 @@ function close(): void {
 
             <div>
                 <target-callout :hidden="isActive || !isViewActive" :config="callout1Config">
-                    <div class="callout-header-text">Dzīvie organismi uz jūras gultnes (bentoss)</div>
+                    <div class="callout-header-text">{{ lang('edu2.card4.title') }}</div>
                 </target-callout>
             </div>
         </div>
 
         <div class="card-content">
             <div class="header">
-                <span>Dzīvie organismi uz jūras gultnes (bentoss)</span>
+                <span>{{ lang('edu2.card4.title') }}</span>
                 <img class="close" src="@images/cross.svg" alt="">
             </div>
 
@@ -56,20 +58,11 @@ function close(): void {
             </svg>
 
             <div class="text-frame">
-                <div><strong>Organismu kopu, kas apdzīvo ūdenstilpnes dibenu, sauc par bentosu.</strong> To veido augi
-                    (fitobentoss) un
-                    dzīvnieki (zoobentoss). Lielāka sugu daudzveidība raksturīga piekrastes zonu akmeņainām vietām, kas
-                    piemērotas aļģu augšanai un ir nozīmīgas zivju nārsta vietas.
-                </div>
+                <div v-html="lang('edu2.card4.text1')" />
 
                 <div class="box">
-                    <div>Uz jūras grunts sastopamie augi lielākoties ir makroskopiskās (ar aci saredzamās) aļģes, retāk
-                        tie ir augstākie augi. <strong>Latvijas piekrastē augi parasti neaug dziļāk par 18 - 25
-                            metriem.</strong> Dziļāk
-                        tiem ir par tumšu – nepietiek gaismas fotosintēzes veikšanai.
-                    </div>
-                    <div class="sub-text">Zem sārtaļģu joslas augi vairs nav atrodami, taču ir sastopami dzīvnieki.
-                    </div>
+                    <div v-html="lang('edu2.card4.text2')" />
+                    <div class="sub-text" v-html="lang('edu2.card4.text3')" />
 
                     <div class="single-card">
                         <div class="absolute-wrapper">
@@ -93,30 +86,23 @@ function close(): void {
                                 </defs>
                             </svg>
 
-                            <div class="text first">Zaļaļģes</div>
-                            <div class="text second">Brūnaļģes</div>
-                            <div class="text third">Sārtaļģes</div>
-                            <div class="text note">Gultne</div>
+                            <div class="text first">{{ lang('edu2.card4.text2.line1') }}</div>
+                            <div class="text second">{{ lang('edu2.card4.text2.line2') }}</div>
+                            <div class="text third">{{ lang('edu2.card4.text2.line3') }}</div>
+                            <div class="text note">{{ lang('edu2.card4.text2.line4') }}</div>
                         </div>
                     </div>
 
-                    <div class="annotation">*Ilustrācijā redzamas dažādas dziļumu joslas kurās sastopamas aļģes</div>
+                    <div class="annotation">{{ lang('edu2.card4.text2.note') }}</div>
                 </div>
 
-                <div><strong>Aļģes ir ekosistēmas primārie producenti.</strong> Tas nozīmē – aļģes no neorganiskajām
-                    vielām rada
-                    organiskās vielas, kuras tālāk jūras dzīvnieki var izmantot pārtikā. Tāpēc vietās, kur ir daudz
-                    aļģu, pulcējas arī daudz to „ēdāju”.
-                </div>
+                <div v-html="lang('edu2.card4.text4')" />
             </div>
 
             <div class="image-frame">
                 <img alt="" src="@images/edu2-image4.png"/>
 
-                <div>Aļģēs sastopamie dzīvnieki ir galvenokārt kukaiņu kāpuri, gliemji, sīkas zivis, vēžveidīgie. Šie
-                    dzīvnieki var kļūt par barību lielākām zivīm un ūdens putniem, tādēļ vietās ar bagātīgu jūras dibena
-                    veģetāciju parasti var sastapt arī daudz putnu.
-                </div>
+                <div v-html="lang('edu2.card4.note')" />
             </div>
 
         </div>

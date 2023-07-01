@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref, watch} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['prev', 'next', 'restart', 'show-detail']);
 const props = defineProps({
     isActive: {
@@ -27,48 +29,37 @@ function prevPage(): void {
 <template>
 
     <div class="edu1-information-block page6">
-        <div class="small-header">Aizsargājamie biotopi Baltijas jūrā</div>
+        <div class="small-header">{{ lang('edu1.page6.title') }}</div>
 
-        <div class="text-block">Latvijas piekrastē Baltijas jūrā sastopami divi Eiropas Savienības nozīmes aizsargājamie
-            biotopi <strong>Smilšu sēkļi jūrā</strong> un <strong>Akmeņu sēkļi jūrā</strong>.
-        </div>
+        <div class="text-block" v-html="lang('edu1.page6.text')"/>
 
         <div class="box-wrapper">
             <div class="box">
                 <img class="image" alt="" src=""/>
 
-                <div class="title">Smilšu sēkļi jūrā</div>
+                <div class="title">{{ lang('edu1.page6.subtitle1') }}</div>
 
-                <div class="text">Smilšu sēkļi jūrā ir garenas, apaļas vai neregulāras formas reljefa veidojumi, kurus
-                    pastāvīgi klāj jūras ūdens. Šo biotopu veido galvenokārt smiltis ar grants, oļu, akmeņu un dūņu
-                    piejaukumu, kurus apdzīvo baktēriju, daudzsartārpu, gliemju un vēžveidīgo sabiedrības. Smilšu sēkļi
-                    ir nozīmīga zivju nārsta un barošanās vieta, tāpat tie piesaista arī ziemojošos ūdensputnus.
-                </div>
+                <div class="text" v-html="lang('edu1.page6.subtitle1.text')"/>
             </div>
 
             <div class="box">
                 <img class="image" alt="" src=""/>
 
-                <div class="title">Akmeņu sēkļi jūrā</div>
+                <div class="title">{{ lang('edu1.page6.subtitle2') }}</div>
 
-                <div class="text">Akmeņu sēkļi jūrā ir viens no ievērojamākajiem un ekoloģiski nozīmīgākajiem biotopu
-                    veidiem Baltijas jūras austrumu daļā, kas ir cieta substrāta teritorijas (akmeņi, laukakmeņi, oļi)
-                    ar smilšu apbērumiem. Šo biotopa veidu apdzīvo neskaitāmas bezmugurkaulnieku, zivju, putnu un augu
-                    sugas.
-                </div>
+                <div class="text" v-html="lang('edu1.page6.subtitle2.text')"/>
             </div>
         </div>
     </div>
 
-
     <div class="page-navigation-link horizontal right" @click="emit('next')">
-        <span>Turpināt</span>
+        <span>{{ lang('common.continue') }}</span>
         <img src="@images/chevron-right.svg" class="bounce-right-anim" alt="">
     </div>
 
     <div class="page-navigation-link horizontal left" @click="prevPage">
         <img src="@images/chevron-left.svg" alt="">
-        <span>Atpakaļ</span>
+        <span>{{ lang('common.back') }}</span>
     </div>
 
 </template>

@@ -8,6 +8,7 @@ import MapItemStructure from "@src/structures/MapItemStructure";
 const {
     translations,
     selectedLanguage,
+    lang
 } = DetailTranslations();
 
 const {
@@ -117,7 +118,7 @@ onMounted(() => {
                 </template>
                 <template v-else>
                     <img class="map" src="@images/map.svg" alt="">
-                    <div class="title">{{ translations.map }}</div>
+                    <div class="title">{{ lang('species.map') }}</div>
                 </template>
 
                 <img class="close" src="@images/cross.svg" alt="">
@@ -144,7 +145,7 @@ onMounted(() => {
             </div>
 
             <div v-if="hasChanged" class="learn-more-button" @click="selectClose">
-                {{ translations.learnMoreButton }}
+                {{ lang('species.learnMoreButton') }}
             </div>
 
         </div>

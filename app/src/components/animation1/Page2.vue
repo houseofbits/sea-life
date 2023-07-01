@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {onMounted, ref, watch} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const infoVideo1 = ref<HTMLMediaElement | null>(null);
 const infoVideo2 = ref<HTMLMediaElement | null>(null);
 const infoVideo3 = ref<HTMLMediaElement | null>(null);
@@ -129,8 +131,8 @@ function returnMain(): void {
                 </svg>
             </div>
 
-            <div class="card-title">Nārsto jūrā</div>
-            <div class="card-subtitle">pastāvīgi dzīvo jūrā – tajā gan nārsto, gan aug un attīstās</div>
+            <div class="card-title">{{ lang('anim1.page2.card1.title') }}</div>
+            <div class="card-subtitle">{{ lang('anim1.page2.card1.text') }}</div>
         </div>
 
         <div
@@ -152,8 +154,9 @@ function returnMain(): void {
                         fill="#555555"/>
                 </svg>
             </div>
-            <div class="card-title">Atgriežas upēs</div>
-            <div class="card-subtitle">barojas jūrā, bet nārstot dodas uz dzimtajām upēm</div>
+
+            <div class="card-title">{{ lang('anim1.page2.card2.title') }}</div>
+            <div class="card-subtitle">{{ lang('anim1.page2.card2.text') }}</div>
         </div>
 
         <div
@@ -175,8 +178,9 @@ function returnMain(): void {
                         fill="#555555"/>
                 </svg>
             </div>
-            <div class="card-title">Pāri okeānam</div>
-            <div class="card-subtitle">Nārstot dodas pāri visam Atlantijas okeānam</div>
+
+            <div class="card-title">{{ lang('anim1.page2.card3.title') }}</div>
+            <div class="card-subtitle">{{ lang('anim1.page2.card3.text') }}</div>
         </div>
     </div>
 
@@ -187,8 +191,8 @@ function returnMain(): void {
         <div class="line"></div>
         <div class="content">
             <div class="fixed-text">
-                <span class="title">Nārsto jūrā</span>
-                <span>Ir zivis, kuras <span class="link">pastāvīgi dzīvo jūrā</span> – tajā gan nārsto, gan aug un attīstās, piemēram brētliņa un jūrasgrundulis.</span>
+                <span class="title">{{ lang('anim1.page2.callout1.title') }}</span>
+                <span v-html="lang('anim1.page2.callout1.text')" />
             </div>
         </div>
     </div>
@@ -200,9 +204,8 @@ function returnMain(): void {
         <div class="line"></div>
         <div class="content">
             <div class="fixed-text">
-                <span class="title">Atgriežas upēs</span>
-                <span>Dažas zivis, piemēram lasis un vimba, lielāko daļu dzīves pavada un barojas jūrā, bet <span
-                    class="link">nārstot dodas uz dzimtajām upēm.</span></span>
+                <span class="title">{{ lang('anim1.page2.callout2.title') }}</span>
+                <span v-html="lang('anim1.page2.callout2.text')" />
             </div>
         </div>
     </div>
@@ -214,9 +217,8 @@ function returnMain(): void {
         <div class="line"></div>
         <div class="content">
             <div class="fixed-text">
-                <span class="title">Pāri okeānam</span>
-                <span>Zuši vairošanās vecumu sasniedz Baltijas jūrā, kā arī ar to savienotajās upēs un ezeros. Savukārt <span
-                    class="link">nārstot tie dodas uz Sargasu jūru pāri visam Atlantijas okeānam.</span> Izšķīlušies jaunie zuši peld pretējā virzienā un atgriežas savu vecāku apdzīvotajās jūrās un upēs.</span>
+                <span class="title">{{ lang('anim1.page2.callout3.title') }}</span>
+                <span v-html="lang('anim1.page2.callout3.text')" />
             </div>
         </div>
     </div>
@@ -224,13 +226,13 @@ function returnMain(): void {
     <div class="info-zero-state-title" :class="{faded: activeElement !== null}">Zivju vairošanās – nārsts</div>
 
     <div v-if="activeElement" class="page-navigation-link horizontal right" @click="nextPage">
-        <span>Turpināt</span>
+        <span>{{ lang('common.continue') }}</span>
         <img src="@images/chevron-right.svg" alt="" class="bounce-right-anim" oncontextmenu="return false;">
     </div>
 
     <div class="back-filter" @click="emit('restart')">
         <img src="@images/arrow-left.svg" alt="" oncontextmenu="return false;">
-        <span>Uz sākumu</span>
+        <span>{{ lang('common.toBeginning') }}</span>
     </div>
 
 </template>

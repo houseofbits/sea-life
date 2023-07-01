@@ -10,7 +10,7 @@ export default [
         initialPosition: new Vector2(598, 969),
         targetPosition: new Vector2(281, 305),
         metadata: {
-            text: "Nāsis",
+            text: "puzzle.outer.item1",
             callout: new CalloutConfigStructure({
                 position: new Vector2(281, 305),
                 size: new Vector2(0, 190),
@@ -24,7 +24,7 @@ export default [
         initialPosition: new Vector2(269, 842),
         targetPosition: new Vector2(735, 696),
         metadata: {
-            text: "Krūšu spura",
+            text: "puzzle.outer.item2",
             callout: new CalloutConfigStructure({
                 position: new Vector2(735, 508),
                 size: new Vector2(0, 190),
@@ -38,7 +38,7 @@ export default [
         initialPosition: new Vector2(253, 952),
         targetPosition: new Vector2(603, 771),
         metadata: {
-            text: "Vēdera spura",
+            text: "puzzle.outer.item3",
             callout: new CalloutConfigStructure({
                 position: new Vector2(603, 654),
                 size: new Vector2(0, 118),
@@ -52,7 +52,7 @@ export default [
         initialPosition: new Vector2(665, 871),
         targetPosition: new Vector2(1291, 707),
         metadata: {
-            text: "Anālā spura",
+            text: "puzzle.outer.item4",
             callout: new CalloutConfigStructure({
                 position: new Vector2(1291, 598),
                 size: new Vector2(0, 109),
@@ -66,7 +66,7 @@ export default [
         initialPosition: new Vector2(1030, 871),
         targetPosition: new Vector2(1175, 292),
         metadata: {
-            text: "Sānu līnija",
+            text: "puzzle.outer.item5",
             callout: new CalloutConfigStructure({
                 position: new Vector2(1175, 292),
                 size: new Vector2(0, 189),
@@ -80,7 +80,7 @@ export default [
         initialPosition: new Vector2(930, 969),
         targetPosition: new Vector2(546, 303),
         metadata: {
-            text: "Žaunu vāks",
+            text: "puzzle.outer.item5",
             callout: new CalloutConfigStructure({
                 position: new Vector2(546, 303),
                 size: new Vector2(0, 186),
@@ -94,7 +94,7 @@ export default [
         initialPosition: new Vector2(1349, 871),
         targetPosition: new Vector2(355, 722),
         metadata: {
-            text: "Mute",
+            text: "puzzle.outer.item7",
             callout: new CalloutConfigStructure({
                 position: new Vector2(355, 534),
                 size: new Vector2(0, 188),
@@ -108,7 +108,7 @@ export default [
         initialPosition: new Vector2(1335, 969),
         targetPosition: new Vector2(1055, 249),
         metadata: {
-            text: "Muguras spura",
+            text: "puzzle.outer.item8",
             callout: new CalloutConfigStructure({
                 position: new Vector2(1055, 249),
                 size: new Vector2(0, 91),
@@ -122,7 +122,7 @@ export default [
         initialPosition: new Vector2(1680, 842),
         targetPosition: new Vector2(1617, 252),
         metadata: {
-            text: "Astes spura",
+            text: "puzzle.outer.item9",
             callout: new CalloutConfigStructure({
                 position: new Vector2(1617, 252),
                 size: new Vector2(0, 189),
@@ -136,7 +136,7 @@ export default [
         initialPosition: new Vector2(1680, 949),
         targetPosition: new Vector2(388, 279),
         metadata: {
-            text: "Acs",
+            text: "puzzle.outer.item10",
             callout: new CalloutConfigStructure({
                 position: new Vector2(388, 279),
                 size: new Vector2(0, 189),

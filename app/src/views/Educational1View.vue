@@ -12,6 +12,7 @@ import NumericPagination from "@src/composables/NumericPagination";
 import {onMounted, ref} from "vue";
 import InputHandlerService from "@src/services/InputHandlerService";
 import DetailListItem from "@src/structures/DetailListItem";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
 const router = useRouter();
 
@@ -24,6 +25,8 @@ const pageComponents = [
     Page6,
     Page7,
 ];
+
+const {lang} = DetailTranslations();
 
 const {
     getAnimationState,
@@ -86,7 +89,7 @@ onMounted(() => {
                 <span class="latin-title" v-html="selectedItem.latinTitle"></span>
             </span>
             <span v-else>
-                Baltijas jūra
+                {{ lang('edu1.title') }}
             </span>
         </navigation-bar>
 
@@ -116,12 +119,12 @@ onMounted(() => {
 
         <div v-if="currentPage===0" class="back-filter" @click="navigateToMain">
             <img src="@images/arrow-left.svg" alt="">
-            <span>Atpakaļ</span>
+            <span>{{ lang('common.back') }}</span>
         </div>
 
         <div v-if="currentPage!==0" class="back-filter" @click="selectPage(0)">
             <img src="@images/arrow-left.svg" alt="">
-            <span>Uz sākumu</span>
+            <span>{{ lang('common.toBeginning') }}</span>
         </div>
     </div>
 </template>

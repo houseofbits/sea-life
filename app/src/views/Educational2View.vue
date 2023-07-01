@@ -9,7 +9,9 @@ import Card1 from "@src/components/educational2/Card1.vue";
 import Card2 from "@src/components/educational2/Card2.vue";
 import Card3 from "@src/components/educational2/Card3.vue";
 import Card4 from "@src/components/educational2/Card4.vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const isViewActive = ref(false);
 
 const router = useRouter();
@@ -50,7 +52,7 @@ onMounted(() => {
 <template>
     <div class="content-1080p bg-white anim2-container">
         <navigation-bar>
-            <span>Barības ķēdes Baltijas jūrā</span>
+            <span>{{ lang('edu2.title') }}</span>
         </navigation-bar>
 
         <svg class="edu2-background" :class="{'view-active': isViewActive}" width="1920" height="553" viewBox="0 0 1920 553" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,8 +62,8 @@ onMounted(() => {
         <div class="modal-background-overlay" :class="{active: isCardActive}"/>
 
         <div class="edu2-title">
-            <div>Ar ko Baltijas jūra ir īpaša?</div>
-            <div>Zivis un pārējie jūras ekosistēmas organismi barības ķēdēs ir cieši saistīti, tai skaitā arī cilvēks.</div>
+            <div>{{ lang('edu2.subtitle') }}</div>
+            <div>{{ lang('edu2.text') }}</div>
         </div>
 
         <Card1 :is-active="isCard1Active" :is-view-active="isViewActive" @click="isCard1Active = !isCard1Active"/>
@@ -69,11 +71,11 @@ onMounted(() => {
         <Card3 :is-active="isCard3Active" :is-view-active="isViewActive" @click="isCard3Active = !isCard3Active"/>
         <Card4 :is-active="isCard4Active" :is-view-active="isViewActive" @click="isCard4Active = !isCard4Active"/>
 
-        <div @click="navigateToInfo" class="white-link">Jūras iemītnieku apraksti</div>
+        <div @click="navigateToInfo" class="white-link">{{ lang('edu2.note') }}</div>
 
         <div class="back-filter" @click="navigateToMain">
             <img src="@images/arrow-left.svg" alt="">
-            <span>Atpakaļ</span>
+            <span>{{ lang('common.back') }}</span>
         </div>
     </div>
 </template>

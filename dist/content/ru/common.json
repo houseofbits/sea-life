@@ -1,27 +1,13 @@
 {
-  "title": "Обитатели Балтийского моря",
-  "backButton": "Назад",
-  "order": "Отряд",
-  "family": "Cемейство",
-  "mainFilterButton": "Назад ко всем",
-  "map": "Kарта",
-  "learnMoreButton": "Узнать больше",
-  "groups": [
-    {
-      "group": 1,
-      "title": "Птицы"
-    },
-    {
-      "group": 2,
-      "title": "Рыба"
-    },
-    {
-      "group": 3,
-      "title": "Ракообразные"
-    },
-    {
-      "group": 4,
-      "title": "Моллюски"
-    }
-  ]
+  "species.title": "Обитатели Балтийского моря",
+  "species.backButton": "Назад",
+  "species.order": "Отряд",
+  "species.family": "Cемейство",
+  "species.mainFilterButton": "Назад ко всем",
+  "species.map": "Kарта",
+  "species.learnMoreButton": "Узнать больше",
+  "species.group1": "Рыба",
+  "species.group2": "Птицы",
+  "species.group3": "Ракообразные",
+  "species.group4": "Моллюски"
 }

@@ -5,23 +5,25 @@ import Vector2 from "@src/structures/Vector2";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import TargetCallout from "@src/components/puzzle/TargetCallout.vue";
 import {onMounted, ref} from "vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
+
+const {lang} = DetailTranslations();
 
 const text = [
-  'Piloriskie piedēkļi izdala gremosanas fermentus, un tajos sakas pārstrādātās barības uzsūkšanās',
-  'Anālā atvere tiek izmantota gremošanas galaproduktu, kā arī liekā ūdens izvadīšanai. Vairošanas laikā pa to ārējā vidē izvada dzimumšūnas.',
-  'Sirds nodrošina asins kustību asinsvados.',
-  'Dzimumdziedzeri veido sievišķās vai vīrišķās dzimumšūnas.',
-  'Peldpūslis spēj izplesties un sarauties, nodrošinot zivij spēju mainīt peldēšanas dziļumu.',
-  'Muskuļi saraujoties nodrošina zivs kustības.',
-  'Žaunās notiek skābekļa uzņemšana.',
-  'Aknas attīra asinis no kaitīgām vielām.',
-  'Žultspūslī uzkrājas žults, kas piedalās barības sašķelšanā.',
-  'Urīnpūslī pirms izvadīšanas uzkrājas urīns',
-  'Nieres izvada vielmaiņas galaproduktus',
-  'Barības vadā notiek uzņemtās barības sašķelšana.',
-  // 'Liesa piedalās organisma imūnsistemas darbībā, noārda organismā iekļuvušos mikroorganismus un noārda novecojušos eritrocītus.',
-  // 'Muguras aorta apgādā ar asinīm muskuļus un iekšējos orgānus',
-  'Kuņģī nokļūst uzņemtā barība. Ir zivju sugas, kurām kuņģa nav.'
+    'puzzle.inner.info1',
+    'puzzle.inner.info2',
+    'puzzle.inner.info3',
+    'puzzle.inner.info4',
+    'puzzle.inner.info5',
+    'puzzle.inner.info6',
+    'puzzle.inner.info7',
+    'puzzle.inner.info8',
+    'puzzle.inner.info9',
+    'puzzle.inner.info10',
+    'puzzle.inner.info11',
+    'puzzle.inner.info12',
+    'puzzle.inner.info13',
+    'puzzle.inner.info14'
 ];
 
 const callouts = [
@@ -121,7 +123,6 @@ const pairingExclude: { [key: number]: number[] } = {
 const calloutVisibilityStack = ref(new Array<number>());
 
 function openInfoCallout(id: number): void {
-  console.log('ōpen '+id);
   if (!calloutVisibilityStack.value.includes(id)) {
     calloutVisibilityStack.value.push(id);
   }
@@ -159,7 +160,7 @@ onMounted(() => {
       :hidden="!isVisible(index)"
       :is-point-visible="true"
   >
-    <template #text>{{ text[index] }}</template>
+    <template #text>{{ lang(text[index]) }}</template>
   </target-callout>
 
   <svg width="1717" style="z-index:1000; position: absolute; left: 101px; top: 115px;" height="951"

@@ -5,20 +5,22 @@ import Vector2 from "@src/structures/Vector2";
 import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import {onMounted, ref} from "vue";
 import CalloutConfigStructure from "@src/structures/CalloutConfigStructure";
+import DetailTranslations from "@src/composables/DetailTranslations";
+
+const {lang} = DetailTranslations();
 
 const text = [
-  'Mencas lielā mute liecina par to, ka zivs ir plēsīga un ķer citas zivis.',
-  'Nāsis zivīm kalpo tikai kā ožas orgāns.',
-  'Zivju acis atšķir ne tikai formas, bet arī krāsas. Redzi izmanto, lai izvairītos no plēsējiem, meklētu barību un atrastu partneri.',
-  'Žaunu vāki pasargā žaunas no ārējiem bojājumiem un piedalās ūdens plūsmas apmaiņā tajās.',
-  'Krūšu spuras izmanto straujai virziena un ātruma maiņai peldēšanas laikā.',
-  'Vēdera spuras stabilizē zivi, peldot augšup vai lejup.',
-  'Anālā spura stabilizē zivi peldēšanas laikā.',
-  'Astes spura nodrošina zivs kustību uz priekšu.',
-  'Muguras spura saglabā zivs stabilitāti peldot.',
-  'Sānu līnijā atrodas atveres īpasiem kanāliem, kas atrodas ādā. Tajos atrodas ļoti jutīgas šūnas, ar kuram zivs\n' +
-  'uztver ūdens spiediena maiņu. Tās ļauj sajust ūdens kustību, medījuma vai ienaidnieka kustību.',
-  'Zvīņas aizsargā zivs ķermeni, un dažam zivīm tās var izmantot to vecuma noteikšanai.',
+    'puzzle.outer.info1',
+    'puzzle.outer.info2',
+    'puzzle.outer.info3',
+    'puzzle.outer.info4',
+    'puzzle.outer.info5',
+    'puzzle.outer.info6',
+    'puzzle.outer.info7',
+    'puzzle.outer.info8',
+    'puzzle.outer.info9',
+    'puzzle.outer.info10',
+    'puzzle.outer.info11'
 ];
 
 const callouts = [
@@ -133,7 +135,7 @@ onMounted(() => {
       :hidden="!isVisible(index)"
       :is-point-visible="true"
   >
-    {{ text[index] }}
+    {{ lang(text[index]) }}
   </text-callout>
 
   <svg style="z-index:1000; position: absolute; left: 261px; top: 324px;" width="1417" height="507"

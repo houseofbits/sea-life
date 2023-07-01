@@ -10,7 +10,11 @@ export default class DetailCommonStructure {
     learnMoreButton: string = '';
     groups: Array<{group: number, title: string}> = [];
 
+    translations: {[key: string]: string} = {};
+
     constructor(params: Partial<DetailCommonStructure>) {
         Object.assign(this, params);
+
+        Object.assign(this.translations, params);
     }
 }

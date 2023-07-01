@@ -7,7 +7,9 @@ import DraggableElement from "@src/structures/DraggableElement";
 import Draggable from "@src/services/Draggable";
 import {onMounted, reactive, ref, watch} from "vue";
 import InnerPartsInformation from "@src/components/puzzle/InnerPartsInformation.vue";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['prev', 'next']);
 
 const props = defineProps({
@@ -141,7 +143,7 @@ onMounted(() => {
         @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
         @drag:start="dragStart(element)">
 
-      <div>{{ element.metadata.text }}</div>
+      <div>{{ lang(element.metadata.text) }}</div>
     </puzzle-element>
 
     <icon-callout
@@ -154,7 +156,7 @@ onMounted(() => {
 
   <div class="prev-puzzle-button" @click="emit('prev')">
     <img src="@images/chevron-left.svg" alt="">
-    <span>Skelets</span>
+    <span>{{ lang('puzzle.title2') }}</span>
   </div>
 
 <!--  <div class="next-puzzle-button" @click="emit('next')">-->

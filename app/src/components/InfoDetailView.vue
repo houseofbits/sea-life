@@ -103,14 +103,15 @@ function getFamilyStyle(): any {
 }
 
 const {
-    translations
+    translations,
+    lang
 } = DetailTranslations();
 
 const orderTitle = computed<string>(() => {
     if (props.item.orderTitle) {
         return props.item.orderTitle;
     }
-    return translations.value.order;
+    return lang('species.order');       //translations.value.order;
 });
 
 onMounted(() => {
@@ -127,7 +128,7 @@ onMounted(() => {
         <div class="family-detail" :style="getFamilyStyle()">
             <span class="latin-name" v-html="item.latinTitle"/>
             <span class="latin-detail"><strong>{{ orderTitle }}: </strong><em v-html="item.order"/></span>
-            <span class="latin-detail"><strong>{{ translations.family }}: </strong><em v-html="item.family"/></span>
+            <span class="latin-detail"><strong>{{ lang('species.family') }}: </strong><em v-html="item.family"/></span>
         </div>
 
         <div class="fact-detail" :style="getFactStyle()">
@@ -148,7 +149,7 @@ onMounted(() => {
         <div class="info-identifier-section">
             <div v-if="isMapVisible" class="map-button" @click="emit('map')">
                 <img src="@images/map.svg" alt="" oncontextmenu="return false;">
-                <span>{{ translations.map }}</span>
+                <span>{{ lang('species.map') }}</span>
             </div>
 
             <template v-if="Array.isArray(item.identifier)">
@@ -166,7 +167,7 @@ onMounted(() => {
 
         <div class="back-filter" @click="close">
             <img src="@images/arrow-left.svg" alt="" oncontextmenu="return false;">
-            <span>{{ translations.backButton }}</span>
+            <span>{{ lang('species.backButton') }}</span>
         </div>
 
     </div>

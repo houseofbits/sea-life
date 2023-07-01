@@ -8,7 +8,9 @@ import {CalloutTypeEnum} from "@src/helpers/CalloutTypeEnum";
 import Vector2 from "@src/structures/Vector2";
 import {onMounted, reactive, ref, watch} from "vue";
 import Draggable from "@src/services/Draggable";
+import DetailTranslations from "@src/composables/DetailTranslations";
 
+const {lang} = DetailTranslations();
 const emit = defineEmits(['prev', 'next']);
 
 const props = defineProps({
@@ -83,18 +85,18 @@ onMounted(() => {
       @placed="(draggable: Draggable) => elementPlaced(element.name, draggable)"
       @drag:start="dragStart(element)">
 
-    <div>{{ element.metadata.text }}</div>
+    <div>{{ lang(element.metadata.text) }}</div>
   </puzzle-element>
 
   <icon-callout v-for="callout in calloutConf" :config="callout" :hidden="!isActive"/>
 
     <div class="prev-puzzle-button" @click="emit('prev')">
         <img src="@images/chevron-left.svg" alt="">
-        <span>Ārējā uzbūve</span>
+        <span>{{ lang('puzzle.title1') }}</span>
     </div>
 
   <div class="next-puzzle-button" @click="emit('next')">
-    <span>Iekšējā uzbūve</span>
+    <span>{{ lang('puzzle.title3') }}</span>
     <img src="@images/chevron-right.svg" alt="" :class="{'bounce-right-anim': isComplete}">
   </div>
 
