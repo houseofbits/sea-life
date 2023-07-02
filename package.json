@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "prod": "webpack --mode=production",
+    "prod": "npm version patch && webpack --mode=production",
     "build": "webpack --mode=development",
     "watch": "webpack --watch --mode=development",
     "serve": "webpack serve --mode=development",
