@@ -7,6 +7,8 @@ import DetailContentStructure from "@src/structures/DetailContentStructure";
 import DetailList from "@src/composables/DetailList";
 import DetailTranslations from "@src/composables/DetailTranslations";
 
+const packageVersion = require('/package.json').version;
+
 const router = useRouter();
 
 const {
@@ -46,8 +48,9 @@ onMounted(() => {
 </script>
 <template>
     <router-view v-show="!isLoading"/>
-    <div v-if="isLoading" class="content-1080p detail-list detail-list-loading">
-        Loading
+    <div v-if="isLoading" class="content-1080p detail-list loader_view">
+        <span>Version: {{ packageVersion }}</span>
+        <span class="detail-list-loading">Loading</span>
     </div>
     <div v-if="errorMessage" class="content-1080p detail-list-error bg-white">
         <span>Error while fetching data from the server.</span>
