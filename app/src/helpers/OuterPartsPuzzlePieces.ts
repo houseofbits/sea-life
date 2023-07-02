@@ -80,7 +80,7 @@ export default [
         initialPosition: new Vector2(930, 969),
         targetPosition: new Vector2(546, 303),
         metadata: {
-            text: "puzzle.outer.item5",
+            text: "puzzle.outer.item6",
             callout: new CalloutConfigStructure({
                 position: new Vector2(546, 303),
                 size: new Vector2(0, 186),
