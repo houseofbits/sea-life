@@ -5,8 +5,8 @@
     "transform": {
       "width": 86,
       "height": 89,
-      "top": 330,
-      "left": 1140
+      "top": 364,
+      "left": 212
     }
   },
   {
@@ -15,8 +15,8 @@
     "transform": {
       "width": 110,
       "height": 44,
-      "top": 555,
-      "left": 1060,
+      "top": 595,
+      "left": 132,
       "angle": 45
     }
   },
@@ -26,8 +26,8 @@
     "transform": {
       "width": 93,
       "height": 63,
-      "top": 438,
-      "left": 1136
+      "top": 470,
+      "left": 208
     }
   },
   {
@@ -36,8 +36,8 @@
     "transform": {
       "width": 100,
       "height": 88,
-      "top": 339,
-      "left": 1064
+      "top": 369,
+      "left": 134
     }
   },
   {
@@ -46,8 +46,8 @@
     "transform": {
       "width": 97,
       "height": 87,
-      "top": 241,
-      "left": 1073
+      "top": 271,
+      "left": 145
     }
   },
   {
@@ -56,8 +56,8 @@
     "transform": {
       "width": 78,
       "height": 94,
-      "top": 236,
-      "left": 1149
+      "top": 266,
+      "left": 221
     }
   },
   {
@@ -66,8 +66,8 @@
     "transform": {
       "width": 68,
       "height": 33,
-      "top": 435,
-      "left": 1110,
+      "top": 466,
+      "left": 182,
       "angle": 33
     }
   },
@@ -77,8 +77,8 @@
     "transform": {
       "width": 87,
       "height": 41,
-      "top": 540,
-      "left": 1145,
+      "top": 580,
+      "left": 217,
       "angle": -40
     }
   },
@@ -88,8 +88,8 @@
     "transform": {
       "width": 65,
       "height": 41,
-      "top": 535,
-      "left": 256,
+      "top": 525,
+      "left": 541,
       "angle": 20
     }
   },
@@ -99,8 +99,8 @@
     "transform": {
       "width": 37,
       "height": 26,
-      "top": 596,
-      "left": 276,
+      "top": 586,
+      "left": 561,
       "angle": 3
     }
   },
@@ -110,8 +110,8 @@
     "transform": {
       "width": 62,
       "height": 33,
-      "top": 559,
-      "left": 330,
+      "top": 549,
+      "left": 615,
       "angle": -12
     }
   },
@@ -121,8 +121,8 @@
     "transform": {
       "width": 54,
       "height": 38,
-      "top": 586,
-      "left": 325
+      "top": 576,
+      "left": 610
     }
   },
   {
@@ -131,8 +131,8 @@
     "transform": {
       "width": 81,
       "height": 33,
-      "top": 547,
-      "left": 392
+      "top": 537,
+      "left": 677
     }
   },
   {
@@ -141,8 +141,8 @@
     "transform": {
       "width": 45,
       "height": 21,
-      "top": 580,
-      "left": 428
+      "top": 570,
+      "left": 713
     }
   },
   {
@@ -151,8 +151,8 @@
     "transform": {
       "width": 40,
       "height": 20,
-      "top": 639,
-      "left": 790
+      "top": 629,
+      "left": 1075
     }
   },
   {
@@ -161,8 +161,8 @@
     "transform": {
       "width": 79,
       "height": 15,
-      "top": 615,
-      "left": 430,
+      "top": 605,
+      "left": 715,
       "angle": -10
     }
   },
@@ -172,8 +172,8 @@
     "transform": {
       "width": 44,
       "height": 31,
-      "top": 582,
-      "left": 471
+      "top": 572,
+      "left": 756
     }
   },
   {
@@ -182,8 +182,8 @@
     "transform": {
       "width": 72,
       "height": 51,
-      "top": 607,
-      "left": 535,
+      "top": 597,
+      "left": 820,
       "angle": -26
     }
   },
@@ -193,8 +193,8 @@
     "transform": {
       "width": 144,
       "height": 115,
-      "top": 232,
-      "left": 188
+      "top": 222,
+      "left": 473
     }
   },
   {
@@ -203,8 +203,8 @@
     "transform": {
       "width": 102,
       "height": 84,
-      "top": 540,
-      "left": 555,
+      "top": 530,
+      "left": 840,
       "angle": 4
     }
   },
@@ -214,8 +214,8 @@
     "transform": {
       "width": 62,
       "height": 45,
-      "top": 625,
-      "left": 620,
+      "top": 615,
+      "left": 905,
       "angle": -145
     }
   },
@@ -225,8 +225,8 @@
     "transform": {
       "width": 156,
       "height": 73,
-      "top": 492,
-      "left": 610,
+      "top": 482,
+      "left": 895,
       "angle": 15
     }
   },
@@ -236,8 +236,8 @@
     "transform": {
       "width": 74,
       "height": 18,
-      "top": 626,
-      "left": 667,
+      "top": 616,
+      "left": 952,
       "angle": 8
     }
   },
@@ -247,8 +247,8 @@
     "transform": {
       "width": 46,
       "height": 29,
-      "top": 646,
-      "left": 684,
+      "top": 636,
+      "left": 969,
       "angle": -5
     }
   },
@@ -258,8 +258,8 @@
     "transform": {
       "width": 51,
       "height": 17,
-      "top": 622,
-      "left": 745
+      "top": 612,
+      "left": 1030
     }
   },
   {
@@ -268,8 +268,8 @@
     "transform": {
       "width": 30,
       "height": 23,
-      "top": 661,
-      "left": 797
+      "top": 651,
+      "left": 1082
     }
   },
   {
@@ -278,8 +278,8 @@
     "transform": {
       "width": 69,
       "height": 31,
-      "top": 613,
-      "left": 370
+      "top": 603,
+      "left": 655
     }
   },
   {
@@ -288,8 +288,8 @@
     "transform": {
       "width": 32,
       "height": 23,
-      "top": 639,
-      "left": 753
+      "top": 629,
+      "left": 1038
     }
   },
   {
@@ -298,8 +298,8 @@
     "transform": {
       "width": 292,
       "height": 146,
-      "top": 365,
-      "left": 130,
+      "top": 355,
+      "left": 415,
       "angle": 5
     }
   },
@@ -309,8 +309,8 @@
     "transform": {
       "width": 82,
       "height": 42,
-      "top": 455,
-      "left": 1070,
+      "top": 490,
+      "left": 138,
       "angle": 20
     }
   },
@@ -320,8 +320,8 @@
     "transform": {
       "width": 76,
       "height": 43,
-      "top": 282,
-      "left": 448
+      "top": 272,
+      "left": 738
     }
   },
   {
@@ -330,8 +330,8 @@
     "transform": {
       "width": 145,
       "height": 71,
-      "top": 309,
-      "left": 530
+      "top": 299,
+      "left": 815
     }
   },
   {
@@ -340,8 +340,8 @@
     "transform": {
       "width": 77,
       "height": 65,
-      "top": 250,
-      "left": 664
+      "top": 240,
+      "left": 940
     }
   },
   {
@@ -350,8 +350,8 @@
     "transform": {
       "width": 136,
       "height": 26,
-      "top": 335,
-      "left": 730
+      "top": 325,
+      "left": 1015
     }
   },
   {
@@ -360,8 +360,8 @@
     "transform": {
       "width": 84,
       "height": 26,
-      "top": 530,
-      "left": 815,
+      "top": 520,
+      "left": 1100,
       "angle": -10
     }
   },
@@ -371,8 +371,8 @@
     "transform": {
       "width": 122,
       "height": 57,
-      "top": 536,
-      "left": 129,
+      "top": 526,
+      "left": 414,
       "angle": -10
     }
   },
@@ -382,8 +382,8 @@
     "transform": {
       "width": 66,
       "height": 32,
-      "top": 571,
-      "left": 216,
+      "top": 561,
+      "left": 501,
       "angle": -5
     }
   }

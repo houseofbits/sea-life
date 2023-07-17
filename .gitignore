@@ -5,3 +5,6 @@ package-lock.json
 dist/images
 dist/video
 dist/fonts
+tooling/txt-parser/txt
+tooling/txt-parser/output
+sea-life-1.0.4.zip

@@ -1915,7 +1915,7 @@ small {
     top: 145px;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.12), 0 1px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    background: #FFFFFF url(/images/modal-bg.jpg) no-repeat bottom;
+    background: #FFFFFF url(/images/modal-bg-3.png) no-repeat bottom;
     color: #22324B;
     transition: all 300ms;
     opacity: 0;
@@ -1982,7 +1982,7 @@ small {
     .navigation-modal .window .learn-more-button {
       position: absolute;
       bottom: 40px;
-      right: 40px;
+      left: 40px;
       background: #D4E1E9;
       border: 1px solid black;
       border-radius: 6px;
