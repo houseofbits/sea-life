@@ -6,6 +6,7 @@ const isLeavingPromptVisible = ref<boolean>(false);
 const isAuthPromptVisible = ref<boolean>(true);
 const hasUnsavedChangesPending = ref<boolean>(false);
 const leaveCallback = ref<CallableFunction | null>(null);
+const username = ref<string|null>(null);
 const passphrase = ref<string|null>(null);
 const authenticationErrorMessage = ref<string|null>(null);
 
@@ -36,11 +37,12 @@ export default () => {
         isLeavingPromptVisible.value = false;
     }
 
-    async function authenticate(password: string) {
+    async function authenticate(user: string, password: string) {
         authenticationErrorMessage.value = null;
         try {
-            await ItemUpdateService.authenticate(password);
+            await ItemUpdateService.authenticate(user, password);
             isAuthPromptVisible.value = false;
+            username.value = user;
             passphrase.value = password;
         }  catch (e: any) {
             authenticationErrorMessage.value = e.message;
@@ -59,6 +61,7 @@ export default () => {
         isAuthPromptVisible,
         authenticate,
         passphrase,
+        username,
         authenticationErrorMessage
     };
 }

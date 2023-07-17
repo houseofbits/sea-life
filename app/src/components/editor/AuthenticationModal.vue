@@ -2,6 +2,7 @@
 import {ref} from "vue";
 import EditorGlobalState from "@src/composables/EditorGlobalState";
 
+const username = ref<string>('');
 const password = ref<string>('');
 
 const {
@@ -49,7 +50,15 @@ const {
 
                         <div class="mb-3 w-full mt-3">
                             <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                                <span class="text-gray-500">Enter passphrase:</span>
+                                <span class="text-gray-500">Username:</span>
+                                <input v-model="username" type="text"
+                                       class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            </label>
+                        </div>
+
+                        <div class="mb-3 w-full mt-3">
+                            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                                <span class="text-gray-500">Password:</span>
                                 <input v-model="password" type="text"
                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             </label>
@@ -57,7 +66,7 @@ const {
                     </div>
                 </div>
                 <div class="bg-gray-50 px-4 py-3 flex justify-end">
-                    <button @click="() => authenticate(password)">Authenticate</button>
+                    <button @click="() => authenticate(username, password)">Authenticate</button>
                 </div>
             </div>
         </div>

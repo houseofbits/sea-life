@@ -9,9 +9,9 @@ spl_autoload_register(function ($class_name) {
     include './editor/' . $class_name . '.php';
 });
 
-$encoded_passphrase = file_get_contents('../edit.pass');
+$encoded_passphrase = @file_get_contents('../edit.pass');
 if (empty($encoded_passphrase)) {
-    $encoded_passphrase = '$2y$10$TzwCk685VY5oVqCdSMW1kO95C6Z5FgQPXaP7QG.9UiufsUu5MFwl6';       //var_dump(password_hash('80L9CUh@XSH6oZjSMh', PASSWORD_DEFAULT)); exit
+    $encoded_passphrase = '$2y$10$TzwCk685VY5oVqCdSMW1kO95C6Z5FgQPXaP7QG.9UiufsUu5MFwl6';
 }
 
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])
@@ -19,6 +19,11 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH'])
 
     $rawdata = json_decode(file_get_contents("php://input"));
     $service = new ContentFileUpdateRequestService();
+
+    if ($rawdata->username !== 'LVDM') {
+        header('Status: 403 Access denied');
+        exit;
+    }
 
     if (!password_verify($rawdata->password, $encoded_passphrase)) {
         header('Status: 403 Access denied');

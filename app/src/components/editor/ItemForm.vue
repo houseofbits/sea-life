@@ -71,6 +71,7 @@ const {
     isLoading,
     setLoading,
     passphrase,
+    username
 } = EditorGlobalState();
 
 const isSaveDisabled = computed<boolean>(() => {
@@ -99,7 +100,7 @@ async function updateData(): Promise<any> {
     setLoading(true);
     try {
         console.log(passphrase.value);
-        await ItemUpdateService.update(props.item.sourceFileName, props.isBaseLanguage, props.selectedLanguage, formValues, passphrase.value || '');
+        await ItemUpdateService.update(props.item.sourceFileName, props.isBaseLanguage, props.selectedLanguage, formValues, username.value || '', passphrase.value || '');
         updateParentItem();
         setUnsavedChangesPending(false);
         initialData.value = new EditItemFormValuesStructure(formValues);
